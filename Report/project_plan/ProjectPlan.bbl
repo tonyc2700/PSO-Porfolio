@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{complex}
+Konstantinos~P. Anagostopoulos.
+\newblock Mutiobjective evolutionary algorithms for complex optimisation
+  problems.
+\newblock 2009.
+
+\bibitem{port}
+Wikipedia.
+\newblock Portfolio optimisation.
+\newblock \url{http://en.wikipedia.org/wiki/Portfolio_optimization}.
+\newblock Accessed: February,2014.
+
+\bibitem{finance}
+Gerard Cornuejols.
+\newblock Optimisation methods in finance, 2005.
+
+\bibitem{pso}
+James Kennedy and Russel Eberhart.
+\newblock Particle swarm optimisation.
+\newblock 2001.
+
+\bibitem{kkt}
+Wikipedia.
+\newblock Karush-kuhn-tucker condition.
+\newblock \url{http://en.wikipedia.org/wiki/Karush-Kuhn-Tucker_conditions}.
+\newblock Accessed: February,2014.
+
+\bibitem{simplex}
+Wikipedia.
+\newblock Simplex method.
+\newblock \url{http://en.wikipedia.org/wiki/Simplex_algorithm}.
+\newblock Accessed: February,2014.
+
+\bibitem{moea}
+Konstantinos~P. Anagnostopoulos.
+\newblock Multiobjective evolutionary algorithms for complex portfolio
+  optimization problems, 2009.
+
+\bibitem{pso2}
+E.C. Laskari.
+\newblock Particle swarm optimisation for integer programming.
+\newblock 2005.
+
+\end{thebibliography}

@@ -1,0 +1,29 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+utils/ghc-cabal/dist-install/build/Main.o : utils/ghc-cabal/Main.hs
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/Prelude.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/filepath/dist-install/build/System/FilePath.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/System/Exit.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/System/Environment.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/directory/dist-install/build/System/Directory.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/System/IO.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/Data/Maybe.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/base/dist-install/build/Data/List.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/PackageIndex.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/InstalledPackageInfo.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Verbosity.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Text.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Register.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Build.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Utils.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Program/HcPkg.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Program.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/LocalBuildInfo.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple/Configure.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Simple.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/PackageDescription/Parse.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/PackageDescription/Configuration.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/PackageDescription/Check.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/PackageDescription.hi
+utils/ghc-cabal/dist-install/build/Main.o : libraries/Cabal/Cabal/dist-install/build/Distribution/ModuleName.hi
+# DO NOT DELETE: End of Haskell dependencies
+utils/ghc-cabal_dist-install_depfile_haskell_EXISTS = YES

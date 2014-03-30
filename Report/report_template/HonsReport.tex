@@ -1,0 +1,179 @@
+%%
+%%  HonsReport.tex - Latex Sampler...
+%%
+%%  Dave Ritchie, October 2002
+%%
+%%-----------------------------------------------------------------------
+%%
+%%  This example uses the "mscthesis" style, which assumes you have the
+%%  local Latex environment defined. To setup Latex on raven, for example:
+%%
+%%     raven% setup tex
+%%
+%%  To typeset this script:
+%%
+%%     latex HonsReport.tex
+%%
+%%  To view the result:
+%%
+%%     xdvi HonsReport.dvi
+%%
+%%  To print:
+%%
+%%     dvi2ps -o HonsReport.ps HonsReport.dvi; lpr HonsReport.ps
+%%
+%%  etc...
+%%
+%%  The class and style files "mscthesis.cls" and "mscthesis.sty" are
+%%  taken from the curent directory, or from 
+%%
+%%    /local/tex/teTeX/texmf.local/tex/latex/mscthesis.cls
+%%
+%%  Hence these could be copied and customised if necessary.
+%%
+%%  The local Latex Guide is at:
+%%
+%%    http://docs.csd.abdn.ac.uk/LaTeX/
+%%
+%%-----------------------------------------------------------------------
+\documentclass[a4paper,12pt]{mscthesis}
+
+\RequirePackage{float}
+\RequirePackage{ifthen}
+\RequirePackage{epsfig}
+\RequirePackage{amsmath}
+\RequirePackage{tabularx}
+\RequirePackage{subfigure}
+\RequirePackage{supertabular}
+
+
+\begin{document}
+
+\title{How I Did It!}
+
+\author{H. Ackermann}
+
+\abstract{This report describes a revolutionary breakthrough in
+          software engineering. 
+          An entirely new programming paradigm is presented
+          in which the engineer writes a vague description of
+          the requirements and the software system generates
+          executable code using the {\em ``I thought that's what
+          you meant principle.''} 
+          Artificial Intelligence techniques are used to 
+          sample fragments of existing code from commercial programs,
+          and a low level parser is used to combine these fragments
+          into an executable program. 
+          In 90\% of cases, the given requirements are so vague that 
+          a panel of expert agree that the generated code 
+          could indeed be said to satisfy at least 70\% of the
+          requirement specification. 
+          Users of new the system found it to be almost indistinguishable
+          from many existing desktop products.
+          One expert remarked that ``the new system could save many people 
+          thousands of dollars - they would never again need to buy
+          expensive and often unnecessary software.''
+}
+
+%%-----------------------------------------------------------------------
+
+%%
+%%  Create the first page(s)
+%% 
+
+\maketitle
+
+\acknowledgements{
+I would like to thank my family, my colleagues, and everyone else
+who knows me.}
+
+%%-----------------------------------------------------------------------
+
+%%
+%% Do Honours Projects require a declaration ??
+%% 
+%% \declaration
+
+%%-----------------------------------------------------------------------
+
+%%
+%%  Make the rest of the "front matter"
+%%
+
+\tableofcontents
+
+%% \listoffigures
+
+%% \listoftables
+
+\clearpage
+
+%%-----------------------------------------------------------------------
+
+%%  we probably want wide line spacing for Reports
+
+\widespacing
+
+
+\chapter{Introduction (Why Its Important/Worthwhile)}
+
+In this report I will treat my grave subject with deadly
+seriousness. There may be doubters \cite{wilder:1985},
+but this document will demonstrate the error of their ways,
+and explain in full how I achieved my {\em remarkable results}.
+
+The rest of this Report is divided into Chapters and SubSections. 
+The Chapter Headings and some of the Subsection Headings might
+actually make sense. The rest of this stuff is of course 
+complete rubbish.
+
+\section{Project Overview}
+
+\section{Project Constraints}
+
+\chapter{Background (Where I Started From)}
+
+\section{Existing Code Generators}
+
+\section{A New Paradigm for Code Generation}
+
+\subsection{The Fractality Principle}
+
+\subsection{Distinguishing Randomness and Complexity}
+
+\subsection{Generating Random Code But Nice-Looking Code}
+
+\chapter{Methods (How I Did It)}
+
+\chapter{Results (How Good It Is)}
+
+\chapter{Conclusions (What I Have Achieved)}
+
+\subsection{Achievements}
+\subsection{Future Work}
+\subsection{Summary}
+%%
+%%  how to include another source file (discussion.tex)
+%%
+%% \include{discussion}
+
+%%-----------------------------------------------------------------------
+
+%% rename chapters as appendices
+
+\appendix
+
+\chapter{An Appendix}
+
+%%-----------------------------------------------------------------------
+
+%%
+%%  Need an HonsReport.bib file to get a bibliography
+%%
+
+\bibliographystyle{unsrt}
+
+\addcontentsline{toc}{chapter}{\numberline{}Bibliography}
+\bibliography{HonsReport}
+
+\end{document}

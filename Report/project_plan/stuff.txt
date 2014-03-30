@@ -1,0 +1,60 @@
+\section*{Introduction}
+Optimisation models play an increasingly important role in financial decisions. Many computational finance problems ranging from asset allocation to risk management can be solved using modern optimisation techniques \cite{complex}. I have been interested in the analysis of financial trading for a very long time and I believe that with the help of statistical mathematics and a strong and safe computing language, a ``smart'' system can be created and given the correct guidelines, it can independently manage a portfolio \cite{port,finance} and arrive at the optimal (maximum profit with minimum risk) trading decisions. Haskell is one of the most influential functional programming languages available today along with Lisp, Standard ML and o'Caml. When used for financial analysis, you can achieve a much-improved level of prediction and clear problem descriptions when compared to other languages.
+
+
+\section*{Goals}
+\begin{itemize}
+  \item Make application to optimise financial portfolio 
+  \item PSO and parallel programming already exit in Haskell
+  \item Implement PSO to real world data constraints and function
+  \item Optional Extra: \begin{itemize}
+                          \item Nice GUI 
+                          \item Print out report
+                        \end{itemize}
+\end{itemize}
+
+
+\section*{Methodology}
+\begin{itemize}
+  \item Compare algorithms: Verify that PSO is more efficient than KKT \cite{kkt} and Simplex \cite{simplex}.
+  \item Implement parallel programming methods in Haskell
+  \item Improve financial trading knowledge: For example, when measuring risk, would be be better to use variance or  quantile-based risk measures\cite{moea}.
+  \item 
+\end{itemize}
+
+
+\section*{Resources Required}
+I aim to make an application which can run on a normal PC or laptop. 
+\begin{itemize}
+  \item Dual core processor with 1.6GHz or more.
+  \item Haskell: Parallel Haskell Compilation System, version 7.4.2 or higher.
+\end{itemize}
+
+
+\section*{Risk Assessment}
+A possible problem would be that the constraints for a given optimisation process don't make a compact set. Meaning that it won't necessarily have an optimal solution and the program might crash or give incorrect results. To tackle this, I will implement safe guard measures to determine whether the region constraints is well define, thanks to Haskell's lazy evaluation, it won't try to work out the solution before the verification has been carried out. 
+
+If the program become efficient enough, large datasets will have to been kept in order to expand the application. If this occurs, a simple PC or Laptop will not have the processing power or memory to handle such large requests or computation. This would be solved by purchasing or renting servers, alternatively, we could use the cloud to do the computation required. I would have to research how Haskell will behave if implemented in the cloud.
+
+
+
+
+Optimisation models play an increasingly important role in financial decisions. Many computational finance problems ranging from asset allocation to risk management can be solved using modern optimisation techniques \cite{complex}. I have been interested in the analysis of financial trading for a very long time and I believe that with the help of statistical mathematics and a strong and safe computing language, a ``smart'' system can be created and given the correct guidelines, it can independently manage a portfolio \cite{port,finance} and arrive at the optimal (maximum profit with minimum risk) trading decisions. Haskell is one of the most influential functional programming languages available today along with Lisp, Standard ML and o'Caml. When used for financial analysis, you can achieve a much-improved level of prediction and clear problem descriptions when compared to other languages.
+
+
+I will try to build an application which uses PSO to optimise a financial portfolio, I will use parallel programming and PSO algorithms which already exist in Haskell and 
+
+
+\subsection*{Compare Algorithms}
+
+I will want to verify that Particle Swarm Optimisation (PSO) is more efficient than other linear optimisation methods such as  Karush–Kuhn–Tucker (KKT) \cite{kkt} and Simplex \cite{simplex}. I will use bench mark problems with 10, 100, and 1000 variables and compare efficiency between the methods. The modeling might be done is Mathematica \cite{mathematica} as it provides a very efficient way (in term of time and complexity) to model the outcome of PSW vs KKt and Simplex methods. 
+
+\subsection*{Improve Financial Trading Knowledge}
+
+For my system to be efficient, I will need to learn how the computer will need to make decisions for an optimal solution. One might be a very good programmer but if one doesn't know what to write, it is useless. For example, when measuring risk, would be be better to use variance or  quantile-based risk measures\cite{moea}.
+
+\subsection*{Implementation}
+
+I will try to implement the back-bone for a portfolio management system, time willing it will have a user friendly GUI. Most importantly though, I will want to make a system which independently calculated the best outcome given a portfolio. 
+
+

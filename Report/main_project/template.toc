@@ -1,0 +1,5 @@
+\contentsline {chapter}{\tocchapter {Chapter}{1}{chapter title}}{1}{chapter.1}
+\contentsline {section}{\tocsection {}{1}{section title}}{2}{section.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{subsection title}}{2}{subsection.1.1.1}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{the next chapter}}{3}{chapter.2}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{4}{chapter.2}

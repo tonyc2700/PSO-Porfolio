@@ -1,0 +1,311 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/haskell98/dist-install/build/Prelude.o libraries/haskell98/dist-install/build/Prelude.dyn_o libraries/haskell98/dist-install/build/Prelude.p_o : libraries/haskell98/Prelude.hs
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Err.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Err.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Err.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Show.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Show.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Show.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Float.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Float.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Float.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Real.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Real.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Real.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Real.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Real.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Real.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Num.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Num.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Num.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Enum.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Enum.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Enum.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Text/Read.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Text/Read.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Text/Read.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/GHC/Base.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/GHC/Base.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/GHC/Base.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Data/Tuple.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Data/Tuple.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Data/Tuple.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Data/Maybe.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Data/Maybe.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Data/Maybe.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Data/Either.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Data/Either.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Data/Either.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Data/List.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Data/List.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Data/List.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/System/IO/Error.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/System/IO/Error.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/System/IO/Error.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/System/IO.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/System/IO.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/System/IO.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Control/Monad.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Control/Monad.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Control/Monad.p_hi
+libraries/haskell98/dist-install/build/Prelude.o : libraries/base/dist-install/build/Control/Exception/Base.hi
+libraries/haskell98/dist-install/build/Prelude.dyn_o : libraries/base/dist-install/build/Control/Exception/Base.dyn_hi
+libraries/haskell98/dist-install/build/Prelude.p_o : libraries/base/dist-install/build/Control/Exception/Base.p_hi
+libraries/haskell98/dist-install/build/Monad.o libraries/haskell98/dist-install/build/Monad.dyn_o libraries/haskell98/dist-install/build/Monad.p_o : libraries/haskell98/Monad.hs
+libraries/haskell98/dist-install/build/Monad.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Monad.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Monad.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Monad.o : libraries/base/dist-install/build/Control/Monad.hi
+libraries/haskell98/dist-install/build/Monad.dyn_o : libraries/base/dist-install/build/Control/Monad.dyn_hi
+libraries/haskell98/dist-install/build/Monad.p_o : libraries/base/dist-install/build/Control/Monad.p_hi
+libraries/haskell98/dist-install/build/System.o libraries/haskell98/dist-install/build/System.dyn_o libraries/haskell98/dist-install/build/System.p_o : libraries/haskell98/System.hs
+libraries/haskell98/dist-install/build/System.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/System.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/System.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/System.o : libraries/process/dist-install/build/System/Cmd.hi
+libraries/haskell98/dist-install/build/System.dyn_o : libraries/process/dist-install/build/System/Cmd.dyn_hi
+libraries/haskell98/dist-install/build/System.p_o : libraries/process/dist-install/build/System/Cmd.p_hi
+libraries/haskell98/dist-install/build/System.o : libraries/base/dist-install/build/System/Environment.hi
+libraries/haskell98/dist-install/build/System.dyn_o : libraries/base/dist-install/build/System/Environment.dyn_hi
+libraries/haskell98/dist-install/build/System.p_o : libraries/base/dist-install/build/System/Environment.p_hi
+libraries/haskell98/dist-install/build/System.o : libraries/base/dist-install/build/System/Exit.hi
+libraries/haskell98/dist-install/build/System.dyn_o : libraries/base/dist-install/build/System/Exit.dyn_hi
+libraries/haskell98/dist-install/build/System.p_o : libraries/base/dist-install/build/System/Exit.p_hi
+libraries/haskell98/dist-install/build/IO.o libraries/haskell98/dist-install/build/IO.dyn_o libraries/haskell98/dist-install/build/IO.p_o : libraries/haskell98/IO.hs
+libraries/haskell98/dist-install/build/IO.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/IO.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/IO.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/IO.o : libraries/base/dist-install/build/System/IO/Error.hi
+libraries/haskell98/dist-install/build/IO.dyn_o : libraries/base/dist-install/build/System/IO/Error.dyn_hi
+libraries/haskell98/dist-install/build/IO.p_o : libraries/base/dist-install/build/System/IO/Error.p_hi
+libraries/haskell98/dist-install/build/IO.o : libraries/base/dist-install/build/System/IO.hi
+libraries/haskell98/dist-install/build/IO.dyn_o : libraries/base/dist-install/build/System/IO.dyn_hi
+libraries/haskell98/dist-install/build/IO.p_o : libraries/base/dist-install/build/System/IO.p_hi
+libraries/haskell98/dist-install/build/List.o libraries/haskell98/dist-install/build/List.dyn_o libraries/haskell98/dist-install/build/List.p_o : libraries/haskell98/List.hs
+libraries/haskell98/dist-install/build/List.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/List.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/List.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/List.o : libraries/base/dist-install/build/Data/List.hi
+libraries/haskell98/dist-install/build/List.dyn_o : libraries/base/dist-install/build/Data/List.dyn_hi
+libraries/haskell98/dist-install/build/List.p_o : libraries/base/dist-install/build/Data/List.p_hi
+libraries/haskell98/dist-install/build/Maybe.o libraries/haskell98/dist-install/build/Maybe.dyn_o libraries/haskell98/dist-install/build/Maybe.p_o : libraries/haskell98/Maybe.hs
+libraries/haskell98/dist-install/build/Maybe.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Maybe.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Maybe.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Maybe.o : libraries/base/dist-install/build/Data/Maybe.hi
+libraries/haskell98/dist-install/build/Maybe.dyn_o : libraries/base/dist-install/build/Data/Maybe.dyn_hi
+libraries/haskell98/dist-install/build/Maybe.p_o : libraries/base/dist-install/build/Data/Maybe.p_hi
+libraries/haskell98/dist-install/build/Ix.o libraries/haskell98/dist-install/build/Ix.dyn_o libraries/haskell98/dist-install/build/Ix.p_o : libraries/haskell98/Ix.hs
+libraries/haskell98/dist-install/build/Ix.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Ix.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Ix.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Ix.o : libraries/base/dist-install/build/Data/Ix.hi
+libraries/haskell98/dist-install/build/Ix.dyn_o : libraries/base/dist-install/build/Data/Ix.dyn_hi
+libraries/haskell98/dist-install/build/Ix.p_o : libraries/base/dist-install/build/Data/Ix.p_hi
+libraries/haskell98/dist-install/build/Array.o libraries/haskell98/dist-install/build/Array.dyn_o libraries/haskell98/dist-install/build/Array.p_o : libraries/haskell98/Array.hs
+libraries/haskell98/dist-install/build/Array.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Array.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Array.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Array.o : libraries/array/dist-install/build/Data/Array.hi
+libraries/haskell98/dist-install/build/Array.dyn_o : libraries/array/dist-install/build/Data/Array.dyn_hi
+libraries/haskell98/dist-install/build/Array.p_o : libraries/array/dist-install/build/Data/Array.p_hi
+libraries/haskell98/dist-install/build/Array.o : libraries/haskell98/dist-install/build/Ix.hi
+libraries/haskell98/dist-install/build/Array.dyn_o : libraries/haskell98/dist-install/build/Ix.dyn_hi
+libraries/haskell98/dist-install/build/Array.p_o : libraries/haskell98/dist-install/build/Ix.p_hi
+libraries/haskell98/dist-install/build/CPUTime.o libraries/haskell98/dist-install/build/CPUTime.dyn_o libraries/haskell98/dist-install/build/CPUTime.p_o : libraries/haskell98/CPUTime.hs
+libraries/haskell98/dist-install/build/CPUTime.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/CPUTime.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/CPUTime.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/CPUTime.o : libraries/base/dist-install/build/System/CPUTime.hi
+libraries/haskell98/dist-install/build/CPUTime.dyn_o : libraries/base/dist-install/build/System/CPUTime.dyn_hi
+libraries/haskell98/dist-install/build/CPUTime.p_o : libraries/base/dist-install/build/System/CPUTime.p_hi
+libraries/haskell98/dist-install/build/Char.o libraries/haskell98/dist-install/build/Char.dyn_o libraries/haskell98/dist-install/build/Char.p_o : libraries/haskell98/Char.hs
+libraries/haskell98/dist-install/build/Char.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Char.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Char.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Char.o : libraries/base/dist-install/build/Data/Char.hi
+libraries/haskell98/dist-install/build/Char.dyn_o : libraries/base/dist-install/build/Data/Char.dyn_hi
+libraries/haskell98/dist-install/build/Char.p_o : libraries/base/dist-install/build/Data/Char.p_hi
+libraries/haskell98/dist-install/build/Complex.o libraries/haskell98/dist-install/build/Complex.dyn_o libraries/haskell98/dist-install/build/Complex.p_o : libraries/haskell98/Complex.hs
+libraries/haskell98/dist-install/build/Complex.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Complex.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Complex.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Complex.o : libraries/base/dist-install/build/Data/Complex.hi
+libraries/haskell98/dist-install/build/Complex.dyn_o : libraries/base/dist-install/build/Data/Complex.dyn_hi
+libraries/haskell98/dist-install/build/Complex.p_o : libraries/base/dist-install/build/Data/Complex.p_hi
+libraries/haskell98/dist-install/build/Directory.o libraries/haskell98/dist-install/build/Directory.dyn_o libraries/haskell98/dist-install/build/Directory.p_o : libraries/haskell98/Directory.hs
+libraries/haskell98/dist-install/build/Directory.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Directory.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Directory.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Directory.o : libraries/directory/dist-install/build/System/Directory.hi
+libraries/haskell98/dist-install/build/Directory.dyn_o : libraries/directory/dist-install/build/System/Directory.dyn_hi
+libraries/haskell98/dist-install/build/Directory.p_o : libraries/directory/dist-install/build/System/Directory.p_hi
+libraries/haskell98/dist-install/build/Directory.o : libraries/directory/dist-install/build/System/Directory.hi
+libraries/haskell98/dist-install/build/Directory.dyn_o : libraries/directory/dist-install/build/System/Directory.dyn_hi
+libraries/haskell98/dist-install/build/Directory.p_o : libraries/directory/dist-install/build/System/Directory.p_hi
+libraries/haskell98/dist-install/build/Locale.o libraries/haskell98/dist-install/build/Locale.dyn_o libraries/haskell98/dist-install/build/Locale.p_o : libraries/haskell98/Locale.hs
+libraries/haskell98/dist-install/build/Locale.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Locale.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Locale.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Locale.o : libraries/old-locale/dist-install/build/System/Locale.hi
+libraries/haskell98/dist-install/build/Locale.dyn_o : libraries/old-locale/dist-install/build/System/Locale.dyn_hi
+libraries/haskell98/dist-install/build/Locale.p_o : libraries/old-locale/dist-install/build/System/Locale.p_hi
+libraries/haskell98/dist-install/build/Numeric.o libraries/haskell98/dist-install/build/Numeric.dyn_o libraries/haskell98/dist-install/build/Numeric.p_o : libraries/haskell98/Numeric.hs
+libraries/haskell98/dist-install/build/Numeric.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Numeric.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Numeric.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Numeric.o : libraries/base/dist-install/build/Numeric.hi
+libraries/haskell98/dist-install/build/Numeric.dyn_o : libraries/base/dist-install/build/Numeric.dyn_hi
+libraries/haskell98/dist-install/build/Numeric.p_o : libraries/base/dist-install/build/Numeric.p_hi
+libraries/haskell98/dist-install/build/Random.o libraries/haskell98/dist-install/build/Random.dyn_o libraries/haskell98/dist-install/build/Random.p_o : libraries/haskell98/Random.hs
+libraries/haskell98/dist-install/build/Random.o : libraries/haskell98/dist-install/build/Numeric.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/haskell98/dist-install/build/Numeric.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/haskell98/dist-install/build/Numeric.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/Data/IORef.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/Data/IORef.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/Data/IORef.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/System/IO/Unsafe.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/System/IO/Unsafe.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/System/IO/Unsafe.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/Data/Char.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/Data/Char.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/Data/Char.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/Data/Ratio.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/Data/Ratio.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/Data/Ratio.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/time/dist-install/build/Data/Time.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/time/dist-install/build/Data/Time.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/time/dist-install/build/Data/Time.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/System/CPUTime.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/System/CPUTime.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/System/CPUTime.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/base/dist-install/build/Data/Int.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/base/dist-install/build/Data/Int.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/base/dist-install/build/Data/Int.p_hi
+libraries/haskell98/dist-install/build/Random.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Random.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Random.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Int.o libraries/haskell98/dist-install/build/Int.dyn_o libraries/haskell98/dist-install/build/Int.p_o : libraries/haskell98/Int.hs
+libraries/haskell98/dist-install/build/Int.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Int.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Int.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Int.o : libraries/base/dist-install/build/Data/Int.hi
+libraries/haskell98/dist-install/build/Int.dyn_o : libraries/base/dist-install/build/Data/Int.dyn_hi
+libraries/haskell98/dist-install/build/Int.p_o : libraries/base/dist-install/build/Data/Int.p_hi
+libraries/haskell98/dist-install/build/Time.o libraries/haskell98/dist-install/build/Time.dyn_o libraries/haskell98/dist-install/build/Time.p_o : libraries/haskell98/Time.hs
+libraries/haskell98/dist-install/build/Time.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Time.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Time.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Time.o : libraries/old-time/dist-install/build/System/Time.hi
+libraries/haskell98/dist-install/build/Time.dyn_o : libraries/old-time/dist-install/build/System/Time.dyn_hi
+libraries/haskell98/dist-install/build/Time.p_o : libraries/old-time/dist-install/build/System/Time.p_hi
+libraries/haskell98/dist-install/build/Ratio.o libraries/haskell98/dist-install/build/Ratio.dyn_o libraries/haskell98/dist-install/build/Ratio.p_o : libraries/haskell98/Ratio.hs
+libraries/haskell98/dist-install/build/Ratio.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Ratio.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Ratio.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Ratio.o : libraries/base/dist-install/build/Data/Ratio.hi
+libraries/haskell98/dist-install/build/Ratio.dyn_o : libraries/base/dist-install/build/Data/Ratio.dyn_hi
+libraries/haskell98/dist-install/build/Ratio.p_o : libraries/base/dist-install/build/Data/Ratio.p_hi
+libraries/haskell98/dist-install/build/Bits.o libraries/haskell98/dist-install/build/Bits.dyn_o libraries/haskell98/dist-install/build/Bits.p_o : libraries/haskell98/Bits.hs
+libraries/haskell98/dist-install/build/Bits.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Bits.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Bits.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Bits.o : libraries/base/dist-install/build/Data/Bits.hi
+libraries/haskell98/dist-install/build/Bits.dyn_o : libraries/base/dist-install/build/Data/Bits.dyn_hi
+libraries/haskell98/dist-install/build/Bits.p_o : libraries/base/dist-install/build/Data/Bits.p_hi
+libraries/haskell98/dist-install/build/CError.o libraries/haskell98/dist-install/build/CError.dyn_o libraries/haskell98/dist-install/build/CError.p_o : libraries/haskell98/CError.hs
+libraries/haskell98/dist-install/build/CError.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/CError.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/CError.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/CError.o : libraries/base/dist-install/build/Foreign/C/Error.hi
+libraries/haskell98/dist-install/build/CError.dyn_o : libraries/base/dist-install/build/Foreign/C/Error.dyn_hi
+libraries/haskell98/dist-install/build/CError.p_o : libraries/base/dist-install/build/Foreign/C/Error.p_hi
+libraries/haskell98/dist-install/build/CForeign.o libraries/haskell98/dist-install/build/CForeign.dyn_o libraries/haskell98/dist-install/build/CForeign.p_o : libraries/haskell98/CForeign.hs
+libraries/haskell98/dist-install/build/CForeign.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/CForeign.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/CForeign.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/CForeign.o : libraries/base/dist-install/build/Foreign/C.hi
+libraries/haskell98/dist-install/build/CForeign.dyn_o : libraries/base/dist-install/build/Foreign/C.dyn_hi
+libraries/haskell98/dist-install/build/CForeign.p_o : libraries/base/dist-install/build/Foreign/C.p_hi
+libraries/haskell98/dist-install/build/CString.o libraries/haskell98/dist-install/build/CString.dyn_o libraries/haskell98/dist-install/build/CString.p_o : libraries/haskell98/CString.hs
+libraries/haskell98/dist-install/build/CString.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/CString.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/CString.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/CString.o : libraries/base/dist-install/build/Foreign/C/String.hi
+libraries/haskell98/dist-install/build/CString.dyn_o : libraries/base/dist-install/build/Foreign/C/String.dyn_hi
+libraries/haskell98/dist-install/build/CString.p_o : libraries/base/dist-install/build/Foreign/C/String.p_hi
+libraries/haskell98/dist-install/build/CTypes.o libraries/haskell98/dist-install/build/CTypes.dyn_o libraries/haskell98/dist-install/build/CTypes.p_o : libraries/haskell98/CTypes.hs
+libraries/haskell98/dist-install/build/CTypes.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/CTypes.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/CTypes.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/CTypes.o : libraries/base/dist-install/build/Foreign/C/Types.hi
+libraries/haskell98/dist-install/build/CTypes.dyn_o : libraries/base/dist-install/build/Foreign/C/Types.dyn_hi
+libraries/haskell98/dist-install/build/CTypes.p_o : libraries/base/dist-install/build/Foreign/C/Types.p_hi
+libraries/haskell98/dist-install/build/ForeignPtr.o libraries/haskell98/dist-install/build/ForeignPtr.dyn_o libraries/haskell98/dist-install/build/ForeignPtr.p_o : libraries/haskell98/ForeignPtr.hs
+libraries/haskell98/dist-install/build/ForeignPtr.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/ForeignPtr.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/ForeignPtr.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/ForeignPtr.o : libraries/base/dist-install/build/Foreign/ForeignPtr.hi
+libraries/haskell98/dist-install/build/ForeignPtr.dyn_o : libraries/base/dist-install/build/Foreign/ForeignPtr.dyn_hi
+libraries/haskell98/dist-install/build/ForeignPtr.p_o : libraries/base/dist-install/build/Foreign/ForeignPtr.p_hi
+libraries/haskell98/dist-install/build/MarshalAlloc.o libraries/haskell98/dist-install/build/MarshalAlloc.dyn_o libraries/haskell98/dist-install/build/MarshalAlloc.p_o : libraries/haskell98/MarshalAlloc.hs
+libraries/haskell98/dist-install/build/MarshalAlloc.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/MarshalAlloc.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/MarshalAlloc.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/MarshalAlloc.o : libraries/base/dist-install/build/Foreign/Marshal/Alloc.hi
+libraries/haskell98/dist-install/build/MarshalAlloc.dyn_o : libraries/base/dist-install/build/Foreign/Marshal/Alloc.dyn_hi
+libraries/haskell98/dist-install/build/MarshalAlloc.p_o : libraries/base/dist-install/build/Foreign/Marshal/Alloc.p_hi
+libraries/haskell98/dist-install/build/MarshalArray.o libraries/haskell98/dist-install/build/MarshalArray.dyn_o libraries/haskell98/dist-install/build/MarshalArray.p_o : libraries/haskell98/MarshalArray.hs
+libraries/haskell98/dist-install/build/MarshalArray.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/MarshalArray.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/MarshalArray.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/MarshalArray.o : libraries/base/dist-install/build/Foreign/Marshal/Array.hi
+libraries/haskell98/dist-install/build/MarshalArray.dyn_o : libraries/base/dist-install/build/Foreign/Marshal/Array.dyn_hi
+libraries/haskell98/dist-install/build/MarshalArray.p_o : libraries/base/dist-install/build/Foreign/Marshal/Array.p_hi
+libraries/haskell98/dist-install/build/MarshalError.o libraries/haskell98/dist-install/build/MarshalError.dyn_o libraries/haskell98/dist-install/build/MarshalError.p_o : libraries/haskell98/MarshalError.hs
+libraries/haskell98/dist-install/build/MarshalError.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/MarshalError.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/MarshalError.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/MarshalError.o : libraries/base/dist-install/build/Foreign/Marshal/Error.hi
+libraries/haskell98/dist-install/build/MarshalError.dyn_o : libraries/base/dist-install/build/Foreign/Marshal/Error.dyn_hi
+libraries/haskell98/dist-install/build/MarshalError.p_o : libraries/base/dist-install/build/Foreign/Marshal/Error.p_hi
+libraries/haskell98/dist-install/build/MarshalError.o : libraries/base/dist-install/build/System/IO/Error.hi
+libraries/haskell98/dist-install/build/MarshalError.dyn_o : libraries/base/dist-install/build/System/IO/Error.dyn_hi
+libraries/haskell98/dist-install/build/MarshalError.p_o : libraries/base/dist-install/build/System/IO/Error.p_hi
+libraries/haskell98/dist-install/build/MarshalUtils.o libraries/haskell98/dist-install/build/MarshalUtils.dyn_o libraries/haskell98/dist-install/build/MarshalUtils.p_o : libraries/haskell98/MarshalUtils.hs
+libraries/haskell98/dist-install/build/MarshalUtils.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/MarshalUtils.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/MarshalUtils.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/MarshalUtils.o : libraries/base/dist-install/build/Foreign/Marshal/Utils.hi
+libraries/haskell98/dist-install/build/MarshalUtils.dyn_o : libraries/base/dist-install/build/Foreign/Marshal/Utils.dyn_hi
+libraries/haskell98/dist-install/build/MarshalUtils.p_o : libraries/base/dist-install/build/Foreign/Marshal/Utils.p_hi
+libraries/haskell98/dist-install/build/Ptr.o libraries/haskell98/dist-install/build/Ptr.dyn_o libraries/haskell98/dist-install/build/Ptr.p_o : libraries/haskell98/Ptr.hs
+libraries/haskell98/dist-install/build/Ptr.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Ptr.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Ptr.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Ptr.o : libraries/base/dist-install/build/Foreign/Ptr.hi
+libraries/haskell98/dist-install/build/Ptr.dyn_o : libraries/base/dist-install/build/Foreign/Ptr.dyn_hi
+libraries/haskell98/dist-install/build/Ptr.p_o : libraries/base/dist-install/build/Foreign/Ptr.p_hi
+libraries/haskell98/dist-install/build/StablePtr.o libraries/haskell98/dist-install/build/StablePtr.dyn_o libraries/haskell98/dist-install/build/StablePtr.p_o : libraries/haskell98/StablePtr.hs
+libraries/haskell98/dist-install/build/StablePtr.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/StablePtr.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/StablePtr.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/StablePtr.o : libraries/base/dist-install/build/Foreign/StablePtr.hi
+libraries/haskell98/dist-install/build/StablePtr.dyn_o : libraries/base/dist-install/build/Foreign/StablePtr.dyn_hi
+libraries/haskell98/dist-install/build/StablePtr.p_o : libraries/base/dist-install/build/Foreign/StablePtr.p_hi
+libraries/haskell98/dist-install/build/Storable.o libraries/haskell98/dist-install/build/Storable.dyn_o libraries/haskell98/dist-install/build/Storable.p_o : libraries/haskell98/Storable.hs
+libraries/haskell98/dist-install/build/Storable.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Storable.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Storable.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Storable.o : libraries/base/dist-install/build/Foreign/Storable.hi
+libraries/haskell98/dist-install/build/Storable.dyn_o : libraries/base/dist-install/build/Foreign/Storable.dyn_hi
+libraries/haskell98/dist-install/build/Storable.p_o : libraries/base/dist-install/build/Foreign/Storable.p_hi
+libraries/haskell98/dist-install/build/Word.o libraries/haskell98/dist-install/build/Word.dyn_o libraries/haskell98/dist-install/build/Word.p_o : libraries/haskell98/Word.hs
+libraries/haskell98/dist-install/build/Word.o : libraries/haskell98/dist-install/build/Prelude.hi
+libraries/haskell98/dist-install/build/Word.dyn_o : libraries/haskell98/dist-install/build/Prelude.dyn_hi
+libraries/haskell98/dist-install/build/Word.p_o : libraries/haskell98/dist-install/build/Prelude.p_hi
+libraries/haskell98/dist-install/build/Word.o : libraries/base/dist-install/build/Data/Word.hi
+libraries/haskell98/dist-install/build/Word.dyn_o : libraries/base/dist-install/build/Data/Word.dyn_hi
+libraries/haskell98/dist-install/build/Word.p_o : libraries/base/dist-install/build/Data/Word.p_hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/haskell98_dist-install_depfile_haskell_EXISTS = YES

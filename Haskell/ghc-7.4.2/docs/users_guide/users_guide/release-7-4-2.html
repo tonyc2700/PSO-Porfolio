@@ -1,0 +1,123 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>1.8. Release notes for version 7.4.2</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><link rel="home" href="index.html" title="The Parallel Haskell Compilation System User's Guide, Version 7.4.2"><link rel="up" href="introduction-GHC.html" title="Chapter 1. Introduction to GHC"><link rel="prev" href="release-7-4-1.html" title="1.7. Release notes for version 7.4.1"><link rel="next" href="ghci.html" title="Chapter 2. Using GHCi"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.8. Release notes for version 7.4.2</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="release-7-4-1.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Introduction to GHC</th><td width="20%" align="right"> <a accesskey="n" href="ghci.html">Next</a></td></tr></table><hr></div><div class="sect1" title="1.8. Release notes for version 7.4.2"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="release-7-4-2"></a>1.8. Release notes for version 7.4.2</h2></div></div></div><p>
+    The 7.4.2 release is a bugfix release. The changes relative to 7.4.1 are
+    listed below.
+  </p><div class="sect2" title="1.8.1. Compiler"><div class="titlepage"><div><div><h3 class="title"><a name="idp19640632"></a>1.8.1. Compiler</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+          A bug in dependency analysis of type declarations in the presence of
+          type families (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5792" target="_top">#5792</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          The "Heap exhausted" error message was truncating the reported heap
+          size to 32 bits (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5838" target="_top">#5838</a>).
+          This has now been fixed.
+        </p></li><li class="listitem"><p>
+          The register clobber list in the ARM runtime now includes extra
+          registers (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5824" target="_top">#5824</a>).
+        </p></li><li class="listitem"><p>
+          A crash due to a buffer overflow during RTS argument processing
+          (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5851" target="_top">#5851</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          A blocked STM computation inside <code class="literal">unsafePerformIO</code>
+          or <code class="literal">unsafeInterleaveIO</code> would segfault when resuming
+          after an asynchronous exception (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5866" target="_top">#5866</a>).
+          This has now been fixed.
+        </p></li><li class="listitem"><p>
+          A race condition when creating directories during parallel builds
+          (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5891" target="_top">#5891</a>)
+          has been fixed.
+          </p></li><li class="listitem"><p>
+          Changed behavior of the <code class="literal">--main-is</code> flag so that it
+          forces recompilation of fewer modules (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5878" target="_top">#5878</a>).
+        </p></li><li class="listitem"><p>
+          The wording of the help text for the <code class="literal">-N</code> flag has
+          been improved (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5896" target="_top">#5896</a>).
+        </p></li><li class="listitem"><p>
+          Fixed command line options passed to <code class="literal">clang</code>, when
+          used as the assembler (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5903" target="_top">#5903</a>).
+        </p></li><li class="listitem"><p>
+          Changed behavior of unrecognized flags (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5921" target="_top">#5921</a>).
+          Any unrecognized argument starting with a <code class="literal">'-'</code> now produces an
+          error, instead of being passed to the linker.
+        </p></li><li class="listitem"><p>
+          A bug in code generation on PowerPC (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5900" target="_top">#5900</a>)
+          resulting in an invalid operand for a shift instruction has been
+          fixed.
+        </p></li><li class="listitem"><p>
+          Updated LLVM backend to support the new "fence" instruction instead
+          of the llvm.memory.barrier intrinsic (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5814" target="_top">#5814</a>).
+        </p></li><li class="listitem"><p>
+          ARM support in the RTS linker (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5839" target="_top">#5839</a>)
+          has been implemented.
+        </p></li><li class="listitem"><p>
+          An RTS crash in <code class="literal">threadStackOverflow</code> (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5214" target="_top">#5214</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          Generating an occurence without a binding site within a Template
+          Haskell splice now results in a sensible error message, instead of a
+          compiler panic (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5959" target="_top">#5999</a>,
+          <a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5971" target="_top">#5971</a>).
+        </p></li><li class="listitem"><p>
+          A bug where an exception generated in a TH splice would escape to the
+          top level (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5976" target="_top">#5976</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          When using <code class="literal">-fwarn-unsafe</code>, GHC now reports unsafe
+          language extensions.
+        </p></li><li class="listitem"><p>
+          The non-threaded RTS now avoids wakeups when the system is idle
+          (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5991" target="_top">#5991</a>).
+        </p></li><li class="listitem"><p>
+          A bug causing a crash with a very small initial stack size (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5993" target="_top">#5993</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          A performance bug causing functions to lose the tail-recursive
+          property after optimization (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5920" target="_top">#5920</a>,
+          <a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5997" target="_top">#5997</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          <code class="literal">hs_init</code> can now be called with
+          <code class="literal">NULL</code> pointers as arguments (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/6006" target="_top">#6006</a>).
+        </p></li></ul></div></div><div class="sect2" title="1.8.2. GHCi"><div class="titlepage"><div><div><h3 class="title"><a name="idp19718352"></a>1.8.2. GHCi</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+          Fixed bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5836" target="_top">#5836</a>)
+          where GHCi would silently accept an import statement for a
+          non-existing module.
+        </p></li><li class="listitem"><p>
+          Fixed bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5904" target="_top">#5904</a>)
+          which caused GHCi to crash when a *-module was loaded twice.
+        </p></li><li class="listitem"><p>
+          The <code class="literal">:edit</code> command in GHCi now causes the current
+          module to be automatically reloaded after exiting from the editor
+          (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5343" target="_top">#5343</a>).
+        </p></li><li class="listitem"><p>
+          A GHCi bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5534" target="_top">#5534</a>)
+          causing compiled modules not to be loaded correctly has been fixed.
+        </p></li><li class="listitem"><p>
+          A GHCi bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5979" target="_top">#5979</a>,
+          <a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/6007" target="_top">#6007</a>)
+          where a failed import would cause successive imports to fail has been
+          fixed.
+        </p></li></ul></div></div><div class="sect2" title="1.8.3. Libraries"><div class="titlepage"><div><div><h3 class="title"><a name="idp19724256"></a>1.8.3. Libraries</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+          Fixed bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5872" target="_top">#5872</a>)
+          in the default implementation of <code class="literal">popCount</code> in
+          <code class="literal">Data.Bits</code>.
+        </p></li><li class="listitem"><p>
+          A potential race condition in
+          <code class="literal">Control.Concurrent.Chan</code> (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5870" target="_top">#5870</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          An <code class="literal">MVar</code> bug which could cause deadlocks (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5943" target="_top">#5943</a>)
+          has been fixed.
+        </p></li><li class="listitem"><p>
+          Fixed a bug in <code class="literal">hGetBufSome</code> (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5843" target="_top">#5843</a>)
+          which was causing <code class="literal">Data.ByteString.hGetSome</code> to
+          block on Windows in some situations.
+        </p></li><li class="listitem"><p>
+          Fixed crash while parsing numeric values in exponential notation
+          (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5688" target="_top">#5688</a>).
+        </p></li></ul></div></div><div class="sect2" title="1.8.4. Tools"><div class="titlepage"><div><div><h3 class="title"><a name="idp19731376"></a>1.8.4. Tools</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+          <code class="literal">hp2ps</code> can now handle backslashes in identifiers
+          correctly (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5800" target="_top">#5800</a>).
+        </p></li><li class="listitem"><p>
+          A <code class="literal">haddock</code> bug (<a class="ulink" href="http://hackage.haskell.org/trac/ghc/ticket/5989" target="_top">#5989</a>)
+          where modules were being incorrectly inferred safe has been fixed.
+        </p></li></ul></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="release-7-4-1.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="introduction-GHC.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ghci.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">1.7. Release notes for version 7.4.1 </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Using GHCi</td></tr></table></div></body></html>

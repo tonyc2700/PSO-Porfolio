@@ -1,0 +1,28 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/deepseq/dist-install/build/Control/DeepSeq.o libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/deepseq/Control/DeepSeq.hs
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Prelude.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Version.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Version.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Version.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Fixed.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Fixed.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Fixed.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/array/dist-install/build/Data/Array.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/array/dist-install/build/Data/Array.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/array/dist-install/build/Data/Array.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Complex.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Complex.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Complex.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Ratio.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Ratio.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Ratio.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Word.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Word.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Word.p_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.o : libraries/base/dist-install/build/Data/Int.hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.dyn_o : libraries/base/dist-install/build/Data/Int.dyn_hi
+libraries/deepseq/dist-install/build/Control/DeepSeq.p_o : libraries/base/dist-install/build/Data/Int.p_hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/deepseq_dist-install_depfile_haskell_EXISTS = YES

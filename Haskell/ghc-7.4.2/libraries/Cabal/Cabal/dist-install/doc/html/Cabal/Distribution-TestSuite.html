@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Distribution.TestSuite</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_Distribution-TestSuite.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption">Cabal-1.14.0: A framework for packaging Haskell software</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Portability</th><td>portable</td></tr><tr><th>Maintainer</th><td>cabal-devel@haskell.org</td></tr><tr><th>Safe Haskell</th><td>Safe-Infered</td></tr></table><p class="caption">Distribution.TestSuite</p></div><div id="table-of-contents"><p class="caption">Contents</p><ul><li><a href="#g:1">Example
+</a></li><li><a href="#g:2">Tests
+</a></li></ul></div><div id="description"><p class="caption">Description</p><div class="doc"><p>This module defines the detailed test suite interface which makes it
+ possible to expose individual tests to Cabal or other test agents.
+</p></div></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short"><span class="keyword">newtype</span>  <a href="#t:Options">Options</a>  = <a href="#v:Options">Options</a> [(<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>, <a href="../base-4.5.1.0/Data-String.html#t:String">String</a>)]</li><li class="src short"><a href="#v:lookupOption">lookupOption</a> :: <a href="../base-4.5.1.0/Text-Read.html#t:Read">Read</a> r =&gt; <a href="../base-4.5.1.0/Data-String.html#t:String">String</a> -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; r</li><li class="src short"><span class="keyword">class</span>  <a href="#t:TestOptions">TestOptions</a> t  <span class="keyword">where</span><ul class="subs"><li><a href="#v:name">name</a> :: t -&gt; <a href="../base-4.5.1.0/Data-String.html#t:String">String</a></li><li><a href="#v:options">options</a> :: t -&gt; [(<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>, <a href="../base-4.5.1.0/Data-Typeable-Internal.html#t:TypeRep">TypeRep</a>)]</li><li><a href="#v:defaultOptions">defaultOptions</a> :: t -&gt; <a href="../base-4.5.1.0/System-IO.html#t:IO">IO</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></li><li><a href="#v:check">check</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; [<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>]</li></ul></li><li class="src short"><span class="keyword">data</span>  <a href="#t:Test">Test</a> </li><li class="src short"><a href="#v:pure">pure</a> :: <a href="Distribution-TestSuite.html#t:PureTestable">PureTestable</a> p =&gt; p -&gt; <a href="Distribution-TestSuite.html#t:Test">Test</a></li><li class="src short"><a href="#v:impure">impure</a> :: <a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a> i =&gt; i -&gt; <a href="Distribution-TestSuite.html#t:Test">Test</a></li><li class="src short"><span class="keyword">data</span>  <a href="#t:Result">Result</a> <ul class="subs"><li>= <a href="#v:Pass">Pass</a>  </li><li>| <a href="#v:Fail">Fail</a> <a href="../base-4.5.1.0/Data-String.html#t:String">String</a>  </li><li>| <a href="#v:Error">Error</a> <a href="../base-4.5.1.0/Data-String.html#t:String">String</a>  </li></ul></li><li class="src short"><span class="keyword">class</span> <a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> t =&gt; <a href="#t:ImpureTestable">ImpureTestable</a> t  <span class="keyword">where</span><ul class="subs"><li><a href="#v:runM">runM</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; <a href="../base-4.5.1.0/System-IO.html#t:IO">IO</a> <a href="Distribution-TestSuite.html#t:Result">Result</a></li></ul></li><li class="src short"><span class="keyword">class</span> <a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> t =&gt; <a href="#t:PureTestable">PureTestable</a> t  <span class="keyword">where</span><ul class="subs"><li><a href="#v:run">run</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; <a href="Distribution-TestSuite.html#t:Result">Result</a></li></ul></li></ul></div><div id="interface"><h1 id="g:1">Example
+</h1><div class="doc"><p>The following terms are used carefully throughout this file:
+</p><dl><dt>test interface</dt><dd>    The interface provided by this module.
+</dd><dt>test agent</dt><dd>    A program used by package users to coordinates the running
+                  of tests and the reporting of their results.
+</dd><dt>test framework</dt><dd>    A package used by software authors to specify tests,
+                      such as QuickCheck or HUnit.
+</dd></dl><p>Test frameworks are obligated to supply, at least, instances of the
+ <code><a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a></code> and <code><a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a></code> classes.  It is preferred that test
+ frameworks implement <code><a href="Distribution-TestSuite.html#t:PureTestable">PureTestable</a></code> whenever possible, so that test agents
+ have an assurance that tests can be safely run in parallel.
+</p><p>Test agents that allow the user to specify options should avoid setting
+ options not listed by the <code><a href="Distribution-TestSuite.html#v:options">options</a></code> method.  Test agents should use <code><a href="Distribution-TestSuite.html#v:check">check</a></code>
+ before running tests with non-default options.  Test frameworks must
+ implement a <code><a href="Distribution-TestSuite.html#v:check">check</a></code> function that attempts to parse the given options safely.
+</p><p>The packages cabal-test-hunit, cabal-test-quickcheck1, and
+ cabal-test-quickcheck2 provide simple interfaces to these popular test
+ frameworks.  An example from cabal-test-quickcheck2 is shown below.  A
+ better implementation would eliminate the console output from QuickCheck's
+ built-in runner and provide an instance of <code><a href="Distribution-TestSuite.html#t:PureTestable">PureTestable</a></code> instead of
+ <code><a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a></code>.
+</p><pre> import Control.Monad (liftM)
+ import Data.Maybe (catMaybes, fromJust, maybe)
+ import Data.Typeable (Typeable(..))
+ import qualified Distribution.TestSuite as Cabal
+ import System.Random (newStdGen, next, StdGen)
+ import qualified Test.QuickCheck as QC
+
+ data QCTest = forall prop. QC.Testable prop =&gt; QCTest String prop
+
+ test :: QC.Testable prop =&gt; String -&gt; prop -&gt; Cabal.Test
+ test n p = Cabal.impure $ QCTest n p
+
+ instance Cabal.TestOptions QCTest where
+     name (QCTest n _) = n
+
+     options _ =
+         [ (&quot;std-gen&quot;, typeOf (undefined :: String))
+         , (&quot;max-success&quot;, typeOf (undefined :: Int))
+         , (&quot;max-discard&quot;, typeOf (undefined :: Int))
+         , (&quot;size&quot;, typeOf (undefined :: Int))
+         ]
+
+     defaultOptions _ = do
+         rng &lt;- newStdGen
+         return $ Cabal.Options $
+             [ (&quot;std-gen&quot;, show rng)
+             , (&quot;max-success&quot;, show $ QC.maxSuccess QC.stdArgs)
+             , (&quot;max-discard&quot;, show $ QC.maxDiscard QC.stdArgs)
+             , (&quot;size&quot;, show $ QC.maxSize QC.stdArgs)
+             ]
+
+     check t (Cabal.Options opts) = catMaybes
+         [ maybeNothing &quot;max-success&quot; ([] :: [(Int, String)])
+         , maybeNothing &quot;max-discard&quot; ([] :: [(Int, String)])
+         , maybeNothing &quot;size&quot; ([] :: [(Int, String)])
+         ]
+         -- There is no need to check the parsability of &quot;std-gen&quot;
+         -- because the Read instance for StdGen always succeeds.
+         where
+             maybeNothing n x =
+                 maybe Nothing (\str -&gt;
+                     if reads str == x then Just n else Nothing)
+                     $ lookup n opts
+
+ instance Cabal.ImpureTestable QCTest where
+     runM (QCTest _ prop) o =
+         catch go (return . Cabal.Error . show)
+         where
+             go = do
+                 result &lt;- QC.quickCheckWithResult args prop
+                 return $ case result of
+                         QC.Success {} -&gt; Cabal.Pass
+                         QC.GaveUp {}-&gt;
+                             Cabal.Fail $ &quot;gave up after &quot;
+                                        ++ show (QC.numTests result)
+                                        ++ &quot; tests&quot;
+                         QC.Failure {} -&gt; Cabal.Fail $ QC.reason result
+                         QC.NoExpectedFailure {} -&gt;
+                             Cabal.Fail &quot;passed (expected failure)&quot;
+             args = QC.Args
+                 { QC.replay = Just
+                     ( Cabal.lookupOption &quot;std-gen&quot; o
+                     , Cabal.lookupOption &quot;size&quot; o
+                     )
+                 , QC.maxSuccess = Cabal.lookupOption &quot;max-success&quot; o
+                 , QC.maxDiscard = Cabal.lookupOption &quot;max-discard&quot; o
+                 , QC.maxSize = Cabal.lookupOption &quot;size&quot; o
+                 }
+</pre></div><div class="top"><p class="src"><span class="keyword">newtype</span>  <a name="t:Options" class="def">Options</a>  </p><div class="doc"><p><code><a href="Distribution-TestSuite.html#t:Options">Options</a></code> are provided to pass options to test runners, making tests
+ reproducable.  Each option is a <code>(<code><a href="../base-4.5.1.0/Data-String.html#t:String">String</a></code>, <code><a href="../base-4.5.1.0/Data-String.html#t:String">String</a></code>)</code> of the form
+ <code>(Name, Value)</code>.  Use <code><a href="../base-4.5.1.0/Data-Monoid.html#v:mappend">mappend</a></code> to combine sets of <code><a href="Distribution-TestSuite.html#t:Options">Options</a></code>; if the same
+ option is given different values, the value from the left argument of
+ <code><a href="../base-4.5.1.0/Data-Monoid.html#v:mappend">mappend</a></code> will be used.
+</p></div><div class="subs constructors"><p class="caption">Constructors</p><table><tr><td class="src"><a name="v:Options" class="def">Options</a> [(<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>, <a href="../base-4.5.1.0/Data-String.html#t:String">String</a>)]</td><td class="doc empty">&nbsp;</td></tr></table></div><div class="subs instances"><p id="control.i:Options" class="caption collapser" onclick="toggleSection('i:Options')">Instances</p><div id="section.i:Options" class="show"><table><tr><td class="src"><a href="../base-4.5.1.0/Data-Eq.html#t:Eq">Eq</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Text-Read.html#t:Read">Read</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Text-Show.html#t:Show">Show</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Data-Monoid.html#t:Monoid">Monoid</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><a name="v:lookupOption" class="def">lookupOption</a> :: <a href="../base-4.5.1.0/Text-Read.html#t:Read">Read</a> r =&gt; <a href="../base-4.5.1.0/Data-String.html#t:String">String</a> -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; r</p><div class="doc"><p>Read an option from the specified set of <code><a href="Distribution-TestSuite.html#t:Options">Options</a></code>.  It is an error to
+ lookup an option that has not been specified.  For this reason, test agents
+ should <code><a href="../base-4.5.1.0/Data-Monoid.html#v:mappend">mappend</a></code> any <code><a href="Distribution-TestSuite.html#t:Options">Options</a></code> against the <code><a href="Distribution-TestSuite.html#v:defaultOptions">defaultOptions</a></code> for a test, so
+ the default value specified by the test framework will be used for any
+ otherwise-unspecified options.
+</p></div></div><div class="top"><p class="src"><span class="keyword">class</span>  <a name="t:TestOptions" class="def">TestOptions</a> t  <span class="keyword">where</span></p><div class="subs methods"><p class="caption">Methods</p><p class="src"><a name="v:name" class="def">name</a> :: t -&gt; <a href="../base-4.5.1.0/Data-String.html#t:String">String</a></p><div class="doc"><p>The name of the test.
+</p></div><p class="src"><a name="v:options" class="def">options</a> :: t -&gt; [(<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>, <a href="../base-4.5.1.0/Data-Typeable-Internal.html#t:TypeRep">TypeRep</a>)]</p><div class="doc"><p>A list of the options a test recognizes.  The name and <code><a href="../base-4.5.1.0/Data-Typeable-Internal.html#t:TypeRep">TypeRep</a></code> are
+ provided so that test agents can ensure that user-specified options are
+ correctly typed.
+</p></div><p class="src"><a name="v:defaultOptions" class="def">defaultOptions</a> :: t -&gt; <a href="../base-4.5.1.0/System-IO.html#t:IO">IO</a> <a href="Distribution-TestSuite.html#t:Options">Options</a></p><div class="doc"><p>The default options for a test.  Test frameworks should provide a new
+ random seed, if appropriate.
+</p></div><p class="src"><a name="v:check" class="def">check</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; [<a href="../base-4.5.1.0/Data-String.html#t:String">String</a>]</p><div class="doc"><p>Try to parse the provided options.  Return the names of unparsable
+ options.  This allows test agents to detect bad user-specified options.
+</p></div></div><div class="subs instances"><p id="control.i:TestOptions" class="caption collapser" onclick="toggleSection('i:TestOptions')">Instances</p><div id="section.i:TestOptions" class="show"><table><tr><td class="src"><a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> <a href="Distribution-TestSuite.html#t:Test">Test</a></td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><h1 id="g:2">Tests
+</h1><div class="top"><p class="src"><span class="keyword">data</span>  <a name="t:Test" class="def">Test</a>  </p><div class="doc"><p><code><a href="Distribution-TestSuite.html#t:Test">Test</a></code> is a wrapper for pure and impure tests so that lists containing
+ arbitrary test types can be constructed.
+</p></div><div class="subs instances"><p id="control.i:Test" class="caption collapser" onclick="toggleSection('i:Test')">Instances</p><div id="section.i:Test" class="show"><table><tr><td class="src"><a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a> <a href="Distribution-TestSuite.html#t:Test">Test</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> <a href="Distribution-TestSuite.html#t:Test">Test</a></td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><a name="v:pure" class="def">pure</a> :: <a href="Distribution-TestSuite.html#t:PureTestable">PureTestable</a> p =&gt; p -&gt; <a href="Distribution-TestSuite.html#t:Test">Test</a></p><div class="doc"><p>A convenient function for wrapping pure tests into <code><a href="Distribution-TestSuite.html#t:Test">Test</a></code>s.
+</p></div></div><div class="top"><p class="src"><a name="v:impure" class="def">impure</a> :: <a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a> i =&gt; i -&gt; <a href="Distribution-TestSuite.html#t:Test">Test</a></p><div class="doc"><p>A convenient function for wrapping impure tests into <code><a href="Distribution-TestSuite.html#t:Test">Test</a></code>s.
+</p></div></div><div class="top"><p class="src"><span class="keyword">data</span>  <a name="t:Result" class="def">Result</a>  </p><div class="subs constructors"><p class="caption">Constructors</p><table><tr><td class="src"><a name="v:Pass" class="def">Pass</a></td><td class="doc"><p>indicates a successful test
+</p></td></tr><tr><td class="src"><a name="v:Fail" class="def">Fail</a> <a href="../base-4.5.1.0/Data-String.html#t:String">String</a></td><td class="doc"><p>indicates a test completed unsuccessfully;
+ the <code><a href="../base-4.5.1.0/Data-String.html#t:String">String</a></code> value should be a human-readable message
+ indicating how the test failed.
+</p></td></tr><tr><td class="src"><a name="v:Error" class="def">Error</a> <a href="../base-4.5.1.0/Data-String.html#t:String">String</a></td><td class="doc"><p>indicates a test that could not be
+ completed due to some error; the test framework
+ should provide a message indicating the
+ nature of the error.
+</p></td></tr></table></div><div class="subs instances"><p id="control.i:Result" class="caption collapser" onclick="toggleSection('i:Result')">Instances</p><div id="section.i:Result" class="show"><table><tr><td class="src"><a href="../base-4.5.1.0/Data-Eq.html#t:Eq">Eq</a> <a href="Distribution-TestSuite.html#t:Result">Result</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Text-Read.html#t:Read">Read</a> <a href="Distribution-TestSuite.html#t:Result">Result</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Text-Show.html#t:Show">Show</a> <a href="Distribution-TestSuite.html#t:Result">Result</a></td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><span class="keyword">class</span> <a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> t =&gt; <a name="t:ImpureTestable" class="def">ImpureTestable</a> t  <span class="keyword">where</span></p><div class="doc"><p>Class abstracting impure tests.  Test frameworks should implement this
+ class only as a last resort for test types which actually require <code><a href="../base-4.5.1.0/System-IO.html#t:IO">IO</a></code>.
+ In particular, tests that simply require pseudo-random number generation can
+ be implemented as pure tests.
+</p></div><div class="subs methods"><p class="caption">Methods</p><p class="src"><a name="v:runM" class="def">runM</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; <a href="../base-4.5.1.0/System-IO.html#t:IO">IO</a> <a href="Distribution-TestSuite.html#t:Result">Result</a></p><div class="doc"><p>Runs an impure test and returns the result.  Test frameworks
+ implementing this class are responsible for converting any exceptions to
+ the correct <code><a href="Distribution-TestSuite.html#t:Result">Result</a></code> value.
+</p></div></div><div class="subs instances"><p id="control.i:ImpureTestable" class="caption collapser" onclick="toggleSection('i:ImpureTestable')">Instances</p><div id="section.i:ImpureTestable" class="show"><table><tr><td class="src"><a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a> <a href="Distribution-TestSuite.html#t:Test">Test</a></td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><span class="keyword">class</span> <a href="Distribution-TestSuite.html#t:TestOptions">TestOptions</a> t =&gt; <a name="t:PureTestable" class="def">PureTestable</a> t  <span class="keyword">where</span></p><div class="doc"><p>Class abstracting pure tests.  Test frameworks should prefer to implement
+ this class over <code><a href="Distribution-TestSuite.html#t:ImpureTestable">ImpureTestable</a></code>.  A default instance exists so that any pure
+ test can be lifted into an impure test; when lifted, any exceptions are
+ automatically caught.  Test agents that lift pure tests themselves must
+ handle exceptions.
+</p></div><div class="subs methods"><p class="caption">Methods</p><p class="src"><a name="v:run" class="def">run</a> :: t -&gt; <a href="Distribution-TestSuite.html#t:Options">Options</a> -&gt; <a href="Distribution-TestSuite.html#t:Result">Result</a></p><div class="doc"><p>The result of a pure test.
+</p></div></div></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.11.0</p></div></body></html>

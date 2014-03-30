@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: project.aux
+The style file: plain.bst
+Database file #1: myref.bib
+I was expecting a `,' or a `}'---line 14 of file myref.bib
+ :   
+ :   author = {Anagnostopoulos, Konstantinos P. and Mamanis, Georgios},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            529 strings with 4844 characters,
+and the built_in function-call counts, 2144 in all, are:
+= -- 209
+> -- 77
+< -- 4
++ -- 32
+- -- 24
+* -- 124
+:= -- 327
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 89
+empty$ -- 188
+format.name$ -- 24
+if$ -- 483
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 4
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 47
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 78
+stack$ -- 0
+substring$ -- 147
+swap$ -- 34
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 19
+width$ -- 7
+write$ -- 65
+(There was 1 error message)

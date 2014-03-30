@@ -1,0 +1,267 @@
+\documentclass[10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%
+% Packages/Macros %
+%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb,latexsym,amsmath}    % Standard packages
+\usepackage{pstricks,multido,pst-plot}     % Packages for drawing figures
+\usepackage{multicol,fancyheadings}        % Misc.
+\usepackage{float}                       % Used to define Algorithm enviro
+% \usepackage[vcentermath,enableskew]{youngtab}
+% %\usepackage{youngtab}
+
+
+\newcommand{\comment}[1]{}
+
+
+%%%%%%%%%%%
+% Margins %
+%%%%%%%%%%%
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{1.00in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-.50in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Labelling theorems, lemmas, etc... %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newtheorem{maintheorem}[theorem]{Main Theorem}
+\newtheorem{mainlemma}[theorem]{Main Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{property}{Property}
+
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Drawing paths/ferrers diagrams %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\upright(#1,#2){%
+    \if\space #2
+        \put(0,0){\line(1,0){#1}}
+    \else
+        \put(0,0){\line(1,0){#1} \line(0,1){1}}
+        \put(#1,1){\upright(#2)}
+    \fi
+}
+
+\def\uprightnew(#1,#2,#3){%
+    \if\space #3
+        \put(0,0){\line(0,1){#1}}\put(0,#1){\line(1,0){#2}}
+    \else
+        \put(0,0){\line(0,1){#1}}\put(0,#1){\line(1,0){#2}}
+        \put(#2,#1){\uprightnew(#3)}
+    \fi
+}
+
+\def\downrightnew(#1,#2,#3){%
+    \if\space #3
+        \put(0,0){\line(0,-1){#1}}\put(0,-#1){\line(1,0){#2}}
+    \else
+        \put(0,0){\line(0,-1){#1}}\put(0,-#1){\line(1,0){#2}}
+        \put(#2,-#1){\downrightnew(#3)}
+    \fi
+}
+
+\def\downright(#1,#2){%
+    \if\space #2
+        \put(0,0){\line(1,0){#1} \line(0,-1){1}}
+    \else
+        \put(0,0){\line(1,0){#1} \line(0,-1){1}}
+        \put(#1,-1){\downright(#2)}
+    \fi
+}
+
+\def\ferrers(#1,#2){%
+    \if\space #2
+        \put(0,1){\line(1,0){#1}}
+        \multiput(0,0)(1,0){#1}{\line(0,1){1}} \put(#1,0){\line(0,1){1}}
+        \put(0,0){\line(1,0){#1}}
+    \else
+        \put(0,1){\line(1,0){#1}}
+        \multiput(0,0)(1,0){#1}{\line(0,1){1}} \put(#1,0){\line(0,1){1}}
+        \put(0,0){\line(1,0){#1}}
+        \put(0,1){\ferrers(#2)}
+    \fi
+}
+
+\def\labels(#1,#2){%
+    \if\space #2
+        \rput(.5,.5){#1}
+    \else
+        \rput(.5,.5){#1}
+        \put(1,0){\labels(#2)}
+    \fi
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% Header and footer %
+%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\header}[3]{
+    \lhead[{\footnotesize #1}]{{\footnotesize #1}}
+    \chead[{\footnotesize #2}]{{\footnotesize #2}}
+    \rhead[{\footnotesize #3}]{{\footnotesize #3}}
+}
+\newcommand{\footer}[3]{
+    \lfoot[#1]{#1}
+    \cfoot[#2]{#2}
+    \rfoot[#3]{#3}
+}
+\def\headrulewidth{0pt}
+\pagestyle{fancy}
+
+
+
+
+
+\newcommand{\qbinom}[2]{{#1 \brack #2}}
+
+\newcounter{lastexercise}
+\newenvironment{exercises}
+  {\begin{enumerate}
+    \setcounter{enumi}\thelastexercise}
+{\setcounter{lastexercise}\theenumi\end{enumerate}}
+
+
+\begin{document}
+\header{}{}{}
+\footer{}{}{}
+
+\setcounter{lastexercise}{150}
+\appendix
+\section{A Brief Introduction to Partition Theory}
+
+The general problem in the theory of partitions is to enumerate representations of a positive integer $n$ as the sum
+$$ n = \lambda_1 + \lambda_2 + \cdots + \lambda_k$$
+where each $\lambda_i$ comes from a specified multiset of integers.  A partition of $n$ is a representation of $n$ as a sum of integers where the order of the terms (or parts) is irrelevant.  Therefore we will use the convention that a partition $\lambda = (\lambda_1,\lambda_2,\ldots, \lambda_k)$ is a weakly decreasing sequence of nonnegative integers.  The \index{Partition!size}{\em size} of $\lambda$, denoted by $|\lambda|$, is the sum $\lambda_1+\cdots + \lambda_k$.  If $|\lambda| = n$ then $\lambda$ is said to be a \index{Partition!definition}{\em partition} of
+$n$, denoted $\lambda \vdash n$.
+
+
+The \index{Ferrers diagram}Ferrers diagram corresponding to a partition $\lambda$ is a graphical representation of $\lambda$.  To construct the Ferrers
+diagram for $\lambda = (\lambda_1,\lambda_2,\ldots ,\lambda_k)$, simply place a row of $\lambda_{i+1}$ left justified blocks on top of $\lambda_i$ blocks, for each
+$i=1,2,\ldots ,k-1$.  For example, the Ferrers diagram for the partition $\lambda = (6,4,3,1,1)$ is
+\begin{center}
+\begin{pspicture}(2.4,2)
+\psset{unit=.4cm}
+\put(0,0){\ferrers(6,4,3,1,1,)}
+\end{pspicture}
+\end{center} 
+
+The main tool we will use to count partitions by size is the \index{Geometric series}geometric series
+$$\frac{1}{1-q} = 1 + q + q^2 + q^3 + \cdots  \hspace{20pt} \frac{1}{1-q^n} = 1 + q^n + q^{2n} + q^{3n} + \cdots $$
+We can think of these series as building up Ferrers diagrams by rows
+$$
+\frac{1}{1-{\tiny \yng(1)}} = 1+ {\tiny \yng(1)} + {\tiny \yng(1,1)} + {\tiny \yng(1,1,1)} + \cdots 
+\hspace{20pt}
+\frac{1}{1-{\tiny \yng(2)}} =  1+ {\tiny \yng(2)} + {\tiny \yng(2,2)} + {\tiny \yng(2,2,2)} + \cdots 
+$$
+or by columns
+$$
+\frac{1}{1-{\tiny \yng(1)}} = 1 + {\tiny \yng(1)} + {\tiny \yng(2)} + {\tiny \yng(3)} + \cdots 
+\hspace{20pt}
+\frac{1}{1-{\tiny\Yvcentermath1 \yng(1,1)}} = 1 + {\tiny \yng(1,1)} + {\tiny \yng(2,2)} + {\tiny \yng(3,3)} + \cdots  \hspace{20pt}
+$$
+Multiplication of two or more series of the above form corresponds to the juxtaposition of rows or columns to build up Ferrers diagrams.  This leads us to our first fundamental result:
+
+\begin{theorem}
+The generating function that counts partitions by size (i.e. $\sum_{n \geq 0} p(n) q^n$ where $p(n)$ is the number of partitions of $n$) is given by
+$$\prod_{n\geq 1} \frac{1}{1-q^n}.$$
+\end{theorem}
+
+
+
+\begin{exercises}
+\item Write down the generating function for partitions with...
+\begin{enumerate}
+\item ...largest part at most $n$.
+\item ...largest part exactly $n$.
+\item ...at most $n$ parts.
+\item ...exactly $n$ parts.
+\item What is the connection between parts a) and c)?  b) and d)?  Can you think of a map between these two pairs of sets of partitions?
+\end{enumerate}
+
+\item How many partitions are there that fit inside an $n \times m$ box?  In other words, how many partitions are there with at most $m$ parts and each part is at most $n$.  What recursion is satisfied by your formula?  What does this recursion say about these partitions?  Write down a recursion for the generating function that counts these partitions by size.  Can you find a rational function of $q$ that solves this recursion?
+
+\item Write down the generating function for partitions with...
+\begin{enumerate}
+\item ...exactly $n$ distinct parts.
+\item ...any number of distinct parts.
+\end{enumerate}
+Write down the identity that results in summing your answer from part (a) over all possible values of $n$.\label{distinctparts}
+
+ 
+\item Write down the generating function for partitions with...
+\begin{enumerate}
+\item ...only odd parts.
+\item ...no part repeated more than $m$ times.
+\end{enumerate}
+
+\item Consider the following identity:
+$$\prod_{n\geq 1}(1+q^n) = \prod_{n\geq 1}\frac{1}{(1-q^{2n-1})}$$
+Translate this identity into a statement regarding partitions.  We have seen a simple algebraic proof in class.  Can you give a combinatorial proof of this fact?
+
+
+\item Let $S \subseteq \Bbb{Z}^{+}$.  Write down the generating function for partitions...
+\begin{enumerate}
+\item ...whose parts are elements of $S$.
+\item ...whose parts are distinct elements of $S$.
+\end{enumerate}
+
+\item How many ways are there to make change for a ten dollar bill?  What if each coin/bill can be used at most once?  Give a numerical answer as well as an answer in terms of the coefficient of a power of $q$ in a particular power series.  The use of a computer may be required to get the numerical answer.
+
+\end{exercises}
+
+Up until now, we have been using generating functions to count partitions by size.  That is to say, the coefficient of $q^{n}$ in each of the above generating functions tells us how many partitions of $n$ there are with a particular characteristic (i.e. only odd parts, distinct parts, each part used at most twice, etc.).  There are of course other statistics associated with partitions.  For example, we may be interested in keeping track of how many nonzero parts are in a partition.  This is referred to as the length of $\lambda$, denoted $l(\lambda)$.
+
+\begin{exercises}
+\item Write down a generating function that counts partitions both by size and by length.  In other words, we want a power series in two variables, say $q$ and $z$, such that the coefficient of $z^{l}q^{n}$ is the number of partitions of $n$ with exactly $l$ parts.
+
+\item Write down an identity similar in nature to your answer to question \ref{distinctparts} that counts partitions with distinct parts by size and length.
+
+\item The following product
+$$(1+z)(1+zq)(1+zq^2)\cdots (1+zq^{n-1})$$
+is said to be a $q$-analog of $(1+z)^{n}$ since 
+$$\lim_{q\rightarrow 1}(1+z)(1+zq)(1+zq^2)\cdots (1+zq^{n-1}) = (1+z)^{n}.$$
+Of course $(1+z)^{n}$ can be expanded using the Binomial theorem.  Find and prove a $q$-analog of the Binomial theorem.  Similarly,
+$$\frac{1}{(1-z)(1-zq)(1-zq^2)\cdots (1-zq^{n-1})}$$
+is a $q$-analog of $(1-z)^{-n}$.  Find and prove a $q$-analog to the power series expansion of $(1-z)^{-n}$. 
+
+\end{exercises}
+
+
+
+The Durfee square of the partition $\lambda$ is the largest square that can be imbedded in the Ferrers diagram of $\lambda$.  Formally, the size of the Durfee square is the largest value $i$ such that 
+$$\lambda_{i}\geq i.$$
+For example, the partition $\lambda = (6,4,3,1,1)$ has a $3\times 3$ Durfee square associated with it.
+
+\begin{exercises}
+\item What is the generating function that counts all partitions by size that have an $m \times m$ Durfee square.  What do you get if you sum over all $m\geq 0$?  How do your answers change if you want to count these partitions by size and by length?
+
+\item Write down an identity that decomposes partitions with distinct parts based on the size of their Durfee square.  Can you count by size and length?
+
+\item A partition $\lambda$ is said to be self-conjugate if the number of squares in the $i^{th}$ row of its Ferrers diagram is the same as the number of squares in the $i^{th}$ column.  Show that the number of self-conjugate partitions of $n$ is the equal to the number of partitions of $n$ using distinct odd parts.  Translate this statement into an identity of generating functions.  How does your identity change if you want to count by size and length of partitions?
+
+
+\item In your solution to the previous problem, replace $z$ by $-1$ and simplify.  This result is known as Euler's Pentagonal Number Theorem.
+
+\item Consider the following product of generating functions
+$$\prod_{n\geq 1} \frac{1}{(1-q^n)}\sum_{m=-\infty}^{\infty} (-1)^m q^{\frac{3m^2-m}{2}}$$
+Using Euler's Pentagonal Number Theorem, simplify the above expression.  Give a general formula for the coefficient of $q^{n}$ of the above product in terms of the partition function $p(n)$= the number of partitions of $n$.  Use this to give a recursive formula for $p(n)$.  Compute $p(13)$.
+
+\end{exercises}
+
+
+
+
+
+\end{document}

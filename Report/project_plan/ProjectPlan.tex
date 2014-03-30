@@ -1,0 +1,87 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{hyperref}
+
+
+\setlength\hoffset{-0.5in}      %% these work quite well with a 12pt font
+\setlength\voffset{-0.5in}
+\setlength{\textwidth}{6.30in}
+\setlength{\textheight}{9.0in}
+
+\bibliographystyle{unsrt}
+
+\begin{document}
+
+\begin{center}
+{\Large\bf{Particle Swarm Optimisation for Portfolio Optimisation Problems in Finance}} \\
+      \vspace{5.0mm}
+{\Large\bf{Project Plan}} \\
+      \vspace{8mm}
+      {\large\bf{Anthony S. Chapman}}  \\
+      % \vspace{5.0mm}
+      %  {\tt user@csd.abdn.ac.uk} \\
+      \vspace{5.0mm}
+      {\em Supervisor: Dr. Wei Pang, \\
+        Department of Computing Science,\\
+        University of Aberdeen, Aberdeen AB24 3UE, UK} 
+\end{center}
+
+
+\section*{Introduction}
+Optimisation models play an increasingly important role in portfolio management decisions. Many computational portfolio problems ranging from asset allocation to risk management can be solved using modern optimisation techniques \cite{complex}. I have been interested in the analysis of trading for a very long time and I believe that with the help of statistical mathematics and a strong and safe computing language, a ``smart'' system can be created and given the correct guidelines, it can independently manage a portfolio \cite{port,finance} and arrive at the optimal (maximum profit with minimum risk) trading decisions. Particle Swarm Optimisation is at the frontier of both linear and non-linear optimisation methods yet there are not that many applications to finance\cite{pso}.
+
+% Haskell is one of the most influential functional programming languages available today alongside Lisp, Standard ML and o'Caml. When used for financial analysis, it could help to achieve a higher level of prediction and clear problem descriptions when compared to other languages.
+  
+
+\section*{Goals}
+The goal of this project is to make an application to optimise a portfolio using PSO methods. For example, give a budget and some assets you are interested in, the system will decide what to buy or sell in order to maximise profit and minimise risk. If I have enough time I would like to give it a nice user friendly GUI and maybe even run it on the cloud, but this are unlikely. 
+
+% \begin{itemize}
+%   \item Make application to optimise financial portfolio 
+%   \item PSO and parallel programming already exit in Haskell
+%   \item Implement PSO to real world data constraints and function
+%   \item Optional Extra: \begin{itemize}
+%                           \item Nice GUI 
+%                           \item Print out report
+%                         \end{itemize}
+% \end{itemize}
+
+
+\section*{Methodology}
+The following point illustrate how I will carry out the project:
+\begin{itemize}
+  \item Familiarise myself with PSO and apply it to integer programming problems.
+  \item Verify whether PSO is more efficient than KKT \cite{kkt} and Simplex \cite{simplex}.
+  \item Research portfolio optimisation, example, when measuring risk, would be better to use variance or  quantile-based risk measures\cite{moea}.
+  \item Implement simple portfolio test solutions, for example, implement a PSO algorithm to test whether it be financially beneficial to buy or sell a collection of assets in a portfolio\cite{pso2}. 
+  \item Learning about PSO in Haskell and possibly parallel programming modules in Haskell.
+\end{itemize}
+
+
+\section*{Resources Required}
+I aim to make an application which can run on a standard PC or laptop. 
+\begin{itemize}
+  \item Dual core processor with 1.6GHz or more.
+  \item Haskell: Parallel Haskell Compilation System, version 7.4.2 or higher.
+\end{itemize}
+
+
+\section*{Risk Assessment}
+I will need to be most efficient in my time management given that I also have to study for other modules in mathematics. Finding the balance and rhythm for working is essential to the success of my proposed project.
+
+A possible problem would be that the constraints for a given optimisation process don't make a compact set. Meaning that it won't necessarily have an optimal solution and the program might crash or give incorrect results. To tackle this, I will implement safe guard measures to determine whether the region constraints is well defined, thanks to Haskell's lazy evaluation, it won't try to work out the solution before the verification has been carried out. 
+
+
+\section*{Timetable}
+\begin{itemize}
+  \item 2 weeks: Literature review on PSO, portfolio optimisation and risk assessment. 
+  \item 2 weeks: Testing what I learnt from literature and experiment with ideas.
+  \item 4 weeks: Implement main system.
+  \item 3 weeks: Write report.
+  \item 1 week as buffer in case something takes longer than expected.
+\end{itemize}
+
+
+
+\bibliography{ProjectPlan}
+
+\end{document}

@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{Stallings2010}
+W.~Stallings.
+\newblock {\em Cryptography an Network Security: Principles and Practice}.
+\newblock Prentice Hall, 5 edition, 2010.
+
+\bibitem{cryptowiki}
+Wikipedia.
+\newblock Cryptography.
+\newblock \url{http://en.wikipedia.org/wiki/Cryptography}, November 2012.
+
+\end{thebibliography}

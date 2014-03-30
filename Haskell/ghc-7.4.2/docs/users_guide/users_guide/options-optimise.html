@@ -1,0 +1,196 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>4.10. Optimisation (code improvement)</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><link rel="home" href="index.html" title="The Parallel Haskell Compilation System User's Guide, Version 7.4.2"><link rel="up" href="using-ghc.html" title="Chapter 4. Using GHC"><link rel="prev" href="packages.html" title="4.9.  Packages"><link rel="next" href="code-generators.html" title="4.11. GHC Backends"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.10. Optimisation (code improvement)</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="packages.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Using GHC</th><td width="20%" align="right"> <a accesskey="n" href="code-generators.html">Next</a></td></tr></table><hr></div><div class="sect1" title="4.10. Optimisation (code improvement)"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="options-optimise"></a>4.10. Optimisation (code improvement)</h2></div></div></div><a class="indexterm" name="idp22925264"></a><a class="indexterm" name="idp22925656"></a><p>The <code class="option">-O*</code> options specify convenient
+    &#8220;packages&#8221; of optimisation flags; the
+    <code class="option">-f*</code> options described later on specify
+    <span class="emphasis"><em>individual</em></span> optimisations to be turned on/off;
+    the <code class="option">-m*</code> options specify
+    <span class="emphasis"><em>machine-specific</em></span> optimisations to be turned
+    on/off.</p><div class="sect2" title="4.10.1. -O*: convenient &#8220;packages&#8221; of optimisation flags."><div class="titlepage"><div><div><h3 class="title"><a name="optimise-pkgs"></a>4.10.1. <code class="option">-O*</code>: convenient &#8220;packages&#8221; of optimisation flags.</h3></div></div></div><p>There are <span class="emphasis"><em>many</em></span> options that affect
+      the quality of code produced by GHC.  Most people only have a
+      general goal, something like &#8220;Compile quickly&#8221; or
+      &#8220;Make my program run like greased lightning.&#8221; The
+      following &#8220;packages&#8221; of optimisations (or lack
+      thereof) should suffice.</p><p>Note that higher optimisation levels cause more
+      cross-module optimisation to be performed, which can have an
+      impact on how much of your program needs to be recompiled when
+      you change something.  This is one reason to stick to
+      no-optimisation when developing code.</p><div class="variablelist"><dl><dt><span class="term">
+            No <code class="option">-O*</code>-type option specified:
+            <a class="indexterm" name="idp22930248"></a>
+          </span></dt><dd><p>This is taken to mean: &#8220;Please compile
+            quickly; I'm not over-bothered about compiled-code
+            quality.&#8221; So, for example: <span class="command"><strong>ghc -c
+            Foo.hs</strong></span></p></dd><dt><span class="term">
+            <code class="option">-O0</code>:
+            <a class="indexterm" name="idp22932080"></a>
+          </span></dt><dd><p>Means &#8220;turn off all optimisation&#8221;,
+	    reverting to the same settings as if no
+	    <code class="option">-O</code> options had been specified.  Saying
+	    <code class="option">-O0</code> can be useful if
+	    eg. <span class="command"><strong>make</strong></span> has inserted a
+	    <code class="option">-O</code> on the command line already.</p></dd><dt><span class="term">
+            <code class="option">-O</code> or <code class="option">-O1</code>:
+            <a class="indexterm" name="idp22934856"></a>
+            <a class="indexterm" name="idp22935264"></a>
+            <a class="indexterm" name="idp22935672"></a>
+          </span></dt><dd><p>Means: &#8220;Generate good-quality code without
+            taking too long about it.&#8221; Thus, for example:
+            <span class="command"><strong>ghc -c -O Main.lhs</strong></span></p></dd><dt><span class="term">
+            <code class="option">-O2</code>:
+            <a class="indexterm" name="idp22937664"></a>
+            <a class="indexterm" name="idp22938056"></a>
+          </span></dt><dd><p>Means: &#8220;Apply every non-dangerous
+            optimisation, even if it means significantly longer
+            compile times.&#8221;</p><p>The avoided &#8220;dangerous&#8221; optimisations
+            are those that can make runtime or space
+            <span class="emphasis"><em>worse</em></span> if you're unlucky.  They are
+            normally turned on or off individually.</p><p>At the moment, <code class="option">-O2</code> is
+            <span class="emphasis"><em>unlikely</em></span> to produce better code than
+            <code class="option">-O</code>.</p></dd></dl></div><p>We don't use a <code class="option">-O*</code> flag for day-to-day
+      work.  We use <code class="option">-O</code> to get respectable speed;
+      e.g., when we want to measure something.  When we want to go for
+      broke, we tend to use <code class="option">-O2</code> (and we go for
+      lots of coffee breaks).</p><p>The easiest way to see what <code class="option">-O</code> (etc.)
+      &#8220;really mean&#8221; is to run with <code class="option">-v</code>,
+      then stand back in amazement.</p></div><div class="sect2" title="4.10.2. -f*: platform-independent flags"><div class="titlepage"><div><div><h3 class="title"><a name="options-f"></a>4.10.2. <code class="option">-f*</code>: platform-independent flags</h3></div></div></div><a class="indexterm" name="idp22943336"></a><a class="indexterm" name="idp22943712"></a><p>These flags turn on and off individual optimisations.
+      They are normally set via the <code class="option">-O</code> options
+      described above, and as such, you shouldn't need to set any of
+      them explicitly (indeed, doing so could lead to unexpected
+      results).  However, there are one or two that may be of
+      interest:</p><div class="variablelist"><dl><dt><span class="term"><code class="option">-fexcess-precision</code>:</span></dt><dd><a class="indexterm" name="idp22945576"></a><p>When this option is given, intermediate floating
+	    point values can have a <span class="emphasis"><em>greater</em></span>
+	    precision/range than the final type.  Generally this is a
+	    good thing, but some programs may rely on the exact
+	    precision/range of
+	    <code class="literal">Float</code>/<code class="literal">Double</code> values
+	    and should not use this option for their compilation.</p></dd><dt><span class="term"><code class="option">-fignore-asserts</code>:</span></dt><dd><a class="indexterm" name="idp22948192"></a><p>Causes GHC to ignore uses of the function
+	    <code class="literal">Exception.assert</code> in source code (in
+	    other words, rewriting <code class="literal">Exception.assert p
+	    e</code> to <code class="literal">e</code> (see <a class="xref" href="assertions.html" title="7.15. Assertions">Section 7.15, &#8220;Assertions
+
+&#8221;</a>).  This flag is turned on by
+	    <code class="option">-O</code>.
+	    </p></dd><dt><span class="term">
+            <code class="option">-fignore-interface-pragmas</code>
+	    <a class="indexterm" name="idp22951256"></a>
+          </span></dt><dd><p>Tells GHC to ignore all inessential information when reading interface files.
+	    That is, even if <code class="filename">M.hi</code> contains unfolding or strictness information
+	    for a function, GHC will ignore that information.</p></dd><dt><span class="term">
+            <code class="option">-fliberate-case</code>
+            <a class="indexterm" name="idp22953296"></a>
+          </span></dt><dd><p>Turn on the liberate-case transformation.</p></dd><dt><span class="term">
+            <code class="option">-fno-cse</code>
+            <a class="indexterm" name="idp22954800"></a>
+          </span></dt><dd><p>Turns off the common-sub-expression elimination optimisation.
+	      Can be useful if you have some <code class="literal">unsafePerformIO</code>
+	    expressions that you don't want commoned-up.</p></dd><dt><span class="term">
+            <code class="option">-fno-strictness</code>
+            <a class="indexterm" name="idp22956776"></a>
+          </span></dt><dd><p>Turns off the strictness analyser; sometimes it eats
+	    too many cycles.</p></dd><dt><span class="term">
+            <code class="option">-fno-full-laziness</code>
+            <a class="indexterm" name="idp22958320"></a>
+          </span></dt><dd><p>Turns off the full laziness optimisation (also known as
+	      let-floating).  Full laziness increases sharing, which can lead
+	      to increased memory residency.</p><p>NOTE: GHC doesn't implement complete full-laziness.
+            When optimisation in on, and
+            <code class="option">-fno-full-laziness</code> is not given, some
+            transformations that increase sharing are performed, such
+            as extracting repeated computations from a loop.  These
+            are the same transformations that a fully lazy
+            implementation would do, the difference is that GHC
+            doesn't consistently apply full-laziness, so don't rely on
+            it.</p></dd><dt><span class="term">
+            <code class="option">-fno-float-in</code>
+            <a class="indexterm" name="idp22961224"></a>
+          </span></dt><dd><p>Turns off the float-in transformation.</p></dd><dt><span class="term">
+            <code class="option">-fno-specialise</code>
+            <a class="indexterm" name="idp22962736"></a>
+          </span></dt><dd><p>Turns off the automatic specialisation of overloaded functions.</p></dd><dt><span class="term">
+            <code class="option">-fno-state-hack</code>
+            <a class="indexterm" name="idp22964272"></a>
+          </span></dt><dd><p>Turn off the "state hack" whereby any lambda with a
+	      <code class="literal">State#</code> token as argument is considered to be
+	      single-entry, hence it is considered OK to inline things inside
+	      it.  This can improve performance of IO and ST monad code, but it
+	    runs the risk of reducing sharing.</p></dd><dt><span class="term">
+            <code class="option">-fpedantic-bottoms</code>
+            <a class="indexterm" name="idp22966376"></a>
+          </span></dt><dd><p>Make GHC be more precise about its treatment of bottom (but see also
+                     <code class="option">-fno-state-hack</code>). In particular, stop GHC 
+                     eta-expanding through a case expression, which is good for
+		     performance, but bad if you are using <code class="literal">seq</code> on
+                     partial applications.</p></dd><dt><span class="term">
+            <code class="option">-fomit-interface-pragmas</code>
+	    <a class="indexterm" name="idp22968704"></a>
+          </span></dt><dd><p>Tells GHC to omit all inessential information from the interface file
+	      generated for the module being compiled (say M).  This means that a module
+	      importing M will see only the <span class="emphasis"><em>types</em></span> of the functions that M exports, but not
+	      their unfoldings, strictness info, etc.  Hence, for example,
+	      no function exported by M will be inlined
+	      into an importing module.  The benefit is that modules that import M will
+	      need to be recompiled less often (only when M's exports change their type,
+	      not when they change their implementation).
+	      </p></dd><dt><span class="term">
+            <code class="option">-fsimpl-tick-factor=<em class="replaceable"><code>n</code></em></code>
+            <a class="indexterm" name="idp22971112"></a>
+          </span></dt><dd><p>GHC's optimiser can diverge if you write rewrite rules (<a class="xref" href="rewrite-rules.html" title="7.17. Rewrite rules">Section 7.17, &#8220;Rewrite rules
+
+
+
+&#8221;</a>) 
+              that don't terminate, or (less satisfactorily) if you
+              code up recursion through data types
+              (<a class="xref" href="bugs.html#bugs-ghc" title="13.2.1. Bugs in GHC">Section 13.2.1, &#8220;Bugs in GHC&#8221;</a>).  To avoid making the compiler fall into an infinite
+	      loop, the optimiser carries a "tick count" and stops inlining and applying rewrite rules
+              when this count is exceeded.  The limit is set as a multiple of the program size, so 
+              bigger programs get more ticks. The <code class="option">-fsimpl-tick-factor</code> flag lets
+              you change the multiplier. The default is 100; numbers larger than 100 give more ticks,
+              and numbers smaller than 100 give fewer.</p><p>If the tick-count expires, GHC summarises what simplifier steps it has done; 
+            you can use <code class="option">-fddump-simpl-stats</code> to generate a much more detailed list.
+            Usually that identifies the loop quite accurately, because some numbers are very large.
+	      </p></dd><dt><span class="term">
+            <code class="option">-fstatic-argument-transformation</code>
+            <a class="indexterm" name="idp22974976"></a>
+          </span></dt><dd><p>Turn on the static argument transformation.</p></dd><dt><span class="term">
+            <code class="option">-fspec-constr</code>
+            <a class="indexterm" name="idp22976488"></a>
+          </span></dt><dd><p>Turn on call-pattern specialisation.</p></dd><dt><span class="term">
+            <code class="option">-funbox-strict-fields</code>:
+	    <a class="indexterm" name="idp22978024"></a>
+	    <a class="indexterm" name="idp22978512"></a>
+	    <a class="indexterm" name="idp22978936"></a>
+          </span></dt><dd><p>This option causes all constructor fields which are
+            marked strict (i.e. &#8220;!&#8221;) to be unboxed or
+            unpacked if possible.  It is equivalent to adding an
+            <code class="literal">UNPACK</code> pragma to every strict
+            constructor field (see <a class="xref" href="pragmas.html#unpack-pragma" title="7.16.10. UNPACK pragma">Section 7.16.10, &#8220;UNPACK pragma&#8221;</a>).</p><p>This option is a bit of a sledgehammer: it might
+	    sometimes make things worse.  Selectively unboxing fields
+	    by using <code class="literal">UNPACK</code> pragmas might be
+	    better. An alternative is to use
+        <code class="option">-funbox-strict-fields</code> to turn on
+        unboxing by default but disable it for certain constructor
+        fields using the <code class="literal">NOUNPACK</code> pragma
+        (see <a class="xref" href="pragmas.html#nounpack-pragma" title="7.16.11. NOUNPACK pragma">Section 7.16.11, &#8220;NOUNPACK pragma&#8221;</a>).
+        </p></dd><dt><span class="term">
+            <code class="option">-funfolding-creation-threshold=<em class="replaceable"><code>n</code></em></code>:
+	    <a class="indexterm" name="idp22983392"></a>
+	    <a class="indexterm" name="idp22983888"></a>
+	    <a class="indexterm" name="idp22984312"></a>
+          </span></dt><dd><p>(Default: 45) Governs the maximum size that GHC will
+            allow a function unfolding to be.   (An unfolding has a
+            &#8220;size&#8221; that reflects the cost in terms of
+            &#8220;code bloat&#8221; of expanding that unfolding
+            at a call site. A bigger function would be assigned a
+            bigger cost.) </p><p> Consequences: (a) nothing larger than this will be
+	    inlined (unless it has an INLINE pragma); (b) nothing
+	    larger than this will be spewed into an interface
+	    file. </p><p> Increasing this figure is more likely to result in longer
+            compile times than faster code.  The next option is more
+            useful:</p></dd><dt><span class="term"><code class="option">-funfolding-use-threshold=<em class="replaceable"><code>n</code></em></code></span></dt><dd><a class="indexterm" name="idp22987008"></a><a class="indexterm" name="idp22987480"></a><a class="indexterm" name="idp22987888"></a><p>(Default: 8) This is the magic cut-off figure for
+            unfolding: below this size, a function definition will be
+            unfolded at the call-site, any bigger and it won't.  The
+            size computed for a function depends on two things: the
+            actual size of the expression minus any discounts that
+            apply (see <code class="option">-funfolding-con-discount</code>).</p></dd></dl></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="packages.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="using-ghc.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="code-generators.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.9. 
+Packages
+  </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.11. GHC Backends</td></tr></table></div></body></html>

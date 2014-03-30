@@ -1,0 +1,799 @@
+\documentclass{pdfmx4020}
+%\documentclass{mx4020}
+\usepackage{hyperref}
+%\usepackage{graphicx}
+% Erin's additions
+\usepackage{color} 
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.fractals}
+
+\Title{Integer Partitions}
+\Author{Anthony S. Chapman}
+\Year{2013--2014}
+\Supervisor{William Turner}
+
+\graphicspath{ {./Figures/} }
+
+\begin{document}
+
+\mxfrontpage
+
+\begin{Summary}
+Enter your summary here ...
+\end{Summary}
+
+\StartThesis
+
+\chapter{Introduction}
+
+\section{Some Terminology}
+An integer partition is a way of writing a positive integer as a sum of positive integers. Each number of that sum will be referred to as a part of an integer partition. For example, 3+1 and 2+2 are both different integer partitions of 4.
+
+Let p(n) be the size or cardinality of the set of integer partitions of a positive integer n, called the partition function. For example, p(4) = 5 since \{4, 3+1, 2+2, 2+1+1 and 1+1+1+1\} forms the set of integer partitions of 4 and there are 5 elements in the set.
+
+Let p(n $\mid$ condition) be the partition function whose integer partitions satisfy some condition. For example, p(4 $\mid$ odd numbers)=2 since \{1+1+1+1, 3+1\} is the set of integer partitions of 4 whose parts are odd numbers. 
+
+Statements in the form p(n $\mid$ condition 1) = p(n $\mid$ condition 2) are called partition identities and there are many different, wonderful and unexpected partition identities. 
+
+\section{Something Interesting}
+Every number has as many integer partitions into parts of size 1, 4, 6, 9, 11, 14,... as into parts of difference at least 2 (1+3 is an integer partition of 4 into parts of difference at least 2 as 3-1 $\geq$  2 but 2+1+1 would not). Notice that \{1,4,9,11,...\} are [1] and [4] mod 5, now also notice that [4] $\equiv$ [-1] mod 5. Which leads us to say that there are as many integer partitions into parts which belong to [$\pm$1] mod 5 as there are partitions into parts of difference at least 2!
+
+\section{Euler's identity}
+In 1748, Leonhard Euler proved a very interesting phenomena. He noticed how the number of partitions with only odd parts equals that of the number of partitions with distinct part. To put it formally: 
+
+\begin{theorem}  
+p(n $\mid$ odd parts) = p(n $\mid$ distinct parts)
+\end{theorem}
+
+For example you can see that there are 4 partitions of 6 of just odd parts and 4 partitions who have all distinct parts. Similarly for 7 there are 5 partitions of odd parts and 5 also for partitions who have all distinct parts. The following table shows this bizarre coincidence up to 9.
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    Partitions of odd parts & Partitions of distinct parts \\
+    % \hline
+    % p(n\textbar odd parts) & p(n\textbar distinct parts) \\
+    \hline
+    1 & 1 \\
+    \hline
+    1+1 & 2 \\
+    \hline
+    1+1+1+1 & 4 \\
+    3+1 & 3+1 \\
+    \hline
+    1+1+1+1+1 & 5 \\
+    3+1+1 & 4+1 \\
+    5 & 3+2 \\
+    \hline
+    1+1+1+1+1+1 & 6 \\
+    3+1+1+1 & 5+1 \\
+    3+3 & 4+2 \\
+    5+1 & 3+2+1 \\
+    \hline
+    1+1+1+1+1+1+1 & 7 \\
+    3+1+1+1+1 & 6+1 \\
+    3+3+1 & 5+2 \\
+    5+1+1 & 4+3 \\
+    7 & 4+2+1 \\
+    \hline
+    1+1+1+1+1+1+1+1 & 8 \\
+    3+1+1+1+1+1 & 7+1 \\
+    3+3+1+1 & 6+2 \\
+    5+1+1+1 & 5+3 \\
+    5+3 & 5+2+1 \\
+    7+1 & 4+3+1 \\
+    \hline
+    1+1+1+1+1+1+1+1+1 & 9 \\
+    3+1+1+1+1+1+1 & 8+1 \\
+    3+3+1+1+1 & 7+2 \\
+    3+3+3 & 6+3 \\
+    5+1+1+1+1 & 5+4 \\
+    5+3+1 & 6+2+1 \\
+    7+1+1 & 5+3+1 \\
+    9 & 4+3+2 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\section{Set Terminology}
+\begin{itemize}
+  \item The order of elements in a set is not relevant. For example, \{1,2,3\} = \{1,3,2\}.
+  \item The intersection of two sets N and N' is the set of elements who lie in both sets, denoted (N$\cap$N').
+  \item Two sets are disjoint if the have no elements in common, ie the intersection is the empty set.
+  \item The union of two sets N and N' is the set containing all elements in both sets (without repetition), denoted (N$\cup$N'). For example, N=\{1,2,3\} and N'=\{2,3,4\} then (N$\cup$N')=\{1,2,3,4\}.
+  \item The number of elements in a set N is called the cardinality of N and denoted \textbar N\textbar. For example, \textbar\{1,3,5,7\}\textbar = 4.
+\end{itemize}
+
+Unions and intersections can be conveniently illustrated by so-called Venn diagrams, for example the Venn diagram below shows how we can visualise the union and intersection of N=\{1,2,3\} and N'=\{2,3,4\}.
+
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.50\textwidth]{venn_diagram.png}
+    %\caption{Some caption text}
+    \label{fig:graph}
+\end{figure}
+
+From the Venn diagram above you can see that \textbar N\textbar + \textbar N'\textbar = \textbar N$\cap$N'\textbar + \textbar N$\cup$N'\textbar. In order to have the cardinality of the union of the two sets to equal the sum of the cardinality of each set, then the intersection must be empty, ie the sets must be disjoint from eachother. 
+
+\chapter{Euler started it...}
+
+\section{Bijective proof mentality}
+
+In order to prove Euler's identy of p(n $\mid$ odd parts) = p(n $\mid$ distinct parts) we need to find some one-to-one correspondance between the partitions into odd parts and the partitions into distinct parts. We would, in an ideal world like it to be some pretty polinomial function such as p(n $\mid$ odd parts) = $x^2 -x -2$. We could then show that p(n $\mid$ distinct parts) also equals that same equation, and like magic we would be done! 
+
+Let us investigate this further by listing the result for some values:
+\begin{center}
+  \begin{tabular}{l*{10}{c}r}
+    n              & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \hline
+    p(n \textbar odd parts) & 1 & 1 & 2 & 2 & 3 & 4 & 5 & 6 & 8 & 10  \\
+  \end{tabular}
+\end{center}
+
+Unfortunately, no such simple function such as a polynomial is suggested by this table. We could quite easily waste our lifetimes in the persuit to prove such an identity by trying to find a function to discribe one of Euler's identities. 
+
+It would be more sensible to take a more simplistic approach. If we want to verify that the number of objects of type A is equal to the number of objects of type B, we need not find the actual number-it is sufficient to pair them up and show that every object of type A is paired to a unique of type B and vice versa. We just need to find a bijection between the partitions in question. 
+
+It's not initially obvious what a bijection from p(n $\mid$ odd parts) to p(n $\mid$ distinct parts) could look like. Let us recollect that an integer partition of n is just a collection of integers who's sum is n, so a bijection between partitions must be described in terms of operations on integers. A simple operation is splitting an even part into two equal halves. The inverse would be to sum two equal parts into one part twice as large. This process gives an immediate bijective proof of a partition identity:
+
+\begin{center}
+  p(n $\mid$ even parts) = p(n $\mid$ even number of each part).
+\end{center}
+
+\clearpage % --------- Starts a new page
+Here is how the bijection works for n = 6:
+
+\begin{center}
+  \begin{tabular}{ll}
+    6 & $\mapsto$ 3 + 3 \\
+    4 + 2 & $\mapsto$ 2 + 2 + 1 + 1 \\
+    2 + 2 + 2 & $\mapsto$ 1 + 1 + 1 + 1 + 1 + 1 \\
+  \end{tabular}
+\end{center}
+
+As you can see 6 breaks into 3 + 3 and 4 into 2 + 2 and so on... What if n is odd? You may ask. Well, if n is infact odd then there are no even numbers whos summation is an odd number and therefore can't be split further into equal integer parts, but this does not mean the identity is flawed for you see in n = 3: 
+
+\begin{center}
+  p(3 $\mid$ even parts) = 0 = p(3 $\mid$ even number of each part).
+\end{center}
+
+As you can see, the above applies to any odd n. 
+
+Let us now look at another interesting bijection, firstly notice that:
+\begin{center}
+  \begin{tabular}{lll}
+    6 & $\mapsto$  2$\times$(3) \\
+    4 + 2 & $\mapsto$  2$\times$(2 + 1) \\
+    2 + 2 + 2 & $\mapsto$ 2$\times$(1 + 1 + 1)\\
+  \end{tabular}
+\end{center}
+
+The above bijection shows how p(n \textbar even parts) = p(n/2). Now notice that:
+
+\begin{center}
+  \begin{tabular}{lll}
+    2$\times$(3)& $\mapsto$  3 + 3  \\
+    2$\times$(2 + 1) & $\mapsto$  2 + 2 + 1 + 1 \\
+    2$\times$(1 + 1 + 1) & $\mapsto$ 1 + 1 + 1 + 1 + 1 + 1 \\
+  \end{tabular}
+\end{center}
+
+Which shows how p(n/2) = p(n $\mid$ even number of each part). Putting both results together we get a very nice Euler identity:
+
+\begin{center}
+  p(n $\mid$ even parts) = p(n/2) = p(n $\mid$ even number of each part)
+\end{center}
+
+I have just shown that p(n $\mid$ even parts) = p(n $\mid$ even number of each part) in two distinct ways. Firstly by finding a direct bijection and secondly by finding a bijection from another integer function (p(n/2)). This type of solution is very common in integer partitions although it does not solve every type.
+
+\section{A bijection for Euler's identity}
+
+Returning to p(n $\mid$ odd parts) = p(n $\mid$ distinct parts). We must find a bijection with the property that when we give it an array of odd parts, it delivers a collection of distinct parts with the same sum. The inverse must do the exact opposite as it is a bijection. 
+
+\textit{From odd to distinct parts:} If all the parts are distinct then there are no two copies of the same part in the partition. Hence, if there are two odd parts which are the same, we must do something about it. As you have just read, a natural thing to do is to merge the two equal parts together into one part twice as large. We can repeat this procedure until all parts are distinct. For example,
+
+\begin{tabular}{rl}
+  3 + 3 + 3 + 1 + 1 + 1 + 1 & $\mapsto$ (3 + 3) + 3 + (1 + 1) + (1 + 1) \\
+  & $\mapsto$ 6 + 3 + 2 + 2 \\
+  & $\mapsto$ 6 + 3 + (2 + 2) \\
+  & $\mapsto$ 6 + 3 + 4 \\
+\end{tabular}
+
+\textit{Reversing back to odd parts}: The inverse would be to split even parts into two equal halves. Repeating this procedure must eventually lead to a collection of odd parts. For example,
+
+\begin{center}
+  \begin{tabular}{rl}
+    6 + 3 + 4 & $\mapsto$ (3 + 3) + 3 + (2 + 2) \\
+    & $\mapsto$ 3 + 3 + 3 + (1 + 1) + (1 + 1) \\
+  \end{tabular}
+\end{center}
+
+It may seem that there is an arbitrariness in the order in which we choose to split or merge the parts, however, the integers are an abelian group under addition. 
+
+The same bijection also proves that for n $\geq$ 1, p(n $\mid$ even number of odd parts) = p(n $\mid$ distinct parts, number of odd parts in even)
+
+\begin{center}
+  p(n $\mid$ even number of odd parts) = p(n $\mid$ distinct parts, number of odd parts in even),
+\end{center}
+
+as well as the same statement with  both ``even'' changed to ``odd''. You can see this as every step in the splitting/merging process changes the number of odd parts by an even number (+2 if an even part is split into two odd parts, -2 if two odd parts are merged and 0 otherwise). Hence the number of odd/even parts of every partition is either changed by 2 or by none. 
+
+\section{Euler pairs}
+The merging/ splitting technique we just used to prove Euler's identity is quite versatile. We can use it to for other sets of partitions, for instance, set X and Y, as long as the splitting process takes all partitions in X to partitions in Y and the mergining process does the inverse. 
+
+For example, let X be the set of partitions of n into parts of size one. The number of partitions in X are p(n $\mid$ parts in \{1\}) = 1, since the only partition of n satisfying the condition is the sum 1 + 1 + ... + 1 of n 1s. The merging process will add pairs of 1s into 2s and pairs of 2s into 4s and so on until all parts are distinct. Consequently, the corresponding set Y must be the set of of partitions of n into distinct parts in \{1,2,4,8,...\} (powers of two). The splitting process will take $2^k$ and split it into a pair of powers of two ($2^{k-1}$ + $2^{k-1}$). Since the only power of two that is odd is $2^0$ = 1, this process will carry on until all parts are 1s. Hence,
+
+\begin{center}
+  p(n $\mid$ parts in \{1\}) = p(n $\mid$ parts are distinct powers of 2).
+\end{center}
+
+This particular statements shows the uniqueness of for representing integers as binary numbers.
+
+We have just used the splitting/merging process to prove two different partition identities. Firstly, Euler's identity, 
+
+\begin{center}
+  p(n $\mid$ parts in \{1,3,5,7,...\}) = p(n $\mid$ distinct parts in \{1,2,3,4,5,...\}),
+\end{center}
+
+and the the uniqueness of the binary representation, 
+
+\begin{center}
+  p(n $\mid$ parts in \{1\}) = p(n $\mid$ distinct parts in \{1,2,4,8,...\}).
+\end{center}
+
+What are the limits of this splitting/merging process? For what sets X of part sizes can we find a bijection to distinct parts in another set Y? Such a pair is called an \textit{Euler pair}.
+
+
+\chapter{Ferrers Graphs}
+Graphical representation of partitions is very useful, mainly because they can help us visualise how some complex partition bijections work. 
+
+\section{Ferrers Graphs and Ferrers Boards}
+There are two main way to represent an integer partition graphically, for example a partition of 12 is 4 + 4 + 2 + 1 + 1 and it's representation is as follows:
+
+\begin{center}
+\begin{figure}[htbp]
+\caption{Below is a Ferrers Graph}
+\begin{tikzpicture}
+  \foreach \x in {0,...,3}
+    \filldraw (\x*.35, 0) circle (.6mm);
+  \foreach \x in {0,...,3}
+    \filldraw (\x*.35, -.35) circle (.6mm);
+  \foreach \x in {0,...,1}
+    \filldraw (\x*.35, -.7) circle (.6mm);
+  \foreach \x in {0}
+    \filldraw (\x*.35, -1.05) circle (.6mm);
+  \foreach \x in {0}
+    \filldraw (\x*.35, -1.4) circle (.6mm);
+\end{tikzpicture}
+\caption{Below is a Ferrers Board (or a Young diagram)}
+\begin{tikzpicture}[thick]
+  \foreach \position in {(0,1.8),(0.6,1.8),(1.2,1.8),(1.8,1.8),(0,0),(0,0.6),(0,1.2),(0.6,0.6),(0.6,1.2),(1.2,1.2),(1.8,1.2),(0,-0.6)}
+    \draw \position rectangle +(0.6,0.6);
+\end{tikzpicture}
+
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,3}
+%     \filldraw (\x*.35, 0) rectangle ++(1.6mm,1.6mm);
+%   \foreach \x in {0,...,3}
+%     \filldraw (\x*.35, -.35) circle (.6mm);
+%   \foreach \x in {0,...,1}
+%     \filldraw (\x*.35, -.7) circle (.6mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.35, -1.05) circle (.6mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.35, -1.4) circle (.6mm);
+% \end{tikzpicture}
+\end{figure}
+\end{center}
+
+An example of a bijection which is easily seen through Ferrers graphs would be as follows, remove the top row.
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \filldraw (0, -2) circle (.5mm);
+    \draw[ultra thick, blue] (-.2,.2) -- (-.2,-.2) -- (1.7, -.2) -- (1.7, .2) -- (-.2,.2);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm} \mapsto \hspace{1cm}\\
+    \vspace{1cm}\end{array}$
+  \begin{tikzpicture}
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \filldraw (0, -2) circle (.5mm);
+  \end{tikzpicture}
+\end{center}
+
+You can see that if we remove the top row of a Ferrers graph, we are in fact left with a new Ferrers graph. If r was the length or the removed row, then all the other rows must have been less than or equal to r, hence the new Ferrers graphs has all rows less than or equal to r also. Conversely, we could add a row of length r to the top of a graph (meaning it's at least as big as the biggest part). Thus we have a bijection proving the partition identity:
+
+\begin{center}
+  p(n $\mid$ greatest part is r) = p(n $-$ r $\mid$ all parts $\leq$ r).
+\end{center}
+
+Similarly, removing the first column instead of the first row would obtain yet another Ferrers graph, with no column longer than the one removed (due to the nature of Ferrers graphs). Remember that the length of the first column in the number of parts of the partition. 
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \filldraw (0, -2) circle (.5mm);
+    \draw[ultra thick, blue] (-.2,0.2) -- (-.2,-2.2) -- (.2, -2.2) -- (.2, .2) -- (-.2,.2);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm} \mapsto \hspace{1cm}\\
+    \vspace{1cm}\end{array}$
+  \begin{tikzpicture}
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+  \end{tikzpicture}
+\end{center}
+
+Here m is the length of the first column (number of parts in a partition) and will result in the following partition identy:
+
+\begin{center}
+  p(n $\mid$ m parts) = p(n $-$ m $\mid$ at most m parts).
+\end{center}
+
+% From similar reasoning to the one used above, one can get another integer partition, namely, p(n $\mid$ $\leq$ m parts) = p(n $-$ m $\mid$ all parts $\leq$ m).
+
+\section{Conjugate Partitions}
+Suppose a speaker draws a Ferrers graph on transparency to show all his/her colleagues how wonderful Ferrers graphs are! Unfortunately, he/she messed it up and placed the transparency paper up-side down on the projector (it happens even to the best of us...). To your surprise, there's still a Ferrers graph on the projector! What the speaker has performed is a transformation called conjugation:
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \filldraw (0, -2) circle (.5mm);
+    %\draw[ultra thick, blue] (-.2,0.2) -- (-.2,-2.2);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm} \mapsto \hspace{1cm}\\
+    \vspace{1cm}\end{array}$
+      \begin{tikzpicture}
+    \foreach \x in {0,...,4}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    %\draw[ultra thick, blue] (2.2, .2) -- (-.2,.2);
+  \end{tikzpicture}
+\end{center}
+
+Slightly more formal, let $m_{ij}$ denote the the Ferrers graph's dot at position (i,j) (starting from top left). Then the conjugate of that Ferrers graph will have all i and j swapped so $m_{ij}$ = conjugate $m_{ji}$. Notice that the rows of the first graphs have become the columns of the second, and vice versa. This is a bijection and it gives us yet another partition identity:
+
+\begin{center}
+  p(n $\mid$ m parts) = p(n-m $\mid$ greatest part is m).
+\end{center}
+
+You can see if by noticing that the greatest part in the conjugate equals the number of parts of the original graph. 
+
+Here's another example of this for 3 + 3 + 2 + 2 + 1 + 1 $\mapsto$ 6 + 4 + 2:
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2.5) circle (.5mm);
+    %\draw[ultra thick, blue] (-.2,0.2) -- (-.2,-2.2);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm} \mapsto \hspace{1cm}\\
+    \vspace{1cm}\end{array}$
+      \begin{tikzpicture}
+    \foreach \x in {0,...,5}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    %\draw[ultra thick, blue] (2.2, .2) -- (-.2,.2);
+  \end{tikzpicture}
+\end{center}
+
+If you relax the conditions slightly and notice that m is as big as it can be you can also see that:
+
+\begin{center}
+  p(n $\mid$ $\leq$ m parts) = p(n $-$ m $\mid$ greatest parts $\leq$ m).
+\end{center}
+
+\section{Self-conjugate partitions}
+A partition is self-conjugate if it is its own conjugate. For example, the self conjugate partitions of 12 are 6 + 2 + 1 + 1 + 1 + 1, 5 + 3 + 2 + 1 + 1 and 4 + 4 + 2 + 2:
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,5}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -3) circle (.5mm);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm}
+    \vspace{1cm}\end{array}$
+  \begin{tikzpicture}
+    \foreach \x in {0,...,4}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,2}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2) circle (.5mm);
+  \end{tikzpicture}
+    $\begin{array}{ccc}
+    \vspace{1cm}
+    \hspace{1cm}
+    \vspace{1cm}\end{array}$
+  \begin{tikzpicture}
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0,...,1}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+  \end{tikzpicture}
+\end{center}
+
+There is a natural transformation from self-conjugate partitions into partitions into distinct odd parts. 
+
+Take the first row together with the first column and make a new row of all the dots. Then the second row and second column and so on until there are no more pairs of rows and columns left. Since self-conjugate partitions are symmetrical around the northwest-southwest diagonal, we always merge a row with a column of the same length - and since they share one dot, the result is a row twice the length of the original row minus one, hence odd. The graph below shows this map more clearly where 5 + 4 + 4 + 4 + 1 gets mapped to  9 + 5 + 3 + 1. 
+
+\begin{center}
+    \begin{tikzpicture}
+      \foreach \x in {0,...,4}
+        \filldraw (\x*.5, 0) circle (.5mm);
+      \foreach \x in {0,...,3}
+        \filldraw (\x*.5, -.5) circle (.5mm);
+      \foreach \x in {0,...,3}
+        \filldraw (\x*.5, -1) circle (.5mm);
+      \foreach \x in {0,...,3}
+        \filldraw (\x*.5, -1.5) circle (.5mm);
+      \filldraw (0, -2) circle (.5mm);
+      \draw[ultra thick, blue] (-.2,-2.2) -- (-.2,.2) -- (2.2, .2);
+      \draw[ultra thick, blue] (.3,-1.7) -- (.3,-.3) -- (1.7, -.3);
+      \draw[ultra thick, blue] (.8,-1.7) -- (.8,-.8) -- (1.7, -.8);
+      \draw[ultra thick, blue] (1.2,-1.7) -- (1.2,-1.2) -- (1.7, -1.2);
+    \end{tikzpicture}
+      $\begin{array}{ccc}
+      \vspace{1cm}
+      \hspace{1cm} \mapsto \hspace{1cm}\\
+      \vspace{1cm}\end{array}$
+    \begin{tikzpicture}
+      \foreach \x in {0,...,8}
+        \filldraw (\x*.5, 0) circle (.5mm);
+      \foreach \x in {0,...,4}
+        \filldraw (\x*.5, -.5) circle (.5mm);
+      \foreach \x in {0,...,2}
+        \filldraw (\x*.5, -1) circle (.5mm);
+      \filldraw (0, -1.5) circle (.5mm);
+      \filldraw[white] (0,-2.2) circle(.5mm);
+    \end{tikzpicture}
+    \end{center}
+
+Conversely, starting from a partition into distinct odd part, we can bend each odd part into a unique symmetry L shape, and all these Ls fit inside each other to form a self-conjugate Ferrers graph. This bijection proves the identity:
+
+\begin{center}
+  p(n $\mid$ self-conjugate) = p(n-m $\mid$ distinct odd parts).
+\end{center}
+
+% \section{Using Ferrers graphs for an upper bound.}
+
+% Firstly, we'd like to find out if the partition function is in fact a growing function. We want to show that: p(n) $\textgreater$ p(n-1). 
+
+% Let's look at all the partitions of three,
+
+% \begin{tikzpicture}
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -1) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,1}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,2}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+% \end{tikzpicture}
+
+% and compare it to all the partitions of four,
+
+% \begin{tikzpicture}
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -1) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -1.5) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,1}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -1) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,2}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,1}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+%   \foreach \x in {0,...,1}
+%     \filldraw (\x*.5, -.5) circle (.5mm);
+% \end{tikzpicture}
+% $\begin{array}{ccc}
+% \vspace{1cm}
+% \hspace{1cm}
+% \vspace{1cm}\end{array}$
+% \begin{tikzpicture}
+%   \foreach \x in {0,...,3}
+%     \filldraw (\x*.5, 0) circle (.5mm);
+% \end{tikzpicture}
+
+% What can we notice from this? For every partition of n-1, we obtain a partition of n by adding a single dot in a new bottom row (ie adding 1 to the partition). Conversely, every partition of n with a single dot at the botton (partition with the number 1 in it) gives a partition of n $-$ 1 after we remove that dot. Hence, p(n $-$ 1) = p(n $\mid$ at least one 1-part) and from this we can deduce that:
+
+% \begin{center}
+%   p(n) = p(n $-$ 1) + p(n $\mid$ no 1-part) $\textgreater$ p(n $-$ 1).
+% \end{center}
+
+% Now we have shown that p(n) is a growing function, our next step would have to be to determine a bound for the growth speed, which turns out to be the famous \textit{Fibonacci numbers}. 
+
+\section{Bressoud's Beautiful Bijection}
+
+Some notation is needed, a partition in $d$-distinct parts where $d \in \mathbb{N}$ means that every part in a partition differs by at least $d$ from all the others. So instead of saying p(n $\mid$ distinct parts, each part differs by at least 2) we'll say p(n $\mid$ 2-distinct parts).
+
+I will now show you a relatively modern bijective proof of the following partition identity:
+
+\begin{center}
+  p(n $\mid$ 2-distinct parts) = p(n $\mid$ 1-distinct parts, each even part is greater than twice the amount of odd parts)  %\textgreater 2  number of odd parts)
+\end{center}
+
+To show this bijection we'll start with a partition in 2-distinct parts, say (13 + 10 + 8 + 4 + 1), and make a Ferrers graph out of it. 
+
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,12}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {0,...,9}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {0,...,7}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {0,...,3}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {0}
+      \filldraw (\x*.5, -2) circle (.5mm);
+  \end{tikzpicture}
+\end{center}
+
+Rearrange the graph to have a slope of two dots per row until the bottom, then draw a vertical line such that the last row has one dot to the left of the line.
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,12}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {2,...,11}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {4,...,11}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {6,...,9}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {8}
+      \filldraw (\x*.5, -2) circle (.5mm);
+    \draw[ultra thick, blue] (4.25,-2.1) -- (4.25,0.1);
+  \end{tikzpicture}
+\end{center}
+
+Rearrange the right hand side such that the dots are in decreasing order from the top starting with the odd number of dots then the even ones. 
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,...,11}
+      \filldraw (\x*.5, 0) circle (.5mm);
+    \foreach \x in {2,...,11}
+      \filldraw (\x*.5, -0.5) circle (.5mm);
+    \foreach \x in {4,...,9}
+      \filldraw (\x*.5, -1) circle (.5mm);
+    \foreach \x in {6,...,12}
+      \filldraw (\x*.5, -1.5) circle (.5mm);
+    \foreach \x in {8}
+      \filldraw (\x*.5, -2) circle (.5mm);
+    \draw[ultra thick, blue] (4.25,-2.1) -- (4.25,0.1);
+  \end{tikzpicture}
+\end{center}
+
+Now if you ignore the line and take each row as a part of a partition you get a new partition, (12 + 10 + 6 + 7 + 1) which is a partition in which each even part is greater than twice the amount of odd parts. 
+
+To complete this bijection, we would need a way to reverse what we have just done. The inverse is a follows:
+\begin{enumerate}
+  \item Get a Ferrers graph where each even part is greater than twice the amount of odd parts
+  \item Arrange the rows such that the even rows come first, in decreasing order, followed by the odd rows, in decreasing order.
+  \item Adjust the left margin to slope by two dots extra indentation per row and draw a vertical line such that the last row has one dot to the left of this line.
+  \item Rearrange the the rows on the right hand side of the line in descending order
+  \item Ignore line and make a partition with the rows
+  \item Obtain a partition into 2-distinct parts.
+\end{enumerate}
+
+To see how this bijection works, notice that you can only get an odd part is the right hand side of the line is even, as the left hand side is always odd. 
+
+\begin{figure}[h]
+    \centering
+        \includegraphics[width=0.50\textwidth]{beautiful-bijection.png}
+\end{figure}
+
+
+If you let $k$ be the number of even numbers on the right hand side of the line then there will be $k$ odd numbers in the whole partition. Notice that in the left hand side of the line, each row has $2n+1$ (an odd number) dots.
+
+From the graph above, either there is no even parts on the right hand side or the first odd part on the left hand side is $2n+1$. 
+
+
+\chapter{Introducing the first Rogers-Ramanujan identity}
+
+A fundamental type of partition is structured as follows: 
+
+\begin{center}
+  For some N $\subset \mathbb{N}$ 
+
+  p(n $\mid$ some condition) = p(n $\mid$ parts in N) , $\forall n \textgreater 0$
+\end{center}
+
+For example, p(n $\mid$ even number of each part) = p(n $\mid$ even parts), here N is the set of even numbers and the condition is that there is an even number of each part. To prove that this is true you can use the merging and splitting method to show that there is a bijection between the two partition functions. 
+
+Another example would be Euler's Identity, which we have already seen and proved in this paper, stating that p(n $\mid$ distinct parts) = p(n $\mid$ N) where N is the set of odd parts. Can we construct a similar case but instead of distinct parts, into parts which differ by at least 2, ie. p(n $\mid$ 2-distinct parts) = p(n $\mid$ parts in N) for some N. 
+\begin{center}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    n & Partition of n into 2-distinct parts & p(n $\mid$ 2-distinct parts) \\
+    \hline
+    1 & 1 & 1 \\
+    \hline
+    2 & 2 & 1 \\
+    \hline
+    3 & 3 & 1 \\
+    \hline
+    4 & 4, 3+1 & 2 \\
+    \hline
+    5 & 5, 4+1 & 2 \\
+    \hline
+    6 & 6, 5+1, 4+2 & 3 \\
+    \hline
+    7 & 7, 6+1, 5+2 & 3 \\
+    \hline
+    8 & 8, 7+1, 6+2, 5+3 & 4 \\
+    \hline
+    9 & 9, 8+1, 7+2, 6+3, 5+3+1 & 5 \\
+    \hline
+    10 & 10, 9+1, 8+2, 7+3, 6+4, 6+3+1 & 6 \\
+    \hline
+    11 & 11, 10+1, 9+2, 8+3, 7+4, 7+3+1, 6+4+1 & 7 \\
+    \hline
+  \end{tabular}
+\end{center}
+From the table we can begin to construct a set N for our identity to hold, you can see that there is only one partition of 1 into 2-distinct parts, this means that there should be one partition of 1 whose parts are in N, this means that 1 $\in$ N. 
+
+For 2 and 3, there is 1 partition for each into 2-distinct parts, which means that there will be one partition for each out of parts in N, at the moment, we have N = \{1\} and we can certainly make a partition of 2 and 3 using parts in N, remember that we can use the parts in N as many times as we would like, (1+1) and (1+1+1) respectively. So 2 and 3 need not be in our set N. 
+
+There are two partitions of 4 into 2-distinct parts, but we can only make one out of parts in N (1+1+1+1) so we need to add 4 to N, now N = \{1,4\}. 
+
+Following this method we will get that N = \{1,4,6,9,11,14,16,19,21,24...\}. 
+
+Can you notice the pattern? If we start with 1 and 4 and add 5 to each we get two new entries! So we can always get two new numbers in the sequence by adding 5 to the previous two numbers in the sequence. This set can be described as the set of numbers with remainder 1 or 4 when dived by 5, more formally, it's the set congruent to 1 or 4 modulo 5 or \{m $\mid$ m $\equiv$ 1 or 4 (mod 5) \}.
+
+This interesting discovery is called the \textit{first} Rogers-Ramanujan identity, as mentioned at the begining of this paper: p(n $\mid$ 2-distinct parts) = p(n $\mid$ parts $\equiv$ 1 or 4 (mod 5)).
+
+Computer program ?? --------------------------------------------------------------
+
+Notice that 4 is congruent to -1 modulo 5, thus we can rewrite the \textit{first} Rogers-Ramanujan identity as having parts congruent to $\pm$ 1 (mod 5):
+
+\begin{center}
+  p(n $\mid$ 2-distinct parts) = p(n $\mid$ parts $\equiv \pm$ 1 (mod 5))
+\end{center}
+
+Section about difficulties about proving this!! ------------------------------------
+
+\chapter{Generating Functions.}
+Generating functions offer a way to convert combinatorics
+
+
+\begin{thebibliography}{999}
+
+\bibitem{c1} Jones, A., Smith, B. 2004.\emph{book/article title}. other publication details
+
+\end{thebibliography}
+
+\end{document}

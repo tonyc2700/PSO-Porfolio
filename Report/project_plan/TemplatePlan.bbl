@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{wooldridge2002}
+Michael Wooldridge.
+\newblock {\em {An Introduction to Multiagent Systems}}.
+\newblock {John Wiley \& Sons}, {Chichester, UK}, February 2002.
+
+\bibitem{shoham95}
+Y.~Shoham and M.~Tennenholtz.
+\newblock {On Social Laws for Artificial Agent Societies: Off-line Design}.
+\newblock {\em Artificial Intelligence}, 73(1-2):231--252, 1995.
+
+\bibitem{garcia-camino2005}
+A.~Garcia-Camino, P.~Noriega, and J.~A. Rodriguez-Aguilar.
+\newblock {Implementing Norms in Electronic Institutions}.
+\newblock In {\em {4th Int'l Joint Conf on Autonomous Agents and Multiagent
+  Systems (AAMAS)}}, {Utrecht, The Netherlands}, July 2005. ACM Press.
+
+\end{thebibliography}

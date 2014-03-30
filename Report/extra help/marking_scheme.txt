@@ -1,0 +1,21 @@
+Marking Scheme
+
+Firstly, the work undertaken in your project must be substantial. That is, the amount of work should be compatible with the number of credits (and nominal effort hours) of the course. We encourage students to look at past reports to get a "feel" for the quality and amount of work involved in First Class projects (some past projects are available here).
+
+Additionally, following the BCS Accreditation Requirements (section 2.2.7) the project must provide evidence of your ability to apply practical and analytical skills. Some other project requirements of the BCS code of practice are:
+
+Investigation of the subject area
+Clearly defined research methods
+Specification of project aims and outcomes
+Development of a solution to a practical problem which involves the development of new software
+Follow a structured design process, involving s number of design stages
+Use of appropriate tools to support the development process
+Description of the verification and validation used
+Consider quality, reliability, maintainability, etc, as appropriate
+Consider the research and design methodologies, as well as the product or deliverable
+Include a critical appraisal of the project
+The markers' report form has been designed to assess the above criteria and to embody best practice for marking Honours projects in a similar manner to that of other Scottish universities (e.g. Edinburgh, St. Andrews, Glasgow and Heriot-Watt).
+
+What Markers Look For
+
+It is very important that you document carefully anything which you brought into the project "from outside." This includes any external sources of information, and also specifically includes any work that has been done on the project by yourself or others prior to the month in which it started. The need for this is obvious - all students must be judged on the work done over the same period of time. There is no problem with a project which builds on previous work, provided the extent of that work is set out in some detail in the report. In general, when marking a project, staff are asked to look for and consider the following aspects:

@@ -1,0 +1,38 @@
+\BOOKMARK [0][-]{chapter.1}{Chapter 1. Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{1. Motivation}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Chapter 2. Background}{}
+\BOOKMARK [1][-]{section.2.1}{1. Particle Swarm Optimisation}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{2. Portfolio Management}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{3. Multi-objective Optimisation}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Chapter 3. Related Work}{}
+\BOOKMARK [1][-]{section.3.1}{1. Portfolio in Excel}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{2. Something PSO}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{3. PSO applied}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Chapter 4. Problem Domain}{}
+\BOOKMARK [1][-]{section.4.1}{1. Approach}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Chapter 5. Requirements}{}
+\BOOKMARK [1][-]{section.5.1}{1. Functional}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{2. Non-functional}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Chapter 6. Methodology and Technologies}{}
+\BOOKMARK [1][-]{section.6.1}{1. Methodology}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{2. Technology}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Chapter 7. System Design and Architecture}{}
+\BOOKMARK [0][-]{chapter.8}{Chapter 8. Future Work}{}
+\BOOKMARK [1][-]{section.8.1}{1. PSO Parameters}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{2. Asset's Covariance}{chapter.8}
+\BOOKMARK [1][-]{section.8.3}{3. Market Relationships}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{Chapter 9. Experimentation and Testing}{}
+\BOOKMARK [0][-]{chapter.10}{Chapter 10. Financial Data}{}
+\BOOKMARK [1][-]{section.10.1}{1. Data Description}{chapter.10}
+\BOOKMARK [1][-]{section.10.2}{2. Problem Domain}{chapter.10}
+\BOOKMARK [1][-]{section.10.3}{3. Assets and their Weights}{chapter.10}
+\BOOKMARK [1][-]{section.10.4}{4. Analysis}{chapter.10}
+\BOOKMARK [1][-]{section.10.5}{5. PSO Parameters}{chapter.10}
+\BOOKMARK [1][-]{section.10.6}{6. Experimentation and Testing}{chapter.10}
+\BOOKMARK [1][-]{section.10.7}{7. Portfolio Constraints}{chapter.10}
+\BOOKMARK [1][-]{section.10.8}{8. Results}{chapter.10}
+\BOOKMARK [0][-]{chapter.11}{Chapter 11. Discussion and Conclusion}{}
+\BOOKMARK [1][-]{section.11.1}{1. Discussion}{chapter.11}
+\BOOKMARK [1][-]{section.11.2}{2. Future Work}{chapter.11}
+\BOOKMARK [1][-]{section.11.3}{3. Conclusion}{chapter.11}
+\BOOKMARK [0][-]{section.11.3}{Bibliography}{}

@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{pso3}
+M.~Clerc and J.~Kennedy.
+\newblock The particle swarm - explosion, stability, and convergence in a
+  multidimensional complex space.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, pages 58--73,
+  Feb 2002.
+
+\bibitem{pso}
+J.~Kennedy and R.~Eberhart.
+\newblock Particle swarm optimization.
+\newblock In {\em Neural Networks, 1995. Proceedings., IEEE International
+  Conference on}, volume~4, pages 1942--1948 vol.4, Nov 1995.
+
+\bibitem{pso4}
+K.E. Parsopoulos and M.N. Vrahatis.
+\newblock Recent approaches to global optimization problems through particle
+  swarm optimization.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, 1:235--306,
+  2002.
+
+\bibitem{haskellPSO}
+Pablo Rabanal, Ismael Rodíguez, and Fernando Rubio.
+\newblock
+  \url{http://antares.sip.ucm.es/prabanal/english/heuristics_library.html}.
+\newblock Accessed: February,2014.
+
+\bibitem{pso2}
+Yuhui Shi and R.~Eberhart.
+\newblock A modified particle swarm optimizer.
+\newblock In {\em Evolutionary Computation Proceedings, 1998. IEEE World
+  Congress on Computational Intelligence.}, pages 69--73, May 1998.
+
+\bibitem{sublime}
+Jon Skinner.
+\newblock \url{http://www.sublimetext.com}.
+\newblock Accessed: February,2014.
+
+\end{thebibliography}

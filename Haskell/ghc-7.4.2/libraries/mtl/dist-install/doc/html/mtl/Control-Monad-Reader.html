@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Control.Monad.Reader</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_Control-Monad-Reader.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption">mtl-1.1.1.1: Monad transformer library</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Portability</th><td>non-portable (multi-param classes, functional dependencies)</td></tr><tr><th>Stability</th><td>experimental</td></tr><tr><th>Maintainer</th><td>libraries@haskell.org</td></tr><tr><th>Safe Haskell</th><td>Safe</td></tr></table><p class="caption">Control.Monad.Reader</p></div><div id="table-of-contents"><p class="caption">Contents</p><ul><li><a href="#g:1">Example 1: Simple Reader Usage
+</a></li><li><a href="#g:2">Example 2: Modifying Reader Content With <code>local</code>
+</a></li><li><a href="#g:3">Example 3: <code>ReaderT</code> Monad Transformer
+</a></li></ul></div><div id="description"><p class="caption">Description</p><div class="doc"><dl><dt>Computation type:</dt><dd> Computations which read values from a shared environment.
+</dd><dt>Binding strategy:</dt><dd> Monad values are functions from the environment to a value.
+The bound function is applied to the bound value, and both have access
+to the shared environment.
+</dd><dt>Useful for:</dt><dd> Maintaining variable bindings, or other shared environment.
+</dd><dt>Zero and plus:</dt><dd> None.
+</dd><dt>Example type:</dt><dd> <code><code><a href="Control-Monad-Reader.html#t:Reader">Reader</a></code> [(String,Value)] a</code>
+</dd></dl><p>The <code><a href="Control-Monad-Reader.html#t:Reader">Reader</a></code> monad (also called the Environment monad).
+Represents a computation, which can read values from
+a shared environment, pass values from function to function,
+and execute sub-computations in a modified environment.
+Using <code><a href="Control-Monad-Reader.html#t:Reader">Reader</a></code> monad for such computations is often clearer and easier
+than using the <code><a href="Control-Monad-State.html#t:State">State</a></code> monad.
+</p><p>Inspired by the paper
+  /Functional Programming with Overloading and
+      Higher-Order Polymorphism/, 
+    Mark P Jones (<a href="http://web.cecs.pdx.edu/~mpj/">http://web.cecs.pdx.edu/~mpj/</a>)
+    Advanced School of Functional Programming, 1995.
+</p></div></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short">module <a href="Control-Monad-Reader-Class.html">Control.Monad.Reader.Class</a></li><li class="src short"><span class="keyword">newtype</span>  <a href="#t:Reader">Reader</a> r a = <a href="#v:Reader">Reader</a> {<ul class="subs"><li><a href="#v:runReader">runReader</a> :: r -&gt; a</li></ul>}</li><li class="src short"><a href="#v:mapReader">mapReader</a> ::  (a -&gt; b) -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r a -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r b</li><li class="src short"><a href="#v:withReader">withReader</a> ::  (r' -&gt; r) -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r a -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r' a</li><li class="src short"><span class="keyword">newtype</span>  <a href="#t:ReaderT">ReaderT</a> r m a = <a href="#v:ReaderT">ReaderT</a> {<ul class="subs"><li><a href="#v:runReaderT">runReaderT</a> :: r -&gt; m a</li></ul>}</li><li class="src short"><a href="#v:mapReaderT">mapReaderT</a> ::  (m a -&gt; n b) -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> w m a -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> w n b</li><li class="src short"><a href="#v:withReaderT">withReaderT</a> ::  (r' -&gt; r) -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m a -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r' m a</li><li class="src short">module <a href="../base-4.5.1.0/Control-Monad.html">Control.Monad</a></li><li class="src short">module <a href="../base-4.5.1.0/Control-Monad-Fix.html">Control.Monad.Fix</a></li><li class="src short">module <a href="Control-Monad-Trans.html">Control.Monad.Trans</a></li></ul></div><div id="interface"><h1>Documentation</h1><div class="top"><p class="src">module <a href="Control-Monad-Reader-Class.html">Control.Monad.Reader.Class</a></p></div><div class="top"><p class="src"><span class="keyword">newtype</span>  <a name="t:Reader" class="def">Reader</a> r a </p><div class="doc"><p>The parameterizable reader monad.
+</p><p>The <code>return</code> function creates a <code>Reader</code> that ignores the environment,
+and produces the given value.
+</p><p>The binding operator <code>&gt;&gt;=</code> produces a <code>Reader</code> that uses the environment
+to extract the value its left-hand side,
+and then applies the bound function to that value in the same environment.
+</p></div><div class="subs constructors"><p class="caption">Constructors</p><table><tr><td class="src"><a name="v:Reader" class="def">Reader</a></td><td class="doc empty">&nbsp;</td></tr><tr><td colspan="2"><div class="subs fields"><p class="caption">Fields</p><dl><dt class="src"><a name="v:runReader" class="def">runReader</a> :: r -&gt; a</dt><dd class="doc"><p>Runs <code>Reader</code> and extracts the final value from it.
+    To extract the value apply <code>(runReader reader)</code> to an environment value.  
+    Parameters:
+</p><ul><li> A <code>Reader</code> to run.
+</li><li> An initial environment.
+</li></ul></dd></dl><div class="clear"></div></div></td></tr></table></div><div class="subs instances"><p id="control.i:Reader" class="caption collapser" onclick="toggleSection('i:Reader')">Instances</p><div id="section.i:Reader" class="show"><table><tr><td class="src"><a href="Control-Monad-Reader-Class.html#t:MonadReader">MonadReader</a> r (<a href="Control-Monad-Reader.html#t:Reader">Reader</a> r)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:Monad">Monad</a> (<a href="Control-Monad-Reader.html#t:Reader">Reader</a> r)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:Functor">Functor</a> (<a href="Control-Monad-Reader.html#t:Reader">Reader</a> r)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad-Fix.html#t:MonadFix">MonadFix</a> (<a href="Control-Monad-Reader.html#t:Reader">Reader</a> r)</td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><a name="v:mapReader" class="def">mapReader</a> ::  (a -&gt; b) -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r a -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r b</p></div><div class="top"><p class="src"><a name="v:withReader" class="def">withReader</a> ::  (r' -&gt; r) -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r a -&gt; <a href="Control-Monad-Reader.html#t:Reader">Reader</a> r' a</p><div class="doc"><p>A more general version of <code><a href="Control-Monad-Reader-Class.html#v:local">local</a></code>.
+</p></div></div><div class="top"><p class="src"><span class="keyword">newtype</span>  <a name="t:ReaderT" class="def">ReaderT</a> r m a </p><div class="doc"><p>The reader monad transformer.
+Can be used to add environment reading functionality to other monads.
+</p></div><div class="subs constructors"><p class="caption">Constructors</p><table><tr><td class="src"><a name="v:ReaderT" class="def">ReaderT</a></td><td class="doc empty">&nbsp;</td></tr><tr><td colspan="2"><div class="subs fields"><p class="caption">Fields</p><dl><dt class="src"><a name="v:runReaderT" class="def">runReaderT</a> :: r -&gt; m a</dt><dd class="doc empty">&nbsp;</dd></dl><div class="clear"></div></div></td></tr></table></div><div class="subs instances"><p id="control.i:ReaderT" class="caption collapser" onclick="toggleSection('i:ReaderT')">Instances</p><div id="section.i:ReaderT" class="show"><table><tr><td class="src"><a href="Control-Monad-Writer-Class.html#t:MonadWriter">MonadWriter</a> w m =&gt; <a href="Control-Monad-Writer-Class.html#t:MonadWriter">MonadWriter</a> w (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Control-Monad-Error-Class.html#t:MonadError">MonadError</a> e m =&gt; <a href="Control-Monad-Error-Class.html#t:MonadError">MonadError</a> e (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Control-Monad-State-Class.html#t:MonadState">MonadState</a> s m =&gt; <a href="Control-Monad-State-Class.html#t:MonadState">MonadState</a> s (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:Monad">Monad</a> m =&gt; <a href="Control-Monad-Reader-Class.html#t:MonadReader">MonadReader</a> r (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Control-Monad-Trans.html#t:MonadTrans">MonadTrans</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:Monad">Monad</a> m =&gt; <a href="../base-4.5.1.0/Control-Monad.html#t:Monad">Monad</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:Monad">Monad</a> m =&gt; <a href="../base-4.5.1.0/Control-Monad.html#t:Functor">Functor</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad-Fix.html#t:MonadFix">MonadFix</a> m =&gt; <a href="../base-4.5.1.0/Control-Monad-Fix.html#t:MonadFix">MonadFix</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Control-Monad.html#t:MonadPlus">MonadPlus</a> m =&gt; <a href="../base-4.5.1.0/Control-Monad.html#t:MonadPlus">MonadPlus</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Control-Monad-Trans.html#t:MonadIO">MonadIO</a> m =&gt; <a href="Control-Monad-Trans.html#t:MonadIO">MonadIO</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Control-Monad-Cont-Class.html#t:MonadCont">MonadCont</a> m =&gt; <a href="Control-Monad-Cont-Class.html#t:MonadCont">MonadCont</a> (<a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m)</td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><a name="v:mapReaderT" class="def">mapReaderT</a> ::  (m a -&gt; n b) -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> w m a -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> w n b</p></div><div class="top"><p class="src"><a name="v:withReaderT" class="def">withReaderT</a> ::  (r' -&gt; r) -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r m a -&gt; <a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a> r' m a</p></div><div class="top"><p class="src">module <a href="../base-4.5.1.0/Control-Monad.html">Control.Monad</a></p></div><div class="top"><p class="src">module <a href="../base-4.5.1.0/Control-Monad-Fix.html">Control.Monad.Fix</a></p></div><div class="top"><p class="src">module <a href="Control-Monad-Trans.html">Control.Monad.Trans</a></p></div><h1 id="g:1">Example 1: Simple Reader Usage
+</h1><div class="doc"><p>In this example the <code>Reader</code> monad provides access to variable bindings.
+Bindings are a <code>Map</code> of integer variables.
+The variable <code>count</code> contains number of variables in the bindings.
+You can see how to run a Reader monad and retrieve data from it
+with <code><a href="Control-Monad-Reader.html#v:runReader">runReader</a></code>, how to access the Reader data with <code><a href="Control-Monad-Reader-Class.html#v:ask">ask</a></code> and <code><a href="Control-Monad-Reader-Class.html#v:asks">asks</a></code>.
+</p><pre> type Bindings = Map String Int;
+
+-- Returns True if the &quot;count&quot; variable contains correct bindings size.
+isCountCorrect :: Bindings -&gt; Bool
+isCountCorrect bindings = runReader calc_isCountCorrect bindings
+
+-- The Reader monad, which implements this complicated check.
+calc_isCountCorrect :: Reader Bindings Bool
+calc_isCountCorrect = do
+    count &lt;- asks (lookupVar &quot;count&quot;)
+    bindings &lt;- ask
+    return (count == (Map.size bindings))
+
+-- The selector function to  use with 'asks'.
+-- Returns value of the variable with specified name.
+lookupVar :: String -&gt; Bindings -&gt; Int
+lookupVar name bindings = fromJust (Map.lookup name bindings)
+
+sampleBindings = Map.fromList [(&quot;count&quot;,3), (&quot;1&quot;,1), (&quot;b&quot;,2)]
+
+main = do
+    putStr $ &quot;Count is correct for bindings &quot; ++ (show sampleBindings) ++ &quot;: &quot;;
+    putStrLn $ show (isCountCorrect sampleBindings);
+</pre></div><h1 id="g:2">Example 2: Modifying Reader Content With <code>local</code>
+</h1><div class="doc"><p>Shows how to modify Reader content with <code><a href="Control-Monad-Reader-Class.html#v:local">local</a></code>.
+</p><pre>calculateContentLen :: Reader String Int
+calculateContentLen = do
+    content &lt;- ask
+    return (length content);
+
+-- Calls calculateContentLen after adding a prefix to the Reader content.
+calculateModifiedContentLen :: Reader String Int
+calculateModifiedContentLen = local (&quot;Prefix &quot; ++) calculateContentLen
+
+main = do
+    let s = &quot;12345&quot;;
+    let modifiedLen = runReader calculateModifiedContentLen s
+    let len = runReader calculateContentLen s
+    putStrLn $ &quot;Modified 's' length: &quot; ++ (show modifiedLen)
+    putStrLn $ &quot;Original 's' length: &quot; ++ (show len)
+</pre></div><h1 id="g:3">Example 3: <code>ReaderT</code> Monad Transformer
+</h1><div class="doc"><p>Now you are thinking: 'Wow, what a great monad! I wish I could use
+Reader functionality in MyFavoriteComplexMonad!'. Don't worry.
+This can be easy done with the <code><a href="Control-Monad-Reader.html#t:ReaderT">ReaderT</a></code> monad transformer.
+This example shows how to combine <code>ReaderT</code> with the IO monad.
+</p><pre>-- The Reader/IO combined monad, where Reader stores a string.
+printReaderContent :: ReaderT String IO ()
+printReaderContent = do
+    content &lt;- ask
+    liftIO $ putStrLn (&quot;The Reader Content: &quot; ++ content)
+
+main = do
+    runReaderT printReaderContent &quot;Some Content&quot;
+</pre></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.11.0</p></div></body></html>

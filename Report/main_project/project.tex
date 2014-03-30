@@ -1,0 +1,289 @@
+\documentclass{pdfmx4020}
+%\documentclass{mx4020}
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm}
+% Erin's additions
+\usepackage{color} 
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{array}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.fractals}
+
+\newtheorem*{defn}{Definition}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{exa}{Example}
+\newtheorem*{no}{Note}
+
+\Title{Title...}
+\Author{Anthony S. Chapman}
+\Year{2013--2014}
+\Supervisor{Dr. Wei Pang}
+
+\graphicspath{ {./Figures/} }
+
+\begin{document}
+
+% \mxfrontpage
+\newfrontpage
+
+% \begin{Summary}
+% Summary....
+% \end{Summary}
+
+\begin{Abstract}
+Abstract....
+\end{Abstract}
+
+\begin{Acknowledgments}
+Acknowledgments....
+\end{Acknowledgments}
+
+\StartThesis
+
+\chapter{Introduction}
+  
+  \section{Motivation} % (fold)
+  \label{sec:motivation}
+  % section motivation (end)
+
+\chapter{Background}
+  \section{Particle Swarm Optimisation} % (fold)
+  \label{sec:particle_swarm_optimisation}
+    Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behavior of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
+
+    Assuming worker bees are searching for a patch of flowers with the most pollen, also assume that the bees
+  % section particle_swarm_optimisation (end)
+
+  \section{Portfolio Management} % (fold)
+  \label{sec:portfolio_management}
+  
+  % section portfolio_management (end)
+
+  \section{Multi-objective Optimisation} % (fold)
+  \label{sec:multi_objective_optimisation}
+  
+  % section multi_objective_optimisation (end)
+
+
+\chapter{Related Work}
+  \section{Portfolio in Excel} % (fold)
+  \label{sec:portfolio_in_excel}
+    
+  % section portfolio_in_excel (end)
+
+  \section{Something PSO} % (fold)
+  \label{sec:something_pso}
+  
+  % section something_pso (end)
+
+  \section{PSO applied} % (fold)
+  \label{sec:pso_applied}
+  
+  % section pso_applied (end)
+
+\chapter{Problem Domain}
+  \section{Approach} % (fold)
+  \label{sec:approach}
+  
+  % section approach (end)
+
+\chapter{Requirements}
+This section describes the requirements for this project. Table \ref{table:functionalRequirements} refers to the functional requirements from technical point of view. Section \ref{sec:non_functional} focuses on the non-functional requirements of the system. 
+  \section{Functional} % (fold)
+  \label{sec:functional}
+  \begin{table}[ht]
+    \setlength{\extrarowheight}{2.0pt}
+    \begin{tabular}{|l|l|l|}
+      \hline
+      No. & Description & Priority \\
+      \hline
+      \textbf{1} & \textbf{Optimisation of Portfolio} & \\
+      \hline 
+      \textbf{1.1} & \textbf{PSO} & \\
+      \hline 
+      1.1.1 & Initialisation of particle population & High \\
+      \hline 
+      1.1.2 & Processing swarm optimisation & High \\
+      \hline 
+      1.1.3 & Updating the local and global (at each step) particle values& \\
+      \hline 
+      1.1.4 & Calculating an optimal solution & High \\
+      \hline 
+      1.1.5 & Presenting the results & High \\
+      \hline 
+      \textbf{1.2} & \textbf{PSO for portfolio problem } & \\
+      \hline 
+      1.2.1 & Minimise portfolio variance & High \\
+      \hline 
+      1.2.2 & Maximise portfolio expected return & Low \\
+      \hline 
+      1.2.3 & Use multi-objective for optimum solution & Low \\
+      \hline 
+      1.2.4 & Refining results output & High \\
+      \hline 
+      1.2.5 & Make results for readable for user & High \\
+      \hline 
+      \textbf{2} & \textbf{User Input} & \\
+      \hline
+      2.1 & Allow the user to enter the name of the data file & High \\
+      \hline
+      2.2 & Allow the user to change the expected portfolio return & High \\
+      \hline 
+      2.3 & Allow the user to select the name for the output file & Low \\
+      \hline 
+      2.4 & Allow the user to change the PSO particle size & Low \\
+      \hline 
+      2.5 & Allow the user to change the PSO iteration number & Low \\
+      \hline
+      \textbf{3} &\textbf{Output format} & \\
+      \hline 
+      3.1 & Display the results during run-time & High \\
+      \hline 
+      3.2 & Make results more readable for output file & High \\
+      \hline
+      3.3 & Store results into a separate file & High \\
+      \hline
+    \end{tabular}
+    \caption{Functional requirements for system.}
+    \label{table:functionalRequirements}
+  \end{table}
+  
+  % section functional (end)
+
+  \section{Non-functional} % (fold)
+  \label{sec:non_functional}
+  As this system is an extension on a PSO module by Fernando Rubio et. all \cite{haskellPSO}, it is crucially important to devote a considerable amount of time to testing. This is to ensure that the alterations do not affect the performance of the overall efficiency of the algorithm and quality of the optimisation.  
+
+  The system's scalability is something not to be overlooked. As each asset in a portfolio represents one dimension in the fitness function (not to be confused with just another linear factor of the same coefficient in a function), optimising a function in, for example, 100 dimensions (100 assets) might be to much for the system to cope with. 
+
+  Running the PSO requires setting up various parameters and thresholds for optimisation (size of the particle population, number of iterations, inertia weights and convergence coefficients). These parameters need to be optimised for the algorithm to be computationally effective and produce accurate results. 
+
+  % section non_functional (end)
+
+\chapter{Methodology and Technologies}
+  This chapter describes the methodology used in the project for the research, design, implementation and testing. It also mentions the technologies used to achieve the goals. 
+  \section{Methodology} % (fold)
+  \label{sec:methodology}
+  This sections is basically an extension to the project plan which had to be made during the first week of the project. An approximate guideline to follow the project was set focusing on the project deadlines. I left a few weeks for margin for error in case something takes slightly longer than planned for whatever reason. 
+
+   -----Project timeline-----
+
+  For this project to be successful I am planning on spending the initial weeks researching relevant literature and becoming familiar with the concepts of Particle Swarm Optimisation. This is a completely new field to me and understanding the key ideas and models will be critically important. Not only will I need to understand PSO's background I will also need to study previous implementations and applications in order to become absolutely comfortable with it. Finally, as I am planning on improving an existing algorithm, I will have to spend some time becoming familiar enough with the code so that I will be able to modify it with ease.
+
+  The implementation stage will consist of designing the future system and the realisation of the plans. Key design decisions will have to be made during this stage and the solutions might be obtained from the analysis of previous work. 
+
+  To complete this project test driven development will be carried out. I plan to test after every implementation or modification. This will be done to ensure that changes won't affect any previous functionality. The tests will evaluate the efficiency as well as the accuracy of my system. Given the nature of PSO's `random' initialisation,  I want to make sure that the results are consistent. 
+
+  The writing of this result will be flexible, the sections will be written as needed or when the section arises naturally throught the project. 
+
+  % section methodology (end)
+
+  \section{Technology} % (fold)
+  \label{sec:technology}
+
+    \subsection{Haskell} % (fold)
+    \label{sub:haskell}
+      Coming from a strong mathematical background I find functional languages easier to understand. Also one huge advantage of pure functional languages is that the absence of side-effects allow them to offer a clear semantic framework to analyse the correctness of programs. 
+
+      As Haskell is the functional language I am more familiar with, I didn't see the point in learning a new language as it would only restrict my project process, so Haskell was a clear winner. 
+
+      There are other PSO implementations in other languages such as C and Ruby but as already mentioned, Haskell is my preferred language. 
+
+    % subsection haskell (end)
+    \subsection{Operating System} % (fold)
+    \label{sub:operating_system}
+      As Haskell is platform independent (in the sense that it can be compiled in Windows, Linux or Mac) I have chosen to use Ubuntu 12.04 as it is my preferred OS and I feel the most comfortable with it. In addition, I wouldn't be affected in the about of software needed for the project as it is provided for all three OSs already mentioned. 
+
+      The work was carried out on my personal laptop (Intel CORE$^{TM}$ i3 @ 2.6GHZ,4Gb RAM). If required due to any reasons, the university provide classroom PCs (Intel CORE$^{TM}$ i3-2100 CPU @3.10 GHz, 3 Gb RAM) although I have faith that my own machine will be reliable enough for me not to have to change machines. 
+      Sublime Text 2 was chosen as the IDE for the project. It has many useful functions \cite{sublime} and similarly for the choice of OS, I am happy with this editor.
+    % subsection operating_system (end)
+  
+  % section technology (end)
+
+\chapter{System Design and Architecture}
+
+\chapter{Future Work}
+  \section{PSO Parameters} % (fold)
+  \label{sec:parameters}
+  
+  % section parameters (end)
+
+  \section{Asset's Covariance} % (fold)
+  \label{sec:covariance}
+  
+  % section covariance (end)
+
+  \section{Market Relationships} % (fold)
+  \label{sec:market_relationships}
+  
+  % section market_relationships (end)
+
+\chapter{Experimentation and Testing}
+
+\chapter{Financial Data}
+  \section{Data Description} % (fold)
+  \label{sec:data_description}
+  
+  % section data_description (end)
+
+  \section{Problem Domain} % (fold)
+  \label{sec:problem_domain}
+  
+  % section problem_domain (end)
+
+  \section{Assets and their Weights} % (fold)
+  \label{sec:assets_and_their_weights}
+  
+  % section assets_and_their_weights (end)
+
+  \section{Analysis} % (fold)
+  \label{sec:analysis}
+  
+  % section analysis (end)
+
+  \section{PSO Parameters} % (fold)
+  \label{sec:pso_parameters}
+  
+  % section pso_parameters (end)
+
+  \section{Experimentation and Testing} % (fold)
+  \label{sec:experimentation_and_testing}
+  
+  % section experimentation_and_testing (end)
+
+  \section{Portfolio Constraints} % (fold)
+  \label{sec:portfolio_constraints}
+  
+  % section portfolio_constraints (end)
+
+  \section{Results} % (fold)
+  \label{sec:results}
+  
+  % section results (end)
+
+
+\chapter{Discussion and Conclusion}
+
+  \section{Discussion} % (fold)
+  \label{sec:discussion}
+  
+  % section discussion (end)
+
+  \section{Future Work} % (fold)
+  \label{sec:future_work}
+  
+  % section future_work (end)
+
+  \section{Conclusion} % (fold)
+  \label{sec:conclusion}
+  
+  % section conclusion (end)
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{myref}
+
+\end{document}

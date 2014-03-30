@@ -1,0 +1,33 @@
+Project stuff
+
+Parallel programming
+Profile management system
+Bench mark / previous question about management systems
+Can we implement PSO to solve risk / profit matrices?
+Cloud computing for HASKELL?
+Integer programming
+
+2. PSO and ruby code: 
+     http://www.cleveralgorithms.com/nature-inspired/swarm/pso.html  
+
+3. A paper (You could just read the background of the problem): 
+     http://link.springer.com/article/10.1007%2Fs10287-009-0113-8
+
+4. Portfolio management on Wikipedia:
+     http://en.wikipedia.org/wiki/Portfolio_optimization
+
+5. Mixed Integer Programming could be used to solve portfolio management. 
+     You could check online by yourself.
+
+
+
+Useful shit:
+computational robust risk measures
+integer programming for asset trading
+
+
+PSO vs Simplex
+"address problems"
+bench mark problems for integer programming and PSO
+Test pso vs simples with 10 variables , 20 then 100 
+PSO for constrained satisfaction problems

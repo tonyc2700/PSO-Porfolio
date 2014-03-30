@@ -1,0 +1,186 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.o libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.p_o : libraries/xhtml/Text/XHtml/BlockTable.hs
+libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.o libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_o : libraries/xhtml/Text/XHtml/Internals.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.o : libraries/base/dist-install/build/Data/Monoid.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_o : libraries/base/dist-install/build/Data/Monoid.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_o : libraries/base/dist-install/build/Data/Monoid.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.o : libraries/base/dist-install/build/Data/Char.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_o : libraries/base/dist-install/build/Data/Char.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_o : libraries/base/dist-install/build/Data/Char.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.o libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.p_o : libraries/xhtml/Text/XHtml/Transitional/Elements.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.o libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.p_o : libraries/xhtml/Text/XHtml/Transitional/Attributes.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.o libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.p_o : libraries/xhtml/Text/XHtml/Frameset/Attributes.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.o libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_o : libraries/xhtml/Text/XHtml/Strict/Attributes.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.o libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.p_o : libraries/xhtml/Text/XHtml/Frameset/Elements.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.o libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_o : libraries/xhtml/Text/XHtml/Strict/Elements.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.o libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_o : libraries/xhtml/Text/XHtml/Extras.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/xhtml/Text/XHtml/Strict.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Strict.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/Text/XHtml/Frameset.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Frameset.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/xhtml/Text/XHtml/Table.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o : libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/xhtml/dist-install/build/Text/XHtml/BlockTable.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Table.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/Text/XHtml/Debug.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/xhtml/dist-install/build/Text/XHtml/Table.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Table.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/Text/XHtml/Transitional.hs
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Extras.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Attributes.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Frameset/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Strict/Elements.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Internals.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml.o libraries/xhtml/dist-install/build/Text/XHtml.dyn_o libraries/xhtml/dist-install/build/Text/XHtml.p_o : libraries/xhtml/Text/XHtml.hs
+libraries/xhtml/dist-install/build/Text/XHtml.o : libraries/base/dist-install/build/Prelude.hi
+libraries/xhtml/dist-install/build/Text/XHtml.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml.o : libraries/xhtml/dist-install/build/Text/XHtml/Debug.hi
+libraries/xhtml/dist-install/build/Text/XHtml.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Debug.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Debug.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml.o : libraries/xhtml/dist-install/build/Text/XHtml/Table.hi
+libraries/xhtml/dist-install/build/Text/XHtml.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Table.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Table.p_hi
+libraries/xhtml/dist-install/build/Text/XHtml.o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional.hi
+libraries/xhtml/dist-install/build/Text/XHtml.dyn_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional.dyn_hi
+libraries/xhtml/dist-install/build/Text/XHtml.p_o : libraries/xhtml/dist-install/build/Text/XHtml/Transitional.p_hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/xhtml_dist-install_depfile_haskell_EXISTS = YES

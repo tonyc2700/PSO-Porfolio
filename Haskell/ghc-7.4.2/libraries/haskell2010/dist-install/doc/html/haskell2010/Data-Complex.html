@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Data.Complex</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_Data-Complex.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption">haskell2010-1.1.0.1: Compatibility with Haskell 2010</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Safe Haskell</th><td>Safe</td></tr></table><p class="caption">Data.Complex</p></div><div id="table-of-contents"><p class="caption">Contents</p><ul><li><a href="#g:1">Rectangular form
+</a></li><li><a href="#g:2">Polar form
+</a></li><li><a href="#g:3">Conjugate
+</a></li><li><a href="#g:4">Specification
+</a></li></ul></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short"><span class="keyword">data</span>  <a href="#t:Complex">Complex</a> a = !a <a href="#v::-43-">:+</a> !a</li><li class="src short"><a href="#v:realPart">realPart</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a</li><li class="src short"><a href="#v:imagPart">imagPart</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a</li><li class="src short"><a href="#v:mkPolar">mkPolar</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; a -&gt; a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a</li><li class="src short"><a href="#v:cis">cis</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a</li><li class="src short"><a href="#v:polar">polar</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; (a, a)</li><li class="src short"><a href="#v:magnitude">magnitude</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a</li><li class="src short"><a href="#v:phase">phase</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a</li><li class="src short"><a href="#v:conjugate">conjugate</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a</li></ul></div><div id="interface"><h1 id="g:1">Rectangular form
+</h1><div class="top"><p class="src"><span class="keyword">data</span>  <a name="t:Complex" class="def">Complex</a> a <a href="../base-4.5.1.0/src/Data-Complex.html#Complex" class="link">Source</a></p><div class="doc"><p>Complex numbers are an algebraic type.
+</p><p>For a complex number <code>z</code>, <code><code><a href="Prelude.html#v:abs">abs</a></code> z</code> is a number with the magnitude of <code>z</code>,
+ but oriented in the positive real direction, whereas <code><code><a href="Prelude.html#v:signum">signum</a></code> z</code>
+ has the phase of <code>z</code>, but unit magnitude.
+</p></div><div class="subs constructors"><p class="caption">Constructors</p><table><tr><td class="src">!a <a name="v::-43-" class="def">:+</a> !a</td><td class="doc"><p>forms a complex number from its real and imaginary
+ rectangular components.
+</p></td></tr></table></div><div class="subs instances"><p id="control.i:Complex" class="caption collapser" onclick="toggleSection('i:Complex')">Instances</p><div id="section.i:Complex" class="show"><table><tr><td class="src"><a href="../base-4.5.1.0/Data-Typeable-Internal.html#t:Typeable1">Typeable1</a> <a href="Data-Complex.html#t:Complex">Complex</a></td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:Eq">Eq</a> a =&gt; <a href="Prelude.html#t:Eq">Eq</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Prelude.html#t:Floating">Floating</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Prelude.html#t:Fractional">Fractional</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="../base-4.5.1.0/Data-Data.html#t:Data">Data</a> a =&gt; <a href="../base-4.5.1.0/Data-Data.html#t:Data">Data</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Prelude.html#t:Num">Num</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:Read">Read</a> a =&gt; <a href="Prelude.html#t:Read">Read</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr><tr><td class="src"><a href="Prelude.html#t:Show">Show</a> a =&gt; <a href="Prelude.html#t:Show">Show</a> (<a href="Data-Complex.html#t:Complex">Complex</a> a)</td><td class="doc empty">&nbsp;</td></tr></table></div></div></div><div class="top"><p class="src"><a name="v:realPart" class="def">realPart</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a<a href="../base-4.5.1.0/src/Data-Complex.html#realPart" class="link">Source</a></p><div class="doc"><p>Extracts the real part of a complex number.
+</p></div></div><div class="top"><p class="src"><a name="v:imagPart" class="def">imagPart</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a<a href="../base-4.5.1.0/src/Data-Complex.html#imagPart" class="link">Source</a></p><div class="doc"><p>Extracts the imaginary part of a complex number.
+</p></div></div><h1 id="g:2">Polar form
+</h1><div class="top"><p class="src"><a name="v:mkPolar" class="def">mkPolar</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; a -&gt; a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a<a href="../base-4.5.1.0/src/Data-Complex.html#mkPolar" class="link">Source</a></p><div class="doc"><p>Form a complex number from polar components of magnitude and phase.
+</p></div></div><div class="top"><p class="src"><a name="v:cis" class="def">cis</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a<a href="../base-4.5.1.0/src/Data-Complex.html#cis" class="link">Source</a></p><div class="doc"><p><code><code><a href="Data-Complex.html#v:cis">cis</a></code> t</code> is a complex value with magnitude <code>1</code>
+ and phase <code>t</code> (modulo <code>2*<code><a href="Prelude.html#v:pi">pi</a></code></code>).
+</p></div></div><div class="top"><p class="src"><a name="v:polar" class="def">polar</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; (a, a)<a href="../base-4.5.1.0/src/Data-Complex.html#polar" class="link">Source</a></p><div class="doc"><p>The function <code><a href="Data-Complex.html#v:polar">polar</a></code> takes a complex number and
+ returns a (magnitude, phase) pair in canonical form:
+ the magnitude is nonnegative, and the phase in the range <code>(-<code><a href="Prelude.html#v:pi">pi</a></code>, <code><a href="Prelude.html#v:pi">pi</a></code>]</code>;
+ if the magnitude is zero, then so is the phase.
+</p></div></div><div class="top"><p class="src"><a name="v:magnitude" class="def">magnitude</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a<a href="../base-4.5.1.0/src/Data-Complex.html#magnitude" class="link">Source</a></p><div class="doc"><p>The nonnegative magnitude of a complex number.
+</p></div></div><div class="top"><p class="src"><a name="v:phase" class="def">phase</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; a<a href="../base-4.5.1.0/src/Data-Complex.html#phase" class="link">Source</a></p><div class="doc"><p>The phase of a complex number, in the range <code>(-<code><a href="Prelude.html#v:pi">pi</a></code>, <code><a href="Prelude.html#v:pi">pi</a></code>]</code>.
+ If the magnitude is zero, then so is the phase.
+</p></div></div><h1 id="g:3">Conjugate
+</h1><div class="top"><p class="src"><a name="v:conjugate" class="def">conjugate</a> :: <a href="Prelude.html#t:RealFloat">RealFloat</a> a =&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a -&gt; <a href="Data-Complex.html#t:Complex">Complex</a> a<a href="../base-4.5.1.0/src/Data-Complex.html#conjugate" class="link">Source</a></p><div class="doc"><p>The conjugate of a complex number.
+</p></div></div><h1 id="g:4">Specification
+</h1><div class="doc"><pre> module Data.Complex(Complex((:+)), realPart, imagPart, conjugate, mkPolar,
+                     cis, polar, magnitude, phase)  where
+ 
+ infix  6  :+
+ 
+ data  (RealFloat a)     =&gt; Complex a = !a :+ !a  deriving (Eq,Read,Show)
+ 
+ 
+ realPart, imagPart :: (RealFloat a) =&gt; Complex a -&gt; a
+ realPart (x:+y)        =  x
+ imagPart (x:+y)        =  y
+ 
+ conjugate      :: (RealFloat a) =&gt; Complex a -&gt; Complex a
+ conjugate (x:+y) =  x :+ (-y)
+ 
+ mkPolar                :: (RealFloat a) =&gt; a -&gt; a -&gt; Complex a
+ mkPolar r theta        =  r * cos theta :+ r * sin theta
+ 
+ cis            :: (RealFloat a) =&gt; a -&gt; Complex a
+ cis theta      =  cos theta :+ sin theta
+ 
+ polar          :: (RealFloat a) =&gt; Complex a -&gt; (a,a)
+ polar z                =  (magnitude z, phase z)
+ 
+ magnitude :: (RealFloat a) =&gt; Complex a -&gt; a
+ magnitude (x:+y) =  scaleFloat k
+                    (sqrt ((scaleFloat mk x)^2 + (scaleFloat mk y)^2))
+                   where k  = max (exponent x) (exponent y)
+                         mk = - k
+ 
+ phase :: (RealFloat a) =&gt; Complex a -&gt; a
+ phase (0 :+ 0) = 0
+ phase (x :+ y) = atan2 y x
+ 
+ 
+ instance  (RealFloat a) =&gt; Num (Complex a)  where
+     (x:+y) + (x':+y') =  (x+x') :+ (y+y')
+     (x:+y) - (x':+y') =  (x-x') :+ (y-y')
+     (x:+y) * (x':+y') =  (x*x'-y*y') :+ (x*y'+y*x')
+     negate (x:+y)     =  negate x :+ negate y
+     abs z             =  magnitude z :+ 0
+     signum 0          =  0
+     signum z@(x:+y)   =  x/r :+ y/r  where r = magnitude z
+     fromInteger n     =  fromInteger n :+ 0
+ 
+ instance  (RealFloat a) =&gt; Fractional (Complex a)  where
+     (x:+y) / (x':+y') =  (x*x''+y*y'') / d :+ (y*x''-x*y'') / d
+                          where x'' = scaleFloat k x'
+                                y'' = scaleFloat k y'
+                                k   = - max (exponent x') (exponent y')
+                                d   = x'*x'' + y'*y''
+
+     fromRational a    =  fromRational a :+ 0
+ 
+ instance  (RealFloat a) =&gt; Floating (Complex a)       where
+     pi             =  pi :+ 0
+     exp (x:+y)     =  expx * cos y :+ expx * sin y
+                       where expx = exp x
+     log z          =  log (magnitude z) :+ phase z
+ 
+     sqrt 0         =  0
+     sqrt z@(x:+y)  =  u :+ (if y &lt; 0 then -v else v)
+                       where (u,v) = if x &lt; 0 then (v',u') else (u',v')
+                             v'    = abs y / (u'*2)
+                             u'    = sqrt ((magnitude z + abs x) / 2)
+ 
+     sin (x:+y)     =  sin x * cosh y :+ cos x * sinh y
+     cos (x:+y)     =  cos x * cosh y :+ (- sin x * sinh y)
+     tan (x:+y)     =  (sinx*coshy:+cosx*sinhy)/(cosx*coshy:+(-sinx*sinhy))
+                       where sinx  = sin x
+                             cosx  = cos x
+                             sinhy = sinh y
+                             coshy = cosh y
+ 
+     sinh (x:+y)    =  cos y * sinh x :+ sin  y * cosh x
+     cosh (x:+y)    =  cos y * cosh x :+ sin y * sinh x
+     tanh (x:+y)    =  (cosy*sinhx:+siny*coshx)/(cosy*coshx:+siny*sinhx)
+                       where siny  = sin y
+                             cosy  = cos y
+                             sinhx = sinh x
+                             coshx = cosh x
+ 
+     asin z@(x:+y)  =  y':+(-x')
+                       where  (x':+y') = log (((-y):+x) + sqrt (1 - z*z))
+     acos z@(x:+y)  =  y'':+(-x'')
+                       where (x'':+y'') = log (z + ((-y'):+x'))
+                             (x':+y')   = sqrt (1 - z*z)
+     atan z@(x:+y)  =  y':+(-x')
+                       where (x':+y') = log (((1-y):+x) / sqrt (1+z*z))
+ 
+     asinh z        =  log (z + sqrt (1+z*z))
+     acosh z        =  log (z + (z+1) * sqrt ((z-1)/(z+1)))
+     atanh z        =  log ((1+z) / sqrt (1-z*z))
+ 
+</pre></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.11.0</p></div></body></html>

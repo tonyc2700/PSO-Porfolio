@@ -42,12 +42,28 @@ Acknowledgments....
 \StartThesis
 
 \chapter{Introduction}
+  \section{Overview} % (fold)
+  \label{sec:overview}
   
+  % section overview (end)
+
   \section{Motivation} % (fold)
   \label{sec:motivation}
   % section motivation (end)
 
+  \section{Primary Goals} % (fold)
+  \label{sec:primary_goals}
+  
+  % section primary_goals (end)
+
+  \section{Secondary Goals} % (fold)
+  \label{sec:secondary_goals}
+  
+  % section secondary_goals (end)
+
 \chapter{Background}
+  In order to expand and adapt existing Particles Swarm Optimisation methods an initial background research has to be done to fully understand the concepts involved. Similarly to fully 
+
   \section{Particle Swarm Optimisation} % (fold)
   \label{sec:particle_swarm_optimisation}
     Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behavior of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
@@ -67,6 +83,32 @@ Acknowledgments....
 
 
 \chapter{Related Work}
+  \section{Markowitz Model} % (fold)
+  \label{sec:markowitz_model}
+    One of the first contributions to the portfolio problem was made by Markowitz \cite{marko1} which was later described in more detail in his book \cite{marko2}. Markowitz introduced the mean-variance model which considers the variance of the portfolio as the measure of the investor's risk under a set of assumptions. According to Markowitz, the portfolio selection problem can be expressed as an objective function subject to linear constraints. 
+
+    Following Markowitz, the investment horizon includes a single period whereas the investment strategy is to select an optimal portfolio at the beginning of the period which will be held unchanged until the date of termination. The joint distribution of one-period security returns is assumed to be a multivariate normal distribution, which in turn follows that the distribution of the portfolio return is also normal. 
+
+    Let $S = (S_1,S_2,S_3, \dots , S_N)$ be the set of $N$ assets where each asset $S_i$ has a rate of return represented by a variable $R_i$ with a expected return $r_i$ and each pair of assets $(S_i,S_j)$ has a covariance $\sigma_{ij}$ . The variance-covariance matrix $\sigma_{n\times n}$ contains all the covariance values, furthermore, it is a symmetric matrix and every diagonal element $\sigma_{ii}$ represents the variance of asset $S_i$. Let $\pi$ be a positive value which represents the investor's required expected return. Generally the values $r_i$ $\sigma_{ij}$ are estimated from past data and are fixed during the period of investment. 
+
+    According to Markowitz, a portfolio is a real valued vector $X = (x_1,x_2,x_3, \dots ,x_i)$ where each variable $x_i$ represents the percentage invested in a corresponding asset $S_i$. The value $\sum\limits_{i=1}^N \sum\limits_{j=1}^N x_i x_j \sigma_{ij}$ is the variance of the portfolio and it is the measure of risk associated with the portfolio. From this, we may obtain a constrained portfolio optimisation problem: 
+    \begin{equation}
+      \begin{split}
+        Minimise \\
+        \sum\limits_{i=1}^N \sum\limits_{j=1}^N x_i x_j \sigma_{ij} \\
+        Constraints:\\
+        \sum\limits_{i=1}^N x_i r_i = \pi \\
+        \sum\limits_{i=1}^N x_i = 1 \\
+        x_i \geq 1, i \in \{1,2,\dots,N\}
+      \end{split}
+    \end{equation}
+
+    Here, the objective function minimises the total variance (risk) associated with a portfolio whilst the constraints ensure that the portfolio meets the expected required return of $\pi$ and the proportions of all the assets sum to 1. The non-negative constraint means that no short-selling is allowed. 
+
+    This framework presumes that the investor uses a quadratic utility function or that asset returns follow a multivariate normal distribution. This implies that the rate of return of a portfolio of assets can be completely explained by the expected return or variance of assets. The efficient-frontier is the set of assets which provide minimum risk for a specified level of return. Solving the Markowitz portfolio optimisation problems for different specified expected portfolio returns will give us a set which represents the efficient-frontier, it is a smooth semi-increasing curve which represents the best possible trade-off between risk and expected return, also called the set of Pareto-optimal portfolios. 
+
+  % section markowitz_model (end)
+  
   \section{Portfolio in Excel} % (fold)
   \label{sec:portfolio_in_excel}
     
@@ -175,7 +217,7 @@ This section describes the requirements for this project. Table \ref{table:funct
 
   To complete this project test driven development will be carried out. I plan to test after every implementation or modification. This will be done to ensure that changes won't affect any previous functionality. The tests will evaluate the efficiency as well as the accuracy of my system. Given the nature of PSO's `random' initialisation,  I want to make sure that the results are consistent. 
 
-  The writing of this result will be flexible, the sections will be written as needed or when the section arises naturally throught the project. 
+  The writing of this result will be flexible, the sections will be written as needed or when the section arises naturally throughout the project. 
 
   % section methodology (end)
 
@@ -202,22 +244,6 @@ This section describes the requirements for this project. Table \ref{table:funct
   % section technology (end)
 
 \chapter{System Design and Architecture}
-
-\chapter{Future Work}
-  \section{PSO Parameters} % (fold)
-  \label{sec:parameters}
-  
-  % section parameters (end)
-
-  \section{Asset's Covariance} % (fold)
-  \label{sec:covariance}
-  
-  % section covariance (end)
-
-  \section{Market Relationships} % (fold)
-  \label{sec:market_relationships}
-  
-  % section market_relationships (end)
 
 \chapter{Experimentation and Testing}
 
@@ -261,6 +287,22 @@ This section describes the requirements for this project. Table \ref{table:funct
   \label{sec:results}
   
   % section results (end)
+
+\chapter{Future Work}
+  \section{PSO Parameters} % (fold)
+  \label{sec:parameters}
+  
+  % section parameters (end)
+
+  \section{Asset's Covariance} % (fold)
+  \label{sec:covariance}
+  
+  % section covariance (end)
+
+  \section{Market Relationships} % (fold)
+  \label{sec:market_relationships}
+  
+  % section market_relationships (end)
 
 
 \chapter{Discussion and Conclusion}

@@ -1,5 +1,8 @@
 \begin{thebibliography}{1}
 
+\bibitem{marko2}
+
+
 \bibitem{pso3}
 M.~Clerc and J.~Kennedy.
 \newblock The particle swarm - explosion, stability, and convergence in a
@@ -12,6 +15,11 @@ J.~Kennedy and R.~Eberhart.
 \newblock Particle swarm optimization.
 \newblock In {\em Neural Networks, 1995. Proceedings., IEEE International
   Conference on}, volume~4, pages 1942--1948 vol.4, Nov 1995.
+
+\bibitem{marko1}
+H.~Markowitz.
+\newblock Portfolio selection.
+\newblock In {\em Journal of Finance}, volume~1, pages 77--91, March 1952.
 
 \bibitem{pso4}
 K.E. Parsopoulos and M.N. Vrahatis.

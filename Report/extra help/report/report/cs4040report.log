@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  6 MAR 2014 09:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  7 APR 2014 17:13
 entering extended mode
  %&-line parsing enabled.
 **cs4040report.tex
@@ -317,7 +317,7 @@ Here is how much of TeX's memory you used:
 fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
 b></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cs4040report.pdf (3 pages, 149316 bytes).
+Output written on cs4040report.pdf (3 pages, 149269 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

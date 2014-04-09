@@ -14,9 +14,9 @@ wpg1 = (-0.16,1.89,2.12)
 wpg2 :: (Double,Double,Double)
 wpg2 = (0.7,1.45,1.49)
 --Number of particles
-np1 = 400 
+np1 = 40 
 --Number of iterations
-nit1 = 2000
+nit1 = 200
 ------------------------------------------
 --------- Financial variables ------------
 ------------------------------------------
@@ -55,15 +55,31 @@ portSeq wpg np nit f bo
 mainPortTest np nit prob bound = portSeq wpg1 np nit prob bound
 
 main = do
-    putStrLn "Enter file name including extension, eg 'assets.txt'"
-    file <- getLine 
-    src <- readFile file
+    --putStrLn "Enter file name including extension, eg 'assets.txt'."
+    --file <- getLine 
+    --src <- readFile file
+    src <- readFile "readText.txt"
     let triples   = map (split.words) (lines src)
     let names = extractName triples
     let rateR = extractRate triples :: [Double]
     let expR = extractExp triples :: [Double]
     let nAssets = length rateR
+    --------------------Testing----------------------------------------
+    ---- Getting settings for portfolio function
+    ---- Risk
+    --putStrLn "Enter level of risk (0.4-0.9), where 0.4 is least risky."
+    --risk' <- getLine
+    --let risk = read risk'
+    ---- Risk aversion
+    --putStrLn "Enter level of risk aversion, recommended 3."
+    --aversion' <- getLine
+    --let aversion = read aversion'
+    ---- Required portfolio return
+    --putStrLn "Enter your required portfolio return."
+    --reqExpR' <- getLine
+    --let reqExpR = read reqExpR'
         --Return of portfolio
+    -------------------------------------------------------------------
         portR :: Position -> Double
         portR w = sum [x*y | x <- w, y <- rateR]
         --Expected Portfolio return 
@@ -87,12 +103,17 @@ main = do
     extractExp  xs = [d | (_,_,d) <- xs]
 
 
-outPutFile names pso = do
+outPutFile names pos = do
     t <- getCurrentTime
-    appendFile ("output-" ++ show (toGregorian $ utctDay t)) "Boo\n" 
+    appendFile ("output-" ++ (time t)) ((time t) ++ "\nBoo\n")
+  where time t = show (toGregorian $ utctDay t)
 
+-- Turns a number into a percentage 
 toPerc :: Double -> Double
-toPerc x = 100*x
+toPerc x = 100*(myRound x 4)
+-- Rounds a number to s decimal points 
+myRound n s = fromIntegral (round (n * factor)) / factor
+    where factor = fromIntegral (10^s)
 
 --printStuff :: String -> [Double] -> String
 --printStuff (x:xs) (y:ys) = x 

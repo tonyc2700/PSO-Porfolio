@@ -30,7 +30,7 @@ mainSeq wpg np nit f bo
        putStr "Best position: "
        print (snd bestPos)
 
-{--
+--{--
 mainPar :: WPGparams -> Int -> Int -> Int -> Int -> (Position -> Double) -> Boundings -> IO()
 mainPar wpg np npit nit nPE f bo
   = do sg <- getStdGen
@@ -81,7 +81,7 @@ main = do args <- getArgs
           putStr "Sol: "
           case version  of
              1 -> mainSeq wpg1 np (head args') (fit problem) (bo problem) 
-{--
+--{--
              2 -> mainPar wpg1 np npit nit (head rest) (fit problem) (bo problem)
              3 -> mainParV wpg1 np npit nit (map fromIntegral rest) (fit problem) (bo problem)
              4 -> mainParV2 wpg1 np iterations speeds (fit problem) (bo problem)
@@ -155,7 +155,7 @@ risk = 0.5
 --Risk aversion
 aversion = 3
 --Required expected return
-reqExpR = 0.02
+reqExpR = 0.03
 
 --Number of assets
 nAssets :: Int
@@ -206,9 +206,10 @@ penVal = 1/penPara
 --Unconstrained porfolio function 
 mainPortFunction :: Position -> Double
 mainPortFunction w = (port w) + penVal*(abs((expPortR w)-reqExpR)) + penVal*(abs((sum w) - 1))
+--mainPortFunction w = (port w) + penVal*((expPortR w)-reqExpR) + penVal*(abs((sum w) - 1))
 
 weightsBound :: Boundings
-weightsBound = replicate nAssets (0,1)
+weightsBound = replicate nAssets (0.05,0.35)
 
 portSeq :: WPGparams -> Int -> Int -> (Position -> Double) -> Boundings -> IO()
 portSeq wpg np nit f bo
@@ -227,4 +228,4 @@ portSeq wpg np nit f bo
 mainPortTest np nit prob bound = portSeq wpg1 np nit prob bound
 
 --Showing example of function
-mainPortTest1 = mainPortTest 20 100 mainPortFunction weightsBound
+mainPortTest1 = mainPortTest 20 300 mainPortFunction weightsBound

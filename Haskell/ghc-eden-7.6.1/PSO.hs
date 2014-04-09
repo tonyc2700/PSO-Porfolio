@@ -11,10 +11,10 @@
 -------------------------------------------------------------
 
 module PSO(psoSEQ,                              -- Sequential PSO scheme
-           pso,psoVar,psoVar2,                  -- Parallel versions of PSO
+           --pso,psoVar,psoVar2,                  -- Parallel versions of PSO
            Position,Speed,Boundings,WPGparams,Particle   -- Auxiliary types
            ) where
-import Control.Parallel.Eden
+--import Control.Parallel.Eden
 import Control.DeepSeq
 import Data.List
 import System.Random
@@ -116,13 +116,13 @@ initialize sg np bo f = map (addBest bpos) nearlyPos
         nearlyPos = zip3 fs pos ss
         bpos = (fsnd3 . minimum) nearlyPos
         
-        bo'= map includeAsymmetry bo  
+        bo'= map includeAsymmetry bo
         includeAsymmetry = id  -- In case no asymmetric initialization is used
 --        mitad (lowR,upR) = (upR/3,upR) -- Example of asymmetric initialization
 
         addBest (bv,bpo) (fv,po,s) = (fv,bv,po,s,po,bpo)
 
---{--
+{--
 ----------------------------------
 -- Generic PSO parallel schemes --
 ----------------------------------

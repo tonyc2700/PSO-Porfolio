@@ -30,7 +30,7 @@ mainSeq wpg np nit f bo
        putStr "Best position: "
        print (snd bestPos)
 
-{--
+--{--
 mainPar :: WPGparams -> Int -> Int -> Int -> Int -> (Position -> Double) -> Boundings -> IO()
 mainPar wpg np npit nit nPE f bo
   = do sg <- getStdGen
@@ -81,9 +81,9 @@ main = do args <- getArgs
           putStr "Sol: "
           case version  of
              1 -> mainSeq wpg1 np (head args') (fit problem) (bo problem) 
-             2 -> portSeq wpg1 np (head args') mainPortFunction weightsBound
-             3 -> testSeq wpg1 np (head args') mainPortFunction weightsBound --(fit problem) (bo problem) 
-{--
+             --2 -> portSeq wpg1 np (head args') mainPortFunction weightsBound
+             --3 -> testSeq wpg1 np (head args') mainPortFunction weightsBound --(fit problem) (bo problem) 
+--{--
              2 -> mainPar wpg1 np npit nit (head rest) (fit problem) (bo problem)
              3 -> mainParV wpg1 np npit nit (map fromIntegral rest) (fit problem) (bo problem)
              4 -> mainParV2 wpg1 np iterations speeds (fit problem) (bo problem)

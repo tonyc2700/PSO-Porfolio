@@ -36,7 +36,9 @@ My fitness, 50 particles, 500 iterations, 10 assets, wpg1 = (-0.16,1.89,2.02)
 0.9140999999999994
 0.914099999999999
 0.9140999999999989
-0.9140999999999989
+0.9140999999999989est (pso' rss wpg it f bo initParticles)
+  where initParticles = initialize sg np bo f
+        rss = makeRss np (randomRs 
 0.9140999999999991
 0.9140999999999992
 0.9140999999999995

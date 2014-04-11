@@ -1,7 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{marko2}
 
+
+\bibitem{constriction_factor_2}
+
+
+\bibitem{constriction_factor}
+M.~Clerc.
+\newblock The swarm and the queen: towards a deterministic and adaptive
+  particle swarm optimization.
+\newblock In {\em Evolutionary Computation, 1999. CEC 99. Proceedings of the
+  1999 Congress on}, volume~3, pages --1957 Vol. 3, 1999.
 
 \bibitem{pso3}
 M.~Clerc and J.~Kennedy.

@@ -66,9 +66,73 @@ Acknowledgments....
 
   \section{Particle Swarm Optimisation} % (fold)
   \label{sec:particle_swarm_optimisation}
-    Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behavior of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
+    % Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behavior of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
 
-    Assuming worker bees are searching for a patch of flowers with the most pollen, also assume that the bees
+    % Assuming worker bees are searching for a patch of flowers with the most pollen, also assume that the bees
+
+    Particle swarm optimization (PSO) is a population based  stochastic optimization technique developed by Kennedy and  Eberhart in 1995, discovered through simplified social model simulation \cite{pso,pso2,pso3,pso4}. It simulates the behavior of bird flocking involving the scenario of a collection of birds randomly looking for food in a search space. None of the birds know where the food is located, they do know how far the food location is from their current position. An effective technique for the bird to find food is to adjust their velocity according to the bird which is nearest to the food. PSO was motivated from this scenario and was developed to solve complex optimization problems, where the optimum position of the fitness function is where the food is located and all the birds are the particles searching for this optimum position. 
+
+    In the conventional PSO, the behaviour displays particles in a multidimensional space where each particles has two characteristics: a position vector and a velocity vector. Let $n$ be the number of particles in the swarm.  Then each particles $i \in n$ has the characteristics shown in \ref{eq:PSO_stuff}:
+    % \begin{itemize}
+    %   \item $X_i^k$ : The current position of particle i at time k.
+    %   \item $V_i^k$ : The current velocity of particle i at time k. 
+    %   \item $Pbest_i^k$ : The personal best position of particle i at time k. 
+    %   \item $Gbest^k$ : The global best position of particle i at time k. 
+    % \end{itemize}
+    \begin{equation} \label{eq:PSO_stuff}
+      \begin{split}
+        & V_i^k \text{ : The velocity of particle i at time k.} \\
+        & X_i^k \text{ : The current position of particle i at time k.} \\
+        & Pbest_i^k \text{ : The personal best position of particle i at time k.} \\
+        & Gbest^k \text{ : The global best position of particle i at time k.} \\
+      \end{split}
+    \end{equation}
+
+    At each step, the velocity of the ith particle will be updated according to the following equation:
+
+    \begin{equation} \label{eq:vel}
+      \begin{split}
+        V_{i}^{k+1} & = \omega V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{k} - X_{i}^{k} \Big) \\
+        \text{where} & \\
+        & V_i^{k+1} \text{ : The velocity of particle i at time k + 1.} \\
+        & V_i^k \text{ : The velocity of particle i at time k.} \\
+        & X_i^k \text{ : The current position of particle i at time k.} \\
+        & \omega \text{ : Inertia weight parameter.} \\
+        & c_1, c_2 \text{ : Acceleration coefficients.} \\
+        & r_1, r_2 \text{ : Random numbers between 0 and 1.} \\
+        & Pbest_i^k \text{ : The personal best position of particle i at time k.} \\
+        & Gbest^k \text{ : The global best position of particle i at time k.} \\
+      \end{split}
+    \end{equation}
+
+    In the updating process \ref{eq:vel} the acceleration coefficients $c_1, c_2$ and the inertia weight $\omega$ are predefined and $r_1, r_2$ are uniformly generated random numbers in the range [0,1]
+
+    In Algorithm \ref{eq:pso} you can see the pseudo-code for a basic PSO. A step by step explanation of \ref{eq:pso}. First there is an initialisation for all the particles in the PSO, for every particle i, initPosition(i) randomly created a particle with a designated position in the search space. For the first step, initBestLocal(i) = initPosition(i) but it will be updated afterwards. Then the if function makes a first global best and if any other particles has a better global best position it will be set as the new global best. initVelocity(i) gives particles i an initial velocity which is randomly generated. 
+
+    After the initialisation, the core of the PSO method is executed until the endingCondition() is satisfied, which can be the number of iterations or an improvement threshold. In the body of the \textit{While} loop all particles are updated. The first step is to generate random numbers used in the velocity equation \ref{eq:vel}. Then the actual velocity is updated. The next step, updatePosition(i) updates the position of a particles in the search space and checks the fitness function value for improvement or not. A the end of the \textit{for} loop, if improvedLocal(i) = True then updates the local best position and finally it's similar for updating the global best position. 
+
+    \begin{algorithm}[H] \label{eq:pso}
+      \mbox{\textbf{Initialisation}} \\
+      \For{i = 1,\dots,S}{
+        initPosition(i) \\
+        initBestLocal(i) \\
+        \If{i = 1}{initBestGlobal()} 
+        \If{improvedGlobal(i)}{updateGlobalBest(i)} 
+        initVelocity(i)
+      }
+      \mbox{\textbf{Main program}} \\      
+      \While{not endingCondition()}{
+        \For{i - 1,\dots, S}{
+          createRnd($r_1,r_2$) \\
+          updateVelocity(i$,r_1,r_2$) \\
+          updatePosition(i) \\
+          \If{improvedLocal(i)}{updateBestLocal(i)}
+          \If{improvedGlobal(i)}{updateGlobalBest(i)}
+        }
+      }
+      \caption{PSO pseudo-code.}
+    \end{algorithm}
+    
   % section particle_swarm_optimisation (end)
 
   \section{Portfolio Management} % (fold)
@@ -195,11 +259,11 @@ This section describes the requirements for this project. Table \ref{table:funct
 
   \section{Non-functional} % (fold)
   \label{sec:non_functional}
-  As this system is an extension on a PSO module by Fernando Rubio et. all \cite{haskellPSO}, it is crucially important to devote a considerable amount of time to testing. This is to ensure that the alterations do not affect the performance of the overall efficiency of the algorithm and quality of the optimisation.  
+    As this system is an extension on a PSO module by Fernando Rubio et. all \cite{haskellPSO}, it is crucially important to devote a considerable amount of time to testing. This is to ensure that the alterations do not affect the performance of the overall efficiency of the algorithm and quality of the optimisation.  
 
-  The system's scalability is something not to be overlooked. As each asset in a portfolio represents one dimension in the fitness function (not to be confused with just another linear factor of the same coefficient in a function), optimising a function in, for example, 100 dimensions (100 assets) might be to much for the system to cope with. 
+    The system's scalability is something not to be overlooked. As each asset in a portfolio represents one dimension in the fitness function (not to be confused with just another linear factor of the same coefficient in a function), optimising a function in, for example, 100 dimensions (100 assets) might be to much for the system to cope with. 
 
-  Running the PSO requires setting up various parameters and thresholds for optimisation (size of the particle population, number of iterations, inertia weights and convergence coefficients). These parameters need to be optimised for the algorithm to be computationally effective and produce accurate results. 
+    Running the PSO requires setting up various parameters and thresholds for optimisation (size of the particle population, number of iterations, inertia weights and convergence coefficients). These parameters need to be optimised for the algorithm to be computationally effective and produce accurate results. 
 
   % section non_functional (end)
 
@@ -245,7 +309,42 @@ This section describes the requirements for this project. Table \ref{table:funct
 
 \chapter{System Design and Architecture}
 
+
 \chapter{Experimentation and Testing}
+
+  \section{Constriction Factors} % (fold)
+  \label{sec:constriction_factors}
+    Maurice Clerc in his study on stability and convergence of PSO \cite{constriction_factor} has introduced a constriction factor. Clerc indicates that the use of a constriction factor may be necessary to insure convergence of the PSO for certain fitness functions.
+
+    In order to ensure convergence of the PSO, the velocity of the constriction factor based approach can be expressed as follows:
+
+    \begin{equation} \label{eq:cf}
+      \begin{split}
+        V_{i}^{k+1} & = K \Bigg[ V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{k} - X_{i}^{k} \Big) \Bigg] \\
+        \text{where }\\
+        K & = \frac{2}{\mid 2 - \phi - \sqrt{\phi^2 -4\phi} \mid} \text{ and } \phi = c_1 + c_2 \text{ s.t. } \phi > 4  \\
+        % \text{and} \\
+        % \phi = c_1 + c_2 , \phi > 4 \\
+      \end{split}
+    \end{equation}
+
+    The convergence characteristic of the system can be controlled by $\phi$ through choosing suitable $c_1$ and $c_2$ in \eqref{eq:cf}. In this approach, $\phi$ must be greater than 4 to guarantee stability \cite{constriction_factor_2}. 
+
+      % \begin{align}
+      %   V_{i}^{k+1} & = K \Bigg[ V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big(Gbest_{i}^{k} - X_{i}^{k} \Big) \Bigg] \\
+      %   \text{where } \\
+      %   K & = \frac{2}{\mid 2 - \phi - \sqrt{\phi^2 -4\phi} \mid}  \\
+      % \end{align}
+
+    \subsection{Results}
+  % section constriction_factors (end)
+
+  \section{Scalability} % (fold)
+  \label{sec:scalability}
+    Number of assets
+  % section scalability (end)
+
+
 
 \chapter{Financial Data}
   \section{Data Description} % (fold)

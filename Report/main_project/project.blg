@@ -12,46 +12,52 @@ I was expecting a `,' or a `}'---line 20 of file myref.bib
  :   author = {Markowitz, H.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 35 of file myref.bib
+ :   
+ :   author = {Lim, Shi and Montakhab, Mohammad},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in marko2
-You've used 8 entries,
+Warning--to sort, need author or key in constriction_factor_2
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            536 strings with 4915 characters,
-and the built_in function-call counts, 2661 in all, are:
-= -- 254
-> -- 85
-< -- 6
-+ -- 36
-- -- 26
-* -- 151
-:= -- 390
-add.period$ -- 22
-call.type$ -- 8
-change.case$ -- 34
+            543 strings with 5144 characters,
+and the built_in function-call counts, 3203 in all, are:
+= -- 300
+> -- 93
+< -- 8
++ -- 41
+- -- 28
+* -- 183
+:= -- 460
+add.period$ -- 26
+call.type$ -- 10
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 117
-empty$ -- 249
-format.name$ -- 26
-if$ -- 607
+cite$ -- 12
+duplicate$ -- 141
+empty$ -- 315
+format.name$ -- 28
+if$ -- 733
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 5
-newline$ -- 41
-num.names$ -- 14
-pop$ -- 61
+int.to.str$ -- 10
+missing$ -- 6
+newline$ -- 49
+num.names$ -- 16
+pop$ -- 75
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 34
 quote$ -- 0
-skip$ -- 108
+skip$ -- 131
 stack$ -- 0
-substring$ -- 177
-swap$ -- 45
-text.length$ -- 6
+substring$ -- 225
+swap$ -- 52
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
-warning$ -- 1
-while$ -- 23
-width$ -- 9
-write$ -- 81
-(There were 2 error messages)
+type$ -- 40
+warning$ -- 2
+while$ -- 27
+width$ -- 12
+write$ -- 97
+(There were 3 error messages)

@@ -20,6 +20,13 @@ M.~Clerc and J.~Kennedy.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, pages 58--73,
   Feb 2002.
 
+\bibitem{pso_app2}
+Wei Hongkai, Wang Pingbo, Cai Zhiming, Chen Baozhu, and Yao Wanjun.
+\newblock Application of particle swarm optimization method in fractional
+  fourier transform.
+\newblock In {\em Image Analysis and Signal Processing (IASP), 2010
+  International Conference on}, pages 442--445, April 2010.
+
 \bibitem{pso}
 J.~Kennedy and R.~Eberhart.
 \newblock Particle swarm optimization.
@@ -38,11 +45,25 @@ K.E. Parsopoulos and M.N. Vrahatis.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, 1:235--306,
   2002.
 
+\bibitem{pso_app_main}
+R.~Poli.
+\newblock An analysis of publications on particle swarm optimisation
+  applications.
+\newblock In {\em Technical Report CSM-469 (Department of Computer Science,
+  University of Essex, UKI}, May 207.
+
 \bibitem{haskellPSO}
 Pablo Rabanal, Ismael Rodíguez, and Fernando Rubio.
 \newblock
   \url{http://antares.sip.ucm.es/prabanal/english/heuristics_library.html}.
 \newblock Accessed: February,2014.
+
+\bibitem{pso_app}
+E.~Shahamatnia and M.-M. Ebadzadeh.
+\newblock Application of particle swarm optimization and snake model hybrid on
+  medical imaging.
+\newblock In {\em Computational Intelligence In Medical Imaging (CIMI), 2011
+  IEEE Third International Workshop On}, pages 1--8, April 2011.
 
 \bibitem{pso2}
 Yuhui Shi and R.~Eberhart.
@@ -54,5 +75,16 @@ Yuhui Shi and R.~Eberhart.
 Jon Skinner.
 \newblock \url{http://www.sublimetext.com}.
 \newblock Accessed: February,2014.
+
+\bibitem{pso_app3}
+Qingnian Wang, Kun Yan, Xiaofeng Wan, and Meiling Yuan.
+\newblock Application of particle swarm optimization in fussy neural networks.
+\newblock In {\em Information Assurance and Security, 2009. IAS '09. Fifth
+  International Conference on}, volume~1, pages 158--161, Aug 2009.
+
+\bibitem{localmin}
+X.~Yao, Liu Y., and Lin G.
+\newblock Evolutionary programming made faster.
+\newblock In {\em Evolutionary Computation}, volume~3, pages 82--102, 1999.
 
 \end{thebibliography}

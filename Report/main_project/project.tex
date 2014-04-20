@@ -199,8 +199,14 @@ Acknowledgments....
   % section pso_applied (end)
 
 \chapter{Problem Domain}
+  
+  The Particle Swarm Optimisation Algorithms has already been effectively implemented to solved various optimisation problems \cite{pso_app,pso_app2,pso_app3} under variant domains such as biomedical, networks, clustering, finance, combinatorial and many more \cite{pso_app_main}. This project mainly focuses on expanding the optimisation algorithm created by Rabanal, Rodrıguez and Rubio in their paper ``A Functional Approach to Parallelize Particle Swarm Optimization'' \cite{haskellPSO} and applying it to solve the portfolio selection problem \cite{marko2}. The optimisation algorithm has been successful by means of accuracy as well as efficiency at finding the maxima or minimia of given problems over specified domains, its special success is at not becoming trapped in local maxima or minimas even though the algorithm might encounter multiple of them before finding the global maxima or minima due to the concept of randomness being introduces, not only to each particle but also to the initialisation of the whole swarm itself. When evolutionary algorithms come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, the danger might be that when it finds a certain local minima which might seem like a ``good enough'' solution, then the algorithm might converge to this false solution. Furthermore when what we're trying to optimise has local minima and global minima which differ by thousands of pounds worth of stocks when applied to financial situations it is crucial the algorithm does not get stuck in non-optimal solutions. 
+
+  Mention more about portfolio optimisation....
+
   \section{Approach} % (fold)
   \label{sec:approach}
+
   
   % section approach (end)
 

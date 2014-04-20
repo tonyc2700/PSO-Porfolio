@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  11 APR 2014 16:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  20 APR 2014 21:13
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -729,6 +729,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 [6]
 Chapter 4
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ± in font cmr12!
 [7
 
 
@@ -772,7 +774,7 @@ Bibliography
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
 
-Underfull \hbox (badness 2181) in paragraph at lines 42--46
+Underfull \hbox (badness 2181) in paragraph at lines 56--60
 []\OT1/cmr/m/n/10 Pablo Ra-banal, Is-mael Rodguez, and Fer-nando Ru-bio. []$\OT
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
@@ -782,13 +784,13 @@ Underfull \hbox (badness 2181) in paragraph at lines 42--46
 
 ] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 15886 strings out of 495061
- 277576 string characters out of 1182621
- 356568 words of memory out of 3000000
- 18504 multiletter control sequences out of 15000+50000
+ 15896 strings out of 495061
+ 277697 string characters out of 1182621
+ 356726 words of memory out of 3000000
+ 18509 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,886b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,1789b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
@@ -802,9 +804,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb>
-Output written on project.pdf (23 pages, 286462 bytes).
+Output written on project.pdf (23 pages, 297127 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
  370 words of extra memory for PDF output out of 10000 (max. 10000000)
 

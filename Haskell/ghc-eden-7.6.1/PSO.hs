@@ -60,13 +60,14 @@ psoSEQ :: RandomGen a => a            -- Random generator
           -> (Position -> Double)     -- Fitness function
           -> Boundings                -- Search space boundaries 
           -> (Double,Position)        -- Value and position of best fitness
+----With constriction factor. 
 --psoSEQ sg (_,x2,x3) np it f bo = obtainBest (pso' rss wpg' it f bo initParticles)
 --  where initParticles = initialize sg np bo f
 --        rss = makeRss np (randomRs (0,1) sg)
 --        wpg' = ((wpgFunc x2 x3),x2,x3)
 --wpgFunc :: Double -> Double -> Double
 --wpgFunc x2 x3 = 2 / (abs (2 - (x2+x3)- sqr ((x2+x3)**2 -4*(x2+x3))))
-
+----Without constriction factor
 psoSEQ sg wpg np it f bo = obtainBest (pso' rss wpg it f bo initParticles)
   where initParticles = initialize sg np bo f
         rss = makeRss np (randomRs (0,1) sg)

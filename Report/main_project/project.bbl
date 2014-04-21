@@ -3,8 +3,16 @@
 \bibitem{marko2}
 
 
+\bibitem{non-dist}
+
+
 \bibitem{constriction_factor_2}
 
+
+\bibitem{crit2}
+W.~Breen.
+\newblock Specific versus general models of portfolio selection.
+\newblock In {\em Oxford Economic Papers}, volume~36, pages 361--368, 1968.
 
 \bibitem{constriction_factor}
 M.~Clerc.
@@ -19,6 +27,12 @@ M.~Clerc and J.~Kennedy.
   multidimensional complex space.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, pages 58--73,
   Feb 2002.
+
+\bibitem{crit3}
+M.~S. Fekdstein.
+\newblock Mean-variance analysis in the theory of liquidity preference of
+  portfolio selection.
+\newblock In {\em Review of Economic Studies}, volume~36, pages 5--12, 1969.
 
 \bibitem{pso_app2}
 Wei Hongkai, Wang Pingbo, Cai Zhiming, Chen Baozhu, and Yao Wanjun.
@@ -75,6 +89,12 @@ Yuhui Shi and R.~Eberhart.
 Jon Skinner.
 \newblock \url{http://www.sublimetext.com}.
 \newblock Accessed: February,2014.
+
+\bibitem{crit}
+G~Szego.
+\newblock Measure of risk.
+\newblock In {\em Journal of Operational Research}, volume 163, pages 5--19,
+  2005.
 
 \bibitem{pso_app3}
 Qingnian Wang, Kun Yan, Xiaofeng Wan, and Meiling Yuan.

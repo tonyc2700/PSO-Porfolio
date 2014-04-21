@@ -9,39 +9,39 @@
 \contentsline {section}{\tocsection {}{3}{Multi-objective Optimisation}}{4}{section.2.3}
 \contentsline {chapter}{\tocchapter {Chapter}{3}{Related Work}}{5}{chapter.3}
 \contentsline {section}{\tocsection {}{1}{Markowitz Model}}{5}{section.3.1}
-\contentsline {section}{\tocsection {}{2}{Portfolio in Excel}}{6}{section.3.2}
-\contentsline {section}{\tocsection {}{3}{Something PSO}}{6}{section.3.3}
-\contentsline {section}{\tocsection {}{4}{PSO applied}}{6}{section.3.4}
-\contentsline {chapter}{\tocchapter {Chapter}{4}{Problem Domain}}{7}{chapter.4}
-\contentsline {section}{\tocsection {}{1}{Approach}}{7}{section.4.1}
-\contentsline {chapter}{\tocchapter {Chapter}{5}{Requirements}}{8}{chapter.5}
-\contentsline {section}{\tocsection {}{1}{Functional}}{8}{section.5.1}
-\contentsline {section}{\tocsection {}{2}{Non-functional}}{9}{section.5.2}
-\contentsline {chapter}{\tocchapter {Chapter}{6}{Methodology and Technologies}}{10}{chapter.6}
-\contentsline {section}{\tocsection {}{1}{Methodology}}{10}{section.6.1}
-\contentsline {section}{\tocsection {}{2}{Technology}}{11}{section.6.2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{11}{subsection.6.2.1}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Operating System}}{11}{subsection.6.2.2}
-\contentsline {chapter}{\tocchapter {Chapter}{7}{System Design and Architecture}}{12}{chapter.7}
-\contentsline {chapter}{\tocchapter {Chapter}{8}{Experimentation and Testing}}{13}{chapter.8}
-\contentsline {section}{\tocsection {}{1}{Constriction Factors}}{13}{section.8.1}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Results}}{13}{subsection.8.1.1}
-\contentsline {section}{\tocsection {}{2}{Scalability}}{13}{section.8.2}
-\contentsline {chapter}{\tocchapter {Chapter}{9}{Financial Data}}{14}{chapter.9}
-\contentsline {section}{\tocsection {}{1}{Data Description}}{14}{section.9.1}
-\contentsline {section}{\tocsection {}{2}{Problem Domain}}{14}{section.9.2}
-\contentsline {section}{\tocsection {}{3}{Assets and their Weights}}{14}{section.9.3}
-\contentsline {section}{\tocsection {}{4}{Analysis}}{14}{section.9.4}
-\contentsline {section}{\tocsection {}{5}{PSO Parameters}}{14}{section.9.5}
-\contentsline {section}{\tocsection {}{6}{Experimentation and Testing}}{14}{section.9.6}
-\contentsline {section}{\tocsection {}{7}{Portfolio Constraints}}{14}{section.9.7}
-\contentsline {section}{\tocsection {}{8}{Results}}{14}{section.9.8}
-\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{15}{chapter.10}
-\contentsline {section}{\tocsection {}{1}{PSO Parameters}}{15}{section.10.1}
-\contentsline {section}{\tocsection {}{2}{Asset's Covariance}}{15}{section.10.2}
-\contentsline {section}{\tocsection {}{3}{Market Relationships}}{15}{section.10.3}
-\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{16}{chapter.11}
-\contentsline {section}{\tocsection {}{1}{Discussion}}{16}{section.11.1}
-\contentsline {section}{\tocsection {}{2}{Future Work}}{16}{section.11.2}
-\contentsline {section}{\tocsection {}{3}{Conclusion}}{16}{section.11.3}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{17}{section.11.3}
+\contentsline {section}{\tocsection {}{2}{Portfolio in Excel}}{7}{section.3.2}
+\contentsline {section}{\tocsection {}{3}{Something PSO}}{7}{section.3.3}
+\contentsline {section}{\tocsection {}{4}{PSO applied}}{7}{section.3.4}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Problem Domain}}{8}{chapter.4}
+\contentsline {section}{\tocsection {}{1}{Approach}}{8}{section.4.1}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Requirements}}{9}{chapter.5}
+\contentsline {section}{\tocsection {}{1}{Functional}}{9}{section.5.1}
+\contentsline {section}{\tocsection {}{2}{Non-functional}}{10}{section.5.2}
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Methodology and Technologies}}{11}{chapter.6}
+\contentsline {section}{\tocsection {}{1}{Methodology}}{11}{section.6.1}
+\contentsline {section}{\tocsection {}{2}{Technology}}{12}{section.6.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{12}{subsection.6.2.1}
+\contentsline {subsection}{\tocsubsection {}{2.2}{Operating System}}{12}{subsection.6.2.2}
+\contentsline {chapter}{\tocchapter {Chapter}{7}{System Design and Architecture}}{13}{chapter.7}
+\contentsline {chapter}{\tocchapter {Chapter}{8}{Experimentation and Testing}}{14}{chapter.8}
+\contentsline {section}{\tocsection {}{1}{Constriction Factors}}{14}{section.8.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Results}}{14}{subsection.8.1.1}
+\contentsline {section}{\tocsection {}{2}{Scalability}}{14}{section.8.2}
+\contentsline {chapter}{\tocchapter {Chapter}{9}{Financial Data}}{15}{chapter.9}
+\contentsline {section}{\tocsection {}{1}{Data Description}}{15}{section.9.1}
+\contentsline {section}{\tocsection {}{2}{Problem Domain}}{15}{section.9.2}
+\contentsline {section}{\tocsection {}{3}{Assets and their Weights}}{15}{section.9.3}
+\contentsline {section}{\tocsection {}{4}{Analysis}}{15}{section.9.4}
+\contentsline {section}{\tocsection {}{5}{PSO Parameters}}{15}{section.9.5}
+\contentsline {section}{\tocsection {}{6}{Experimentation and Testing}}{15}{section.9.6}
+\contentsline {section}{\tocsection {}{7}{Portfolio Constraints}}{15}{section.9.7}
+\contentsline {section}{\tocsection {}{8}{Results}}{15}{section.9.8}
+\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{16}{chapter.10}
+\contentsline {section}{\tocsection {}{1}{PSO Parameters}}{16}{section.10.1}
+\contentsline {section}{\tocsection {}{2}{Asset's Covariance}}{16}{section.10.2}
+\contentsline {section}{\tocsection {}{3}{Market Relationships}}{16}{section.10.3}
+\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{17}{chapter.11}
+\contentsline {section}{\tocsection {}{1}{Discussion}}{17}{section.11.1}
+\contentsline {section}{\tocsection {}{2}{Future Work}}{17}{section.11.2}
+\contentsline {section}{\tocsection {}{3}{Conclusion}}{17}{section.11.3}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{18}{section.11.3}

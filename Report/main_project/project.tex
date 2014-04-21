@@ -4,6 +4,8 @@
 \usepackage{amsmath,amsthm}
 % Erin's additions
 \usepackage{color} 
+\usepackage{graphicx}
+\usepackage{float}
 \usepackage{algorithm2e}
 \usepackage{tikz}
 \usepackage{array}
@@ -171,7 +173,22 @@ Acknowledgments....
 
     This framework presumes that the investor uses a quadratic utility function or that asset returns follow a multivariate normal distribution. This implies that the rate of return of a portfolio of assets can be completely explained by the expected return or variance of assets. The efficient-frontier is the set of assets which provide minimum risk for a specified level of return. Solving the Markowitz portfolio optimisation problems for different specified expected portfolio returns will give us a set which represents the efficient-frontier, it is a smooth semi-increasing curve which represents the best possible trade-off between risk and expected return, also called the set of Pareto-optimal portfolios. 
 
+    \begin{figure}[H]
+      \centering
+        \includegraphics[width=0.9\textwidth]{efficient_frontier}
+      \caption{A picture of a gull.}
+      \label{efficient_frontier}
+    \end{figure}
+
+    Figure~\ref{efficient_frontier} shows an example of an efficient frontier without a risk-free asset. Each point on the line represents a portfolio which is considered to be efficient (ie no other portfolio provides higher return without more risk and similarly for risk). In~\ref{efficient_frontier} Asset A-E represent what the portfolio will be made out of. 
+
+    Markowitz's model is subject to serous criticisms as stated in \cite{crit}, the main ones being that a measure of dispersion can be adopted as a measure of risk only if the relevant distribution is symmetric. Another problem is that the distribution of individual asset returns has a tendency to show a higher probability of being fat-tailed. In case of non-normal, non-symmetric distributions, the utility function must be quadratic \cite{crit}. 
+
+    This criteria as should not be taken lightly since the assets' return does not follow normal distributions in real world situations \cite{non-dist}. This approach can only be used if the investor's utility function is quadratic with non-positive second derivatives or if the asset's return distribution can be fully described. Several research have indicated that that the quadratic utility function implies that beyond some level or return, marginal utility of the decision maker for wealth becomes negative \cite{crit2,crit3}. 
+
   % section markowitz_model (end)
+  
+
   
   %------------------------------------------------------------------
   % \section{Heuristic and Metaheuristic Algorithms} % (fold)

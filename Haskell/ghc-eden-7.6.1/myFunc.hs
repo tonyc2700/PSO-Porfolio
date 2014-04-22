@@ -90,6 +90,7 @@ main = do
         mainPortFunction :: Position -> Double
         --mainPortFunction w = (port w) + penVal*(abs((expPortR w)-reqExpR)) + penVal*(abs((sum w) - 1))
         mainPortFunction w = (port w) + penVal*((expPortR w)-reqExpR) + penVal*(abs((sum w) - 1))
+        --Weight bound is set to this to induce diversification
         weightBounds = replicate nAssets (0.05,0.35)
     let pso = portSeq names wpg1 np1 nit1 mainPortFunction weightBounds
     --outPutFile names (snd pso)

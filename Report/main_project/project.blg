@@ -22,12 +22,18 @@ I was expecting a `,' or a `}'---line 68 of file myref.bib
  :   author = {Lim, Shi and Montakhab, Mohammad},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 74 of file myref.bib
+ :   
+ :   author = {Pedersen , M.E.H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "constriction_factors3"
 Warning--to sort, need author or key in marko2
 Warning--to sort, need author or key in non-dist
 Warning--to sort, need author or key in constriction_factor_2
 You've used 19 entries,
             2118 wiz_defined-function locations,
-            593 strings with 6453 characters,
+            594 strings with 6474 characters,
 and the built_in function-call counts, 6567 in all, are:
 = -- 612
 > -- 204
@@ -66,4 +72,4 @@ warning$ -- 3
 while$ -- 57
 width$ -- 21
 write$ -- 193
-(There were 4 error messages)
+(There were 5 error messages)

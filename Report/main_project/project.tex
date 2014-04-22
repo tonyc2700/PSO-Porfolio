@@ -17,7 +17,8 @@
 \newtheorem*{exa}{Example}
 \newtheorem*{no}{Note}
 
-\Title{Title...}
+\Title{Particle Swarm Optimisation for the Portfolio Selection Problem in a Function Based Environment.}
+% \Title{Functional Approach }
 \Author{Anthony S. Chapman}
 \Year{2013--2014}
 \Supervisor{Dr. Wei Pang}
@@ -109,10 +110,6 @@ Acknowledgments....
 
     In the updating process \ref{eq:vel} the acceleration coefficients $c_1, c_2$ and the inertia weight $\omega$ are predefined and $r_1, r_2$ are uniformly generated random numbers in the range [0,1]
 
-    In Algorithm \ref{eq:pso} you can see the pseudo-code for a basic PSO. A step by step explanation of \ref{eq:pso}. First there is an initialisation for all the particles in the PSO, for every particle i, initPosition(i) randomly created a particle with a designated position in the search space. For the first step, initBestLocal(i) = initPosition(i) but it will be updated afterwards. Then the if function makes a first global best and if any other particles has a better global best position it will be set as the new global best. initVelocity(i) gives particles i an initial velocity which is randomly generated. 
-
-    After the initialisation, the core of the PSO method is executed until the endingCondition() is satisfied, which can be the number of iterations or an improvement threshold. In the body of the \textit{While} loop all particles are updated. The first step is to generate random numbers used in the velocity equation \ref{eq:vel}. Then the actual velocity is updated. The next step, updatePosition(i) updates the position of a particles in the search space and checks the fitness function value for improvement or not. A the end of the \textit{for} loop, if improvedLocal(i) = True then updates the local best position and finally it's similar for updating the global best position. 
-
     \begin{algorithm}[H] \label{eq:pso}
       \mbox{\textbf{Initialisation}} \\
       \For{i = 1,\dots,S}{
@@ -135,17 +132,27 @@ Acknowledgments....
       \caption{PSO pseudo-code.}
     \end{algorithm}
     
+    In Algorithm \ref{eq:pso} you can see the pseudo-code for a basic PSO. A step by step explanation of \ref{eq:pso}. First there is an initialisation for all the particles in the PSO, for every particle i, initPosition(i) randomly created a particle with a designated position in the search space. For the first step, initBestLocal(i) = initPosition(i) but it will be updated afterwards. Then the if function makes a first global best and if any other particles has a better global best position it will be set as the new global best. initVelocity(i) gives particles i an initial velocity which is randomly generated. 
+
+    After the initialisation, the core of the PSO method is executed until the endingCondition() is satisfied, which can be the number of iterations or an improvement threshold. In the body of the \textit{While} loop all particles are updated. The first step is to generate random numbers used in the velocity equation \ref{eq:vel}. Then the actual velocity is updated. The next step, updatePosition(i) updates the position of a particles in the search space and checks the fitness function value for improvement or not. A the end of the \textit{for} loop, if improvedLocal(i) = True then updates the local best position and finally it's similar for updating the global best position. 
+
+    
   % section particle_swarm_optimisation (end)
 
   \section{Portfolio Management} % (fold)
   \label{sec:portfolio_management}
-  
+    The money maker...
   % section portfolio_management (end)
 
-  \section{Multi-objective Optimisation} % (fold)
-  \label{sec:multi_objective_optimisation}
-  
-  % section multi_objective_optimisation (end)
+  \section{Haskell} % (fold)
+  \label{sec:haskell}
+    It rules!! 
+  % section haskell (end)
+
+  % \section{Multi-objective Optimisation} % (fold)
+  % \label{sec:multi_objective_optimisation}
+    
+  % % section multi_objective_optimisation (end)
 
 
 \chapter{Related Work}
@@ -189,7 +196,7 @@ Acknowledgments....
   % section markowitz_model (end)
   
 
-  
+
   %------------------------------------------------------------------
   % \section{Heuristic and Metaheuristic Algorithms} % (fold)
   % \label{sec:heuristic_and_metaheuristic_algorithms}
@@ -217,7 +224,11 @@ Acknowledgments....
 
 \chapter{Problem Domain}
   
-  The Particle Swarm Optimisation Algorithms has already been effectively implemented to solved various optimisation problems \cite{pso_app,pso_app2,pso_app3} under variant domains such as biomedical, networks, clustering, finance, combinatorial and many more \cite{pso_app_main}. This project mainly focuses on expanding the optimisation algorithm created by Rabanal, Rodrıguez and Rubio in their paper ``A Functional Approach to Parallelize Particle Swarm Optimization'' \cite{haskellPSO} and applying it to solve the portfolio selection problem \cite{marko2}. The optimisation algorithm has been successful by means of accuracy as well as efficiency at finding the maxima or minimia of given problems over specified domains, its special success is at not becoming trapped in local maxima or minimas even though the algorithm might encounter multiple of them before finding the global maxima or minima due to the concept of randomness being introduces, not only to each particle but also to the initialisation of the whole swarm itself. When evolutionary algorithms come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, the danger might be that when it finds a certain local minima which might seem like a ``good enough'' solution, then the algorithm might converge to this false solution. Furthermore when what we're trying to optimise has local minima and global minima which differ by thousands of pounds worth of stocks when applied to financial situations it is crucial the algorithm does not get stuck in non-optimal solutions. 
+  Particle Swarm Optimisation Algorithms has already been effectively implemented to solved various optimisation problems \cite{pso_app,pso_app2,pso_app3} under variant domains such as biomedical, networks, clustering, finance, combinatorial and many more \cite{pso_app_main}. This project mainly focuses on expanding the optimisation algorithm created by Rabanal, Rodrıguez and Rubio in their paper ``A Functional Approach to Parallelize Particle Swarm Optimization'' \cite{haskellPSO} and more importantly, applying it to solve the portfolio selection problem \cite{marko2}. The optimisation algorithm has been successful by means of accuracy as well as efficiency. 
+
+  When the difference between investing well and investing efficiently results in not gains hundreds of thousands of pounds, it becomes quite obvious that 
+
+  at finding the maxima or minimia of given problems over specified domains, its special success is at not becoming trapped in local maxima or minimas even though the algorithm might encounter multiple of them before finding the global maxima or minima due to the concept of randomness being introduces, not only to each particle but also to the initialisation of the whole swarm itself. When evolutionary algorithms come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, the danger might be that when it finds a certain local minima which might seem like a ``good enough'' solution, then the algorithm might converge to this false solution. Furthermore when what we're trying to optimise has local minima and global minima which differ by thousands of pounds worth of stocks when applied to financial situations it is crucial the algorithm does not get stuck in non-optimal solutions. 
 
   Mention more about portfolio optimisation....
 
@@ -342,6 +353,49 @@ This section describes the requirements for this project. Table \ref{table:funct
 
 \chapter{System Design and Architecture}
 
+  \section{Original PSO Implementation} % (fold)
+  \label{sec:original_pso_implementation}
+
+    \subsection{Initialisation} % (fold)
+    \label{sub:initialisation}
+    
+    % subsection initialisation (end)
+    \subsection{Optimisation} % (fold)
+    \label{sub:optimisation}
+    
+    % subsection optimisation (end)
+    \subsection{Termination} % (fold)
+    \label{sub:termination}
+    
+    % subsection termination (end)
+  % section original_pso_implementation (end)
+
+  \section{Expansion for Portfolio Optimisation} % (fold)
+  \label{sec:expansion_for_portfolio_optimisation}
+
+    \subsection{Interface and User Input} % (fold)
+    \label{sub:interface_and_user_input}
+    
+    % subsection interface_and_user_input (end)
+    \subsection{Optimisation} % (fold)
+    \label{sub:optimisation}
+    
+    % subsection optimisation (end)
+    \subsection{Termination} % (fold)
+    \label{sub:termination}
+    
+    % subsection termination (end)
+    \subsection{Fitness Function} % (fold)
+    \label{sub:fitness_function}
+    
+    % subsection fitness_function (end)
+    \subsection{Presenting the Results} % (fold)
+    \label{sub:presenting_the_results}
+    
+    % subsection presenting_the_results (end)
+  % section expansion_for_portfolio_optimisation (end)
+
+
 
 \chapter{Experimentation and Testing}
 
@@ -361,7 +415,44 @@ This section describes the requirements for this project. Table \ref{table:funct
       \end{split}
     \end{equation}
 
-    The convergence characteristic of the system can be controlled by $\phi$ through choosing suitable $c_1$ and $c_2$ in \eqref{eq:cf}. In this approach, $\phi$ must be greater than 4 to guarantee stability \cite{constriction_factor_2}. 
+    The convergence characteristic of the system can be controlled by $\phi$ through choosing suitable $c_1$ and $c_2$ in \eqref{eq:cf}. In this approach, $\phi$ must be greater than 4 to guarantee stability \cite{constriction_factor_2}.
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}
+      I plan to test whether this will in fact affect the outcome of the algorithm with my fitness function, furthermore if it does affect it, then whether it improves or worsens the result. In order to test this I will conduct six different experiments, three without a constriction factor where one has the adjustment parameters taken from MEH Pefersen in his paper ``Tuning \& Simplifying Heuristical Optimization''\cite{constriction_factors3}, one with the two random coefficients that add up to less than 4 and one where they add up to more than 4. Then three more with a constriction factor and the rest is the same as the previous three. 
+
+      All tests will be set to 50 particles, 500 iterations and 10 assets. This will give enough indication on how the constriction factor affects my fitness function and how it differs under various criteria.     
+    % subsection testing_strategy (end)
+
+    \subsection{Results} % (fold)
+    \label{sub:results}
+      This subsection shows the results and the following Table~\ref{table:constriction_factor_results} contains the exact values for the results in my experiment, it will follow by a show explanations of the results. 
+
+        \begin{table}[ht]
+          \setlength{\extrarowheight}{2.0pt}
+          \begin{tabular}{|l|l|l|}
+            \hline
+            Test & Mean Result & Standard deviation \\
+            \hline
+            WO-CF Pefersen & 0.914099 & $1.61088\times10^{-16}$ \\
+            \hline
+            WO-CF $<$ 4 & 0.914099 & $1.72748\times10^{-16}$ \\
+            \hline
+            WO-CF $>$ 4 & 0.9141 & $5.36229\times10^{-6}$ \\
+            \hline
+            W-CF Pefersen & 0.91415 & 0.0000389374 \\
+            \hline
+            W-CF $<$ 4 & 0.91416 & 0.0000448388 \\
+            \hline
+            W-CF $>$ 4 & 0.914099 & $2.81328\times10^{-16}$ \\
+            \hline
+          \end{tabular}
+          \caption{Results for \nameref{sec:constriction_factors}.}
+          \label{table:constriction_factor_results}
+        \end{table}
+
+      Blahh
+    % subsection results (end)
 
       % \begin{align}
       %   V_{i}^{k+1} & = K \Bigg[ V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big(Gbest_{i}^{k} - X_{i}^{k} \Big) \Bigg] \\
@@ -369,13 +460,32 @@ This section describes the requirements for this project. Table \ref{table:funct
       %   K & = \frac{2}{\mid 2 - \phi - \sqrt{\phi^2 -4\phi} \mid}  \\
       % \end{align}
 
-    \subsection{Results}
   % section constriction_factors (end)
 
   \section{Scalability} % (fold)
   \label{sec:scalability}
     Number of assets
   % section scalability (end)
+
+  \section{Penalty value} % (fold)
+  \label{sec:penalty_value}
+    For fitness function
+  % section penalty_value (end)
+
+  \section{Asset percentage} % (fold)
+  \label{sec:asset_percentage}
+    Constraint that says you have to invest between 0.05 to 0.35 on each asset
+  % section asset_percentage (end)
+
+  \section{Risk and Risk Aversion} % (fold)
+  \label{sec:risk_and_risk_aversion}
+    Level of riskiness
+  % section risk_and_risk_aversion (end)
+
+  \section{Efficiency} % (fold)
+  \label{sec:efficiency}
+    Standard Deviation stuff, box plots blahh blahhh
+  % section efficiency (end)
 
 
 
@@ -421,20 +531,46 @@ This section describes the requirements for this project. Table \ref{table:funct
   % section results (end)
 
 \chapter{Future Work}
+
   \section{PSO Parameters} % (fold)
   \label{sec:parameters}
-  
+    Dunno...
   % section parameters (end)
+
+  \section{Self-termination} % (fold)
+  \label{sec:self_termination}
+    Stops after some criteria is met
+  % section self_termination (end)
+
+  \section{Diversification} % (fold)
+  \label{sec:diversification}
+    One of the most interesting concepts in portfolio theory I found was that of diversification, unfortunately I found this very late into my project and unable, due to time constraints, to include this into my application. Diversification excites me as it contradicts intuition. One would think that if you have one risky asset, adding another one would only increase the overall risk further, in fact it does the exact opposite!
+
+    The most simplistic model to represent this concept is the proverb, ``putting your eggs in more than one basket''. Regardless on what the probability of each egg is, having more baskets with eggs is more likely to preserve more eggs that less baskets with the same amount of eggs. In other words, if one basket crashes, you still have the the other eggs which where in different baskets. 
+
+    Now something more useful and even less intuitive is that if you invest in more than one company within the same sector, for example split all your money equally (for simplicity in example) and invest in all the mobile phone networks there are. Now company $x$ gets into trouble for some reason which affects the stock market (fraud, IT, quality etc.) and the stock price for $x$ begins to fall, you will find that the price of stocks for all the other companies goes up. This is due to the investors and business which was with company $x$ now deciding to opt out of that company and therefore bringing more investors and business to all the other companies in the market. 
+
+    My application has a sense of diversification due to the extra constraint which I added late in the project as a emergency diversification solution. It states that you much invest between 5\% and 35\% on each asset to force diversification. This is vaux or brute intelligence though, what could be useful if the application gives a little extra preference if it knows that some assets belong to the same sector. 
 
   \section{Asset's Covariance} % (fold)
   \label{sec:covariance}
-  
+    Risk in terms of 
   % section covariance (end)
 
   \section{Market Relationships} % (fold)
   \label{sec:market_relationships}
-  
+    Gold vs Money
   % section market_relationships (end)
+
+
+
+    This would be brilliant!!
+  % section diversification (end)
+
+  \section{Real-time processing} % (fold)
+  \label{sec:real_time_processing}
+    Wow!
+  % section real_time_processing (end)
 
 
 \chapter{Discussion and Conclusion}

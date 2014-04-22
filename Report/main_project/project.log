@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  21 APR 2014 13:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  22 APR 2014 21:14
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -611,25 +611,31 @@ athmorphing.code.tex))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
-ractals.code.tex)) (./project.aux)
+ractals.code.tex)) (./project.aux
+
+LaTeX Warning: Label `sub:optimisation' multiply defined.
+
+
+LaTeX Warning: Label `sub:termination' multiply defined.
+
+)
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count141
 \scratchdimen=\dimen179
@@ -642,16 +648,16 @@ LaTeX Font Info:    ... okay on input line 27.
 \MPnumerator=\count145
 \everyMPtoPDFconversion=\toks41
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -661,8 +667,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
  (./project.out)
 (./project.out)
 \@outlinefile=\write4
@@ -670,7 +676,7 @@ LaTeX Info: Redefining \pageref on input line 27.
 
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=181, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=217, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -686,14 +692,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \StartThesis
+l.45 \StartThesis
                   [1]
 Chapter 1
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 \chapter
+l.67 \chapter
              {Background} [1
 
 
@@ -708,7 +714,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108     \end{equation}
+l.109     \end{equation}
                          [2
 
 
@@ -719,51 +725,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140   \section
-                {Portfolio Management} % (fold) [3]pdfTeX warning (ext4): desti
-nation with the same identifier (name{page.4}) has been already used, duplicate
- ignored
+l.135     I
+           n Algorithm \ref{eq:pso} you can see the pseudo-code for a basic ...
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.151 \chapter
-              {Related Work} [4pdfTeX warning (ext4): destination with the same
- identifier (name{algocf.1}) has been already used, duplicate ignored
+l.138 
+       [4pdfTeX warning (ext4): destination with the same identifier (name{algo
+cf.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.151 \chapter
-              {Related Work}]
+l.138 
+      ] [5]
 Chapter 3
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
+ [6
 
 
 ]
-<./Figures/efficient_frontier.png, id=301, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=350, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}
+ [7]
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.218 \chapter
+l.225 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ± in font cmr12!
-[8
+[9
 
 
 ]
 Chapter 5
-[9
+[10
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
@@ -771,35 +780,45 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.296 
-      ] [10]
+l.307 
+      ] [11]
 Chapter 6
-[11
+[12
 
 
-] [12]
+] [13]
 Chapter 7
-[13
-
-
-]
-Chapter 8
 [14
 
 
 ]
-Chapter 9
+Chapter 8
+
+LaTeX Warning: Citation `constriction_factors3' on page 15 undefined on input l
+ine 422.
+
 [15
+
+
+] [16pdfTeX warning (ext4): destination with the same identifier (name{table.8.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.492 \chapter
+              {Financial Data}]
+Chapter 9
+[17
 
 
 ]
 Chapter 10
-[16
+[18
 
 
-]
+] [19]
 Chapter 11
-(./project.bbl [17
+(./project.bbl [20
 
 
 ]
@@ -815,35 +834,41 @@ Underfull \hbox (badness 2181) in paragraph at lines 70--74
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [21
 
 
 ])
-[19] (./project.aux) ) 
+[22] (./project.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15974 strings out of 495061
- 278754 string characters out of 1182621
- 358234 words of memory out of 3000000
- 18573 multiletter control sequences out of 15000+50000
+ 16024 strings out of 495061
+ 279586 string characters out of 1182621
+ 357220 words of memory out of 3000000
+ 18601 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,1789b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmtt10.pfb>
-Output written on project.pdf (25 pages, 316531 bytes).
+ 56i,19n,57p,1137b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on project.pdf (28 pages, 331849 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 447 words of extra memory for PDF output out of 10000 (max. 10000000)
 

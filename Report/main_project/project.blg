@@ -2,74 +2,44 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: project.aux
 The style file: plain.bst
 Database file #1: myref.bib
-I was expecting a `,' or a `}'---line 14 of file myref.bib
- :   
- :   author = {Anagnostopoulos, Konstantinos P. and Mamanis, Georgios},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 20 of file myref.bib
- :   
- :   author = {Markowitz, H.},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 26 of file myref.bib
- :   
- :   author = {Billio M.},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 68 of file myref.bib
- :   
- :   author = {Lim, Shi and Montakhab, Mohammad},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 74 of file myref.bib
- :   
- :   author = {Pedersen , M.E.H.},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "constriction_factors3"
-Warning--to sort, need author or key in marko2
-Warning--to sort, need author or key in non-dist
-Warning--to sort, need author or key in constriction_factor_2
-You've used 19 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            594 strings with 6474 characters,
-and the built_in function-call counts, 6567 in all, are:
-= -- 612
-> -- 204
-< -- 20
-+ -- 87
-- -- 64
-* -- 385
-:= -- 935
-add.period$ -- 51
-call.type$ -- 19
-change.case$ -- 84
+            575 strings with 5784 characters,
+and the built_in function-call counts, 4869 in all, are:
+= -- 463
+> -- 146
+< -- 14
++ -- 63
+- -- 44
+* -- 261
+:= -- 727
+add.period$ -- 41
+call.type$ -- 15
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 309
-empty$ -- 635
-format.name$ -- 64
-if$ -- 1515
+cite$ -- 15
+duplicate$ -- 216
+empty$ -- 470
+format.name$ -- 44
+if$ -- 1113
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 14
-newline$ -- 92
-num.names$ -- 32
-pop$ -- 145
+int.to.str$ -- 15
+missing$ -- 9
+newline$ -- 74
+num.names$ -- 30
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 52
 quote$ -- 0
-skip$ -- 275
+skip$ -- 191
 stack$ -- 0
-substring$ -- 420
-swap$ -- 123
-text.length$ -- 20
+substring$ -- 309
+swap$ -- 82
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
-warning$ -- 3
-while$ -- 57
-width$ -- 21
-write$ -- 193
-(There were 5 error messages)
+type$ -- 60
+warning$ -- 0
+while$ -- 47
+width$ -- 17
+write$ -- 157

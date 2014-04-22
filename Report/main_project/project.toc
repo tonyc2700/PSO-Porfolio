@@ -33,33 +33,35 @@
 \contentsline {subsection}{\tocsubsection {}{2.3}{Termination}}{14}{subsection.7.2.3}
 \contentsline {subsection}{\tocsubsection {}{2.4}{Fitness Function}}{14}{subsection.7.2.4}
 \contentsline {subsection}{\tocsubsection {}{2.5}{Presenting the Results}}{14}{subsection.7.2.5}
-\contentsline {chapter}{\tocchapter {Chapter}{8}{Experimentation and Testing}}{15}{chapter.8}
-\contentsline {section}{\tocsection {}{1}{Constriction Factors}}{15}{section.8.1}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Testing Strategy}}{15}{subsection.8.1.1}
-\contentsline {subsection}{\tocsubsection {}{1.2}{Results}}{16}{subsection.8.1.2}
-\contentsline {section}{\tocsection {}{2}{Scalability}}{16}{section.8.2}
-\contentsline {section}{\tocsection {}{3}{Penalty value}}{16}{section.8.3}
-\contentsline {section}{\tocsection {}{4}{Asset percentage}}{16}{section.8.4}
-\contentsline {section}{\tocsection {}{5}{Risk and Risk Aversion}}{16}{section.8.5}
-\contentsline {section}{\tocsection {}{6}{Efficiency}}{16}{section.8.6}
-\contentsline {chapter}{\tocchapter {Chapter}{9}{Financial Data}}{17}{chapter.9}
-\contentsline {section}{\tocsection {}{1}{Data Description}}{17}{section.9.1}
-\contentsline {section}{\tocsection {}{2}{Problem Domain}}{17}{section.9.2}
-\contentsline {section}{\tocsection {}{3}{Assets and their Weights}}{17}{section.9.3}
-\contentsline {section}{\tocsection {}{4}{Analysis}}{17}{section.9.4}
-\contentsline {section}{\tocsection {}{5}{PSO Parameters}}{17}{section.9.5}
-\contentsline {section}{\tocsection {}{6}{Experimentation and Testing}}{17}{section.9.6}
-\contentsline {section}{\tocsection {}{7}{Portfolio Constraints}}{17}{section.9.7}
-\contentsline {section}{\tocsection {}{8}{Results}}{17}{section.9.8}
-\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{18}{chapter.10}
-\contentsline {section}{\tocsection {}{1}{PSO Parameters}}{18}{section.10.1}
-\contentsline {section}{\tocsection {}{2}{Self-termination}}{18}{section.10.2}
-\contentsline {section}{\tocsection {}{3}{Diversification}}{18}{section.10.3}
-\contentsline {section}{\tocsection {}{4}{Asset's Covariance}}{19}{section.10.4}
-\contentsline {section}{\tocsection {}{5}{Market Relationships}}{19}{section.10.5}
-\contentsline {section}{\tocsection {}{6}{Real-time processing}}{19}{section.10.6}
-\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{20}{chapter.11}
-\contentsline {section}{\tocsection {}{1}{Discussion}}{20}{section.11.1}
-\contentsline {section}{\tocsection {}{2}{Future Work}}{20}{section.11.2}
-\contentsline {section}{\tocsection {}{3}{Conclusion}}{20}{section.11.3}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{21}{section.11.3}
+\contentsline {chapter}{\tocchapter {Chapter}{8}{Financial Data}}{15}{chapter.8}
+\contentsline {section}{\tocsection {}{1}{Data Description}}{15}{section.8.1}
+\contentsline {section}{\tocsection {}{2}{Problem Domain}}{15}{section.8.2}
+\contentsline {section}{\tocsection {}{3}{Assets and their Weights}}{15}{section.8.3}
+\contentsline {section}{\tocsection {}{4}{Analysis}}{15}{section.8.4}
+\contentsline {section}{\tocsection {}{5}{PSO Parameters}}{15}{section.8.5}
+\contentsline {section}{\tocsection {}{6}{Experimentation and Testing}}{15}{section.8.6}
+\contentsline {section}{\tocsection {}{7}{Portfolio Constraints}}{15}{section.8.7}
+\contentsline {section}{\tocsection {}{8}{Results}}{15}{section.8.8}
+\contentsline {chapter}{\tocchapter {Chapter}{9}{Experimentation and Testing}}{16}{chapter.9}
+\contentsline {section}{\tocsection {}{1}{Constriction Factors}}{16}{section.9.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Testing Strategy}}{16}{subsection.9.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.2}{Hypothesis}}{17}{subsection.9.1.2}
+\contentsline {subsection}{\tocsubsection {}{1.3}{Results}}{17}{subsection.9.1.3}
+\contentsline {subsection}{\tocsubsection {}{1.4}{Conclusion}}{18}{subsection.9.1.4}
+\contentsline {section}{\tocsection {}{2}{Scalability}}{18}{section.9.2}
+\contentsline {section}{\tocsection {}{3}{Penalty value}}{18}{section.9.3}
+\contentsline {section}{\tocsection {}{4}{Asset percentage/Induced/Forced Diversification}}{18}{section.9.4}
+\contentsline {section}{\tocsection {}{5}{Risk and Risk Aversion}}{18}{section.9.5}
+\contentsline {section}{\tocsection {}{6}{Efficiency}}{18}{section.9.6}
+\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{19}{chapter.10}
+\contentsline {section}{\tocsection {}{1}{PSO Parameters}}{19}{section.10.1}
+\contentsline {section}{\tocsection {}{2}{Self-termination}}{19}{section.10.2}
+\contentsline {section}{\tocsection {}{3}{Diversification}}{19}{section.10.3}
+\contentsline {section}{\tocsection {}{4}{Asset's Covariance}}{20}{section.10.4}
+\contentsline {section}{\tocsection {}{5}{Market Relationships}}{20}{section.10.5}
+\contentsline {section}{\tocsection {}{6}{Real-time processing}}{20}{section.10.6}
+\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{21}{chapter.11}
+\contentsline {section}{\tocsection {}{1}{Discussion}}{21}{section.11.1}
+\contentsline {section}{\tocsection {}{2}{Future Work}}{21}{section.11.2}
+\contentsline {section}{\tocsection {}{3}{Conclusion}}{21}{section.11.3}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{22}{section.11.3}

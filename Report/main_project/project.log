@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  22 APR 2014 21:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  22 APR 2014 23:25
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -708,7 +708,7 @@ l.67 \chapter
 ]
 Chapter 2
 
-Underfull \vbox (badness 7832) has occurred while \output is active []
+Underfull \vbox (badness 2253) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
@@ -726,7 +726,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.135     I
-           n Algorithm \ref{eq:pso} you can see the pseudo-code for a basic ...
+           n Algorithm~\ref{eq:pso} one can see the pseudo-code for a standa...
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -765,8 +765,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 l.225 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ± in font cmr12!
 [9
 
 
@@ -793,32 +791,34 @@ Chapter 7
 
 ]
 Chapter 8
-
-LaTeX Warning: Citation `constriction_factors3' on page 15 undefined on input l
-ine 422.
-
 [15
 
 
-] [16pdfTeX warning (ext4): destination with the same identifier (name{table.8.
+]
+Chapter 9
+[16
+
+
+] [17pdfTeX warning (ext4): destination with the same identifier (name{table.9.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.492 \chapter
-              {Financial Data}]
-Chapter 9
-[17
+l.524 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.9
+.2}) has been already used, duplicate ignored
 
-
-]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.524 
+      ] [18]
 Chapter 10
-[18
+[19
 
 
-] [19]
+] [20]
 Chapter 11
-(./project.bbl [20
+(./project.bbl [21
 
 
 ]
@@ -826,34 +826,27 @@ Bibliography
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
 
-Underfull \hbox (badness 2181) in paragraph at lines 70--74
+Underfull \hbox (badness 2181) in paragraph at lines 64--68
 []\OT1/cmr/m/n/10 Pablo Ra-banal, Is-mael Rodguez, and Fer-nando Ru-bio. []$\OT
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21
+) [22
 
 
-])
-[22] (./project.aux)
-
-LaTeX Warning: There were undefined references.
-
+] (./project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16024 strings out of 495061
- 279586 string characters out of 1182621
- 357220 words of memory out of 3000000
- 18601 multiletter control sequences out of 15000+50000
+ 16022 strings out of 495061
+ 279612 string characters out of 1182621
+ 357332 words of memory out of 3000000
+ 18600 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,1137b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,1121b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -866,9 +859,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (28 pages, 331849 bytes).
+Output written on project.pdf (28 pages, 327667 bytes).
 PDF statistics:
  550 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 116 named destinations out of 1000 (max. 500000)
  447 words of extra memory for PDF output out of 10000 (max. 10000000)
 

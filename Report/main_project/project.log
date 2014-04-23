@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  23 APR 2014 18:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  23 APR 2014 22:08
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -624,6 +624,15 @@ LaTeX Warning: Label `sub:termination' multiply defined.
 
 LaTeX Warning: Label `sub:testing_strategy' multiply defined.
 
+
+LaTeX Warning: Label `sub:hypothesis' multiply defined.
+
+
+LaTeX Warning: Label `sub:results' multiply defined.
+
+
+LaTeX Warning: Label `sub:conclusion' multiply defined.
+
 )
 \openout1 = `project.aux'.
 
@@ -812,13 +821,13 @@ Chapter 10
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.556 
+l.560 
       pdfTeX warning (ext4): destination with the same identifier (name{table.1
 0.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.556 
+l.560 
       ] [20]
 Chapter 11
 [21
@@ -854,10 +863,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16046 strings out of 495061
- 279986 string characters out of 1182621
- 357684 words of memory out of 3000000
- 18611 multiletter control sequences out of 15000+50000
+ 16051 strings out of 495061
+ 280074 string characters out of 1182621
+ 357733 words of memory out of 3000000
+ 18612 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,1121b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -873,9 +882,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (30 pages, 337175 bytes).
+Output written on project.pdf (30 pages, 337788 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
  471 words of extra memory for PDF output out of 10000 (max. 10000000)
 

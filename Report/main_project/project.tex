@@ -17,7 +17,7 @@
 \newtheorem*{exa}{Example}
 \newtheorem*{no}{Note}
 
-\Title{Particle Swarm Optimisation for the Portfolio Selection Problem in a Function Based Environment.}
+\Title{Particle Swarm Optimisation for the Portfolio Selection Problem in a Function Based Environment}
 % \Title{Functional Approach }
 \Author{Anthony S. Chapman}
 \Year{2013--2014}
@@ -84,10 +84,10 @@ Acknowledgments....
     % \end{itemize}
     \begin{equation} \label{eq:PSO_stuff}
       \begin{split}
-        & V_i^k \text{ : The velocity of particle i at time k.} \\
-        & X_i^k \text{ : The current position of particle i at time k.} \\
-        & Pbest_i^k \text{ : The personal best position of particle i at time k.} \\
-        & Gbest^k \text{ : The global best position of particle i at time k.} \\
+        & V_i^t \text{ : The velocity of particle i at time t.} \\
+        & X_i^t \text{ : The current position of particle i at time t.} \\
+        & Pbest_i^t \text{ : The personal best position of particle i at time t.} \\
+        & Gbest^t \text{ : The global best position of particle i at time t.} \\
       \end{split}
     \end{equation}
 
@@ -95,16 +95,16 @@ Acknowledgments....
 
     \begin{equation} \label{eq:vel}
       \begin{split}
-        V_{i}^{k+1} & = \omega V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{k} - X_{i}^{k} \Big) \\
+        V_{i}^{t+1} & = \omega V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{t} - X_{i}^{t} \Big) \\
         \text{where} & \\
-        & V_i^{k+1} \text{ : The velocity of particle i at time k + 1.} \\
-        & V_i^k \text{ : The velocity of particle i at time k.} \\
-        & X_i^k \text{ : The current position of particle i at time k.} \\
+        & V_i^{t+1} \text{ : The velocity of particle i at time t + 1.} \\
+        & V_i^t \text{ : The velocity of particle i at time t.} \\
+        & X_i^t \text{ : The current position of particle i at time t.} \\
         & \omega \text{ : Inertia weight parameter.} \\
         & c_1, c_2 \text{ : Acceleration coefficients.} \\
         & r_1, r_2 \text{ : Random numbers between 0 and 1.} \\
-        & Pbest_i^k \text{ : The personal best position of particle i at time k.} \\
-        & Gbest^k \text{ : The global best position of particle i at time k.} \\
+        & Pbest_i^t \text{ : The personal best position of particle i at time t.} \\
+        & Gbest^t \text{ : The global best position of particle i at time t.} \\
       \end{split}
     \end{equation}
 
@@ -406,6 +406,24 @@ Some possible risks which might affect the development of my project and some wo
     \label{sub:optimisation}
     
     % subsection optimisation (end)
+    \subsection{Constriction Factor} % (fold)
+    \label{sub:constriction_factor}
+    Maurice Clerc in his study on stability and convergence of PSO \cite{constriction_factor} has introduced the concept of a constriction factor. Clerc indicated that the use of a constriction factor may be necessary to insure convergence of the PSO for certain fitness functions.
+
+    In order to ensure convergence of the PSO, the velocity from Equation~\ref{eq:vel} can be expressed as follows:
+
+    \begin{equation} \label{eq:cf}
+      \begin{split}
+        V_{i}^{t+1} & = K \Bigg[ V_{i}^{t} + c_1 r_1 \times \Big( Pbest_{i}^{t} - X_{i}^{t} \Big) + c_2 r_2 \times \Big( Gbest^{t} - X_{i}^{t} \Big) \Bigg] \\
+        \text{where }\\
+        K & = \frac{2}{\mid 2 - \phi - \sqrt{\phi^2 -4\phi} \mid} \text{ and } \phi = c_1 + c_2 \text{ s.t. } \phi > 4  \\
+        % \text{and} \\
+        % \phi = c_1 + c_2 , \phi > 4 \\
+      \end{split}
+    \end{equation}
+
+    The convergence characteristic of the system can be controlled by $\phi$ through choosing suitable $c_1$ and $c_2$ in \eqref{eq:cf}. In this approach, $\phi$ must be greater than 4 to guarantee stability \cite{constriction_factor_2}.
+    % subsection constriction_factor (end)
     \subsection{Termination} % (fold)
     \label{sub:termination}
     
@@ -467,39 +485,27 @@ Some possible risks which might affect the development of my project and some wo
 
   \section{Constriction Factors} % (fold)
   \label{sec:constriction_factors}
-    Maurice Clerc in his study on stability and convergence of PSO \cite{constriction_factor} has introduced the concept of constriction factor. Clerc indicated that the use of a constriction factor may be necessary to insure convergence of the PSO for certain fitness functions.
-
-    In order to ensure convergence of the PSO, the velocity of the constriction factor based approach can be expressed as follows:
-
-    \begin{equation} \label{eq:cf}
-      \begin{split}
-        V_{i}^{k+1} & = K \Bigg[ V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{k} - X_{i}^{k} \Big) \Bigg] \\
-        \text{where }\\
-        K & = \frac{2}{\mid 2 - \phi - \sqrt{\phi^2 -4\phi} \mid} \text{ and } \phi = c_1 + c_2 \text{ s.t. } \phi > 4  \\
-        % \text{and} \\
-        % \phi = c_1 + c_2 , \phi > 4 \\
-      \end{split}
-    \end{equation}
-
-    The convergence characteristic of the system can be controlled by $\phi$ through choosing suitable $c_1$ and $c_2$ in \eqref{eq:cf}. In this approach, $\phi$ must be greater than 4 to guarantee stability \cite{constriction_factor_2}.
-
+  In System Design and Architecture~\ref{sub:constriction_factor} the concept of a constriction factor was introduced. 
+    
     \subsection{Testing Strategy} % (fold)
     \label{sub:testing_strategy}
-      I plan to test whether this will in fact affect the outcome of the algorithm when applied to the portfolio selection problem, furthermore if it does affect it, then whether it improves or worsens the result. In order to test this I will conduct six different experiments, three without a constriction factor where one has the adjustment parameters taken from MEH Pefersen in his paper ``Tuning \& Simplifying Heuristical Optimization'' \cite{constriction_factor_3}, one with the two randomness coefficients that add up to less than 4 and one where they add up to more than 4. Then three more with a constriction factor and the rest is the same as the previous three. 
+      I plan to test whether this will in fact affect the outcome of the algorithm when applied to the portfolio selection problem, furthermore if it does affect it, then whether it improves or worsens the result. In order to test this I will conduct six different experiments, three without a constriction factor where one has the adjustment parameters taken from \cite{constriction_factor_3}, one with the two randomness coefficients that add up to less than 4 and one where they add up to more than 4. Then three more with a constriction factor and the rest is the same as the previous three.
 
-      All tests will be set to 50 particles, 500 iterations and 10 assets. This will give enough indication on how the constriction factor affects my fitness function and how it differs under various criteria.     
+      All tests will run 20 times and the results and the time taken will be recorded, all tests will be set to 50 particles, 500 iterations and 10 assets. A mean result and standard deviation will be computed to be able to compare the results. This will give enough indication on how the constriction factor affects my fitness function and how it differs under various criteria.  
     % subsection testing_strategy (end)
 
     \subsection{Hypothesis} % (fold)
     \label{sub:hypothesis}
-      Constriction factor when applied to my portfolio selection problem with appropriate coefficients will improve the portfolio selection problem.
+      Constriction factor when applied to my portfolio selection problem with appropriate coefficients will not improve the portfolio selection problem.
     % subsection hypothesis (end)
 
     \subsection{Results} % (fold)
     \label{sub:results}
-      This subsection shows the results and the following Table~\ref{table:constriction_factor_results} contains the exact values for the results in my experiment, it will follow by a short explanations of the results. 
+      This subsection shows the results and the following Table~\ref{table:constriction_factor_results} contains the exact values for the results in my experiment, it will follow a short explanations of the results. 
 
-        \begin{table}[ht]
+      Firstly, the time it took for each test to run and there was no significant difference between them. Having a constriction factor did not affect the time it takes for the algorithm to complete. 
+
+        \begin{table}[H]
           \setlength{\extrarowheight}{2.0pt}
           \begin{tabular}{|l|l|l|}
             \hline
@@ -544,7 +550,10 @@ Some possible risks which might affect the development of my project and some wo
     % subsection results (end)
     \subsection{Conclusion} % (fold)
     \label{sub:conclusion}
-      Constriction factor when applied to my portfolio selection problem does not improve the results and in the contrary to the hypothesis, it makes the results more unstable. The algorithm will therefore not include a constriction factor. 
+      Constriction factor when applied to my portfolio selection problem does not improve the results as in the hypothesis. It makes the results more unstable, the algorithm will therefore not include a constriction factor. 
+
+      The use of the constriction coefficient can be viewed as a recommendation to the particle to ``take smaller steps''\cite{constriction_factor_4}, because of this it exploits optimal solutions, which is fine if there aren't many, but it does mean that it travels less in the same amount of time. This is one of the main reasons why it did not improve the results. One has to bare in mind that each asset adds a dimension to out search space, this increases domain exponentially so as you increase the amount of assets in a portfolio coupled with making the PSO take smaller steps results in a much larger search space and less area covered by the end of the algorithm. 
+       
     % subsection conclusion (end)
 
       % \begin{align}
@@ -557,6 +566,12 @@ Some possible risks which might affect the development of my project and some wo
 
   \section{Scalability} % (fold)
   \label{sec:scalability}
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}b
+    
+    % subsection testing_strategy (end)
+
     Number of assets
   % section scalability (end)
 

@@ -48,7 +48,7 @@
 
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{10pt}
 \setlength{\voffset}{-1cm}
 \setlength{\hoffset}{-1.2cm}
 \setlength{\textwidth}{6in}

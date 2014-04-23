@@ -1,4 +1,6 @@
-assets
+Time taken for PSO to finish for all tests
+
+PSO 20 particles, 100 iterations, 5 assets
 Time:0.039712s
 Time:0.041968s
 Time:0.044316s
@@ -19,7 +21,7 @@ Time:0.043837s
 Time:0.048421s
 Time:0.050421s
 
-assets
+PSO 20 particles, 300 iterations, 5 assets
 Time:0.109414s
 Time:0.125016s
 Time:0.10036s
@@ -38,7 +40,7 @@ Time:0.103611s
 Time:0.104097s
 Time:0.107703s
 
-assets
+PSO 40 particles, 100 iterations, 5 assets
 Time:0.072602s
 Time:0.081561s
 Time:0.082166s
@@ -56,7 +58,7 @@ Time:0.084864s
 Time:0.083837s
 Time:0.080927s
 
-assets
+PSO 20 particles, 100 iterations, 7 assets
 Time:0.053057s
 Time:0.051095s
 Time:0.05191s
@@ -76,7 +78,7 @@ Time:0.066586s
 Time:0.053134s
 Time:0.057903s
 
-assets
+PSO 20 particles, 300 iterations, 7 assets
 Time:0.138051s
 Time:0.124046s
 Time:0.130943s
@@ -96,7 +98,7 @@ Time:0.129254s
 Time:0.124684s
 Time:0.118445s
 
-assets
+PSO 40 particles, 100 iterations, 7 assets
 Time:0.11259s
 Time:0.108534s
 Time:0.106935s
@@ -116,7 +118,7 @@ Time:0.106984s
 Time:0.124326s
 Time:0.101661s
 
-assets
+PSO 20 particles, 100 iterations, 10 assets
 Time:0.089132s
 Time:0.083944s
 Time:0.087179s
@@ -131,7 +133,7 @@ Time:0.079843s
 Time:0.089229s
 Time:0.114063s
 
-assets
+PSO 20 particles, 300 iterations, 10 assets
 Time:0.177709s
 Time:0.182802s
 Time:0.183269s
@@ -150,7 +152,7 @@ Time:0.187595s
 Time:0.182597s
 Time:0.180392s
 
-assets
+PSO 40 particles, 100 iterations, 10 assets
 Time:0.176422s
 Time:0.177436s
 Time:0.171536s

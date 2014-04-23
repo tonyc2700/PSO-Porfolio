@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  22 APR 2014 23:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  23 APR 2014 10:55
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -613,6 +613,9 @@ ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
 ractals.code.tex)) (./project.aux
 
+LaTeX Warning: Label `sub:haskell' multiply defined.
+
+
 LaTeX Warning: Label `sub:optimisation' multiply defined.
 
 
@@ -676,7 +679,7 @@ LaTeX Info: Redefining \pageref on input line 28.
 
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=217, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=229, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -750,7 +753,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=350, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=366, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -778,18 +781,18 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.307 
+l.308 
       ] [11]
 Chapter 6
 [12
 
 
-] [13]
-Chapter 7
-[14
-
-
 ]
+Chapter 7
+[13
+
+
+] [14]
 Chapter 8
 [15
 
@@ -799,26 +802,31 @@ Chapter 9
 [16
 
 
-] [17pdfTeX warning (ext4): destination with the same identifier (name{table.9.
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.524 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.9
-.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.524 
-      ] [18]
+]
 Chapter 10
-[19
+[17
 
 
-] [20]
+] [18pdfTeX warning (ext4): destination with the same identifier (name{table.10
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.549 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.1
+0.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.549 
+      ] [19]
 Chapter 11
-(./project.bbl [21
+[20
+
+
+] [21]
+Chapter 12
+(./project.bbl [22
 
 
 ]
@@ -831,7 +839,13 @@ Underfull \hbox (badness 2181) in paragraph at lines 64--68
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
 
-) [22
+
+Overfull \hbox (72.01537pt too wide) in paragraph at lines 70--75
+[]\OT1/cmr/m/n/10 Risk Sci-en-tist. []$\OT1/cmtt/m/n/10 http : / / www . risksc
+ientist . com / content / technologies-[]portfolio-[]optimization-[]theory .
+ []
+
+) [23
 
 
 ] (./project.aux)
@@ -840,10 +854,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16022 strings out of 495061
- 279612 string characters out of 1182621
- 357332 words of memory out of 3000000
- 18600 multiletter control sequences out of 15000+50000
+ 16040 strings out of 495061
+ 279873 string characters out of 1182621
+ 357591 words of memory out of 3000000
+ 18609 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,1121b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -859,9 +873,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (28 pages, 327667 bytes).
+Output written on project.pdf (29 pages, 334180 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 447 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -178,12 +178,12 @@ Acknowledgments....
 
     Here, the objective function minimises the total variance (risk) associated with a portfolio whilst the constraints ensure that the portfolio meets the expected required return of $\pi$ and the proportions of all the assets sum to 1. The non-negative constraint means that no short-selling is allowed. 
 
-    This framework presumes that the investor uses a quadratic utility function or that asset returns follow a multivariate normal distribution. This implies that the rate of return of a portfolio of assets can be completely explained by the expected return or variance of assets. The efficient-frontier is the set of assets which provide minimum risk for a specified level of return. Solving the Markowitz portfolio optimisation problems for different specified expected portfolio returns will give us a set which represents the efficient-frontier, it is a smooth semi-increasing curve which represents the best possible trade-off between risk and expected return, also called the set of Pareto-optimal portfolios \cite{}. 
+    This framework presumes that the investor uses a quadratic utility function or that asset returns follow a multivariate normal distribution. This implies that the rate of return of a portfolio of assets can be completely explained by the expected return or variance of assets. The efficient-frontier is the set of assets which provide minimum risk for a specified level of return. Solving the Markowitz portfolio optimisation problems for different specified expected portfolio returns will give us a set which represents the efficient-frontier, it is a smooth semi-increasing curve which represents the best possible trade-off between risk and expected return, also called the set of Pareto-optimal portfolios \cite{pareto}. 
 
     \begin{figure}[H]
       \centering
         \includegraphics[width=0.9\textwidth]{efficient_frontier}
-      \caption{Example of an Efficient Frontier Without a Risk-Free Asset.}
+      \caption{Example of an Efficient Frontier Without a Risk-Free Asset \cite{efficient_frontier}.}
       \label{efficient_frontier}
     \end{figure}
 
@@ -238,7 +238,8 @@ Acknowledgments....
   
   % section approach (end)
 
-\chapter{Requirements}
+\chapter{Requirements and Risk Assessment}
+
 This section describes the requirements for this project. Table \ref{table:functionalRequirements} refers to the functional requirements from technical point of view. Section \ref{sec:non_functional} focuses on the non-functional requirements of the system. 
   \section{Functional} % (fold)
   \label{sec:functional}
@@ -310,6 +311,30 @@ This section describes the requirements for this project. Table \ref{table:funct
     Running the PSO requires setting up various parameters and thresholds for optimisation (size of the particle population, number of iterations, inertia weights and convergence coefficients). These parameters need to be optimised for the algorithm to be computationally effective and produce accurate results. 
 
   % section non_functional (end)
+
+\chapter{Risk Assessment}
+Some possible risks which might affect the development of my project and some worries which must not be overlooked
+
+  \section{Social} % (fold)
+  \label{sec:social}
+    Stuff like joint-honours so have half the time
+  % section social (end)
+  \section{Project Based} % (fold)
+  \label{sec:project_based}
+    \subsection{Haskell} % (fold)
+    \label{sub:haskell}
+      Nature of Haskell being difficult as the type settings so strong (transferring data, parsing) solved by partial functions.
+    % subsection haskell (end)
+    \subsection{PSO} % (fold)
+    \label{sub:pso}
+      Becoming stuck in local minima and not giving optimal solution
+    % subsection pso (end)
+    \subsection{Portfolio} % (fold)
+    \label{sub:portfolio}
+      Company suddenly goes bust, application has no notion of background 
+    % subsection portfolio (end)
+
+  % section project_based (end)
 
 \chapter{Methodology and Technologies}
   This chapter describes the methodology used in the project for the research, design, implementation and testing. It also mentions the technologies used to achieve the goals. 

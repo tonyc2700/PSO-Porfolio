@@ -14,40 +14,43 @@
 \BOOKMARK [1][-]{section.3.4}{4. PSO applied}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Chapter 4. Problem Domain}{}
 \BOOKMARK [1][-]{section.4.1}{1. Approach}{chapter.4}
-\BOOKMARK [0][-]{chapter.5}{Chapter 5. Requirements}{}
+\BOOKMARK [0][-]{chapter.5}{Chapter 5. Requirements and Risk Assessment}{}
 \BOOKMARK [1][-]{section.5.1}{1. Functional}{chapter.5}
 \BOOKMARK [1][-]{section.5.2}{2. Non-functional}{chapter.5}
-\BOOKMARK [0][-]{chapter.6}{Chapter 6. Methodology and Technologies}{}
-\BOOKMARK [1][-]{section.6.1}{1. Methodology}{chapter.6}
-\BOOKMARK [1][-]{section.6.2}{2. Technology}{chapter.6}
-\BOOKMARK [0][-]{chapter.7}{Chapter 7. System Design and Architecture}{}
-\BOOKMARK [1][-]{section.7.1}{1. Original PSO Implementation}{chapter.7}
-\BOOKMARK [1][-]{section.7.2}{2. Expansion for Portfolio Optimisation}{chapter.7}
-\BOOKMARK [0][-]{chapter.8}{Chapter 8. Financial Data}{}
-\BOOKMARK [1][-]{section.8.1}{1. Data Description}{chapter.8}
-\BOOKMARK [1][-]{section.8.2}{2. Problem Domain}{chapter.8}
-\BOOKMARK [1][-]{section.8.3}{3. Assets and their Weights}{chapter.8}
-\BOOKMARK [1][-]{section.8.4}{4. Analysis}{chapter.8}
-\BOOKMARK [1][-]{section.8.5}{5. PSO Parameters}{chapter.8}
-\BOOKMARK [1][-]{section.8.6}{6. Experimentation and Testing}{chapter.8}
-\BOOKMARK [1][-]{section.8.7}{7. Portfolio Constraints}{chapter.8}
-\BOOKMARK [1][-]{section.8.8}{8. Results}{chapter.8}
-\BOOKMARK [0][-]{chapter.9}{Chapter 9. Experimentation and Testing}{}
-\BOOKMARK [1][-]{section.9.1}{1. Constriction Factors}{chapter.9}
-\BOOKMARK [1][-]{section.9.2}{2. Scalability}{chapter.9}
-\BOOKMARK [1][-]{section.9.3}{3. Penalty value}{chapter.9}
-\BOOKMARK [1][-]{section.9.4}{4. Asset percentage/Induced/Forced Diversification}{chapter.9}
-\BOOKMARK [1][-]{section.9.5}{5. Risk and Risk Aversion}{chapter.9}
-\BOOKMARK [1][-]{section.9.6}{6. Efficiency}{chapter.9}
-\BOOKMARK [0][-]{chapter.10}{Chapter 10. Future Work}{}
-\BOOKMARK [1][-]{section.10.1}{1. PSO Parameters}{chapter.10}
-\BOOKMARK [1][-]{section.10.2}{2. Self-termination}{chapter.10}
-\BOOKMARK [1][-]{section.10.3}{3. Diversification}{chapter.10}
-\BOOKMARK [1][-]{section.10.4}{4. Asset's Covariance}{chapter.10}
-\BOOKMARK [1][-]{section.10.5}{5. Market Relationships}{chapter.10}
-\BOOKMARK [1][-]{section.10.6}{6. Real-time processing}{chapter.10}
-\BOOKMARK [0][-]{chapter.11}{Chapter 11. Discussion and Conclusion}{}
-\BOOKMARK [1][-]{section.11.1}{1. Discussion}{chapter.11}
-\BOOKMARK [1][-]{section.11.2}{2. Future Work}{chapter.11}
-\BOOKMARK [1][-]{section.11.3}{3. Conclusion}{chapter.11}
-\BOOKMARK [0][-]{section.11.3}{Bibliography}{}
+\BOOKMARK [0][-]{chapter.6}{Chapter 6. Risk Assessment}{}
+\BOOKMARK [1][-]{section.6.1}{1. Social}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{2. Project Based}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Chapter 7. Methodology and Technologies}{}
+\BOOKMARK [1][-]{section.7.1}{1. Methodology}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{2. Technology}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{Chapter 8. System Design and Architecture}{}
+\BOOKMARK [1][-]{section.8.1}{1. Original PSO Implementation}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{2. Expansion for Portfolio Optimisation}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{Chapter 9. Financial Data}{}
+\BOOKMARK [1][-]{section.9.1}{1. Data Description}{chapter.9}
+\BOOKMARK [1][-]{section.9.2}{2. Problem Domain}{chapter.9}
+\BOOKMARK [1][-]{section.9.3}{3. Assets and their Weights}{chapter.9}
+\BOOKMARK [1][-]{section.9.4}{4. Analysis}{chapter.9}
+\BOOKMARK [1][-]{section.9.5}{5. PSO Parameters}{chapter.9}
+\BOOKMARK [1][-]{section.9.6}{6. Experimentation and Testing}{chapter.9}
+\BOOKMARK [1][-]{section.9.7}{7. Portfolio Constraints}{chapter.9}
+\BOOKMARK [1][-]{section.9.8}{8. Results}{chapter.9}
+\BOOKMARK [0][-]{chapter.10}{Chapter 10. Experimentation and Testing}{}
+\BOOKMARK [1][-]{section.10.1}{1. Constriction Factors}{chapter.10}
+\BOOKMARK [1][-]{section.10.2}{2. Scalability}{chapter.10}
+\BOOKMARK [1][-]{section.10.3}{3. Penalty value}{chapter.10}
+\BOOKMARK [1][-]{section.10.4}{4. Asset percentage/Induced/Forced Diversification}{chapter.10}
+\BOOKMARK [1][-]{section.10.5}{5. Risk and Risk Aversion}{chapter.10}
+\BOOKMARK [1][-]{section.10.6}{6. Efficiency}{chapter.10}
+\BOOKMARK [0][-]{chapter.11}{Chapter 11. Future Work}{}
+\BOOKMARK [1][-]{section.11.1}{1. PSO Parameters}{chapter.11}
+\BOOKMARK [1][-]{section.11.2}{2. Self-termination}{chapter.11}
+\BOOKMARK [1][-]{section.11.3}{3. Diversification}{chapter.11}
+\BOOKMARK [1][-]{section.11.4}{4. Asset's Covariance}{chapter.11}
+\BOOKMARK [1][-]{section.11.5}{5. Market Relationships}{chapter.11}
+\BOOKMARK [1][-]{section.11.6}{6. Real-time processing}{chapter.11}
+\BOOKMARK [0][-]{chapter.12}{Chapter 12. Discussion and Conclusion}{}
+\BOOKMARK [1][-]{section.12.1}{1. Discussion}{chapter.12}
+\BOOKMARK [1][-]{section.12.2}{2. Future Work}{chapter.12}
+\BOOKMARK [1][-]{section.12.3}{3. Conclusion}{chapter.12}
+\BOOKMARK [0][-]{section.12.3}{Bibliography}{}

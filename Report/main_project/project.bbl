@@ -66,6 +66,13 @@ Pablo Rabanal, Ismael Rodíguez, and Fernando Rubio.
   \url{http://antares.sip.ucm.es/prabanal/english/heuristics_library.html}.
 \newblock Accessed: February,2014.
 
+\bibitem{efficient_frontier}
+Risk Scientist.
+\newblock
+  \url{http://www.riskscientist.com/content/technologies-portfolio-optimizatio%
+n-theory.html}.
+\newblock Accessed: 4,April,2014.
+
 \bibitem{pso2}
 Yuhui Shi and R.~Eberhart.
 \newblock A modified particle swarm optimizer.
@@ -75,12 +82,17 @@ Yuhui Shi and R.~Eberhart.
 \bibitem{sublime}
 Jon Skinner.
 \newblock \url{http://www.sublimetext.com}.
-\newblock Accessed: February,2014.
+\newblock Accessed: 17,February,2014.
 
 \bibitem{crit}
 G~Szego.
 \newblock Measure of risk.
 \newblock In {\em Journal of Operational Research}, volume 163, pages 5--19,
   2005.
+
+\bibitem{pareto}
+Wikipedia.
+\newblock \url{http://en.wikipedia.org/wiki/Portfolio_(finance)}.
+\newblock Accessed: 8,April,2014.
 
 \end{thebibliography}

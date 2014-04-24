@@ -95,7 +95,7 @@ Acknowledgments....
 
     \begin{equation} \label{eq:vel}
       \begin{split}
-        V_{i}^{t+1} & = \omega V_{i}^{k} + c_1 r_1 \times \Big( Pbest_{i}^{k} - X_{i}^{k} \Big) + c_2 r_2 \times \Big( Gbest^{t} - X_{i}^{t} \Big) \\
+        V_{i}^{t+1} & = \omega V_{i}^{t} + c_1 r_1 \times \Big( Pbest_{i}^{t} - X_{i}^{t} \Big) + c_2 r_2 \times \Big( Gbest^{t} - X_{i}^{t} \Big) \\
         \text{where} & \\
         & V_i^{t+1} \text{ : The velocity of particle i at time t + 1.} \\
         & V_i^t \text{ : The velocity of particle i at time t.} \\
@@ -146,7 +146,12 @@ Acknowledgments....
 
   \section{Haskell} % (fold)
   \label{sec:haskell}
-    It rules!! 
+    This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms. The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This isn't exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
+
+    ``Real World Haskell'' by Don Stewart, Bryan O'Sullivan, and John Goerzen is a brilliant book to quickly get your head around Haskell. Having a very strong mathematical background I often struggled to understand or accept very simple concepts in object-orientated languages such as Java or Ruby. One I started learning about Haskell, there was no going back.
+
+    Back to our project, Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation, if you didn't know, is an evaluation strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. 
+
   % section haskell (end)
 
   % \section{Multi-objective Optimisation} % (fold)
@@ -491,7 +496,6 @@ Some possible risks which might affect the development of my project and some wo
 
 \chapter{Experimentation and Testing}
 
-
   \section{Efficiency} % (fold)
   \label{sec:efficiency}
     Standard Deviation stuff, box plots blahh blahhh
@@ -604,6 +608,70 @@ Some possible risks which might affect the development of my project and some wo
 
     Number of assets
   % section scalability (end)
+
+  \section{Relationships} % (fold)
+  \label{sec:relationships}
+  This test might seem a little peculiar at first but be  assure, there is method in this madness, that's what I tell myself anyways... I want to see what the relationship is (if any) between the time it takes to run, number of particles, number of iterations and number of assets.
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}
+      I will run nine tests and record, the time it takes to finish and the results just to make sure their are consistent. Each of the nine tests will be run 20 times with a mean and standard deviation calculated and shown in the results. The nine tests will be as follows:
+        \begin{itemize}
+          \item Test 1: PSO 20 particles, 100 iterations, 5 assets
+          \item Test 2: PSO 20 particles, 300 iterations, 5 assets
+          \item Test 3: PSO 40 particles, 100 iterations, 5 assets
+          \item Test 4: PSO 20 particles, 100 iterations, 7 assets
+          \item Test 5: PSO 20 particles, 300 iterations, 7 assets
+          \item Test 6: PSO 40 particles, 100 iterations, 7 assets
+          \item Test 7: PSO 20 particles, 100 iterations, 10 assets
+          \item Test 8: PSO 20 particles, 300 iterations, 10 assets
+          \item Test 9: PSO 40 particles, 100 iterations, 10 assets
+        \end{itemize}
+    % subsection testing_strategy (end)
+
+    \subsection{Hypothesis} % (fold)
+    \label{sub:hypothesis}
+
+    % subsection hypothesis (end)
+
+    \subsection{Results} % (fold)
+    \label{sub:results}
+      
+    % subsection results (end)
+
+    \subsection{Conclusion} % (fold)
+    \label{sub:conclusion}
+      
+    % subsection conclusion (end)
+  % section relationships (end)
+
+  \section{Scalability Time } % (fold)
+  \label{sec:scalability_time }
+  This test might seem a little peculiar at first but be  assure, there is method in this madness (or madness in this method!). I want to see what the relationship is between time, number of particles, number of iterations and number of assets.
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}
+      The application will be run
+
+    % subsection testing_strategy (end)
+
+    \subsection{Hypothesis} % (fold)
+    \label{sub:hypothesis}
+      
+    % subsection hypothesis (end)
+
+    \subsection{Results} % (fold)
+    \label{sub:results}
+      
+    % subsection results (end)
+
+    \subsection{Conclusion} % (fold)
+    \label{sub:conclusion}
+      
+    % subsection conclusion (end)
+
+    Number of assets
+  % section scalability Time and  (end)
 
   \section{Penalty value} % (fold)
   \label{sec:penalty_value}

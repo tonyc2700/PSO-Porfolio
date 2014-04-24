@@ -35,6 +35,11 @@ M.~S. Fekdstein.
   portfolio selection.
 \newblock In {\em Review of Economic Studies}, volume~36, pages 5--12, 1969.
 
+\bibitem{lazy}
+L.P. Jones and J.~Hughes.
+\newblock Report on the programming language haskell 98.
+\newblock In {\em Tech. Rep.}, 1999.
+
 \bibitem{pso}
 J.~Kennedy and R.~Eberhart.
 \newblock Particle swarm optimization.

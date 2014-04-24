@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  24 APR 2014 14:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  24 APR 2014 16:10
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -630,6 +630,30 @@ LaTeX Warning: Label `sub:results' multiply defined.
 
 LaTeX Warning: Label `sub:conclusion' multiply defined.
 
+
+LaTeX Warning: Label `sub:testing_strategy' multiply defined.
+
+
+LaTeX Warning: Label `sub:hypothesis' multiply defined.
+
+
+LaTeX Warning: Label `sub:results' multiply defined.
+
+
+LaTeX Warning: Label `sub:conclusion' multiply defined.
+
+
+LaTeX Warning: Label `sub:testing_strategy' multiply defined.
+
+
+LaTeX Warning: Label `sub:hypothesis' multiply defined.
+
+
+LaTeX Warning: Label `sub:results' multiply defined.
+
+
+LaTeX Warning: Label `sub:conclusion' multiply defined.
+
 )
 \openout1 = `project.aux'.
 
@@ -688,7 +712,7 @@ LaTeX Info: Redefining \pageref on input line 28.
 
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=229, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=237, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -759,7 +783,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=366, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=378, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -771,7 +795,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 \chapter
+l.230 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
 [9
@@ -787,7 +811,7 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.308 
+l.313 
       ] [11]
 Chapter 6
 [12
@@ -818,23 +842,23 @@ Chapter 10
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.569       T
+l.573       T
              he use of the constriction coefficient can be viewed as a recom...
 pdfTeX warning (ext4): destination with the same identifier (name{table.10.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.569       T
+l.573       T
              he use of the constriction coefficient can be viewed as a recom...
-] [21] [22]
+] [21] [22] [23]
 Chapter 11
-[23
+[24
 
 
-] [24]
+] [25]
 Chapter 12
-(./project.bbl [25
+(./project.bbl [26
 
 
 ]
@@ -842,33 +866,37 @@ Bibliography
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
 
-Underfull \hbox (badness 2181) in paragraph at lines 78--82
+Underfull \hbox (badness 2181) in paragraph at lines 83--87
 []\OT1/cmr/m/n/10 Pablo Ra-banal, Is-mael Rodguez, and Fer-nando Ru-bio. []$\OT
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
 
 
-Overfull \hbox (72.01537pt too wide) in paragraph at lines 84--89
+Overfull \hbox (72.01537pt too wide) in paragraph at lines 89--94
 []\OT1/cmr/m/n/10 Risk Sci-en-tist. []$\OT1/cmtt/m/n/10 http : / / www . risksc
 ientist . com / content / technologies-[]portfolio-[]optimization-[]theory .
  []
 
-) [26
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27
 
 
-] (./project.aux)
+])
+[28] (./project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16068 strings out of 495061
- 280316 string characters out of 1182621
- 357792 words of memory out of 3000000
- 18614 multiletter control sequences out of 15000+50000
+ 16086 strings out of 495061
+ 280575 string characters out of 1182621
+ 357905 words of memory out of 3000000
+ 18619 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,1121b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,1121b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -881,9 +909,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (32 pages, 346624 bytes).
+Output written on project.pdf (34 pages, 353276 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

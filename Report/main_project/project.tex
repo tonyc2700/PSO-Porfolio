@@ -368,10 +368,11 @@ Some possible risks which might affect the development of my project and some wo
     % subsection haskell (end)
     \subsection{Operating System} % (fold)
     \label{sub:operating_system}
-      As Haskell is platform independent (in the sense that it can be compiled in Windows, Linux or Mac) I have chosen to use Ubuntu 12.04 as it is my preferred OS and I feel the most comfortable with it. In addition, I wouldn't be affected in the about of software needed for the project as it is provided for all three OSs already mentioned. 
+    As Haskell is platform independent (in the sense that it can be compiled in Windows, Linux or Mac) I have chosen to use Ubuntu 12.04 as it is my preferred OS and I feel the most comfortable with it. In addition, I wouldn't be affected in the about of software needed for the project as it is provided for all three OSs already mentioned. 
 
-      The work was carried out on my personal laptop (Intel CORE$^{TM}$ i3 @ 2.6GHZ,4Gb RAM). If required due to any reasons, the university provide classroom PCs (Intel CORE$^{TM}$ i3-2100 CPU @3.10 GHz, 3 Gb RAM) although I have faith that my own machine will be reliable enough for me not to have to change machines. 
-      Sublime Text 2 was chosen as the IDE for the project. It has many useful functions \cite{sublime} and similarly for the choice of OS, I am happy with this editor.
+    The work was carried out on my personal laptop (Intel CORE$^{TM}$ i3 @ 2.6GHZ,4Gb RAM). If required due to any reasons, the university provide classroom PCs (Intel CORE$^{TM}$ i3-2100 CPU @3.10 GHz, 3 Gb RAM) although I have faith that my own machine will be reliable enough for me not to have to change machines. 
+    
+    Sublime Text 2 was chosen as the IDE for the project. It has many useful functions \cite{sublime} and similarly for the choice of OS, I am happy with this editor.
     % subsection operating_system (end)
   
   % section technology (end)
@@ -380,22 +381,23 @@ Some possible risks which might affect the development of my project and some wo
 
   \section{Original PSO Implementation} % (fold)
   \label{sec:original_pso_implementation}
-
     \subsection{Initialisation} % (fold)
     \label{sub:initialisation}
-    
+    The main purpose of this stage is to create a population of particles (called a swarm) which will be used to search the domain and find the optimal solution to our problem. The application uses a function called \textit{initialise} to randomly create a list of initial particles to populate the search space. It is written in accordance with Algorithm~\ref{eq:pso} and thanks to Haskell's well designed and efficient random generators \cite{random} it ensures that the particles are initialised in such a way to exploit the search space well. For details, see Algorithm~\ref{eq:pso}. After the population has been initialised, the algorithm moves on to the optimisation phase.
     % subsection initialisation (end)
     \subsection{Inertia Weights} % (fold)
     \label{sub:inertia_weights}
-    
+    PSO relies on randomness, as in Equation~\ref{eq:vel}. As this project is not intended to experiment much with the basic PSO parameters we will use the inertia weights presented in \cite{constriction_factor_3}. If there is enough time, we may wish to experiment with different weights. This doesn't mean that testing won't be done, it just means that we won't deviate from our goal to look into this matter, as so much research has already been done\cite{inertia}.
     % subsection inertia_weights (end)
     \subsection{Optimisation} % (fold)
     \label{sub:optimisation}
-    
+    This is done by ``steps'', at each ``step'' a particle is updated by a function \textit{updateParticle} in accordance to Equation~\ref{eq:vel} which changes the position and velocity. The same function checks whether the new position is better that the best solution so far. A boolean system is used, if the new position of the particles is better that global best position, if it is then it changed the global best to this new global best. This is done recursively until all the particles in the swarm have been updated. Function had to be created to deal with the comparison of particles' results and both the position and the value of that position are stored for each particle. 
+
+    For any more details on how the optimisation is done, please refer to \nameref{sec:particle_swarm_optimisation} in Chapter 2.
     % subsection optimisation (end)
     \subsection{Termination} % (fold)
     \label{sub:termination}
-    
+    An function was created to deal with the termination, a user specifies the number of iterations (``steps'') that the algorithm is allowed to run for. This independent function is simple, it runs recursively, applying one \textit{updateParticle} at a time and terminates once there are no more iterations to be performed and returns both the value of the global best and it's position. 
     % subsection termination (end)
   % section original_pso_implementation (end)
 
@@ -404,12 +406,14 @@ Some possible risks which might affect the development of my project and some wo
 
     \subsection{Interface and User Input} % (fold)
     \label{sub:interface_and_user_input}
-    
+    The original implementation needed the swarm size and number of iterations to be hard-coded into the algorithm. This model allows the user to specify how many particles they would like as well as how many iterations the PSO should run for. I don't think the user should be allowed to set the inertia weights and they might not fully understand their purpose and therefore give un-optimised inputs. 
     % subsection interface_and_user_input (end)
-    \subsection{Optimisation} % (fold)
-    \label{sub:optimisation}
+    % ----------------------------------------------------
+    % \subsection{Optimisation} % (fold)
+    % \label{sub:optimisation}
     
-    % subsection optimisation (end)
+    % % subsection optimisation (end)
+    % ----------------------------------------------------
     \subsection{Constriction Factor} % (fold)
     \label{sub:constriction_factor}
     Maurice Clerc in his study on stability and convergence of PSO \cite{constriction_factor} has introduced the concept of a constriction factor. Clerc indicated that the use of a constriction factor may be necessary to insure convergence of the PSO for certain fitness functions.
@@ -430,7 +434,7 @@ Some possible risks which might affect the development of my project and some wo
     % subsection constriction_factor (end)
     \subsection{Termination} % (fold)
     \label{sub:termination}
-    
+    If time allows, it would be nice to have a self-termination PSO which, no matter how many iterations are left, terminates if it thinks that the optimal solution is reached. This could be done by the concept of a threshold, if all the solution reach this threshold, then there is no point in carring of. For example, if all the solution are close enough to each other for a long period of iteration, say $10^{-10}$, then there is no point in looking for thousands more iterations just to find something which won't affect the outcome. 
     % subsection termination (end)
     \subsection{Fitness Function} % (fold)
     \label{sub:fitness_function}
@@ -438,7 +442,7 @@ Some possible risks which might affect the development of my project and some wo
     % subsection fitness_function (end)
     \subsection{Presenting the Results} % (fold)
     \label{sub:presenting_the_results}
-    
+    After the algorithm has finished, the results are displayed on the screen and saved in a separate file which will be called ``output-DATE'', where date is in (year,month,day) format, for example ``output-2014,3,15''. If there is multiple runs in one day, the new results are added to the end of that same file.
     % subsection presenting_the_results (end)
   % section expansion_for_portfolio_optimisation (end)
 
@@ -486,6 +490,12 @@ Some possible risks which might affect the development of my project and some wo
 
 
 \chapter{Experimentation and Testing}
+
+
+  \section{Efficiency} % (fold)
+  \label{sec:efficiency}
+    Standard Deviation stuff, box plots blahh blahhh
+  % section efficiency (end)
 
   \section{Constriction Factors} % (fold)
   \label{sec:constriction_factors}
@@ -597,29 +607,56 @@ Some possible risks which might affect the development of my project and some wo
 
   \section{Penalty value} % (fold)
   \label{sec:penalty_value}
+
+    \subsection{Testing Strategy}
+      The application will be run
+
+    \subsection{Hypothesis}
+
+    \subsection{Results}
+
+    \subsection{Conclusion}
+    
     For fitness function
   % section penalty_value (end)
 
   \section{Asset percentage/Induced/Forced Diversification} % (fold)
   \label{sec:asset_percentage}
+
+    \subsection{Testing Strategy}
+      The application will be run
+
+    \subsection{Hypothesis}
+
+    \subsection{Results}
+
+    \subsection{Conclusion}
+
     Constraint that says you have to invest between 0.05 to 0.35 on each asset
   % section asset_percentage (end)
 
   \section{Risk and Risk Aversion} % (fold)
   \label{sec:risk_and_risk_aversion}
+
+    \subsection{Testing Strategy}
+      The application will be run
+
+    \subsection{Hypothesis}
+
+    \subsection{Results}
+
+    \subsection{Conclusion}
+
     Level of riskiness
   % section risk_and_risk_aversion (end)
 
-  \section{Efficiency} % (fold)
-  \label{sec:efficiency}
-    Standard Deviation stuff, box plots blahh blahhh
-  % section efficiency (end)
 
 
 \chapter{Future Work}
 
   \section{PSO Parameters} % (fold)
   \label{sec:parameters}
+    More testing on WPG inertia weights
     Dunno...
   % section parameters (end)
 

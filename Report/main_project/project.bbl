@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{inertia}
+J.C. Bansal and Et. All.
+\newblock Inertia weight strategies in particle swarm optimization.
+
 \bibitem{crit2}
 W.~Breen.
 \newblock Specific versus general models of portfolio selection.
@@ -54,6 +58,10 @@ H.~Markowitz.
 \bibitem{marko2}
 H.~Markowitz.
 \newblock Portfolio selection-efficient diversification of investments, 1959.
+
+\bibitem{random}
+S.K. Park and K.W. Miller.
+\newblock Random number generators - good ones are hard to find, October 1988.
 
 \bibitem{pso4}
 K.E. Parsopoulos and M.N. Vrahatis.

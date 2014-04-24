@@ -16,9 +16,9 @@ wpg2 :: (Double,Double,Double)
 wpg2 = (0.7,1.45,1.49)
 
 --Number of particles
-np1 = 40 
+np1 = 100 
 --Number of iterations
-nit1 = 200
+nit1 = 1000
 
 ------------------------------------------
 --------- Financial variables ------------
@@ -107,7 +107,8 @@ main = do
 --It either creates or changes a file.
 outPutFile names pos = do
     t <- getCurrentTime
-    appendFile ("output-" ++ (time t)) ((time t) ++ "\n" ++ (printStuff names pos)  ++ "\n" )
+    appendFile ("output-" ++ (time t)) ((time t) ++ "\n" ++ (printStuff names pos) ++ "\n" )
+    --appendFile ("output-" ++ (time t)) ("Expected Portfolio Return is: " ++ "\n\n" )
   where time t = show (toGregorian $ utctDay t)
 
 printStuff [] [] = []

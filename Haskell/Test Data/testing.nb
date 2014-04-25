@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     80518,       1858]
-NotebookOptionsPosition[     77577,       1759]
-NotebookOutlinePosition[     77912,       1774]
-CellTagsIndexPosition[     77869,       1771]
+NotebookDataLength[     80826,       1867]
+NotebookOptionsPosition[     77880,       1768]
+NotebookOutlinePosition[     78217,       1783]
+CellTagsIndexPosition[     78174,       1780]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1552,14 +1552,18 @@ Cell[BoxData[{
   3.607338609267626*^9, 3.607338680672613*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "0.0048795388311477115`", ",", "0.009122885707916431`", ",", 
-   "\[IndentingNewLine]", "0.005425923490906101`", ",", 
-   "0.004915754304514512`", ",", "0.006994144411974603`", ",", 
-   "0.006694273680137013`", ",", "0.008565794631361801`", ",", 
-   "0.00828042691736504`", ",", "0.00557403708361577`"}], "}"}]], "Input",
- CellChangeTimes->{{3.607406533542459*^9, 3.607406533581434*^9}}],
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Standard", " ", "deviation", " ", "for", " ", "time"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"{", 
+   RowBox[{
+   "0.0048795388311477115`", ",", "0.009122885707916431`", ",", 
+    "\[IndentingNewLine]", "0.005425923490906101`", ",", 
+    "0.004915754304514512`", ",", "0.006994144411974603`", ",", 
+    "0.006694273680137013`", ",", "0.008565794631361801`", ",", 
+    "0.00828042691736504`", ",", "0.00557403708361577`"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.607406533542459*^9, 3.607406571801714*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1576,13 +1580,18 @@ Cell[BoxData[
  CellChangeTimes->{{3.607338851905706*^9, 3.607338947963005*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "0.04639473684210526`", ",", "0.1076324705882353`", ",", "0.0812465625`", 
-   ",", "0.05559383333333333`", ",", "\[IndentingNewLine]", 
-   "0.12529994444444445`", ",", "0.10616711111111111`", ",", "0.089034`", ",",
-    "0.1816959411764706`", ",", "0.17403046666666666`"}], "}"}]], "Input",
- CellChangeTimes->{{3.60740644711954*^9, 3.607406447159258*^9}}],
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Mean", " ", "for", " ", "time"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"{", 
+   RowBox[{
+   "0.04639473684210526`", ",", "0.1076324705882353`", ",", "0.0812465625`", 
+    ",", "0.05559383333333333`", ",", "\[IndentingNewLine]", 
+    "0.12529994444444445`", ",", "0.10616711111111111`", ",", "0.089034`", 
+    ",", "0.1816959411764706`", ",", "0.17403046666666666`"}], "}"}]}]], \
+"Input",
+ CellChangeTimes->{{3.60740644711954*^9, 3.607406447159258*^9}, {
+  3.607406576094382*^9, 3.607406582488421*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -1758,7 +1767,7 @@ Cell[BoxData[
   3.607406467814084*^9, 3.607406491289586*^9}}]
 },
 WindowSize->{683, 716},
-WindowMargins->{{Automatic, -1}, {Automatic, 0}},
+WindowMargins->{{670, Automatic}, {Automatic, 33}},
 FrontEndVersion->"9.0 for Linux x86 (32-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1854,12 +1863,12 @@ Cell[58064, 1335, 5088, 109, 1089, "Input"],
 Cell[63155, 1446, 380, 8, 62, "Output"]
 }, Open  ]],
 Cell[63550, 1457, 4415, 94, 847, "Input"],
-Cell[67968, 1553, 429, 8, 121, InheritFromParent],
-Cell[68400, 1563, 532, 12, 77, "Input"],
-Cell[68935, 1577, 396, 7, 99, InheritFromParent],
-Cell[69334, 1586, 7045, 141, 1903, "Input"],
-Cell[76382, 1729, 561, 12, 143, InheritFromParent],
-Cell[76946, 1743, 627, 14, 143, InheritFromParent]
+Cell[67968, 1553, 568, 12, 143, InheritFromParent],
+Cell[68539, 1567, 532, 12, 77, "Input"],
+Cell[69074, 1581, 560, 12, 121, InheritFromParent],
+Cell[69637, 1595, 7045, 141, 1903, "Input"],
+Cell[76685, 1738, 561, 12, 143, InheritFromParent],
+Cell[77249, 1752, 627, 14, 143, InheritFromParent]
 }
 ]
 *)

@@ -70,12 +70,12 @@
 \contentsline {subsection}{\tocsubsection {}{5.1}{Testing Strategy}}{22}{subsection.10.5.1}
 \contentsline {subsection}{\tocsubsection {}{5.2}{Hypothesis}}{22}{subsection.10.5.2}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Results}}{22}{subsection.10.5.3}
-\contentsline {subsection}{\tocsubsection {}{5.4}{Conclusion}}{22}{subsection.10.5.4}
-\contentsline {section}{\tocsection {}{6}{Penalty value}}{22}{section.10.6}
-\contentsline {subsection}{\tocsubsection {}{6.1}{Testing Strategy}}{22}{subsection.10.6.1}
-\contentsline {subsection}{\tocsubsection {}{6.2}{Hypothesis}}{22}{subsection.10.6.2}
-\contentsline {subsection}{\tocsubsection {}{6.3}{Results}}{22}{subsection.10.6.3}
-\contentsline {subsection}{\tocsubsection {}{6.4}{Conclusion}}{22}{subsection.10.6.4}
+\contentsline {subsection}{\tocsubsection {}{5.4}{Conclusion}}{23}{subsection.10.5.4}
+\contentsline {section}{\tocsection {}{6}{Penalty value}}{23}{section.10.6}
+\contentsline {subsection}{\tocsubsection {}{6.1}{Testing Strategy}}{23}{subsection.10.6.1}
+\contentsline {subsection}{\tocsubsection {}{6.2}{Hypothesis}}{23}{subsection.10.6.2}
+\contentsline {subsection}{\tocsubsection {}{6.3}{Results}}{23}{subsection.10.6.3}
+\contentsline {subsection}{\tocsubsection {}{6.4}{Conclusion}}{23}{subsection.10.6.4}
 \contentsline {section}{\tocsection {}{7}{Asset percentage/Induced/Forced Diversification}}{23}{section.10.7}
 \contentsline {subsection}{\tocsubsection {}{7.1}{Testing Strategy}}{23}{subsection.10.7.1}
 \contentsline {subsection}{\tocsubsection {}{7.2}{Hypothesis}}{23}{subsection.10.7.2}

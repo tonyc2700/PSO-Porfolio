@@ -75,7 +75,7 @@ Acknowledgments....
 
     Particle swarm optimization (PSO) is a population based  stochastic optimization technique developed by Kennedy and  Eberhart in 1995, discovered through simplified social model simulation \cite{pso,pso2,pso3,pso4}. It simulates the behavior of bird flocking involving the scenario of a collection of birds randomly looking for food in a search space. None of the birds know where the food is located, but they do know how far the food location is from their current positions. An effective technique for the bird to find food is to adjust their velocity according to the bird which is nearest to the food. PSO was motivated from this scenario and was developed to solve complex optimization problems, where the optimum position of the fitness function is where the food is located and all the birds are the particles searching for this optimum position. 
 
-    In the conventional PSO, the behaviour displays particles in a multidimensional space where each particles has two properties: a position vector and a velocity vector. Let $n$ be the number of particles in the swarm.  Then each particles $i \in n$ has the properties as shown in (\ref{eq:PSO_stuff}):
+    In the conventional PSO, the behaviour displays particles in a multidimensional space where each particles has two properties: a position vector and a velocity vector. Each particle $i$ in the swarm has the properties shown in (\ref{eq:PSO_stuff}):
     % \begin{itemize}
     %   \item $X_i^k$ : The current position of particle i at time k.
     %   \item $V_i^k$ : The current velocity of particle i at time k. 
@@ -108,7 +108,7 @@ Acknowledgments....
       \end{split}
     \end{equation}
 
-    In the updating process \ref{eq:vel} the acceleration coefficients $c_1, c_2$ and the inertia weight $\omega$ are predefined, and $r_1, r_2$ are uniformly generated random numbers in the range [0,1].
+    In the updating process shown in Equation (\ref{eq:vel}) the acceleration coefficients $c_1, c_2$ ($c_1$ determines the importance one following the individual personal best whereas $c_2$ determines the importance of following the particles with the global best position)and the inertia weight $\omega$ (which states how stubborn a particle is at not deviating from their path, regardless of previous results) are predefined, and $r_1, r_2$ (these introduce the concept of randomness so that a particles is able to switch between following their personal best and that of the whole swarm) are uniformly generated random numbers in the range [0,1].
 
     \begin{algorithm}[H] \label{eq:pso}
       \mbox{\textbf{Initialisation}} \\
@@ -132,9 +132,9 @@ Acknowledgments....
       \caption{PSO pseudo-code.}
     \end{algorithm}
     
-    In Algorithm~\ref{eq:pso} one can see the pseudo-code for a standard PSO. A step by step explanation of Algorithm~\ref{eq:pso} is as follows: First, there is an initialisation for all the particles in the PSO, for every particle i, initPosition(i) randomly created a particle with a designated position in the search space. For the first step, initBestLocal(i) = initPosition(i), but it will be updated afterwards. Then the $if$ function makes a first global best and if any other particles has a better global best position it will be set as the new global best. initVelocity(i) gives particles i an initial velocity which is randomly generated. 
+    In Algorithm~\ref{eq:pso} $S$ is the number of particles in a swarm, one can see the pseudo-code for a standard PSO. A step by step explanation of Algorithm~\ref{eq:pso} is as follows: First, there is an initialisation for all the particles in the PSO, for every particle $i$, \textit{initPosition(i)} randomly created a particle with a designated position in the search space. For the first step, \textit{initBestLocal(i) = initPosition(i)}, but it will be updated afterwards. Then the $if$ function makes a first global best and if any other particles has a better global best position it will be set as the new global best. \textit{initVelocity(i)} gives particle $i$ an initial velocity which is randomly generated. 
 
-    After the initialisation, the core of the PSO method is executed until the endingCondition() is satisfied, which can be the number of iterations or an improvement threshold. In the body of the \textit{While} loop all particles are updated. The first step is to generate random numbers used in the velocity Equation~(\ref{eq:vel}). Then the actual velocity is updated. In the next step, updatePosition(i) updates the position of a particles in the search space and checks the fitness function value for improvement or not. A the end of the \textit{for} loop, if improvedLocal(i) = True then updates the local best position and finally it is similar for updating the global best position. 
+    After the initialisation, the core of the PSO method is executed until the \textit{endingCondition()} is satisfied, which can be the number of iterations or an improvement threshold. In the body of the \textit{While} loop all particles are updated. The first step is to generate random numbers used in the velocity Equation~(\ref{eq:vel}). Then the actual velocity is updated. In the next step,\textit{updatePosition(i)} updates the position of a particles in the search space and checks the fitness function value for improvement or not. At the end of the \textit{for} loop, if \textit{improvedLocal(i) = True} then updates the local best position and finally it is similar for updating the global best position. 
 
     
   % section particle_swarm_optimisation (end)
@@ -146,11 +146,11 @@ Acknowledgments....
 
   \section{Haskell} % (fold)
   \label{sec:haskell}
-    This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms. The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This isn't exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
+    This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms. The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This is not exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
 
     ``Real World Haskell'' by Don Stewart, Bryan O'Sullivan, and John Goerzen is a brilliant book to quickly get your head around Haskell. Having a very strong mathematical background I often struggled to understand or accept very simple concepts in object-orientated languages such as Java or Ruby. One I started learning about Haskell, there was no going back.
 
-    Back to our project, Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation, if you didn't know, is an evaluation strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. 
+    Back to our project, Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation, if you did not know, is an evaluation strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. 
 
   % section haskell (end)
 
@@ -172,9 +172,9 @@ Acknowledgments....
     According to Markowitz, a portfolio is a real valued vector $X = (x_1,x_2,x_3, \dots ,x_i)$ where each variable $x_i$ represents the percentage invested in a corresponding asset $S_i$. The value $\sum\limits_{i=1}^N \sum\limits_{j=1}^N x_i x_j \sigma_{ij}$ is the variance of the portfolio and it is the measure of risk associated with the portfolio. From this, we may obtain a constrained portfolio optimisation problem: 
     \begin{equation}
       \begin{split}
-        Minimise \\
-        \sum\limits_{i=1}^N \sum\limits_{j=1}^N x_i x_j \sigma_{ij} \\
-        Constraints:\\
+        \mbox{\textit{Minimise  }} \sum\limits_{i=1}^N \sum\limits_{j=1}^N x_i x_j \sigma_{ij} \\
+        \\\\
+        \mbox{\textit{Constraints:} }
         \sum\limits_{i=1}^N x_i r_i = \pi \\
         \sum\limits_{i=1}^N x_i = 1 \\
         x_i \geq 1, i \in \{1,2,\dots,N\}
@@ -262,17 +262,17 @@ This section describes the requirements for this project. Table \ref{table:funct
       \hline 
       1.1.2 & Processing swarm optimisation & High \\
       \hline 
-      1.1.3 & Updating the local and global (at each step) particle values& \\
+      1.1.3 & Updating the local and global (at each step) particle values & High \\
       \hline 
       1.1.4 & Calculating an optimal solution & High \\
       \hline 
-      1.1.5 & Presenting the results & High \\
+      1.1.5 & Presenting the results & Medium \\
       \hline 
       \textbf{1.2} & \textbf{PSO for portfolio problem } & \\
       \hline 
       1.2.1 & Minimise portfolio variance & High \\
       \hline 
-      1.2.2 & Maximise portfolio expected return & Low \\
+      1.2.2 & Maximise portfolio expected return & Medium \\
       \hline 
       1.2.3 & Use multi-objective for optimum solution & Low \\
       \hline 
@@ -286,15 +286,15 @@ This section describes the requirements for this project. Table \ref{table:funct
       \hline
       2.2 & Allow the user to change the expected portfolio return & High \\
       \hline 
-      2.3 & Allow the user to select the name for the output file & Low \\
+      2.3 & Allow the user to select the name for the output file & Medium \\
       \hline 
       2.4 & Allow the user to change the PSO particle size & Low \\
       \hline 
-      2.5 & Allow the user to change the PSO iteration number & Low \\
+      2.5 & Allow the user to change the PSO iteration number & Medium \\
       \hline
       \textbf{3} &\textbf{Output format} & \\
       \hline 
-      3.1 & Display the results during run-time & High \\
+      3.1 & Display the results during run-time & Medium \\
       \hline 
       3.2 & Make results more readable for output file & High \\
       \hline
@@ -353,7 +353,7 @@ Some possible risks which might affect the development of my project and some wo
 
   The implementation stage will consist of designing the future system and the realisation of the plans. Key design decisions will have to be made during this stage and the solutions might be obtained from the analysis of previous work. 
 
-  To complete this project test driven development will be carried out. I plan to test after every implementation or modification. This will be done to ensure that changes won't affect any previous functionality. The tests will evaluate the efficiency as well as the accuracy of my system. Given the nature of PSO's `random' initialisation,  I want to make sure that the results are consistent. 
+  To complete this project test driven development will be carried out. I plan to test after every implementation or modification. This will be done to ensure that changes will not affect any previous functionality. The tests will evaluate the efficiency as well as the accuracy of my system. Given the nature of PSO's `random' initialisation,  I want to make sure that the results are consistent. 
 
   The writing of this result will be flexible, the sections will be written as needed or when the section arises naturally throughout the project. 
 
@@ -366,14 +366,14 @@ Some possible risks which might affect the development of my project and some wo
     \label{sub:haskell}
       Coming from a strong mathematical background I find functional languages easier to understand. Also one huge advantage of pure functional languages is that the absence of side-effects allow them to offer a clear semantic framework to analyse the correctness of programs. 
 
-      As Haskell is the functional language I am more familiar with, I didn't see the point in learning a new language as it would only restrict my project process, so Haskell was a clear winner. 
+      As Haskell is the functional language I am more familiar with, I did not see the point in learning a new language as it would only restrict my project process, so Haskell was a clear winner. 
 
       There are other PSO implementations in other languages such as C and Ruby but as already mentioned, Haskell is my preferred language. 
 
     % subsection haskell (end)
     \subsection{Operating System} % (fold)
     \label{sub:operating_system}
-    As Haskell is platform independent (in the sense that it can be compiled in Windows, Linux or Mac) I have chosen to use Ubuntu 12.04 as it is my preferred OS and I feel the most comfortable with it. In addition, I wouldn't be affected in the about of software needed for the project as it is provided for all three OSs already mentioned. 
+    As Haskell is platform independent (in the sense that it can be compiled in Windows, Linux or Mac) I have chosen to use Ubuntu 12.04 as it is my preferred OS and I feel the most comfortable with it. In addition, I would not be affected in the about of software needed for the project as it is provided for all three OSs already mentioned. 
 
     The work was carried out on my personal laptop (Intel CORE$^{TM}$ i3 @ 2.6GHZ,4Gb RAM). If required due to any reasons, the university provide classroom PCs (Intel CORE$^{TM}$ i3-2100 CPU @3.10 GHz, 3 Gb RAM) although I have faith that my own machine will be reliable enough for me not to have to change machines. 
     
@@ -392,7 +392,7 @@ Some possible risks which might affect the development of my project and some wo
     % subsection initialisation (end)
     \subsection{Inertia Weights} % (fold)
     \label{sub:inertia_weights}
-    PSO relies on randomness, as in Equation~\ref{eq:vel}. As this project is not intended to experiment much with the basic PSO parameters we will use the inertia weights presented in \cite{constriction_factor_3}. If there is enough time, we may wish to experiment with different weights. This doesn't mean that testing won't be done, it just means that we won't deviate from our goal to look into this matter, as so much research has already been done\cite{inertia}.
+    PSO relies on randomness, as in Equation~\ref{eq:vel}. As this project is not intended to experiment much with the basic PSO parameters we will use the inertia weights presented in \cite{constriction_factor_3}. If there is enough time, we may wish to experiment with different weights. This does not mean that testing will not be done, it just means that we will not deviate from our goal to look into this matter, as so much research has already been done\cite{inertia}.
     % subsection inertia_weights (end)
     \subsection{Optimisation} % (fold)
     \label{sub:optimisation}
@@ -411,7 +411,7 @@ Some possible risks which might affect the development of my project and some wo
 
     \subsection{Interface and User Input} % (fold)
     \label{sub:interface_and_user_input}
-    The original implementation needed the swarm size and number of iterations to be hard-coded into the algorithm. This model allows the user to specify how many particles they would like as well as how many iterations the PSO should run for. I don't think the user should be allowed to set the inertia weights and they might not fully understand their purpose and therefore give un-optimised inputs. 
+    The original implementation needed the swarm size and number of iterations to be hard-coded into the algorithm. This model allows the user to specify how many particles they would like as well as how many iterations the PSO should run for. I do not think the user should be allowed to set the inertia weights and they might not fully understand their purpose and therefore give un-optimised inputs. 
     % subsection interface_and_user_input (end)
     % ----------------------------------------------------
     % \subsection{Optimisation} % (fold)
@@ -439,7 +439,7 @@ Some possible risks which might affect the development of my project and some wo
     % subsection constriction_factor (end)
     \subsection{Termination} % (fold)
     \label{sub:termination}
-    If time allows, it would be nice to have a self-termination PSO which, no matter how many iterations are left, terminates if it thinks that the optimal solution is reached. This could be done by the concept of a threshold, if all the solution reach this threshold, then there is no point in carring of. For example, if all the solution are close enough to each other for a long period of iteration, say $10^{-10}$, then there is no point in looking for thousands more iterations just to find something which won't affect the outcome. 
+    If time allows, it would be nice to have a self-termination PSO which, no matter how many iterations are left, terminates if it thinks that the optimal solution is reached. This could be done by the concept of a threshold, if all the solution reach this threshold, then there is no point in carring of. For example, if all the solution are close enough to each other for a long period of iteration, say $10^{-10}$, then there is no point in looking for thousands more iterations just to find something which will not affect the outcome. 
     % subsection termination (end)
     \subsection{Fitness Function} % (fold)
     \label{sub:fitness_function}
@@ -507,14 +507,14 @@ Some possible risks which might affect the development of my project and some wo
     
     \subsection{Testing Strategy} % (fold)
     \label{sub:testing_strategy}
-      I plan to test whether this will in fact affect the outcome of the algorithm when applied to the portfolio selection problem, furthermore if it does affect it, then whether it improves or worsens the result. In order to test this I will conduct six different experiments, three without a constriction factor where one has the adjustment parameters taken from \cite{constriction_factor_3}, one with the two randomness coefficients that add up to less than 4 and one where they add up to more than 4. Then three more with a constriction factor and the rest is the same as the previous three.
+      I plan to test whether this will in fact affect the outcome of the algorithm when applied to the portfolio optimisation problem, furthermore if it does affect it, then whether it improves or worsens the result. In order to test this I will conduct six different experiments, three without a constriction factor where one has the adjustment parameters taken from \cite{constriction_factor_3}, one with the two randomness coefficients that add up to less than 4 and one where they add up to more than 4, the importance of 4 can be read in \cite{constriction_factor}. Then three more with a constriction factor and the rest is the same as the previous three.
 
-      All tests will run 20 times and the results and the time taken will be recorded, all tests will be set to 50 particles, 500 iterations and 10 assets. A mean result and standard deviation will be computed to be able to compare the results. This will give enough indication on how the constriction factor affects my fitness function and how it differs under various criteria.  
+      All tests will run 20 times and the results and the time taken will be recorded, all tests will be set to 50 particles, 500 iterations and 10 assets. A mean result and standard deviation will be computed to be able to compare the results. This will give enough indication on how the constriction factor affects the fitness function and how it differs under various criteria.  
     % subsection testing_strategy (end)
 
     \subsection{Hypothesis} % (fold)
     \label{sub:hypothesis}
-      Constriction factor when applied to my portfolio selection problem with appropriate coefficients will not improve the portfolio selection problem.
+      Constriction factor when applied to the portfolio selection problem with appropriate coefficients will not improve the portfolio selection problem.
     % subsection hypothesis (end)
 
     \subsection{Results} % (fold)
@@ -562,15 +562,15 @@ Some possible risks which might affect the development of my project and some wo
           \label{table:key_constriction_factor_results}
         \end{table}
 
-      As stated in \ref{eq:cf}, $\phi > 4$, one can see from Table~\ref{table:constriction_factor_results} shows this in W-CF Pefersen and W-CF $<$ 4, as violating this constraints result in a serious decrease in the solution obtained. 
+      The reason for using Pefersen coefficients is stated in the design and architecture section of this report, \nameref{eq:cf} in \nameref{sec:original_pso_implementation}. One can see from Table~\ref{table:constriction_factor_results} that importance having $\phi > 4$ when introducing the constriction factor, in W-CF Pefersen and W-CF $<$ 4 one can see a serious decrease in the optimum found. 
 
-      What is interesting here is that PSO for my fitness function is efficient and consistent without the constriction factor as shown in Table~\ref{table:constriction_factor_results} where WO-CF Pefersen and WO-CF $<$ 4 both have the same mean and almost exact standard deviation, meaning they behave the same. Once we introduce the constriction factor, it is almost catastrophic if we don't have $\phi > 4$, as both W-CF Pefersen and W-CF $<$ 4 have less efficient means and huge standard deviations (in comparison to the other tests) meaning they are unstable and unreliable. Once we make $\phi > 4$, the algorithm settles back to normal but does display higher standard deviation. 
+      What is interesting here is that PSO for the fitness function is efficient and consistent without the constriction factor as shown in Table~\ref{table:constriction_factor_results} where WO-CF Pefersen and WO-CF $<$ 4 both have the same mean and almost exact standard deviation, meaning they behave the same. Once we introduce the constriction factor, it is almost catastrophic if we do not have $\phi > 4$, as both W-CF Pefersen and W-CF $<$ 4 have less efficient means and huge standard deviations (in comparison to the other tests) meaning they are unstable and unreliable. Once we make $\phi > 4$, the algorithm settles back to normal but does display higher standard deviation. 
     % subsection results (end)
     \subsection{Conclusion} % (fold)
     \label{sub:conclusion}
-      Constriction factor when applied to my portfolio selection problem does not improve the results as in the hypothesis. It makes the results more unstable, the algorithm will therefore not include a constriction factor. 
+      Constriction factor when applied to the portfolio optimisation problem does not improve the results as in the hypothesis. It makes the results more unstable, the algorithm will therefore not include a constriction factor. 
 
-      The use of the constriction coefficient can be viewed as a recommendation to the particle to ``take smaller steps''\cite{constriction_factor_4}, because of this it exploits optimal solutions, which is fine if there aren't many, but it does mean that it travels less in the same amount of time. This is one of the main reasons why it did not improve the results. One has to bare in mind that each asset adds a dimension to out search space, this increases domain exponentially so as you increase the amount of assets in a portfolio coupled with making the PSO take smaller steps results in a much larger search space and less area covered by the end of the algorithm. 
+      The use of the constriction coefficient can be viewed as a recommendation to the particle to ``take smaller steps''\cite{constriction_factor_4}, because of this it exploits optimal solutions, which is fine if there are not many, but it does mean that it travels less in the same amount of time. This is one of the main reasons why it did not improve the results. One has to bare in mind that each asset adds a dimension to out search space, this increases domain exponentially so as you increase the amount of assets in a portfolio coupled with making the PSO take smaller steps results in a much larger search space and less area covered by the end of the algorithm. 
        
     % subsection conclusion (end)
 
@@ -636,6 +636,20 @@ Some possible risks which might affect the development of my project and some wo
 
     \subsection{Results} % (fold)
     \label{sub:results}
+    Sum of weights for all results
+    Results mean 1.
+    Results standard deviation $1.3735*10^-9, 0., 1.60689*10^-11, 6.4372*10^-9, 2.66467*10^-15, 1.29662*10^-11, 0.027735, 2.28702*10^-11, 2.54305*10^-10$
+
+    Time taken for PSO to finish for all tests
+    Results mean 0.0463947, 0.107632, 0.0812466, 0.0555938, 0.1253, 0.106167, 0.089034, 0.181696, 0.17403
+    Results standard deviation 0.00487954, 0.00912289, 0.00542592, 0.00491575, 0.00699414, 0.00669427, 0.00856579, 0.00828043, 0.00557404
+
+    Expected Return
+    Means:
+    0.0447, 0.0447, 0.0447, 0.0527, 0.0527, 0.0527, 0.101475, 0.1007, 0.1007
+    Standard Deviation:
+    $6.13954*10^-11, 1.58041*10^-17, 7.18283*10^-13, 3.3924*10^-10, 1.41115*10^-16, 6.83323*10^-13, 0.00279292, 2.30303*10^-12, 2.56085*10^-11 $
+
       
     % subsection results (end)
 

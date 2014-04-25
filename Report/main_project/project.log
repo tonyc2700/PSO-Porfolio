@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  24 APR 2014 16:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  25 APR 2014 11:16
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -743,6 +743,9 @@ l.67 \chapter
 
 ]
 Chapter 2
+
+Underfull \vbox (badness 1831) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -759,7 +762,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.135     I
-           n Algorithm~\ref{eq:pso} one can see the pseudo-code for a standa...
+           n Algorithm~\ref{eq:pso} $S$ is the number of particles in a swar...
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -842,16 +845,25 @@ Chapter 10
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.573       T
-             he use of the constriction coefficient can be viewed as a recom...
-pdfTeX warning (ext4): destination with the same identifier (name{table.10.2}) 
-has been already used, duplicate ignored
+l.569     \subsection
+                     {Conclusion} % (fold)pdfTeX warning (ext4): destination wi
+th the same identifier (name{table.10.2}) has been already used, duplicate igno
+red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.573       T
-             he use of the constriction coefficient can be viewed as a recom...
-] [21] [22] [23]
+l.569     \subsection
+                     {Conclusion} % (fold)] [21]
+Overfull \hbox (27.42323pt too wide) in paragraph at lines 647--652
+\OT1/cmr/m/n/12 0.1007, 0.1007 Stan-dard De-vi-a-tion: $6\OML/cmm/m/it/12 :\OT1
+/cmr/m/n/12 13954 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]11\OML/cmm/m/it/12 ;
+ \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 58041 \OMS/cmsy/m/n/12 ^^C 
+\OT1/cmr/m/n/12 10[]17\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 18283 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]13\OML/cmm/m/it/12 
+; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C
+ []
+
+[22] [23]
 Chapter 11
 [24
 
@@ -909,9 +921,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (34 pages, 353276 bytes).
+Output written on project.pdf (34 pages, 355369 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
+ 662 PDF objects out of 1000 (max. 8388607)
  161 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  25 APR 2014 18:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  25 APR 2014 20:12
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -715,7 +715,7 @@ LaTeX Info: Redefining \pageref on input line 28.
 
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=237, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=245, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -793,7 +793,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=413, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=423, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -829,7 +829,7 @@ Chapter 6
 
 ]
 Chapter 7
-<./Figures/time-line.png, id=465, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=475, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [16
@@ -912,16 +912,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ])
-[31] (./project.aux)
+[31]
+Appendix A: User Manual
+[32
+
+
+]
+Appendix B: Maintenance Manual
+[33
+
+
+] (./project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16107 strings out of 495061
- 280919 string characters out of 1182621
+ 16113 strings out of 495061
+ 280977 string characters out of 1182621
  359197 words of memory out of 3000000
- 18629 multiletter control sequences out of 15000+50000
+ 18631 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,1121b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -940,9 +950,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (37 pages, 421056 bytes).
+Output written on project.pdf (39 pages, 423516 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 171 named destinations out of 1000 (max. 500000)
- 492 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 175 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

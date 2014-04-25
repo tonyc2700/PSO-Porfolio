@@ -98,3 +98,5 @@
 \contentsline {section}{\tocsection {}{2}{Future Work}}{29}{section.12.2}
 \contentsline {section}{\tocsection {}{3}{Conclusion}}{29}{section.12.3}
 \contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{30}{section.12.3}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix A: User Manual}}{32}{chapter*.1}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix B: Maintenance Manual}}{33}{chapter*.2}

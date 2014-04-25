@@ -9,6 +9,13 @@ W.~Breen.
 \newblock Specific versus general models of portfolio selection.
 \newblock In {\em Oxford Economic Papers}, volume~36, pages 361--368, 1968.
 
+\bibitem{two_sided_risk}
+Zhiping Chen and Yi~Wang.
+\newblock {Two-sided coherent risk measures and their application in realistic
+  portfolio optimization}.
+\newblock {\em Journal of Banking \& Finance}, 32(12):2667--2673, December
+  2008.
+
 \bibitem{constriction_factor}
 M.~Clerc.
 \newblock The swarm and the queen: towards a deterministic and adaptive
@@ -108,6 +115,11 @@ G~Szego.
 \newblock Measure of risk.
 \newblock In {\em Journal of Operational Research}, volume 163, pages 5--19,
   2005.
+
+\bibitem{portfolio}
+Wikipedia.
+\newblock \url{http://en.wikipedia.org/wiki/Portfolio_(finance)}.
+\newblock Accessed: 18,April,2014.
 
 \bibitem{pareto}
 Wikipedia.

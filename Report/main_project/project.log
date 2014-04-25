@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  25 APR 2014 11:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  25 APR 2014 18:35
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -613,6 +613,9 @@ ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
 ractals.code.tex)) (./project.aux
 
+LaTeX Warning: Label `eq:portfolio-risk' multiply defined.
+
+
 LaTeX Warning: Label `sub:haskell' multiply defined.
 
 
@@ -761,8 +764,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135     I
-           n Algorithm~\ref{eq:pso} $S$ is the number of particles in a swar...
+l.135   I
+         n Algorithm~\ref{eq:pso} $S$ is the number of particles in a swarm,...
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -770,43 +773,47 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 
+l.139 
        [4pdfTeX warning (ext4): destination with the same identifier (name{algo
 cf.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
+l.139 
       ] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7] [8]
 Chapter 3
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6
+ [9
 
 
 ]
-<./Figures/efficient_frontier.png, id=378, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=413, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}
-) has been already used, duplicate ignored
+ [10]
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.230 \chapter
+l.280 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
-[9
+[12
 
 
 ]
 Chapter 5
-[10
+[13
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
@@ -814,47 +821,56 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.313 
-      ] [11]
+l.363 
+      ] [14]
 Chapter 6
-[12
+[15
 
 
 ]
 Chapter 7
-[13
+<./Figures/time-line.png, id=465, 1177.39874pt x 218.8175pt>
+File: ./Figures/time-line.png Graphic file (type png)
+
+<use ./Figures/time-line.png> [16
 
 
-] [14]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.412 
+       <./Figures/time-line.png (PNG copy)>] [17]
 Chapter 8
-[15
-
-
-] [16] [17]
-Chapter 9
 [18
+
+
+] [19] [20]
+Chapter 9
+[21
 
 
 ]
 Chapter 10
-[19
+[22
 
 
-] [20pdfTeX warning (ext4): destination with the same identifier (name{table.10
+] [23pdfTeX warning (ext4): destination with the same identifier (name{table.10
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.569     \subsection
+l.624     \subsection
                      {Conclusion} % (fold)pdfTeX warning (ext4): destination wi
 th the same identifier (name{table.10.2}) has been already used, duplicate igno
 red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.569     \subsection
-                     {Conclusion} % (fold)] [21]
-Overfull \hbox (27.42323pt too wide) in paragraph at lines 647--652
+l.624     \subsection
+                     {Conclusion} % (fold)] [24]
+Overfull \hbox (27.42323pt too wide) in paragraph at lines 703--708
 \OT1/cmr/m/n/12 0.1007, 0.1007 Stan-dard De-vi-a-tion: $6\OML/cmm/m/it/12 :\OT1
 /cmr/m/n/12 13954 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]11\OML/cmm/m/it/12 ;
  \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 58041 \OMS/cmsy/m/n/12 ^^C 
@@ -863,14 +879,14 @@ Overfull \hbox (27.42323pt too wide) in paragraph at lines 647--652
 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C
  []
 
-[22] [23]
+[25] [26]
 Chapter 11
-[24
+[27
 
 
-] [25]
+] [28]
 Chapter 12
-(./project.bbl [26
+(./project.bbl [29
 
 
 ]
@@ -878,13 +894,13 @@ Bibliography
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
 
-Underfull \hbox (badness 2181) in paragraph at lines 83--87
+Underfull \hbox (badness 2181) in paragraph at lines 90--94
 []\OT1/cmr/m/n/10 Pablo Ra-banal, Is-mael Rodguez, and Fer-nando Ru-bio. []$\OT
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
 
 
-Overfull \hbox (72.01537pt too wide) in paragraph at lines 89--94
+Overfull \hbox (72.01537pt too wide) in paragraph at lines 96--101
 []\OT1/cmr/m/n/10 Risk Sci-en-tist. []$\OT1/cmtt/m/n/10 http : / / www . risksc
 ientist . com / content / technologies-[]portfolio-[]optimization-[]theory .
  []
@@ -892,38 +908,41 @@ ientist . com / content / technologies-[]portfolio-[]optimization-[]theory .
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
+ [30
 
 
 ])
-[28] (./project.aux)
+[31] (./project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16086 strings out of 495061
- 280575 string characters out of 1182621
- 357905 words of memory out of 3000000
- 18619 multiletter control sequences out of 15000+50000
+ 16107 strings out of 495061
+ 280919 string characters out of 1182621
+ 359197 words of memory out of 3000000
+ 18629 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,1121b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,1121b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project.pdf (34 pages, 355369 bytes).
+lic/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on project.pdf (37 pages, 421056 bytes).
 PDF statistics:
- 662 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
- 487 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
+ 492 words of extra memory for PDF output out of 10000 (max. 10000000)
 

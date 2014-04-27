@@ -42,6 +42,13 @@ M.~S. Fekdstein.
   portfolio selection.
 \newblock In {\em Review of Economic Studies}, volume~36, pages 5--12, 1969.
 
+\bibitem{pso_app2}
+Wei Hongkai, Wang Pingbo, Cai Zhiming, Chen Baozhu, and Yao Wanjun.
+\newblock Application of particle swarm optimization method in fractional
+  fourier transform.
+\newblock In {\em Image Analysis and Signal Processing (IASP), 2010
+  International Conference on}, pages 442--445, April 2010.
+
 \bibitem{lazy}
 L.P. Jones and J.~Hughes.
 \newblock Report on the programming language haskell 98.
@@ -86,6 +93,13 @@ K.E. Parsopoulos and M.N. Vrahatis.
 M.E.H. Pedersen.
 \newblock Tuning \& simplifying heuristical optimization, 2010.
 
+\bibitem{pso_app_main}
+R.~Poli.
+\newblock An analysis of publications on particle swarm optimisation
+  applications.
+\newblock In {\em Technical Report CSM-469 (Department of Computer Science,
+  University of Essex, UKI}, May 207.
+
 \bibitem{haskellPSO}
 Pablo Rabanal, Ismael Rodíguez, and Fernando Rubio.
 \newblock
@@ -98,6 +112,13 @@ Risk Scientist.
   \url{http://www.riskscientist.com/content/technologies-portfolio-optimizatio%
 n-theory.html}.
 \newblock Accessed: 4,April,2014.
+
+\bibitem{pso_app}
+E.~Shahamatnia and M.-M. Ebadzadeh.
+\newblock Application of particle swarm optimization and snake model hybrid on
+  medical imaging.
+\newblock In {\em Computational Intelligence In Medical Imaging (CIMI), 2011
+  IEEE Third International Workshop On}, pages 1--8, April 2011.
 
 \bibitem{pso2}
 Yuhui Shi and R.~Eberhart.
@@ -116,6 +137,12 @@ G~Szego.
 \newblock In {\em Journal of Operational Research}, volume 163, pages 5--19,
   2005.
 
+\bibitem{pso_app3}
+Qingnian Wang, Kun Yan, Xiaofeng Wan, and Meiling Yuan.
+\newblock Application of particle swarm optimization in fussy neural networks.
+\newblock In {\em Information Assurance and Security, 2009. IAS '09. Fifth
+  International Conference on}, volume~1, pages 158--161, Aug 2009.
+
 \bibitem{portfolio}
 Wikipedia.
 \newblock \url{http://en.wikipedia.org/wiki/Portfolio_(finance)}.
@@ -125,5 +152,10 @@ Wikipedia.
 Wikipedia.
 \newblock \url{http://en.wikipedia.org/wiki/Portfolio_(finance)}.
 \newblock Accessed: 8,April,2014.
+
+\bibitem{localmin}
+X.~Yao, Liu Y., and Lin G.
+\newblock Evolutionary programming made faster.
+\newblock In {\em Evolutionary Computation}, volume~3, pages 82--102, 1999.
 
 \end{thebibliography}

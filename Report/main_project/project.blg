@@ -3,45 +3,45 @@ The top-level auxiliary file: project.aux
 The style file: plain.bst
 Database file #1: myref.bib
 Warning--empty booktitle in constriction_factor_4
-You've used 23 entries,
+You've used 28 entries,
             2118 wiz_defined-function locations,
-            607 strings with 6633 characters,
-and the built_in function-call counts, 6823 in all, are:
-= -- 638
-> -- 232
-< -- 14
-+ -- 98
-- -- 70
-* -- 351
-:= -- 1049
-add.period$ -- 63
-call.type$ -- 23
-change.case$ -- 99
+            634 strings with 7617 characters,
+and the built_in function-call counts, 8936 in all, are:
+= -- 834
+> -- 321
+< -- 20
++ -- 134
+- -- 100
+* -- 488
+:= -- 1358
+add.period$ -- 78
+call.type$ -- 28
+change.case$ -- 129
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 289
-empty$ -- 663
-format.name$ -- 70
-if$ -- 1534
+cite$ -- 29
+duplicate$ -- 389
+empty$ -- 847
+format.name$ -- 100
+if$ -- 2016
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 12
-newline$ -- 112
-num.names$ -- 46
-pop$ -- 188
+int.to.str$ -- 28
+missing$ -- 17
+newline$ -- 137
+num.names$ -- 56
+pop$ -- 232
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 106
 quote$ -- 0
-skip$ -- 250
+skip$ -- 331
 stack$ -- 0
-substring$ -- 377
-swap$ -- 91
-text.length$ -- 14
+substring$ -- 494
+swap$ -- 133
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
+type$ -- 112
 warning$ -- 1
-while$ -- 64
-width$ -- 25
-write$ -- 229
+while$ -- 82
+width$ -- 30
+write$ -- 285
 (There was 1 warning)

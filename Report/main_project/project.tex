@@ -69,11 +69,11 @@ Acknowledgments....
 
   \section{Particle Swarm Optimisation} % (fold)
   \label{sec:particle_swarm_optimisation}
-    % Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behavior of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
+    % Particle Swarm Optimisation (PSO) \cite{pso,pso2,pso3,pso4} is a metaheuristic inspired on the social behaviour of flocks of birds when flying and on the movement of shoals of fish. A population of entities moves in the search space during the execution on the algorithm. These entities perform local interactions (with other particles as well as the environment).
 
     % Assuming worker bees are searching for a patch of flowers with the most pollen, also assume that the bees
 
-  Particle swarm optimization (PSO) is a population based  stochastic optimization technique developed by Kennedy and  Eberhart in 1995, discovered through simplified social model simulation \cite{pso,pso2,pso3,pso4}. It simulates the behavior of bird flocking involving the scenario of a collection of birds randomly looking for food in a search space. None of the birds know where the food is located, but they do know how far the food location is from their current positions. An effective technique for the bird to find food is to adjust their velocity according to the bird which is nearest to the food. PSO was motivated from this scenario and was developed to solve complex optimization problems, where the optimum position of the fitness function is where the food is located and all the birds are the particles searching for this optimum position. 
+  Particle swarm optimization (PSO) is a population based  stochastic optimization technique developed by Kennedy and  Eberhart in 1995, discovered through simplified social model simulation \cite{pso,pso2,pso3,pso4}. It simulates the behaviour of bird flocking involving the scenario of a collection of birds randomly looking for food in a search space. None of the birds know where the food is located, but they do know how far the food location is from their current positions. An effective technique for the bird to find food is to adjust their velocity according to the bird which is nearest to the food. PSO was motivated from this scenario and was developed to solve complex optimization problems, where the optimum position of the fitness function is where the food is located and all the birds are the particles searching for this optimum position. 
 
   In the conventional PSO, the behaviour displays particles in a multidimensional space where each particles has two properties: a position vector and a velocity vector. Each particle $i$ in the swarm has the properties shown in (\ref{eq:PSO_stuff}):
     % \begin{itemize}
@@ -187,11 +187,10 @@ Acknowledgments....
     \end{split}
   \end{equation} 
 
-  Equation~\ref{eq:portfolio-risk-min} refers to the minimisation of a portfolio's risk. Now an explanation for the constraints in Equation~\ref{eq:portfolio-risk-constraints}, $\eta$ is the required rate of return of a portfolio, that is what the investor has to gain, this constraint ensures that the portfolio reaches this return. The sum of $x_i$ ensures the investors do not buy more than what they can afford and also that the investor invests all the capital it can. Finally, $l_i$ and $u_i$ are lower and upper limits for how much proportion of each asset an investor is allowed to invest in, this is useful for diversification. 
+  Equation~\ref{eq:portfolio-risk-min} refers to the minimisation of a portfolio's risk. Now an explanation for the constraints in Equation~\ref{eq:portfolio-risk-constraints}, $\eta$ is the required rate of return of a portfolio, that is what the investor has to gain, this constraint ensures that the portfolio reaches this return. The sum of $x_i$ ensures the investors do not buy more than what they can afford and also that the investor invests all the capital it can. Finally, $l_i$ and $u_i$ are lower and upper limits for how much proportion of each asset an investor is allowed to invest in, this is useful for diversification \cite{diversification}. 
 
   % section portfolio_management (end)
   
-
   \section{Haskell} % (fold)
   \label{sec:haskell}
   This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms. The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This is not exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
@@ -201,7 +200,6 @@ Acknowledgments....
   Back to our project, Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation, if you did not know, is an evaluation strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. 
 
   ---------------More why it's good for this specific project --------------
-
   % section haskell (end)
 
   % \section{Multi-objective Optimisation} % (fold)
@@ -364,7 +362,7 @@ This chapter describes the requirements for this project. Table~\ref{table:funct
   % section non_functional (end)
 
 \chapter{Risk Assessment}
-Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible risks which might affect the development of my project and some worries which must not be overlooked.
+Section~\ref{sec:social} and Section~\ref{sec:project_based} describe possible risks which might affect the development of my project and some worries which must not be overlooked.
 
   \section{Social Risk Assessment} % (fold)
   \label{sec:social}
@@ -457,7 +455,7 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     % subsection optimisation (end)
     \subsection{Termination} % (fold)
     \label{sub:termination}
-    An function was created to deal with the termination, a user specifies the number of iterations (``steps'') that the algorithm is allowed to run for. This independent function is simple, it runs recursively, applying one \textit{updateParticle} at a time and terminates once there are no more iterations to be performed and returns both the value of the global best and it's position. 
+    A function was created to deal with the termination, a user specifies the number of iterations (``steps'') that the algorithm is allowed to run for. This independent function is simple, it runs recursively, applying one \textit{updateParticle} at a time and terminates once there are no more iterations to be performed and returns both the value of the global best and it's position. 
     % subsection termination (end)
   % section original_pso_implementation (end)
 
@@ -495,6 +493,8 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     \subsection{Termination} % (fold)
     \label{sub:termination}
     If time allows, it would be nice to have a self-termination PSO which, no matter how many iterations are left, terminates if it thinks that the optimal solution is reached. This could be done by the concept of a threshold, if all the solution reach this threshold, then there is no point in carring of. For example, if all the solution are close enough to each other for a long period of iteration, say $10^{-10}$, then there is no point in looking for thousands more iterations just to find something which will not affect the outcome. 
+
+    In order to achieve this, we would need three extra parameters to be added, one to define the threshold, another one to define the maximal number of iterations allowed without improvement (call this \textit{mni}, and another one to compute the current number of remaining iterations allowed without improvement(call this \textit{cni}. After each call to the updating function, compare the current best solution to the past best solution to decide whether there has been a relevant improvement or not. The algorithm would either change the number of iterations to \textit{mni} (in case there was relevant improvement), otherwise reduce the value of \textit{cni} by one. 
     % subsection termination (end)
     \subsection{Fitness Function} % (fold)
     \label{sub:fitness_function}
@@ -502,8 +502,45 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     % subsection fitness_function (end)
     \subsection{Penalty function} % (fold)
     \label{sub:penalty_function}
-    
+    One of the most straight forward approaches to solving constrained optimization problems is the use of a penalty function\cite{constraint}. Using such an approach means transforming the optimisation problem, such our $\rho_{a,p}(R)$ in Equation~\ref{eq:portfolio-risk}, to include the behaviour of being ``punished'' if the constraints are not met. One can construct a single new objective function from combining $\rho_{a,p}(R)$ plus linear factors of each constraint in Equation~\ref{eq:portfolio-risk-constraints}, this new objective function will be used to find an optimum value for the portfolio problem. Thus a new optimisation function can be created:
+      \begin{equation} \label{eq:unconstraint-portfolio-risk}
+        \begin{split}
+          \text{min } f(R) & \\
+          \text{where } 
+          f(R) & = \rho_{a,p}(R) + \frac{1}{\delta}|\widehat{R}-\eta| + \frac{1}{\delta}|\sum\limits_{i=1}^N x_i -1| \\
+          % \rho_{a,p}(R) & = a \|(R-\widehat{R})^+\|_1 + (1-a)\|(R-\widehat{R})^-\|_p - \widehat{R} \\
+        \end{split}
+      \end{equation}
+    Now an explanation on what is happening in Equation~\ref{eq:unconstraint-portfolio-risk}. Firstly,$\delta > 0$ is called the penalty parameter and $\frac{1}{\delta}$ is called the penalty value \cite{constraint}. The penalty parameter should be small enough so that whenever a constraint is violated, the penalty value will be big enough to affect the result to the solution. Secondly, the use of absolute values refers to the distance traveled from the desired value, for example if the sum of the weights is not equal to 1 then $|\sum\limits_{i=1}^N x_i -1| > 0$ multiplying this by a penalty value will be ensure that the solution will not be taken as an optimal one. Finally, similar method in used for deviating from the required expected return. 
+
+    One may notice that in this new optimisation function, the lower and upper bounds for how much one can invest in each asset is not included. This is due to how PSO handles search space domains and will be explained in the following Subsection~\ref{sub:forced_diversification}.
+      % \begin{equation} \label{eq:portfolio-risk}
+      %   \begin{split}
+      %     \rho_{a,p}(R) & = a \|(R-\widehat{R})^+\|_1 + (1-a)\|(R-\widehat{R})^-\|_p - \widehat{R} \\
+      %   \end{split}
+      % \end{equation} 
+      % Now that there is a way to measure risk, the portfolio optimisation problem can be formulated as follows:
+      % \begin{equation} \label{eq:portfolio-risk-min}
+      %   \begin{split}
+      %     \text{min } \rho_{a,p}(R) \\
+      %   \end{split}
+      % \end{equation} 
+      % Subject to constraints:
+      % \begin{equation} \label{eq:portfolio-risk-constraints}
+      %   \begin{split}
+      %     \widehat{R} = \eta \\
+      %     \sum\limits_{i=1}^N x_i = 1 \\
+      %     l_i \leq x_i \leq u_i
+      %   \end{split}
+      % \end{equation}
     % subsection penalty_function (end)
+    \subsection{Forced Diversification} % (fold)
+    \label{sub:forced_diversification}
+    Equation~\ref{eq:unconstraint-portfolio-risk} did not include lower and upper limits for each assets as in Equation~\ref{eq:portfolio-risk-constraints}, this is because the implementations \cite{haskellPSO} already takes into account bounds for the solutions' domain for a given fitness function. Since our objective is to find weights for each asset, the set of assets is the domain for our fitness function. So the bounds for the proportions can be set which the algorithm.
+
+    The bounds inside PSO can be used to give a sense of diversification \cite{diversification}, by not allowing how much you invest on each asset to be too small or to large. For example, you might specify that you have to invest at least 5\% and at most 50\% of any asset in a portfolio, this forces the investor to consider at all assets and helps lowering the risk of a portfolio \cite{diversification}.
+    
+    % subsection forced_diversification (end)
     \subsection{Presenting the Results} % (fold)
     \label{sub:presenting_the_results}
     After the algorithm has finished, the results are displayed on the screen and saved in a separate file which will be called ``output-DATE'', where date is in (year,month,day) format, for example ``output-2014,3,15''. If there is multiple runs in one day, the new results are added to the end of that same file.
@@ -560,6 +597,47 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     Standard Deviation stuff, box plots blahh blahhh
   % section efficiency (end)
 
+  \section{Precision} % (fold)
+  \label{sec:precision}
+  To test how precise / reliable it is. 
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}
+      I will run nine tests and record the expected rate of return for the solution the algorithm gives. Each of the nine tests will be run 20 times with a mean and standard deviation calculated and shown in the following sections. The nine tests will be as follows:
+        \begin{itemize}
+          \item Test 1: PSO 20 particles, 100 iterations, 5 assets
+          \item Test 2: PSO 20 particles, 300 iterations, 5 assets
+          \item Test 3: PSO 40 particles, 100 iterations, 5 assets
+          \item Test 4: PSO 20 particles, 100 iterations, 7 assets
+          \item Test 5: PSO 20 particles, 300 iterations, 7 assets
+          \item Test 6: PSO 40 particles, 100 iterations, 7 assets
+          \item Test 7: PSO 20 particles, 100 iterations, 10 assets
+          \item Test 8: PSO 20 particles, 300 iterations, 10 assets
+          \item Test 9: PSO 40 particles, 100 iterations, 10 assets
+        \end{itemize}
+
+    % subsection testing_strategy (end)
+
+    \subsection{Hypothesis} % (fold)
+    \label{sub:hypothesis}
+      My hypothesis is that the application is reliable and that the results (for the same input) will have almost the same output, ie it is reliable and precise. 
+    % subsection hypothesis (end)
+
+    \subsection{Results} % (fold)
+    \label{sub:results}
+    Expected return for all tests
+    Means:
+    0.0447, 0.0447, 0.0447, 0.0527, 0.0527, 0.0527, 0.101475, 0.1007, 0.1007
+    Standard Deviation:
+    $6.13954*10^-11, 1.58041*10^-17, 7.18283*10^-13, 3.3924*10^-10, 1.41115*10^-16, 6.83323*10^-13, 0.00279292, 2.30303*10^-12, 2.56085*10^-11$
+    % subsection results (end)
+
+    \subsection{Conclusion} % (fold)
+    \label{sub:conclusion}
+      
+    % subsection conclusion (end)
+  % section precision (end)
+
   \section{Constriction Factors} % (fold)
   \label{sec:constriction_factors}
   In System Design and Architecture~\ref{sub:constriction_factor} the concept of a constriction factor was introduced. 
@@ -604,6 +682,8 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
           \caption{Results for \nameref{sec:constriction_factors}.}
           \label{table:constriction_factor_results}
         \end{table}
+
+      ----------------------- Box-whisker plot ------------------------------
 
       Table~\ref{table:key_constriction_factor_results} shows what the acronyms in Table~\ref{table:constriction_factor_results} mean. 
 
@@ -684,8 +764,7 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
           \item Test 6: PSO 40 particles, 100 iterations, 7 assets
           \item Test 7: PSO 20 particles, 100 iterations, 10 assets
           \item Test 8: PSO 20 particles, 300 iterations, 10 assets
-          \item Test 9: PSO 40 particles, 100 iterat
-          ions, 10 assets
+          \item Test 9: PSO 40 particles, 100 iterations, 10 assets
         \end{itemize}
     % subsection testing_strategy (end)
 
@@ -719,33 +798,33 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     % subsection conclusion (end)
   % section relationships (end)
 
-  \section{Scalability Time } % (fold)
-  \label{sec:scalability_time }
-  This test might seem a little peculiar at first but be  assure, there is method in this madness (or madness in this method!). I want to see what the relationship is between time, number of particles, number of iterations and number of assets.
+  % \section{Scalability Time } % (fold)
+  % \label{sec:scalability_time }
+  % This test might seem a little peculiar at first but be  assure, there is method in this madness (or madness in this method!). I want to see what the relationship is between time, number of particles, number of iterations and number of assets.
 
-    \subsection{Testing Strategy} % (fold)
-    \label{sub:testing_strategy}
-      The application will be run
+  %   \subsection{Testing Strategy} % (fold)
+  %   \label{sub:testing_strategy}
+  %     The application will be run
 
-    % subsection testing_strategy (end)
+  %   % subsection testing_strategy (end)
 
-    \subsection{Hypothesis} % (fold)
-    \label{sub:hypothesis}
+  %   \subsection{Hypothesis} % (fold)
+  %   \label{sub:hypothesis}
       
-    % subsection hypothesis (end)
+  %   % subsection hypothesis (end)
 
-    \subsection{Results} % (fold)
-    \label{sub:results}
+  %   \subsection{Results} % (fold)
+  %   \label{sub:results}
       
-    % subsection results (end)
+  %   % subsection results (end)
 
-    \subsection{Conclusion} % (fold)
-    \label{sub:conclusion}
+  %   \subsection{Conclusion} % (fold)
+  %   \label{sub:conclusion}
       
-    % subsection conclusion (end)
+  %   % subsection conclusion (end)
 
-    Number of assets
-  % section scalability Time and  (end)
+  %   Number of assets
+  % % section scalability Time and  (end)
 
   \section{Penalty value} % (fold)
   \label{sec:penalty_value}
@@ -809,7 +888,7 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
 
   \section{Diversification} % (fold)
   \label{sec:diversification}
-    One of the most interesting concepts in portfolio theory I found was that of diversification, unfortunately I found this very late into my project and unable, due to time constraints, to include this into my application. Diversification excites me as it contradicts intuition. One would think that if one have one risky asset, adding another one would only increase the overall risk further, in fact it does the exact opposite!
+    One of the most interesting concepts in portfolio theory I found was that of diversification \cite{diversification_2}, unfortunately I found this very late into my project and unable, due to time constraints, to include this into my application. Diversification excites me as it contradicts intuition. One would think that if one have one risky asset, adding another one would only increase the overall risk further, in fact it does the exact opposite!
 
     The most simplistic model to represent this concept is the proverb, ``putting ones eggs in more than one basket''. Regardless on what the probability of each egg is, having more baskets with eggs is more likely to preserve more eggs that less baskets with the same amount of eggs. In other words, if one basket crashes, one still have the the other eggs which where in different baskets. 
 

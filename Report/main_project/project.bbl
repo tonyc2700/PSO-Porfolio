@@ -36,6 +36,13 @@ M.~Clerc and J.~Kennedy.
   multi-dimensional complex space.
 \newblock 2002.
 
+\bibitem{constraint}
+Carlos~A.C. Coello.
+\newblock Theoretical and numerical constraint-handling techniques used with
+  evolutionary algorithms: A survey of the state of the art.
+\newblock In {\em Computer Methods in Applied Mechanics and Engineering}, pages
+  1245--1287, 2002.
+
 \bibitem{crit3}
 M.~S. Fekdstein.
 \newblock Mean-variance analysis in the theory of liquidity preference of
@@ -93,6 +100,12 @@ K.E. Parsopoulos and M.N. Vrahatis.
 M.E.H. Pedersen.
 \newblock Tuning \& simplifying heuristical optimization, 2010.
 
+\bibitem{diversification_2}
+Krassimir Petrov.
+\newblock Financial institutions, lecture 05.
+\newblock \url{http://www.youtube.com/watch?v=ntNf5qwrq2c}.
+\newblock Accessed: 21,April,2014.
+
 \bibitem{pso_app_main}
 R.~Poli.
 \newblock An analysis of publications on particle swarm optimisation
@@ -147,6 +160,11 @@ Qingnian Wang, Kun Yan, Xiaofeng Wan, and Meiling Yuan.
 Wikipedia.
 \newblock \url{http://en.wikipedia.org/wiki/Portfolio_(finance)}.
 \newblock Accessed: 18,April,2014.
+
+\bibitem{diversification}
+Wikipedia.
+\newblock \url{http://en.wikipedia.org/wiki/Diversification_(finance)}.
+\newblock Accessed: 21,April,2014.
 
 \bibitem{pareto}
 Wikipedia.

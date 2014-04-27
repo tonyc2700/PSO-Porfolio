@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  27 APR 2014 15:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  27 APR 2014 17:53
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -790,7 +790,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=423, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=425, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -802,7 +802,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.280 \chapter
+l.278 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
 Missing character: There is no Ä in font cmr12!
@@ -820,14 +820,14 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.360 
+l.358 
       ] [14]
 Chapter 6
 [15
 
 
 ]
-Overfull \hbox (4.07626pt too wide) in paragraph at lines 385--387
+Overfull \hbox (4.07626pt too wide) in paragraph at lines 383--385
 []\OT1/cmr/m/n/12 When evo-lu-tion-ary al-go-rithms come across func-tions, suc
 h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
 [] \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 x[]sin\OT1/cmr/m/n/12 ([])$
@@ -835,7 +835,7 @@ h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) =
 
 [16]
 Chapter 7
-<./Figures/time-line.png, id=496, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=498, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [17
@@ -846,37 +846,57 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.412 
+l.410 
        <./Figures/time-line.png (PNG copy)>] [18]
 Chapter 8
 [19
 
 
-] [20] [21]
+] [20] [21] [22]
 Chapter 9
-[22
+[23
 
 
 ]
 Chapter 10
-[23
+
+Overfull \hbox (1.14177pt too wide) in paragraph at lines 628--634
+ \OT1/cmr/bx/n/12 2.3.Results.[] \OT1/cmr/m/n/12 Ex-pected re-turn for all test
+s Means: 0.0447, 0.0447, 0.0447, 0.0527,
+ []
 
 
-] [24pdfTeX warning (ext4): destination with the same identifier (name{table.10
-.1}) has been already used, duplicate ignored
+Overfull \hbox (23.84865pt too wide) in paragraph at lines 628--634
+\OT1/cmr/m/n/12 10[]17\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 18283 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]13\OML/cmm/m/it/12 
+; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C 
+\OT1/cmr/m/n/12 10[]10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 41115 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]16\OML/cmm/m/it/12 
+; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 83323 \OMS/cmsy/m/n/12 ^^C
+ \OT1/cmr/m/n/12 10[]13\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\O
+T1/cmr/m/n/12 00279292\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 30303 \OMS/cmsy/m/n/12 ^^C
+ []
+
+[24
+
+
+] [25] [26pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.628     \subsection
-                     {Conclusion} % (fold)pdfTeX warning (ext4): destination wi
-th the same identifier (name{table.10.2}) has been already used, duplicate igno
-red
+l.712       T
+             he use of the constriction coefficient can be viewed as a recom...
+pdfTeX warning (ext4): destination with the same identifier (name{table.10.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.628     \subsection
-                     {Conclusion} % (fold)] [25]
-Overfull \hbox (27.42323pt too wide) in paragraph at lines 707--712
+l.712       T
+             he use of the constriction coefficient can be viewed as a recom...
+] [27]
+Overfull \hbox (27.42323pt too wide) in paragraph at lines 786--791
 \OT1/cmr/m/n/12 0.1007, 0.1007 Stan-dard De-vi-a-tion: $6\OML/cmm/m/it/12 :\OT1
 /cmr/m/n/12 13954 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]11\OML/cmm/m/it/12 ;
  \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 58041 \OMS/cmsy/m/n/12 ^^C 
@@ -885,47 +905,53 @@ Overfull \hbox (27.42323pt too wide) in paragraph at lines 707--712
 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C
  []
 
-[26] [27]
+[28] [29]
 Chapter 11
-[28
+[30
 
 
-] [29]
+] [31]
 Chapter 12
-(./project.bbl [30
+(./project.bbl [32
 
 
 ]
 Bibliography
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33
+
+
+]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
 
-Underfull \hbox (badness 2181) in paragraph at lines 104--108
+Underfull \hbox (badness 2181) in paragraph at lines 117--121
 []\OT1/cmr/m/n/10 Pablo Ra-banal, Is-mael Rodguez, and Fer-nando Ru-bio. []$\OT
 1/cmtt/m/n/10 http : / / antares . sip . ucm . es /
  []
 
 
-Overfull \hbox (72.01537pt too wide) in paragraph at lines 110--115
+Overfull \hbox (72.01537pt too wide) in paragraph at lines 123--128
 []\OT1/cmr/m/n/10 Risk Sci-en-tist. []$\OT1/cmtt/m/n/10 http : / / www . risksc
 ientist . com / content / technologies-[]portfolio-[]optimization-[]theory .
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+[]\OT1/cmr/m/n/10 Wikipedia. []$\OT1/cmtt/m/n/10 http : / / en . wikipedia . or
+g / wiki / Diversification _ (finance)$[]\OT1/cmr/m/n/10 . Ac-cessed:
+ []
 
- [31
-
-
-])
-[32]
+) [34]
 Appendix A: User Manual
-[33
+[35
 
 
 ]
 Appendix B: Maintenance Manual
-[34
+[36
 
 
 ] (./project.aux)
@@ -934,13 +960,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16128 strings out of 495061
- 281183 string characters out of 1182621
- 359524 words of memory out of 3000000
- 18639 multiletter control sequences out of 15000+50000
+ 16140 strings out of 495061
+ 281384 string characters out of 1182621
+ 359731 words of memory out of 3000000
+ 18644 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
- 56i,19n,57p,889b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,890b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -956,9 +982,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (40 pages, 437721 bytes).
+Output written on project.pdf (42 pages, 449474 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

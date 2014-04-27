@@ -169,11 +169,11 @@ Acknowledgments....
   From Equation~\ref{eq:two-sided} we can measure the risk of a portfolio as follows:
   \begin{equation} \label{eq:portfolio-risk}
     \begin{split}
-      \rho_{a,p}(R) & = a \|(R-\widehat{R})^+\|_1 + (1-a)\|(R-\widehat{R})^-\|_p - \widehat{R}) \\
+      \rho_{a,p}(R) & = a \|(R-\widehat{R})^+\|_1 + (1-a)\|(R-\widehat{R})^-\|_p - \widehat{R} \\
     \end{split}
   \end{equation} 
   Now that there is a way to measure risk, the portfolio optimisation problem can be formulated as follows:
-  \begin{equation} \label{eq:portfolio-risk}
+  \begin{equation} \label{eq:portfolio-risk-min}
     \begin{split}
       \text{min } \rho_{a,p}(R) \\
     \end{split}
@@ -187,7 +187,7 @@ Acknowledgments....
     \end{split}
   \end{equation} 
 
-  Equation~\ref{eq:portfolio-risk} refers to the minimisation of a portfolio's risk. Now an explanation for the constraints in Equation~\ref{eq:portfolio-risk-constraints}, $\eta$ is the required rate of return of a portfolio, that is what the investor has to gain, this constraint ensures that the portfolio reaches this return. The sum of $x_i$ ensures the investors do not buy more than what they can afford and also that the investor invests all the capital it can. Finally, $l_i$ and $u_i$ are lower and upper limits for how much proportion of each asset an investor is allowed to invest in, this is useful for diversification. 
+  Equation~\ref{eq:portfolio-risk-min} refers to the minimisation of a portfolio's risk. Now an explanation for the constraints in Equation~\ref{eq:portfolio-risk-constraints}, $\eta$ is the required rate of return of a portfolio, that is what the investor has to gain, this constraint ensures that the portfolio reaches this return. The sum of $x_i$ ensures the investors do not buy more than what they can afford and also that the investor invests all the capital it can. Finally, $l_i$ and $u_i$ are lower and upper limits for how much proportion of each asset an investor is allowed to invest in, this is useful for diversification. 
 
   % section portfolio_management (end)
   
@@ -498,8 +498,12 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describes possible 
     % subsection termination (end)
     \subsection{Fitness Function} % (fold)
     \label{sub:fitness_function}
-    
+    Due to the nature of Haskell and with some mathematical background it is almost trivial to create a function to represent the measure of risk, namely $\rho_{a,p}(R)$ in Equation~\ref{eq:portfolio-risk} in Section~\nameref{sec:portfolio_management} Chapter~\ref{chap:background}. What is much more challenging is finding a way to include the constraints in Equation~\ref{eq:portfolio-risk-constraints} in a way that the algorithm can deal with the main function without violating these condition. Two methods were considered, using multi-objective optimisation or a penalty function. Due to the constraints being linear-independent, it will be straight forward to affect the optimal solution through factors of the constraints. The design of this will be described in the following Subsection~\ref{sub:penalty_function}.
     % subsection fitness_function (end)
+    \subsection{Penalty function} % (fold)
+    \label{sub:penalty_function}
+    
+    % subsection penalty_function (end)
     \subsection{Presenting the Results} % (fold)
     \label{sub:presenting_the_results}
     After the algorithm has finished, the results are displayed on the screen and saved in a separate file which will be called ``output-DATE'', where date is in (year,month,day) format, for example ``output-2014,3,15''. If there is multiple runs in one day, the new results are added to the end of that same file.

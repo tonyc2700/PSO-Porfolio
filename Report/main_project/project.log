@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  27 APR 2014 14:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  27 APR 2014 15:02
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -613,9 +613,6 @@ ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
 ractals.code.tex)) (./project.aux
 
-LaTeX Warning: Label `eq:portfolio-risk' multiply defined.
-
-
 LaTeX Warning: Label `sub:haskell' multiply defined.
 
 
@@ -870,16 +867,16 @@ Chapter 10
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.624     \subsection
+l.628     \subsection
                      {Conclusion} % (fold)pdfTeX warning (ext4): destination wi
 th the same identifier (name{table.10.2}) has been already used, duplicate igno
 red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.624     \subsection
+l.628     \subsection
                      {Conclusion} % (fold)] [25]
-Overfull \hbox (27.42323pt too wide) in paragraph at lines 703--708
+Overfull \hbox (27.42323pt too wide) in paragraph at lines 707--712
 \OT1/cmr/m/n/12 0.1007, 0.1007 Stan-dard De-vi-a-tion: $6\OML/cmm/m/it/12 :\OT1
 /cmr/m/n/12 13954 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]11\OML/cmm/m/it/12 ;
  \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 58041 \OMS/cmsy/m/n/12 ^^C 
@@ -937,10 +934,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16125 strings out of 495061
- 281122 string characters out of 1182621
- 359421 words of memory out of 3000000
- 18637 multiletter control sequences out of 15000+50000
+ 16128 strings out of 495061
+ 281183 string characters out of 1182621
+ 359524 words of memory out of 3000000
+ 18639 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,889b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -959,9 +956,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (40 pages, 435962 bytes).
+Output written on project.pdf (40 pages, 437721 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

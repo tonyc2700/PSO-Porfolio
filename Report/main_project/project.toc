@@ -39,7 +39,8 @@
 \contentsline {subsection}{\tocsubsection {}{2.2}{Constriction Factor}}{20}{subsection.8.2.2}
 \contentsline {subsection}{\tocsubsection {}{2.3}{Termination}}{20}{subsection.8.2.3}
 \contentsline {subsection}{\tocsubsection {}{2.4}{Fitness Function}}{21}{subsection.8.2.4}
-\contentsline {subsection}{\tocsubsection {}{2.5}{Presenting the Results}}{21}{subsection.8.2.5}
+\contentsline {subsection}{\tocsubsection {}{2.5}{Penalty function}}{21}{subsection.8.2.5}
+\contentsline {subsection}{\tocsubsection {}{2.6}{Presenting the Results}}{21}{subsection.8.2.6}
 \contentsline {chapter}{\tocchapter {Chapter}{9}{Financial Data}}{22}{chapter.9}
 \contentsline {section}{\tocsection {}{1}{Data Description}}{22}{section.9.1}
 \contentsline {section}{\tocsection {}{2}{Problem Domain}}{22}{section.9.2}

@@ -229,6 +229,10 @@
   \setcounter{page}{0}
   \setcounter{secnumdepth}{2} %+++++
   \tableofcontents
+  %\listoffigures
+  %\listoftables
+  %\setcounter{page}{0}
+  %\setcounter{secnumdepth}{2} %+++++
   \mainmatter
 
   \newcommand{\T@headline} % text of headline

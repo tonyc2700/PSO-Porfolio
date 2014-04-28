@@ -1,3 +1,5 @@
+\BOOKMARK [0][-]{section*.1}{List of Figures}{}
+\BOOKMARK [0][-]{section*.1}{List of Tables}{}
 \BOOKMARK [0][-]{chapter.1}{Chapter 1. Introduction}{}
 \BOOKMARK [1][-]{section.1.1}{1. Overview}{chapter.1}
 \BOOKMARK [1][-]{section.1.2}{2. Motivation}{chapter.1}
@@ -40,21 +42,20 @@
 \BOOKMARK [1][-]{section.10.2}{2. Precision}{chapter.10}
 \BOOKMARK [1][-]{section.10.3}{3. Constriction Factors}{chapter.10}
 \BOOKMARK [1][-]{section.10.4}{4. Scalability}{chapter.10}
-\BOOKMARK [1][-]{section.10.5}{5. Relationships}{chapter.10}
-\BOOKMARK [1][-]{section.10.6}{6. Penalty value}{chapter.10}
+\BOOKMARK [1][-]{section.10.5}{5. Penalty value}{chapter.10}
+\BOOKMARK [1][-]{section.10.6}{6. Relationships}{chapter.10}
 \BOOKMARK [1][-]{section.10.7}{7. Asset percentage/Induced/Forced Diversification}{chapter.10}
 \BOOKMARK [1][-]{section.10.8}{8. Risk and Risk Aversion}{chapter.10}
 \BOOKMARK [0][-]{chapter.11}{Chapter 11. Future Work}{}
-\BOOKMARK [1][-]{section.11.1}{1. PSO Parameters}{chapter.11}
-\BOOKMARK [1][-]{section.11.2}{2. Self-termination}{chapter.11}
-\BOOKMARK [1][-]{section.11.3}{3. Diversification}{chapter.11}
-\BOOKMARK [1][-]{section.11.4}{4. Assets' Covariance}{chapter.11}
-\BOOKMARK [1][-]{section.11.5}{5. Market Relationships}{chapter.11}
-\BOOKMARK [1][-]{section.11.6}{6. Real-time processing}{chapter.11}
+\BOOKMARK [1][-]{section.11.1}{1. PSO}{chapter.11}
+\BOOKMARK [1][-]{section.11.2}{2. Diversification}{chapter.11}
+\BOOKMARK [1][-]{section.11.3}{3. Assets' Covariance}{chapter.11}
+\BOOKMARK [1][-]{section.11.4}{4. Market Relationships}{chapter.11}
+\BOOKMARK [1][-]{section.11.5}{5. Real-time processing}{chapter.11}
 \BOOKMARK [0][-]{chapter.12}{Chapter 12. Discussion and Conclusion}{}
-\BOOKMARK [1][-]{section.12.1}{1. Discussion}{chapter.12}
-\BOOKMARK [1][-]{section.12.2}{2. Future Work}{chapter.12}
+\BOOKMARK [1][-]{section.12.1}{1. Problems encountered}{chapter.12}
+\BOOKMARK [1][-]{section.12.2}{2. Discussion}{chapter.12}
 \BOOKMARK [1][-]{section.12.3}{3. Conclusion}{chapter.12}
 \BOOKMARK [0][-]{section.12.3}{Bibliography}{}
-\BOOKMARK [0][-]{chapter*.1}{Appendix A: User Manual}{}
-\BOOKMARK [0][-]{chapter*.2}{Appendix B: Maintenance Manual}{}
+\BOOKMARK [0][-]{chapter*.2}{Appendix A: User Manual}{}
+\BOOKMARK [0][-]{chapter*.3}{Appendix B: Maintenance Manual}{}

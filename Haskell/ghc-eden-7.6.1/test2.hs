@@ -30,7 +30,7 @@ mainSeq wpg np nit f bo
        putStr "Best position: "
        print (snd bestPos)
 
---{--
+{--
 mainPar :: WPGparams -> Int -> Int -> Int -> Int -> (Position -> Double) -> Boundings -> IO()
 mainPar wpg np npit nit nPE f bo
   = do sg <- getStdGen
@@ -81,9 +81,9 @@ main = do args <- getArgs
           putStr "Sol: "
           case version  of
              1 -> mainSeq wpg1 np (head args') (fit problem) (bo problem) 
-             --2 -> portSeq wpg1 np (head args') mainPortFunction weightsBound
-             --3 -> testSeq wpg1 np (head args') mainPortFunction weightsBound --(fit problem) (bo problem) 
---{--
+             2 -> portSeq wpg1 np (head args') mainPortFunction weightsBound
+             3 -> testSeq wpg1 np (head args') mainPortFunction weightsBound --(fit problem) (bo problem) 
+{--
              2 -> mainPar wpg1 np npit nit (head rest) (fit problem) (bo problem)
              3 -> mainParV wpg1 np npit nit (map fromIntegral rest) (fit problem) (bo problem)
              4 -> mainParV2 wpg1 np iterations speeds (fit problem) (bo problem)
@@ -218,7 +218,7 @@ port :: Position -> Double
 port w = risk*(max 0 ((portR w)-(expPortR w)))+(1-risk)*(((max 0 ((expPortR w)-(portR w))))**(1/aversion))-(expPortR w)
 
 --Penalty parameter-
-penPara = 0.1
+penPara = 1.0
 --Penalty value
 penVal = 1/penPara
 
@@ -236,19 +236,19 @@ portSeq wpg np nit f bo
   = do sg <- getStdGen
        start <- getCurrentTime
        let bestPos = psoSEQ sg wpg np nit f bo
+       stop <- getCurrentTime
        putStr "Best value: " 
        print (fst bestPos)
-       putStr "Best position: "
-       print (snd bestPos)
-       putStr "Sum of weights: "
-       print (sum (snd bestPos))
+       --putStr "Best position: "
+       --print (snd bestPos)
+       --putStr "Sum of weights: "
+       --print (sum (snd bestPos))
        putStr "Expected Portfolio Return: "
        print (expPortR (snd bestPos))
        --putStr "Expected Portfolio Return: "
        --print (portR (snd bestPos))
-       appendFile "testing3.txt" (showResults bestPos)
-       stop <- getCurrentTime
-       appendFile "testing3.txt" (show (diffUTCTime stop start) ++ "\n")
+       appendFile "penValTest.txt" (showResults bestPos ++ show (diffUTCTime stop start) ++ "\n")
+       --appendFile "testing4.txt" (show (diffUTCTime stop start) ++ "\n")
 
 -- mainPortText number of particles, iterations problem and bounds
 mainPortTest np nit prob bound = portSeq wpg1 np nit prob bound
@@ -258,7 +258,7 @@ mainPortTest1 = mainPortTest 20 100 mainPortFunction weightsBound
 
 something = sum [x*y | x <- [0.0091,0.0090, 0.0107, 0.0041,0.0118], y <- [0.1993,0.35,0.0504,0.35,0.0504]]
 
-showResults pso = show (fst (pso)) ++ show (snd (pso)) ++ show (expPortR (snd pso)) ++ " W.Sum:" ++ show (sum (snd pso)) ++ " Time:"
+showResults pso = show (expPortR (snd pso)) ++ ","++ show (fst (pso)) ++ show (snd (pso)) ++ " W.Sum:" ++ show (sum (snd pso)) ++ " Time:"
 
 testing2 n | n > 0 = portSeq wpg1 20 100 mainPortFunction weightsBound
            | otherwise = error "Nothing"

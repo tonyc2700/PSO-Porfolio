@@ -134,3 +134,4 @@ My fitness, 50 particles, 500 iterations, 10 assets, wpg1 = (-0.16,1.99,2.92)
 0.662139s
 0.661651s
 0.729458s
+0.465989s

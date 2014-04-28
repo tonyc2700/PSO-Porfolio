@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  27 APR 2014 17:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  28 APR 2014 13:38
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -820,14 +820,14 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.358 
+l.382 
       ] [14]
 Chapter 6
 [15
 
 
 ]
-Overfull \hbox (4.07626pt too wide) in paragraph at lines 383--385
+Overfull \hbox (4.07626pt too wide) in paragraph at lines 407--409
 []\OT1/cmr/m/n/12 When evo-lu-tion-ary al-go-rithms come across func-tions, suc
 h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
 [] \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 x[]sin\OT1/cmr/m/n/12 ([])$
@@ -846,7 +846,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.410 
+l.434 
        <./Figures/time-line.png (PNG copy)>] [18]
 Chapter 8
 [19
@@ -860,13 +860,13 @@ Chapter 9
 ]
 Chapter 10
 
-Overfull \hbox (1.14177pt too wide) in paragraph at lines 628--634
+Overfull \hbox (1.14177pt too wide) in paragraph at lines 653--659
  \OT1/cmr/bx/n/12 2.3.Results.[] \OT1/cmr/m/n/12 Ex-pected re-turn for all test
 s Means: 0.0447, 0.0447, 0.0447, 0.0527,
  []
 
 
-Overfull \hbox (23.84865pt too wide) in paragraph at lines 628--634
+Overfull \hbox (23.84865pt too wide) in paragraph at lines 653--659
 \OT1/cmr/m/n/12 10[]17\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 :\OT
 1/cmr/m/n/12 18283 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]13\OML/cmm/m/it/12 
 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C 
@@ -886,17 +886,17 @@ le.10.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.712       T
+l.737       T
              he use of the constriction coefficient can be viewed as a recom...
 pdfTeX warning (ext4): destination with the same identifier (name{table.10.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.712       T
+l.737       T
              he use of the constriction coefficient can be viewed as a recom...
 ] [27]
-Overfull \hbox (27.42323pt too wide) in paragraph at lines 786--791
+Overfull \hbox (27.42323pt too wide) in paragraph at lines 840--845
 \OT1/cmr/m/n/12 0.1007, 0.1007 Stan-dard De-vi-a-tion: $6\OML/cmm/m/it/12 :\OT1
 /cmr/m/n/12 13954 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 10[]11\OML/cmm/m/it/12 ;
  \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 58041 \OMS/cmsy/m/n/12 ^^C 
@@ -905,14 +905,26 @@ Overfull \hbox (27.42323pt too wide) in paragraph at lines 786--791
 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3924 \OMS/cmsy/m/n/12 ^^C
  []
 
-[28] [29]
+[28pdfTeX warning (ext4): destination with the same identifier (name{table.10.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.886 
+      ] [29pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.10.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.923 
+      ] [30]
 Chapter 11
-[30
+[31
 
 
-] [31]
+] [32]
 Chapter 12
-(./project.bbl [32
+(./project.bbl [33
 
 
 ]
@@ -920,7 +932,7 @@ Bibliography
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33
+ [34
 
 
 ]
@@ -944,14 +956,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--168
 g / wiki / Diversification _ (finance)$[]\OT1/cmr/m/n/10 . Ac-cessed:
  []
 
-) [34]
+) [35]
 Appendix A: User Manual
-[35
+[36
 
 
 ]
 Appendix B: Maintenance Manual
-[36
+[37
 
 
 ] (./project.aux)
@@ -960,10 +972,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16140 strings out of 495061
- 281384 string characters out of 1182621
- 359731 words of memory out of 3000000
- 18644 multiletter control sequences out of 15000+50000
+ 16146 strings out of 495061
+ 281473 string characters out of 1182621
+ 359915 words of memory out of 3000000
+ 18647 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,890b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -982,9 +994,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (42 pages, 449474 bytes).
+Output written on project.pdf (43 pages, 457059 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

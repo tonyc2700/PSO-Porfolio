@@ -68,7 +68,7 @@ Acknowledgments....
   % section secondary_goals (end)
 
 \chapter{Background}\label{chap:background}
-  In order to expand and adapt existing Particles Swarm Optimisation methods an initial background research has to be done to fully understand the concepts involved. Similarly to fully 
+  In order to expand and adapt existing Particles Swarm Optimisation methods an initial background research has to be done to fully understand the concepts involved. Similarly to apply the algorithm to solve the portfolio optimisation problem, a deep understanding on how to formulate the problem in a way that the algorithm will understand will have to be made. I plan to gain such knowledge by a mixture of methods including: past lecture slides, power-point presentations, research papers, online teaching videos and visiting the library as well as other ways.
 
   \section{Particle Swarm Optimisation} % (fold)
   \label{sec:particle_swarm_optimisation}
@@ -77,6 +77,8 @@ Acknowledgments....
     % Assuming worker bees are searching for a patch of flowers with the most pollen, also assume that the bees
 
   Particle swarm optimization (PSO) is a population based  stochastic optimization technique developed by Kennedy and  Eberhart in 1995, discovered through simplified social model simulation \cite{pso,pso2,pso3,pso4}. It simulates the behaviour of bird flocking involving the scenario of a collection of birds randomly looking for food in a search space. None of the birds know where the food is located, but they do know how far the food location is from their current positions. An effective technique for the bird to find food is to adjust their velocity according to the bird which is nearest to the food. PSO was motivated from this scenario and was developed to solve complex optimization problems, where the optimum position of the fitness function is where the food is located and all the birds are the particles searching for this optimum position. 
+
+  An interesting thought is presented in \cite{pso} is that PSO can be used to model human social behaviour. One important difference, one that I find so fascinating, is its abstraction. It states that humans adjust not only their physical movements but also our cognitive position too; ``we tend to adjust our beliefs and attitudes to conform with those of our social peers''\cite{pso}. One of the major distinctions in this model compared to that of bird flocks or school's of fish is that collision works differently; ``two individuals can hold identical attitudes and beliefs without banging together, but two birds cannot occupy the same position in space without colliding''.
 
   In the conventional PSO, the behaviour displays particles in a multidimensional space where each particles has two properties: a position vector and a velocity vector. Each particle $i$ in the swarm has the properties shown in (\ref{eq:PSO_stuff}):
     % \begin{itemize}
@@ -93,9 +95,7 @@ Acknowledgments....
         & Gbest^t \text{ : The global best position of particle i at time t.} \\
       \end{split}
     \end{equation}
-
     At each step, the velocity of the $ith$ particle will be updated according to the following equation:
-
     \begin{equation} \label{eq:vel}
       \begin{split}
         V_{i}^{t+1} & = \omega V_{i}^{t} + c_1 r_1 \times \Big( Pbest_{i}^{t} - X_{i}^{t} \Big) + c_2 r_2 \times \Big( Gbest^{t} - X_{i}^{t} \Big) \\
@@ -113,6 +113,7 @@ Acknowledgments....
 
   In the updating process shown in Equation (\ref{eq:vel}) the acceleration coefficients $c_1, c_2$ ($c_1$ determines the importance one following the individual personal best whereas $c_2$ determines the importance of following the particles with the global best position)and the inertia weight $\omega$ (which states how stubborn a particle is at not deviating from their path, regardless of previous results) are predefined, and $r_1, r_2$ (these introduce the concept of randomness so that a particles is able to switch between following their personal best and that of the whole swarm) are uniformly generated random numbers in the range [0,1].
 
+  The following algorithm \ref{eq:pso} is one of the standard PSO. The pseudo-code outlines the procedures implemented in \cite{haskellPSO}, it will be followed by an explanation on how it works.   
     \begin{algorithm}[H] \label{eq:pso}
       \mbox{\textbf{Initialisation}} \\
       \For{i = 1,\dots,S}{
@@ -212,6 +213,8 @@ Acknowledgments....
 
 
 \chapter{Related Work}
+For better understanding of the portfolio selection problem and particle swarm optimisation, their strengths, weaknesses and applications, a study of previous and related works for the measure of risk in a portfolio and alternatives to PSO was made. I will read and evaluate some strengths and weaknesses on the related models and outline where they fail when compared to what this project wants to achieve. 
+
   \section{Markowitz Model} % (fold)
   \label{sec:markowitz_model}
     One of the first contributions to the portfolio problem was made by Markowitz \cite{marko1} which was later described in more detail in his book \cite{marko2}. Markowitz introduced the mean-variance model which considers the variance of the portfolio as the measure of the investor's risk under a set of assumptions. According to Markowitz, the portfolio selection problem can be expressed as an objective function subject to linear constraints. 
@@ -1037,7 +1040,7 @@ The following chapter describes the system's basic design and its program flow. 
 
   \section{PSO} % (fold)
   \label{sec:pso}
-  This section mentions some future improvements or suggestions to improve the particle swarm optimisation algorithm 
+  This section mentions some future improvements or suggestions to improve the particle swarm optimisation algorithm.
     \subsection{Inertia weights} % (fold)
     \label{sub:inertia_weights2}
     
@@ -1065,6 +1068,29 @@ The following chapter describes the system's basic design and its program flow. 
   %   Stops after some criteria is met
   % % section self_termination (end)
 
+  \section{Asset's covariance and Real Time Processing} % (fold)
+  \label{sec:asset_s_covariance_and_real_time_processing}
+  
+  % section asset_s_covariance_and_real_time_processing (end)
+
+  % \section{Assets' Covariance} % (fold)
+  % \label{sec:covariance}
+  %   Risk in terms of 
+  % % section covariance (end)
+
+  % \section{Market Relationships} % (fold)
+  % \label{sec:market_relationships}
+  %   Gold vs Money
+  % % section market_relationships (end)
+
+  %   This would be brilliant!!
+
+  % \section{Real-time processing} % (fold)
+  % \label{sec:real_time_processing}
+  %   Wow!
+  % % section real_time_processing (end)
+
+
 
   \section{Diversification} % (fold)
   \label{sec:diversification}
@@ -1075,25 +1101,7 @@ The following chapter describes the system's basic design and its program flow. 
     Now something more useful and even less intuitive is that if ones invests in more than one company within the same sector, for example split all ones money equally (for simplicity in example) and invest in all the mobile phone networks there are. Now company $x$ gets into trouble for some reason which affects the stock market (fraud, IT, quality etc.) and the stock price for $x$ begins to fall, ones will find that the price of stocks for all the other companies goes up. This is due to the investors and business which was with company $x$ now deciding to opt out of that company and therefore bringing more investors and business to all the other companies in the market. 
 
     My application has a sense of diversification due to the extra constraint which I added late in the project as a emergency diversification solution. It states that one must invest between 5\% and 35\% on each asset to force diversification. This is vaux or brute intelligence though, what could be useful if the application gives a little extra preference if it knows that some assets belong to the same sector. 
-
   % section diversification (end)
-  
-  \section{Assets' Covariance} % (fold)
-  \label{sec:covariance}
-    Risk in terms of 
-  % section covariance (end)
-
-  \section{Market Relationships} % (fold)
-  \label{sec:market_relationships}
-    Gold vs Money
-  % section market_relationships (end)
-
-    This would be brilliant!!
-
-  \section{Real-time processing} % (fold)
-  \label{sec:real_time_processing}
-    Wow!
-  % section real_time_processing (end)
 
 
 \chapter{Discussion and Conclusion}

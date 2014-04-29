@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  28 APR 2014 22:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  29 APR 2014 10:02
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -712,7 +712,7 @@ LaTeX Info: Redefining \pageref on input line 28.
 
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=248, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=240, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -775,15 +775,12 @@ l.70 \chapter
 
 ]
 Chapter 2
-
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.112     \end{equation}
-                         [4
+l.90     \begin{equation}
+                          \label{eq:PSO_stuff} [4
 
 
 ]
@@ -797,21 +794,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.142 
+l.143 
       ] [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
 [9] [10]
 Chapter 3
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11
+[11
 
 
-]
-<./Figures/efficient_frontier.png, id=467, 487.8225pt x 233.87375pt>
+] <./Figures/efficient_frontier.png, id=462, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -823,7 +816,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.281 \chapter
+l.284 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
 Missing character: There is no Ä in font cmr12!
@@ -841,14 +834,14 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.385 
+l.388 
       ] [16]
 Chapter 6
 [17
 
 
 ]
-Overfull \hbox (4.07626pt too wide) in paragraph at lines 410--412
+Overfull \hbox (4.07626pt too wide) in paragraph at lines 413--415
 []\OT1/cmr/m/n/12 When evo-lu-tion-ary al-go-rithms come across func-tions, suc
 h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
 [] \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 x[]sin\OT1/cmr/m/n/12 ([])$
@@ -856,7 +849,7 @@ h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) =
 
 [18]
 Chapter 7
-<./Figures/time-line.png, id=538, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=532, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [19
@@ -867,7 +860,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.441 
+l.444 
        <./Figures/time-line.png (PNG copy)>] [20]
 Chapter 8
 [21
@@ -888,13 +881,13 @@ Chapter 10
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.706 
+l.709 
       ] [28pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.10.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.761 
+l.764 
       ]
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
@@ -903,14 +896,14 @@ Underfull \vbox (badness 1043) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.787       T
+l.790       T
              he application will be run] [30] [31pdfTeX warning (ext4): destina
 tion with the same identifier (name{table.10.4}) has been already used, duplica
 te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.864           \item T
+l.867           \item T
                        est 7: PSO 20 particles, 250 iterations, 10 assets]
 Underfull \vbox (badness 5667) has occurred while \output is active []
 
@@ -919,21 +912,21 @@ Underfull \vbox (badness 5667) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.935       T
+l.938       T
              able~\ref{table:expect_return_results} show the expected return...
 ] [33pdfTeX warning (ext4): destination with the same identifier (name{table.10
 .6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.970       T
+l.973       T
              his leads me to think that if one had to between a large swarm ...
 pdfTeX warning (ext4): destination with the same identifier (name{table.10.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.970       T
+l.973       T
              his leads me to think that if one had to between a large swarm ...
 ] [34]
 Chapter 11
@@ -990,10 +983,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16169 strings out of 495061
- 281786 string characters out of 1182621
- 360284 words of memory out of 3000000
- 18653 multiletter control sequences out of 15000+50000
+ 16163 strings out of 495061
+ 281715 string characters out of 1182621
+ 362213 words of memory out of 3000000
+ 18649 multiletter control sequences out of 15000+50000
  14473 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,890b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1012,9 +1005,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (47 pages, 471913 bytes).
+Output written on project.pdf (47 pages, 472636 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 203 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 860 PDF objects out of 1000 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
+ 500 words of extra memory for PDF output out of 10000 (max. 10000000)
 

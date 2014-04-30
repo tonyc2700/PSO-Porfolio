@@ -1,0 +1,36 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.o libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.p_o : libraries/integer-gmp/GHC/Integer/GMP/Prim.hs
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.o libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_o : libraries/integer-gmp/GHC/Integer/Type.lhs
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.o : libraries/ghc-prim/dist-install/build/GHC/Types.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_o : libraries/ghc-prim/dist-install/build/GHC/Types.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_o : libraries/ghc-prim/dist-install/build/GHC/Types.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.o : libraries/ghc-prim/dist-install/build/GHC/Classes.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_o : libraries/ghc-prim/dist-install/build/GHC/Classes.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_o : libraries/ghc-prim/dist-install/build/GHC/Classes.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.o : libraries/ghc-prim/dist-install/build/GHC/IntWord64.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_o : libraries/ghc-prim/dist-install/build/GHC/IntWord64.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_o : libraries/ghc-prim/dist-install/build/GHC/IntWord64.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.o : libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Prim.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.o libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.p_o : libraries/integer-gmp/GHC/Integer/GMP/Internals.hs
+libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/GMP/Internals.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.o libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.p_o : libraries/integer-gmp/GHC/Integer/Logarithms/Internals.hs
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer.o libraries/integer-gmp/dist-install/build/GHC/Integer.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer.p_o : libraries/integer-gmp/GHC/Integer.lhs
+libraries/integer-gmp/dist-install/build/GHC/Integer.o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Type.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.o libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.dyn_o libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.p_o : libraries/integer-gmp/GHC/Integer/Logarithms.hs
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.o : libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms/Internals.p_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.o : libraries/integer-gmp/dist-install/build/GHC/Integer.hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.dyn_o : libraries/integer-gmp/dist-install/build/GHC/Integer.dyn_hi
+libraries/integer-gmp/dist-install/build/GHC/Integer/Logarithms.p_o : libraries/integer-gmp/dist-install/build/GHC/Integer.p_hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/integer-gmp_dist-install_depfile_haskell_EXISTS = YES

@@ -1,0 +1,25 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/bin-package-db/Distribution/InstalledPackageInfo/Binary.hs
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/base/dist-install/build/Prelude.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/base/dist-install/build/Prelude.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/base/dist-install/build/Control/Exception.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/base/dist-install/build/Control/Exception.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/base/dist-install/build/Control/Exception.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/binary/dist-install/build/Data/Binary.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/binary/dist-install/build/Data/Binary.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/binary/dist-install/build/Data/Binary.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/Cabal/Cabal/dist-install/build/Distribution/InstalledPackageInfo.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/Cabal/Cabal/dist-install/build/Distribution/InstalledPackageInfo.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/Cabal/Cabal/dist-install/build/Distribution/InstalledPackageInfo.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/Cabal/Cabal/dist-install/build/Distribution/License.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/Cabal/Cabal/dist-install/build/Distribution/License.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/Cabal/Cabal/dist-install/build/Distribution/License.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Package.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/Cabal/Cabal/dist-install/build/Distribution/Package.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/Cabal/Cabal/dist-install/build/Distribution/Package.p_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.o : libraries/Cabal/Cabal/dist-install/build/Distribution/Version.hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.dyn_o : libraries/Cabal/Cabal/dist-install/build/Distribution/Version.dyn_hi
+libraries/bin-package-db/dist-install/build/Distribution/InstalledPackageInfo/Binary.p_o : libraries/Cabal/Cabal/dist-install/build/Distribution/Version.p_hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/bin-package-db_dist-install_depfile_haskell_EXISTS = YES

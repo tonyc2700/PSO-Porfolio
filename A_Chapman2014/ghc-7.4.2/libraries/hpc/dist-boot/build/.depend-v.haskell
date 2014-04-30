@@ -1,0 +1,33 @@
+# DO NOT DELETE: Beginning of Haskell dependencies
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : libraries/hpc/Trace/Hpc/Util.hs
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Prelude.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Word.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Bits.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Char.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/List.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Util.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Control/Exception.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Tix.o : libraries/hpc/Trace/Hpc/Tix.hs
+libraries/hpc/dist-boot/build/Trace/Hpc/Tix.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Prelude.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Tix.o : libraries/hpc/dist-boot/build/Trace/Hpc/Util.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Tix.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/List.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : libraries/hpc/Trace/Hpc/Mix.hs
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Prelude.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : libraries/hpc/dist-boot/build/Trace/Hpc/Tix.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : libraries/hpc/dist-boot/build/Trace/Hpc/Util.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Char.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/containers-0.4.0.0/Data/Tree.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Maybe.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/directory-1.1.0.0/System/Directory.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Mix.o : /usr/lib/ghc-7.0.3/old-time-1.0.0.6/System/Time.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.hs
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Prelude.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/System/IO/Unsafe.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : libraries/hpc/dist-boot/build/Trace/Hpc/Util.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Data/Word.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Foreign/Storable.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Foreign/Ptr.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Foreign/Marshal/Array.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Foreign/C/String.hi
+libraries/hpc/dist-boot/build/Trace/Hpc/Reflect.o : libraries/hpc/dist-boot/build/Trace/Hpc/Tix.hi
+# DO NOT DELETE: End of Haskell dependencies
+libraries/hpc_dist-boot_depfile_haskell_EXISTS = YES

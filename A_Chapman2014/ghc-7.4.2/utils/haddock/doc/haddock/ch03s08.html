@@ -1,0 +1,153 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.8. Markup</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><link rel="home" href="index.html" title="Haddock User Guide"><link rel="up" href="markup.html" title="Chapter 3. Documentation and Markup"><link rel="prev" href="module-attributes.html" title="3.7. Module Attributes"><link rel="next" href="ix01.html" title="Index"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.8. Markup</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="module-attributes.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Documentation and Markup</th><td width="20%" align="right"> <a accesskey="n" href="ix01.html">Next</a></td></tr></table><hr></div><div class="section" title="3.8. Markup"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp18467968"></a>3.8. Markup</h2></div></div></div><p>Haddock understands certain textual cues inside
+      documentation annotations that tell it how to render the
+      documentation.  The cues (or <span class="quote">&#8220;<span class="quote">markup</span>&#8221;</span>) have been
+      designed to be simple and mnemonic in ASCII so that the
+      programmer doesn't have to deal with heavyweight annotations
+      when editing documentation comments.</p><div class="section" title="3.8.1. Paragraphs"><div class="titlepage"><div><div><h3 class="title"><a name="idp18469016"></a>3.8.1. Paragraphs</h3></div></div></div><p>One or more blank lines separates two paragraphs in a
+	documentation comment.</p></div><div class="section" title="3.8.2. Special characters"><div class="titlepage"><div><div><h3 class="title"><a name="idp18469680"></a>3.8.2. Special characters</h3></div></div></div><p>The following characters have special meanings in
+	documentation comments: <code class="literal">\</code>, <code class="literal">/</code>,
+	<code class="literal">'</code>, <code class="literal">`</code>,
+	<code class="literal">"</code>, <code class="literal">@</code>,
+	<code class="literal">&lt;</code>.  To insert a literal occurrence of
+	one of these special characters, precede it with a backslash
+	(<code class="literal">\</code>).</p><p>Additionally, the character <code class="literal">&gt;</code> has
+        a special meaning at the beginning of a line, and the
+        following characters have special meanings at the beginning of
+        a paragraph:
+        <code class="literal">*</code>, <code class="literal">-</code>.  These characters
+        can also be escaped using <code class="literal">\</code>.</p><p>Furthermore, the character sequence <code class="literal">&gt;&gt;&gt;</code>
+        has a special meaning at the beginning of a line. To
+        escape it, just prefix the characters in the sequence with a
+        backslash.</p></div><div class="section" title="3.8.3. Character references"><div class="titlepage"><div><div><h3 class="title"><a name="idp18475376"></a>3.8.3. Character references</h3></div></div></div><p>Although Haskell source files may contain any character
+	from the Unicode character set, the encoding of these characters
+	as bytes varies between systems, so that only source files
+	restricted to the ASCII character set are portable.  Other
+	characters may be specified in character and string literals
+	using Haskell character escapes.  To represent such characters
+	in documentation comments, Haddock supports SGML-style numeric
+	character references of the forms
+	<code class="literal">&amp;#</code><em class="replaceable"><code>D</code></em><code class="literal">;</code>
+	and
+	<code class="literal">&amp;#x</code><em class="replaceable"><code>H</code></em><code class="literal">;</code>
+	where <em class="replaceable"><code>D</code></em> and <em class="replaceable"><code>H</code></em>
+	are decimal and hexadecimal numbers denoting a code position
+	in Unicode (or ISO 10646).  For example, the references
+	<code class="literal">&amp;#x3BB;</code>, <code class="literal">&amp;#x3bb;</code>
+	and <code class="literal">&amp;#955;</code> all represent the lower-case
+	letter lambda.</p></div><div class="section" title="3.8.4. Code Blocks"><div class="titlepage"><div><div><h3 class="title"><a name="idp18479312"></a>3.8.4. Code Blocks</h3></div></div></div><p>Displayed blocks of code are indicated by surrounding a
+	paragraph with <code class="literal">@...@</code> or by preceding each
+	line of a paragraph with <code class="literal">&gt;</code> (we often
+	call these &#8220;bird tracks&#8221;).  For
+	example:</p><pre class="programlisting">
+-- | This documentation includes two blocks of code:
+--
+-- @
+--     f x = x + x
+-- @
+--
+-- &gt;  g x = x * 42
+</pre><p>There is an important difference between the two forms
+        of code block: in the bird-track form, the text to the right
+        of the &#8216;<code class="literal">&gt;</code>&#8217; is interpreted
+        literally, whereas the <code class="literal">@...@</code> form
+        interprets markup as normal inside the code block.</p></div><div class="section" title="3.8.5. Examples"><div class="titlepage"><div><div><h3 class="title"><a name="idp18482416"></a>3.8.5. Examples</h3></div></div></div><p> Haddock has markup support for examples of interaction with a
+  <span class="emphasis"><em>read-eval-print loop (REPL)</em></span>.  An
+	example is introduced with
+	<code class="literal">&gt;&gt;&gt;</code> followed by an expression followed
+	by zero or more result lines:</p><pre class="programlisting">
+-- | Two examples are given bellow:
+--
+-- &gt;&gt;&gt; fib 10
+-- 55
+--
+-- &gt;&gt;&gt; putStrLn "foo\nbar"
+-- foo
+-- bar
+</pre><p>Result lines that only contain the string
+	<code class="literal">&lt;BLANKLINE&gt;</code> are rendered as blank lines in the
+	generated documenation.</p></div><div class="section" title="3.8.6. Hyperlinked Identifiers"><div class="titlepage"><div><div><h3 class="title"><a name="idp18485000"></a>3.8.6. Hyperlinked Identifiers</h3></div></div></div><p>Referring to a Haskell identifier, whether it be a type,
+	class, constructor, or function, is done by surrounding it
+	with single quotes:</p><pre class="programlisting">
+-- | This module defines the type 'T'.
+</pre><p>If there is an entity <code class="literal">T</code> in scope in
+	the current module, then the documentation will hyperlink the
+	reference in the text to the definition of
+	<code class="literal">T</code> (if the output format supports
+	hyperlinking, of course; in a printed format it might instead
+	insert a page reference to the definition).</p><p>It is also possible to refer to entities that are not in
+	scope in the current module, by giving the full qualified name
+	of the entity:</p><pre class="programlisting">
+-- | The identifier 'M.T' is not in scope
+</pre><p>If <code class="literal">M.T</code> is not otherwise in scope,
+	then Haddock will simply emit a link pointing to the entity
+	<code class="literal">T</code> exported from module <code class="literal">M</code>
+	(without checking to see whether either <code class="literal">M</code>
+	or <code class="literal">M.T</code> exist).</p><p>To make life easier for documentation writers, a quoted
+	identifier is only interpreted as such if the quotes surround
+	a lexically valid Haskell identifier.  This means, for
+	example, that it normally isn't necessary to escape the single
+	quote when used as an apostrophe:</p><pre class="programlisting">
+-- | I don't have to escape my apostrophes; great, isn't it?
+</pre><p>For compatibility with other systems, the following
+	alternative form of markup is accepted<sup>[<a name="idp18491032" href="#ftn.idp18491032" class="footnote">3</a>]</sup>: <code class="literal">`T'</code>.</p></div><div class="section" title="3.8.7. Emphasis and Monospaced text"><div class="titlepage"><div><div><h3 class="title"><a name="idp18492368"></a>3.8.7. Emphasis and Monospaced text</h3></div></div></div><p>Emphasis may be added by surrounding text with
+	<code class="literal">/.../</code>.</p><p>Monospaced (or typewriter) text is indicated by
+	surrounding it with <code class="literal">@...@</code>.  Other markup is
+	valid inside a monospaced span: for example
+	<code class="literal">@'f' a b@</code> will hyperlink the
+	identifier <code class="literal">f</code> inside the code fragment.</p></div><div class="section" title="3.8.8. Linking to modules"><div class="titlepage"><div><div><h3 class="title"><a name="idp18494744"></a>3.8.8. Linking to modules</h3></div></div></div><p>Linking to a module is done by surrounding the module
+	name with double quotes:</p><pre class="programlisting">
+-- | This is a reference to the "Foo" module.
+</pre></div><div class="section" title="3.8.9. Itemized and Enumerated lists"><div class="titlepage"><div><div><h3 class="title"><a name="idp18495776"></a>3.8.9. Itemized and Enumerated lists</h3></div></div></div><p>A bulleted item is represented by preceding a paragraph
+	with either <span class="quote">&#8220;<span class="quote"><code class="literal">*</code></span>&#8221;</span> or
+	<span class="quote">&#8220;<span class="quote"><code class="literal">-</code></span>&#8221;</span>.  A sequence of bulleted
+	paragraphs is rendered as an itemized list in the generated
+	documentation, eg.:</p><pre class="programlisting">
+-- | This is a bulleted list:
+--
+--     * first item
+--
+--     * second item
+</pre><p>An enumerated list is similar, except each paragraph
+	must be preceded by either
+	<span class="quote">&#8220;<span class="quote"><code class="literal">(<em class="replaceable"><code>n</code></em>)</code></span>&#8221;</span>
+	or
+	<span class="quote">&#8220;<span class="quote"><code class="literal"><em class="replaceable"><code>n</code></em>.</code></span>&#8221;</span>
+	where <em class="replaceable"><code>n</code></em> is any integer.  e.g.</p><pre class="programlisting">
+-- | This is an enumerated list:
+--
+--     (1) first item
+--
+--     2. second item
+</pre></div><div class="section" title="3.8.10. Definition lists"><div class="titlepage"><div><div><h3 class="title"><a name="idp18499688"></a>3.8.10. Definition lists</h3></div></div></div><p>Definition lists are written as follows:</p><pre class="programlisting">
+-- | This is a definition list:
+--
+--   [@foo@] The description of @foo@.
+--
+--   [@bar@] The description of @bar@.
+</pre><p>To produce output something like this:</p><div class="variablelist"><dl><dt><span class="term"><code class="literal">foo</code></span></dt><dd><p>The description of <code class="literal">foo</code>.</p></dd><dt><span class="term"><code class="literal">bar</code></span></dt><dd><p>The description of <code class="literal">bar</code>.</p></dd></dl></div><p>Each paragraph should be preceded by the
+	&#8220;definition term&#8221; enclosed in square brackets.
+	The square bracket characters have no special meaning outside
+	the beginning of a definition paragraph.  That is, if a
+	paragraph begins with a <code class="literal">[</code> character, then
+	it is assumed to be a definition paragraph, and the next
+	<code class="literal">]</code> character found will close the definition
+	term.  Other markup operators may be used freely within the
+	definition term.</p></div><div class="section" title="3.8.11. URLs"><div class="titlepage"><div><div><h3 class="title"><a name="idp18505040"></a>3.8.11. URLs</h3></div></div></div><p>A URL can be included in a documentation comment by
+	surrounding it in angle brackets:
+	<code class="literal">&lt;...&gt;</code>.  If the output format supports
+	it, the URL will be turned into a hyperlink when
+	rendered.</p></div><div class="section" title="3.8.12. Anchors"><div class="titlepage"><div><div><h3 class="title"><a name="idp18506128"></a>3.8.12. Anchors</h3></div></div></div><p>Sometimes it is useful to be able to link to a point in
+	the documentation which doesn't correspond to a particular
+	entity.  For that purpose, we allow <span class="emphasis"><em>anchors</em></span> to be
+	included in a documentation comment.  The syntax is
+	<code class="literal">#<em class="replaceable"><code>label</code></em>#</code>, where
+	<em class="replaceable"><code>label</code></em> is the name of the anchor.
+	An anchor is invisible in the generated documentation.</p><p>To link to an anchor from elsewhere, use the syntax
+	<code class="literal">"<em class="replaceable"><code>module</code></em>#<em class="replaceable"><code>label</code></em>"</code>
+	where <em class="replaceable"><code>module</code></em> is the module name
+	containing the anchor, and <em class="replaceable"><code>label</code></em> is
+	the anchor label.  The module does not have to be local, it
+	can be imported via an interface.</p></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.idp18491032" href="#idp18491032" class="para">3</a>] </sup>
+	We chose not to use this as the primary markup for
+	identifiers because strictly speaking the <code class="literal">`</code>
+	character should not be used as a left quote, it is a grave accent.</p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="module-attributes.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="markup.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ix01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.7. Module Attributes </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Index</td></tr></table></div></body></html>

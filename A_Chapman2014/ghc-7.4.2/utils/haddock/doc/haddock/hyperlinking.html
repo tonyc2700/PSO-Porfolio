@@ -1,0 +1,48 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>3.6. Hyperlinking and re-exported entities</title><link rel="stylesheet" href="fptools.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><link rel="home" href="index.html" title="Haddock User Guide"><link rel="up" href="markup.html" title="Chapter 3. Documentation and Markup"><link rel="prev" href="ch03s05.html" title="3.5. Named chunks of documentation"><link rel="next" href="module-attributes.html" title="3.7. Module Attributes"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Hyperlinking and re-exported entities</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Documentation and Markup</th><td width="20%" align="right"> <a accesskey="n" href="module-attributes.html">Next</a></td></tr></table><hr></div><div class="section" title="3.6. Hyperlinking and re-exported entities"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="hyperlinking"></a>3.6. Hyperlinking and re-exported entities</h2></div></div></div><p>When Haddock renders a type in the generated
+      documentation, it hyperlinks all the type constructors and class
+      names in that type to their respective definitions.  But for a
+      given type constructor or class there may be several modules
+      re-exporting it, and therefore several modules whose
+      documentation contains the definition of that type or class
+      (possibly including the current module!) so which one do we link
+      to?</p><p>Let's look at an example.  Suppose we have three modules
+      <code class="literal">A</code>, <code class="literal">B</code> and
+      <code class="literal">C</code> defined as follows:</p><pre class="programlisting">
+module A (T) where
+data T a = C a
+
+module B (f) where
+import A
+f :: T Int -&gt; Int
+f (C i) = i
+
+module C (T, f) where
+import A
+import B
+</pre><p>Module <code class="literal">A</code> exports a datatype
+      <code class="literal">T</code>.  Module <code class="literal">B</code> imports
+      <code class="literal">A</code> and exports a function <code class="literal">f</code>
+      whose type refers to <code class="literal">T</code>.  Also, both
+	<code class="literal">T</code> and <code class="literal">f</code> are re-exported from
+	module C.</p><p>Haddock takes the view that each entity has a
+	<span class="emphasis"><em>home</em></span> module; that is, the module that the library
+	designer would most like to direct the user to, to find the
+	documentation for that entity.  So, Haddock makes all links to an entity
+	point to the home module.  The one exception is when the entity is also
+      exported by the current module: Haddock makes a local link if it
+	can.</p><p>How is the home module for an entity determined?
+	Haddock uses the following rules:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>If modules A and B both export the entity, and module A imports
+	    (directly or indirectly) module B, then B is preferred.</p></li><li class="listitem"><p>A module with the <code class="literal">hide</code> attribute is never
+	    chosen as the home.</p></li><li class="listitem"><p>A module with the <code class="literal">not-home</code> atribute is only
+	    chosen if there are no other modules to choose.</p></li></ul></div><p>If multiple modules fit the criteria, then one is chosen at
+	random.  If no modules fit the criteria (because the candidates are all
+      hidden), then Haddock will issue a warning for each reference to an
+	entity without a home.</p><p>In the example above, module <code class="literal">A</code> is chosen as the
+	home for <code class="literal">T</code> because it does not import any other
+	module that exports <code class="literal">T</code>.  The link from
+	<code class="literal">f</code>'s
+	type in module <code class="literal">B</code> will therefore point to
+	<code class="literal">A.T</code>.  However, <code class="literal">C</code> also exports
+	<code class="literal">T</code> and <code class="literal">f</code>, and the link from
+	<code class="literal">f</code>'s type in <code class="literal">C</code> will therefore
+	point locally to <code class="literal">C.T</code>.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch03s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="markup.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="module-attributes.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.5. Named chunks of documentation </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.7. Module Attributes</td></tr></table></div></body></html>

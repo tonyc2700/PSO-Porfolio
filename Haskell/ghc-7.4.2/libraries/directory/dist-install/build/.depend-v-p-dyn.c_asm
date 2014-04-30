@@ -1,4 +1,0 @@
-libraries/directory/dist-install/build/cbits/directory.o: libraries/directory/cbits/directory.c
-libraries/directory/dist-install/build/cbits/directory.p_o: libraries/directory/cbits/directory.c
-libraries/directory/dist-install/build/cbits/directory.dyn_o: libraries/directory/cbits/directory.c
-libraries/directory_dist-install_depfile_c_asm_EXISTS = YES

@@ -1,7 +1,0 @@
-# DO NOT DELETE: Beginning of Haskell dependencies
-libraries/old-locale/dist-install/build/System/Locale.o libraries/old-locale/dist-install/build/System/Locale.dyn_o libraries/old-locale/dist-install/build/System/Locale.p_o : libraries/old-locale/System/Locale.hs
-libraries/old-locale/dist-install/build/System/Locale.o : libraries/base/dist-install/build/Prelude.hi
-libraries/old-locale/dist-install/build/System/Locale.dyn_o : libraries/base/dist-install/build/Prelude.dyn_hi
-libraries/old-locale/dist-install/build/System/Locale.p_o : libraries/base/dist-install/build/Prelude.p_hi
-# DO NOT DELETE: End of Haskell dependencies
-libraries/old-locale_dist-install_depfile_haskell_EXISTS = YES

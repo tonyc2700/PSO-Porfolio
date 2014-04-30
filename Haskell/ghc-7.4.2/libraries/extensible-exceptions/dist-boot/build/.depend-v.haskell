@@ -1,6 +1,0 @@
-# DO NOT DELETE: Beginning of Haskell dependencies
-libraries/extensible-exceptions/dist-boot/build/Control/Exception/Extensible.o : libraries/extensible-exceptions/Control/Exception/Extensible.hs
-libraries/extensible-exceptions/dist-boot/build/Control/Exception/Extensible.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Prelude.hi
-libraries/extensible-exceptions/dist-boot/build/Control/Exception/Extensible.o : /usr/lib/ghc-7.0.3/base-4.3.1.0/Control/Exception.hi
-# DO NOT DELETE: End of Haskell dependencies
-libraries/extensible-exceptions_dist-boot_depfile_haskell_EXISTS = YES

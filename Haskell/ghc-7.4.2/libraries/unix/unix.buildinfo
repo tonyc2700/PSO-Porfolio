@@ -1,2 +1,0 @@
-buildable: True
-extra-libraries:  rt util dl pthread

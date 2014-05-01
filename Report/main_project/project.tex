@@ -12,6 +12,11 @@
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{decorations.fractals}
 
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
+\DefineVerbatimEnvironment{example}{Verbatim}{fontsize=\small}
+\newcommand{\ignore}[1]{}
+
 \newtheorem*{defn}{Definition}
 \newtheorem*{thm}{Theorem}
 \newtheorem*{exa}{Example}
@@ -68,7 +73,11 @@ Acknowledgments....
   % section secondary_goals (end)
 
 \chapter{Background}\label{chap:background}
-  In order to expand and adapt existing Particles Swarm Optimisation methods an initial background research has to be done to fully understand the concepts involved. Similarly to apply the algorithm to solve the portfolio optimisation problem, a deep understanding on how to formulate the problem in a way that the algorithm will understand will have to be made. I plan to gain such knowledge by a mixture of methods including: past lecture slides, power-point presentations, research papers, online teaching videos and visiting the library as well as other ways.
+  In order to expand and adapt existing Particles Swarm Optimisation methods an initial background research has to be done to fully understand the concepts involved. Similarly to apply the algorithm to solve the portfolio optimisation problem, a deep understanding on how to formulate the problem in a way that the algorithm will understand will have to be made. 
+
+  This chapter describes the key concepts which I will use and eventually expand, implement and improve. Section~\ref{sec:particle_swarm_optimisation} provides the ideas and methods for PSO. Section~\ref{sec:portfolio_management} gives some background on how to use two-sided coherent risk measure\cite{two_sided_risk} to solve the portfolio selection problem. Section~\ref{sec:haskell} describes some of Haskell's attractions. 
+
+  % I plan to gain such knowledge by a mixture of methods including: past lecture slides, power-point presentations, research papers, online teaching videos and visiting the library as well as other ways.
 
   \section{Particle Swarm Optimisation} % (fold)
   \label{sec:particle_swarm_optimisation}
@@ -167,7 +176,7 @@ Acknowledgments....
 
   One of the advantages proposed for two-sided coherent risk measure was that it would be easy to reflect an investor's attitude towards risk, this is achieve by the variables $p,a$ in $\rho_{a,p}(X)$ in Equation~\ref{eq:two-sided}. An investor's risk adverse attitude is represented by $p$, where the larger $p$ is, the more risk the investor is willing to take, so small $p$ low risk, large $p$ high risk. In Equation~\ref{eq:two-sided} $a$ is the factor controlling the balance between good and bad volatility \cite{two_sided_risk}, $a \to 0$ represents an investors' attitude towards good volatility and $a \to 1$ would be the opposite. Thus different investors might choose different values for $p$ and $a$.
 
-  A reader might not see how Equation~\ref{eq:two-sided} has much to do with calculating risk from a first glance, a quick example will be shown to illustrate it's use. Suppose we have $N$ assets to choose from and for $i \in [1,N]$ let $x_i \in [0,1]$ be the proportional weight of asset $i$ in the portfolio, let $r_i \in \R$ be a variable which represents the rate of return of asset $i$ and $\widehat{r}_i$ be the expected return of asset $i$. Then the rate of return of a portfolio can be expressed as $R = \sum_{i=1}^N x_i r_i$ and the expected return $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$
+  A reader might not see how Equation~\ref{eq:two-sided} has much to do with optimising a portfolio from a first glance, a quick example will be shown to illustrate it's use. Suppose we have $N$ assets to choose from and for $i \in [1,N]$ let $x_i \in [0,1]$ be the proportional weight of asset $i$ in the portfolio, let $r_i \in \R$ be a variable which represents the rate of return of asset $i$ and $\widehat{r}_i$ be the expected return of asset $i$. Then the rate of return of a portfolio can be expressed as $R = \sum_{i=1}^N x_i r_i$ and the expected return $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$
 
   From Equation~\ref{eq:two-sided} we can measure the risk of a portfolio as follows:
   \begin{equation} \label{eq:portfolio-risk}
@@ -196,13 +205,24 @@ Acknowledgments....
   
   \section{Haskell} % (fold)
   \label{sec:haskell}
-  This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms. The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This is not exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
+  This section briefly introduces the main attractions of the functional language Haskell. One big advantage of pure functional programming languages is that the absence of side-effects provides a clear semantic framework to analyse the correctness of programs and algorithms.
 
-  ``Real World Haskell'' by Don Stewart, Bryan O'Sullivan, and John Goerzen is a brilliant book to quickly get your head around Haskell. Having a very strong mathematical background I often struggled to understand or accept very simple concepts in object-orientated languages such as Java or Ruby. Once Haskell was introduced to me, there was no going back.
+  The core notion of functional programming is that a program is a mathematical function, it has an input and produces as output. Simple programs can be created easily and through function composition, more complex programs can be created with minimal effort.  
 
-  Back to our project, Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation, is an evaluation strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. In addition, Haskell is able to work with arbitrarily large numbers, unlike most other languages, by default all numbers are set as \textit{Integer} which can contain arbitrary-precision integers. This feature ensures no overflow errors occur, unless the programmer changes the default. Seeing out project is working over multi dimensional optimisation and in finance, precision is important, this suits the project very nicely.
+  ``Real World Haskell'' by Don Stewart, Bryan O'Sullivan, and John Goerzen has been very useful in understanding how the language works and maximising any Haskell program's efficiency. Having a very strong mathematical background I often struggled to understand or accept very simple concepts in object-orientated languages such as Java or Ruby. Having been introduced to Haskell, I have endeavored to understand the language as best as I can. 
 
-  ---------------More why it's good for this specific project --------------
+  % The core notion of functional programming is that everything is a mathematical function, so everything has an input and an output, similarly to object orientated languages, where everything is an object. This is not exactly clear, to make it simpler, in Haskell, everything is a function or a variable, but something it can be both! By this I mean we can apply function composition. One can think of this by having a function and to that function you can input another function and the output could either be yet another function or a value. 
+
+  % ``Real World Haskell'' by Don Stewart, Bryan O'Sullivan, and John Goerzen is a brilliant book to quickly get your head around Haskell. Having a very strong mathematical background I often struggled to understand or accept very simple concepts in object-orientated languages such as Java or Ruby. Once Haskell was introduced to me, there was no going back.
+
+  Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation is an strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. In addition, Haskell is able to work with arbitrarily large numbers, unlike most other languages, by default all numbers are set as \textit{Integer} which can contain arbitrary-precision integers. This feature ensures no overflow errors occur, unless the programmer changes the default. As this project is working over multi dimensional optimisation and in finance, precision is important, this suits the project very much.
+
+  List comprehension \cite{list_comp} is syntactic construct for creating list based on existing lists. This is a very useful given that we might store all expected return and rate of return values in lists. We can use list comprehension to formulate complex equations such as calculating the expected portfolio return which is $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$, as in Section~\ref{sec:portfolio_management}, easily. The code could therefore be as follows: 
+  \begin{code}
+  expPortR :: [Double] -> [Double] -> Double
+  expPortR weight expRet = sum [ x*y | x <- weight, y <- expRet ]
+  \end{code}
+  The first line states the type which in this case mean, expPortR is a function which takes in two list of type Double and return a Double. The second lines says that the first list is the weight and the second will be the expected return and the rest of the second list computes the expected portfolio return for the given weights and expected rerturn. 
   % section haskell (end)
 
   % \section{Multi-objective Optimisation} % (fold)
@@ -257,6 +277,7 @@ For better understanding of the portfolio selection problem and particle swarm o
   \section{Alternative Optimisation} % (fold)
   \label{sec:alternative_optimisation}
     Some other optimisation like simplex method or hopefully something better which is not as good at solving the portfolio optimisation problem as PSO is. 
+    Hill climbing / greedy search - simplex - scalability problem on deterministic. Easy for hill climbing to get stuck in local opt
   % section alternative_optimisation (end)
 
   %------------------------------------------------------------------
@@ -318,7 +339,6 @@ For better understanding of the portfolio selection problem and particle swarm o
 
   \section{Approach} % (fold)
   \label{sec:approach}
-
   
   % section approach (end)
 

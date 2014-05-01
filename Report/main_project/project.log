@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  30 APR 2014 12:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  1 MAY 2014 11:39
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -611,7 +611,18 @@ athmorphing.code.tex))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
-ractals.code.tex)) (./project.aux
+ractals.code.tex)) (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count141
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count142
+\FV@StepNumber=\count143
+\FV@OutFile=\write4
+) (./project.aux
 
 LaTeX Warning: Label `sub:haskell' multiply defined.
 
@@ -657,43 +668,43 @@ LaTeX Warning: Label `sub:conclusion' multiply defined.
 )
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
+\scratchcounter=\count144
 \scratchdimen=\dimen179
-\scratchbox=\box49
-\nofMPsegments=\count142
-\nofMParguments=\count143
+\scratchbox=\box50
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count144
+\MPscratchCnt=\count147
 \MPscratchDim=\dimen180
-\MPnumerator=\count145
+\MPnumerator=\count148
 \everyMPtoPDFconversion=\toks41
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -701,16 +712,16 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
  (./project.out)
 (./project.out)
-\@outlinefile=\write4
-\openout4 = `project.out'.
+\@outlinefile=\write5
+\openout5 = `project.out'.
 
-\AtBeginShipoutBox=\box50
+\AtBeginShipoutBox=\box51
  ABD: EveryShipout initializing macros
 <phdlogo.pdf, id=196, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
@@ -721,29 +732,29 @@ Contents
 
 
 ])
-\tf@toc=\write5
-\openout5 = `project.toc'.
+\tf@toc=\write6
+\openout6 = `project.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 \StartThesis
+l.50 \StartThesis
                   [1]
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
-(hyperref)                destination is added on input line 47.
+(hyperref)                destination is added on input line 52.
 
 List of Figures
 (./project.lof)
-\tf@lof=\write6
-\openout6 = `project.lof'.
+\tf@lof=\write7
+\openout7 = `project.lof'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \listoffigures
+l.52 \listoffigures
                     [1
 
 
@@ -752,14 +763,14 @@ l.47 \listoffigures
 ]
 List of Tables
 (./project.lot)
-\tf@lot=\write7
-\openout7 = `project.lot'.
+\tf@lot=\write8
+\openout8 = `project.lot'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \listoftables
+l.53 \listoftables
                    [2
 
 
@@ -769,7 +780,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \chapter
+l.75 \chapter
              {Background}\label{chap:background} [3
 
 
@@ -779,8 +790,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90     \begin{equation}
-                          \label{eq:PSO_stuff} [4
+l.92   I
+        n the conventional PSO, the behaviour displays particles in a multid...
+[4
 
 
 ]
@@ -794,7 +806,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.143 
+l.152 
       ] [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -804,7 +816,7 @@ Chapter 3
 [11
 
 
-] <./Figures/efficient_frontier.png, id=409, 487.8225pt x 233.87375pt>
+] <./Figures/efficient_frontier.png, id=417, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -816,7 +828,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.287 \chapter
+l.308 \chapter
               {Problem Domain} <./Figures/efficient_frontier.png (PNG copy)>]
 Chapter 4
 Missing character: There is no Ä in font cmr12!
@@ -834,14 +846,14 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.391 
+l.411 
       ] [16]
 Chapter 6
 [17
 
 
 ]
-Overfull \hbox (4.07626pt too wide) in paragraph at lines 416--418
+Overfull \hbox (4.07626pt too wide) in paragraph at lines 436--438
 []\OT1/cmr/m/n/12 When evo-lu-tion-ary al-go-rithms come across func-tions, suc
 h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
 [] \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 x[]sin\OT1/cmr/m/n/12 ([])$
@@ -849,7 +861,7 @@ h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) =
 
 [18]
 Chapter 7
-<./Figures/time-line.png, id=479, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=487, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [19
@@ -860,13 +872,13 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.447 
+l.467 
        <./Figures/time-line.png (PNG copy)>] [20]
 Chapter 8
 [21
 
 
-] <./Figures/asset-file.png, id=515, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=523, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png> [22] [23pdfTeX warning (ext4): destination with 
@@ -875,7 +887,7 @@ the same identifier (name{figure.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.545 
+l.565 
        <./Figures/asset-file.png (PNG copy)>]
 Underfull \vbox (badness 5637) has occurred while \output is active []
 
@@ -890,13 +902,13 @@ Chapter 9
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.723 
+l.743 
       ] [28pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.9.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.778 
+l.798 
       ]
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
@@ -905,18 +917,18 @@ Underfull \vbox (badness 1043) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.804       T
+l.824       T
              he application will be run]
 
 LaTeX Warning: Reference `sec:portfolio_constraints' on page 30 undefined on in
-put line 828.
+put line 848.
 
 [30] [31pdfTeX warning (ext4): destination with the same identifier (name{table
 .9.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.881           \item T
+l.901           \item T
                        est 7: PSO 20 particles, 250 iterations, 10 assets]
 Underfull \vbox (badness 3557) has occurred while \output is active []
 
@@ -925,22 +937,22 @@ Underfull \vbox (badness 3557) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.952       T
+l.972       T
              able~\ref{table:expect_return_results} show the expected return...
 ] [33pdfTeX warning (ext4): destination with the same identifier (name{table.9.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.987       T
-             his leads me to think that if one had to between a large swarm ...
+l.1007       T
+              his leads me to think that if one had to between a large swarm...
 pdfTeX warning (ext4): destination with the same identifier (name{table.9.7}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.987       T
-             his leads me to think that if one had to between a large swarm ...
+l.1007       T
+              his leads me to think that if one had to between a large swarm...
 ] [34]
 Chapter 10
 [35
@@ -999,11 +1011,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16141 strings out of 495061
- 281406 string characters out of 1182621
- 361865 words of memory out of 3000000
- 18635 multiletter control sequences out of 15000+50000
- 14473 words of font info for 55 fonts, out of 3000000 for 9000
+ 16514 strings out of 495061
+ 287184 string characters out of 1182621
+ 370469 words of memory out of 3000000
+ 19003 multiletter control sequences out of 15000+50000
+ 14641 words of font info for 56 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,890b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
@@ -1021,9 +1033,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (47 pages, 498602 bytes).
+Output written on project.pdf (47 pages, 502411 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
+ 816 PDF objects out of 1000 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

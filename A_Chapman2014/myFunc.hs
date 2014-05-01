@@ -23,12 +23,12 @@ nit1 = 1000-- for testing
 ------------------------------------------
 --------- Financial variables ------------
 ------------------------------------------
-----Risky characteristic
---risk = 0.5 -- for testing
-----Risk aversion
---aversion = 3 -- for testing
-----Required expected return
---reqExpR = 0.01 -- for testing
+--Risky characteristic
+risk = 0.5 -- for testing
+--Risk aversion
+aversion = 3 -- for testing
+--Required expected return
+reqExpR = 0.01 -- for testing
 --Penalty parameter
 penPara = 0.1
 --Penalty value
@@ -53,40 +53,40 @@ portSeq names wpg np nit f bo
 ---------------------------------------------------------------
 
 main = do
-    --Getting the name of the file with asset information
-    putStrLn "Enter file name including extension, eg 'assets.txt'."
-    file <- getLine 
-    src <- readFile file
-    --src <- readFile "readText.txt" -- for testing
+    ----Getting the name of the file with asset information
+    --putStrLn "Enter file name including extension, eg 'assets.txt'."
+    --file <- getLine 
+    --src <- readFile file
+    src <- readFile "readText.txt" -- for testing
     let triples   = map (split.words) (lines src)
     let names = extractName triples :: [String]
     let rateR = extractRate triples :: [Double]
     let expR = extractExp triples :: [Double]
     let nAssets = length rateR
-    -------------------For Testing--------------------------------------
-    -- Getting settings for PSO
-    -- Number of particles for PSO
-    putStrLn "Enter the number of particles for the swarm."
-    np' <- getLine
-    let np = read np'
-    -- Number of iteration for PSO
-    putStrLn "Enter the number of iterations for the PSO to run."
-    nit' <- getLine
-    let nit = read nit'
-    -- Getting settings for portfolio function
-    -- Risk
-    putStrLn "Enter level of risk (0.4-0.9), where 0.4 is least risky."
-    risk' <- getLine
-    let risk = read risk'
-    -- Risk aversion
-    putStrLn "Enter a level for risk aversion, recommended 3."
-    aversion' <- getLine
-    let aversion = read aversion'
-    -- Required portfolio return
-    putStrLn "Enter your required portfolio return, eg '0.02'."
-    reqExpR' <- getLine
-    let reqExpR = read reqExpR'
-    -------------------------------------------------------------------
+    ---------------------For Testing--------------------------------------
+    ---- Getting settings for PSO
+    ---- Number of particles for PSO
+    --putStrLn "Enter the number of particles for the swarm."
+    --np' <- getLine
+    --let np = read np'
+    ---- Number of iteration for PSO
+    --putStrLn "Enter the number of iterations for the PSO to run."
+    --nit' <- getLine
+    --let nit = read nit'
+    ---- Getting settings for portfolio function
+    ---- Risk
+    --putStrLn "Enter level of risk (0.4-0.9), where 0.4 is least risky."
+    --risk' <- getLine
+    --let risk = read risk'
+    ---- Risk aversion
+    --putStrLn "Enter a level for risk aversion, recommended 3."
+    --aversion' <- getLine
+    --let aversion = read aversion'
+    ---- Required portfolio return
+    --putStrLn "Enter your required portfolio return, eg '0.02'."
+    --reqExpR' <- getLine
+    --let reqExpR = read reqExpR'
+    ---------------------------------------------------------------------
         --Return of portfolio
         portR :: Position -> Double
         portR w = sum [x*y | x <- w, y <- rateR]
@@ -102,7 +102,7 @@ main = do
         mainPortFunction w = (port w) + penVal*((expPortR w)-reqExpR) + penVal*(abs((sum w) - 1))
         --Weight bound is set to this to induce diversification
         weightBounds = replicate nAssets (0.05,0.35)
-    let pso = portSeq names wpg1 np nit mainPortFunction weightBounds
+    let pso = portSeq names wpg1 np1 nit1 mainPortFunction weightBounds
     --outPutFile names (snd pso)
     pso
     return ()

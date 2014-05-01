@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{dynamic_inertia}
+Alireza Alfi.
+\newblock Particle swarm optimization algorithm with dynamic inertia weight for
+  online parameter identification applied to lorenz chaotic system, April 2010.
+
 \bibitem{inertia}
 J.C. Bansal and Et. All.
 \newblock Inertia weight strategies in particle swarm optimization.
@@ -36,6 +41,10 @@ M.~Clerc and J.~Kennedy.
   multi-dimensional complex space.
 \newblock 2002.
 
+\bibitem{hill2}
+Hill climbing Search.
+\newblock Selman, bart and gomes, p.c., 2004.
+
 \bibitem{constraint}
 Carlos~A.C. Coello.
 \newblock Theoretical and numerical constraint-handling techniques used with
@@ -55,6 +64,11 @@ Wei Hongkai, Wang Pingbo, Cai Zhiming, Chen Baozhu, and Yao Wanjun.
   fourier transform.
 \newblock In {\em Image Analysis and Signal Processing (IASP), 2010
   International Conference on}, pages 442--445, April 2010.
+
+\bibitem{hill3}
+WALKSAT Iterative Improvement Search Hill~Climbing, Simulated~Annealing and
+  Genetic Algorithms.
+\newblock Moore, andrew, 2009.
 
 \bibitem{lazy}
 L.P. Jones and J.~Hughes.
@@ -125,6 +139,10 @@ Risk Scientist.
   \url{http://www.riskscientist.com/content/technologies-portfolio-optimizatio%
 n-theory.html}.
 \newblock Accessed: 4,April,2014.
+
+\bibitem{hill}
+Richard Senington and David Duke.
+\newblock Combinators for local search in haskell, 2010.
 
 \bibitem{pso_app}
 E.~Shahamatnia and M.-M. Ebadzadeh.

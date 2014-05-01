@@ -11,7 +11,7 @@
 \BOOKMARK [1][-]{section.2.3}{3. Haskell}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Chapter 3. Related Work}{}
 \BOOKMARK [1][-]{section.3.1}{1. Markowitz Model}{chapter.3}
-\BOOKMARK [1][-]{section.3.2}{2. Alternative Optimisation}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{2. Hill Climbing}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Chapter 4. Problem Domain}{}
 \BOOKMARK [1][-]{section.4.1}{1. Approach}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Chapter 5. Requirements}{}
@@ -27,10 +27,10 @@
 \BOOKMARK [1][-]{section.8.1}{1. Original PSO Implementation}{chapter.8}
 \BOOKMARK [1][-]{section.8.2}{2. Expansion for Portfolio Optimisation}{chapter.8}
 \BOOKMARK [0][-]{chapter.9}{Chapter 9. Experimentation and Testing}{}
-\BOOKMARK [1][-]{section.9.1}{1. Efficiency}{chapter.9}
-\BOOKMARK [1][-]{section.9.2}{2. Precision}{chapter.9}
-\BOOKMARK [1][-]{section.9.3}{3. Constriction Factors}{chapter.9}
-\BOOKMARK [1][-]{section.9.4}{4. Scalability}{chapter.9}
+\BOOKMARK [1][-]{section.9.1}{1. Scalability}{chapter.9}
+\BOOKMARK [1][-]{section.9.2}{2. Efficiency}{chapter.9}
+\BOOKMARK [1][-]{section.9.3}{3. Precision}{chapter.9}
+\BOOKMARK [1][-]{section.9.4}{4. Constriction Factors}{chapter.9}
 \BOOKMARK [1][-]{section.9.5}{5. Penalty value}{chapter.9}
 \BOOKMARK [1][-]{section.9.6}{6. Relationships}{chapter.9}
 \BOOKMARK [1][-]{section.9.7}{7. Asset percentage/Induced/Forced Diversification}{chapter.9}
@@ -45,4 +45,4 @@
 \BOOKMARK [1][-]{section.11.3}{3. Conclusion}{chapter.11}
 \BOOKMARK [0][-]{section.11.3}{Bibliography}{}
 \BOOKMARK [0][-]{chapter*.2}{Appendix A: User Manual}{}
-\BOOKMARK [0][-]{chapter*.3}{Appendix B: Maintenance Manual}{}
+\BOOKMARK [0][-]{figure.11.8}{Appendix B: Maintenance Manual}{}

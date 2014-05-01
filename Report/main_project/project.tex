@@ -270,15 +270,44 @@ For better understanding of the portfolio selection problem and particle swarm o
     Markowitz's model is subject to serous criticisms as stated in \cite{crit}, and the main ones being that a measure of dispersion can be adopted as a measure of risk only if the relevant distribution is symmetric. Another problem is that the distribution of individual asset returns has a tendency to show a higher probability of being fat-tailed. In case of non-normal, non-symmetric distributions, the utility function must be quadratic \cite{crit}. 
 
     This criteria should not be taken lightly since the assets' return does not follow normal distributions in real world situations \cite{non-dist}. This approach can only be used if the investor's utility function is quadratic with non-positive second derivatives or if the asset's return distribution can be fully described. Several research have indicated that that the quadratic utility function implies that beyond some level or return, marginal utility of the decision maker for wealth becomes negative \cite{crit2,crit3}. 
-
   % section markowitz_model (end)
 
+  \section{Hill Climbing} % (fold)
+  \label{sec:hill_climbing}
+  Hill climbing \cite{hill,hill2} is an iterative optimisation algorithm which belongs to the family of local search. The algorithm must begin with an arbitrary solution to a problem, then attempts to find a better solution by incrementally changing single elements of the solution. It repeatedly iterates through new solution until no further improvements can be found. 
 
-  \section{Alternative Optimisation} % (fold)
-  \label{sec:alternative_optimisation}
-    Some other optimisation like simplex method or hopefully something better which is not as good at solving the portfolio optimisation problem as PSO is. 
-    Hill climbing / greedy search - simplex - scalability problem on deterministic. Easy for hill climbing to get stuck in local opt
-  % section alternative_optimisation (end)
+  The following pseudo-code is a basic hill climbing algorithm:
+
+    \begin{algorithm}[H] \label{eq:hill}
+      currentNode = startNode; \\
+      \While{not endingCondition()}{
+        L = NEIGHBORS(currentNode) \\
+        nextEval = -INF \\
+        nextNode = NULL \\
+        \For{all x $\in$ L}{
+          \If{EVAL(x) $>$ nextEval}{
+            nextNode = x \\
+            nextEval = EVAL(x) \\
+          }
+        }
+        \If{nextEval $\leq$ EVAL(currentNode)}{return currentNode}
+        currentNode = nextNode
+      }
+      \caption{Discrete Space Hill Climbing pseudo-code.}
+    \end{algorithm}
+  When local search algorithms, such as hill climbing, come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, they very quickly and easily get trapped in a local optima. This is absolutely not acceptable, specially when there are hundreds of thousands of pounds at stake. 
+
+  There are some improved hill climbing implementations \cite{hill3} where they force more randomness into the algorithm making it behave more like a genetic algorithm. The possibility of becoming stuck in a local optimal instead of the global is the biggest reason why I would choose PSO and other evolutionary algorithms over hill climbing. 
+
+  Scalability is another major factor when considering an optimisation algorithm. Hill climbing will just not be able to cope with the amount of dimensions that the portfolio optimisation function belongs to. These are the biggest reasons why I have chosen not to use Hill climbing or similar local search algorithms. 
+
+  % section hill_climbing (end)
+
+  % \section{Alternative Optimisation} % (fold)
+  % \label{sec:alternative_optimisation}
+  %   Some other optimisation like simplex method or hopefully something better which is not as good at solving the portfolio optimisation problem as PSO is. 
+  %   Hill climbing / greedy search - simplex - scalability problem on deterministic. Easy for hill climbing to get stuck in local opt
+  % % section alternative_optimisation (end)
 
   %------------------------------------------------------------------
   % \section{Heuristic and Metaheuristic Algorithms} % (fold)
@@ -339,7 +368,13 @@ For better understanding of the portfolio selection problem and particle swarm o
 
   \section{Approach} % (fold)
   \label{sec:approach}
-  
+  This is a research project aimed at designing and evaluation a possible system to solve the portfolio optimisation problem through the use of particle swarm optimisation. A possible expansion to the PSO implementation \cite{haskellPSO} will also be considered and attempted. The new concept for improving the PSO implementation might be through the use of constriction factors and self-termination described in Chapter~\ref{chap:design}. Just as importantly as the optimisation method PSO, is was formulate the portfolio optimisation problem. I will follow closely a revolutionary way to measure a portfolio's risk \cite{two_sided_risk} written by Zhiping Chen. Although Chen completely rethinks the concept of measuring risk by taking into account both upside and downside risk, some work would have to be done to be able to turn this into a function which PSO will be able to handle as well as take into account the constraints which have to be satisfied. 
+
+  As this is a research project for testing whether it is possible to solve the portfolio optimisation problem through PSO, the application will use simulation (offline) data instead of real-time streams. It's not too much a stretch of the imagination to be able to implement real-time processing as all the financial information is based on previous data. Changing a function, expected return for example, to recalculate it's value after new data has come through would be trivial. 
+
+  One of the main novelties of this project is the use of penalty functions in addition to the two-sided risk measure. The use of a penalty means one can formulate various constraints into a way that can be implemented for the PSO to understand. We use a penalty value to penalise any deviation from the constraint. This also means we need a way to turn deviation from the constraint into a distance measure, this is straight forward given the constraints are linear. 
+
+  For further implementation and design details, including the reasoning behind the decision, please refer to \nameref{chap:design}.
   % section approach (end)
 
 \chapter{Requirements}
@@ -661,6 +696,33 @@ The following chapter describes the system's basic design and its program flow. 
 
 \chapter{Experimentation and Testing}
 
+  \section{Scalability} % (fold)
+  \label{sec:scalability}
+
+    \subsection{Testing Strategy} % (fold)
+    \label{sub:testing_strategy}
+      The application will be run
+
+    % subsection testing_strategy (end)
+
+    \subsection{Hypothesis} % (fold)
+    \label{sub:hypothesis}
+      
+    % subsection hypothesis (end)
+
+    \subsection{Results} % (fold)
+    \label{sub:results}
+      
+    % subsection results (end)
+
+    \subsection{Conclusion} % (fold)
+    \label{sub:conclusion}
+      
+    % subsection conclusion (end)
+
+    Number of assets
+  % section scalability (end)
+
   \section{Efficiency} % (fold)
   \label{sec:efficiency}
     Standard Deviation stuff, box plots blahh blahhh
@@ -815,33 +877,6 @@ The following chapter describes the system's basic design and its program flow. 
       % \end{align}
 
   % section constriction_factors (end)
-
-  \section{Scalability} % (fold)
-  \label{sec:scalability}
-
-    \subsection{Testing Strategy} % (fold)
-    \label{sub:testing_strategy}
-      The application will be run
-
-    % subsection testing_strategy (end)
-
-    \subsection{Hypothesis} % (fold)
-    \label{sub:hypothesis}
-      
-    % subsection hypothesis (end)
-
-    \subsection{Results} % (fold)
-    \label{sub:results}
-      
-    % subsection results (end)
-
-    \subsection{Conclusion} % (fold)
-    \label{sub:conclusion}
-      
-    % subsection conclusion (end)
-
-    Number of assets
-  % section scalability (end)
 
   \section{Penalty value} % (fold)
   \label{sec:penalty_value}
@@ -1077,15 +1112,15 @@ The following chapter describes the system's basic design and its program flow. 
   This section mentions some future improvements or suggestions to improve the particle swarm optimisation algorithm.
     \subsection{Inertia weights} % (fold)
     \label{sub:inertia_weights2}
-    
+      Something to look into for the future, is whether changing the inertia weights will improve PSO on solving the portfolio optimisation problem. Some testing will need to be made to find the optimal inertia weights. Other things to consider is dynamic inertia weights as introduced in \cite{dynamic_inertia} or possibly decreasing inertia weight as in \cite{inertia}. It states that a weight of 1.9 encourages a better global search but a weight of 1.5 would be better for exploiting optima, having a continuously decreasing inertia weight from 1.9 to 1.5 might provide good guidelines for PSO to find all optima and then exploit the global optimum once the inertia weight settles. 
     % subsection inertia_weights (end)
     \subsection{Parallel Programming} % (fold)
     \label{sub:parallel_programming}
-    
+      One of the benefits of Haskell -- Functional stuff...
     % subsection parallel_programming (end)
     \subsection{Self-termination} % (fold)
     \label{sub:self_termination}
-    
+      Refer to design stuff 
     % subsection self_termination (end)
   % section pso (end)
 
@@ -1104,6 +1139,7 @@ The following chapter describes the system's basic design and its program flow. 
 
   \section{Asset's covariance and Real Time Processing} % (fold)
   \label{sec:asset_s_covariance_and_real_time_processing}
+  This section mentions some future improvements for implementing the system.
   
   % section asset_s_covariance_and_real_time_processing (end)
 
@@ -1165,7 +1201,62 @@ The following chapter describes the system's basic design and its program flow. 
 \bibliography{myref}
 
 \chapter*{Appendix A: User Manual}
-
+After starting the program you are asked to enter the name of the file containing the portfolio information. Make sure the file name does not contain any space and that the file extension is correct. If the file does have spaces, replace them with an underscore, example ``file with spaces.txt'' should be changed to ``file\_with\_spaces.txt''. This is just a precaution so the system doesn't get confused. 
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{asset_file}
+  \caption{}
+  \label{fig:asset_file}
+\end{figure}
+After entering the correct name of the file, you will be asked to type in the number of particles for the swarm in PSO, no more than 50 is needed. 
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{np}
+  \caption{}
+  \label{fig:no}
+\end{figure}
+Then you will be asked to enter the number of iterations for the PSO to run for.
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{nit}
+  \caption{}
+  \label{fig:nit}
+\end{figure}
+Followed the level of risk, 0.5 is neutral.
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{risk}
+  \caption{}
+  \label{fig:risk}
+\end{figure}
+Then input the lever of risk aversion, recommended is 3.
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{aversion}
+  \caption{}
+  \label{fig:aversion}
+\end{figure}
+Finally, your expected required portfolio return.
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{portReq}
+  \caption{}
+  \label{fig:portReq}
+\end{figure} 
+PSO is pretty quick so you will, if nothing was wrongly inputted, get an answer almost instantaneously. The system will display the ``un-prettified''results on the window.
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{results}
+  \caption{}
+  \label{fig:results}
+\end{figure}
+For the better looking results, open the folder containing the output file. The name will be ``output-(date).txt'' for example, output-(2014,5,1).txt. It will contain a file with the proportions of the optimal portfolio. 
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.9\textwidth]{output}
+  \caption{}
+  \label{fig:output}
+\end{figure}
 
 \chapter*{Appendix B: Maintenance Manual}
 

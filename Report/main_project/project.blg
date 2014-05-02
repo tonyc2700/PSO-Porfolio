@@ -7,45 +7,45 @@ while executing---line 1049 of file plain.bst
 Warning--empty booktitle in constriction_factor_4
 Name 1 in "Iterative Improvement Search Hill Climbing, Simulated Annealing, WALKSAT, and Genetic Algorithms" has a comma at the end for entry hill3
 while executing---line 1090 of file plain.bst
-You've used 36 entries,
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            662 strings with 8539 characters,
-and the built_in function-call counts, 10860 in all, are:
-= -- 1013
-> -- 389
+            669 strings with 8849 characters,
+and the built_in function-call counts, 11462 in all, are:
+= -- 1063
+> -- 435
 < -- 21
-+ -- 162
-- -- 120
-* -- 558
-:= -- 1659
-add.period$ -- 99
-call.type$ -- 36
-change.case$ -- 161
++ -- 181
+- -- 136
+* -- 596
+:= -- 1761
+add.period$ -- 104
+call.type$ -- 38
+change.case$ -- 176
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 463
-empty$ -- 1045
-format.name$ -- 120
-if$ -- 2448
+cite$ -- 39
+duplicate$ -- 477
+empty$ -- 1089
+format.name$ -- 136
+if$ -- 2570
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 38
 missing$ -- 18
-newline$ -- 174
-num.names$ -- 72
-pop$ -- 309
+newline$ -- 183
+num.names$ -- 76
+pop$ -- 332
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 144
 quote$ -- 0
-skip$ -- 403
+skip$ -- 419
 stack$ -- 0
-substring$ -- 570
-swap$ -- 153
+substring$ -- 581
+swap$ -- 155
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 152
 warning$ -- 1
-while$ -- 100
-width$ -- 38
-write$ -- 357
+while$ -- 104
+width$ -- 40
+write$ -- 375
 (There were 2 error messages)

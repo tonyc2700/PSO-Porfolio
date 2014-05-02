@@ -468,7 +468,7 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describe possible r
     \label{sub:pso}
       One thing that is a worry whenever trying to optimise any function is the possibility of becoming stuck in a local optimum value, and then mistaking that as the global optimal best solution. Randomness is key when dealing with such situations. This solves this problem by introducing randomness not only to each particle's momentum but also to the initialisation of the swarm itself! This ensures that the swarm is able to search the whole domain and then determine the optimal value. 
 
-      When evolutionary algorithms come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, the danger might be that when it finds a certain local minima which might seem like a ``good enough'' solution, then the algorithm might converge to this false solution. Furthermore when what we're trying to optimise has local minima and global minima which differ by thousands of pounds worth of stocks when applied to financial situations it is crucial the algorithm does not get stuck in non-optimal solutions. 
+      When evolutionary algorithms come across functions, such as $f(x)=\sum\limits_{i=1}^n -x_i sin(\sqrt{|x_i|})$ which was considered \cite{localmin} as a particularly hard function to optimise due to the number of local minima increases exponentially with the number of dimensions of the searching space, the danger might be that when it finds a certain local minima which might seem like a ``good enough'' solution, then the algorithm might converge to this false solution. Furthermore when what we are trying to optimise has local minima and global minima which differ by thousands of pounds worth of stocks when applied to financial situations it is crucial the algorithm does not get stuck in non-optimal solutions. 
     % subsection pso (end)
     \subsection{Portfolio} % (fold)
     \label{sub:portfolio}
@@ -730,7 +730,7 @@ The following chapter describes the system's basic design and its program flow. 
 
   \section{Precision} % (fold)
   \label{sec:precision}
-  These tests should verify that the system is stable, by this I mean that given the same input, the output should be almost the same. A there is a lot of randomness in the algorithm, one can't expect the outputs to be equal, but they should be equivalent up to some threshold. In this case the threshold will be $1.0\times10^{-8}$, this small enough to not affect the expected return from a optimised portfolio.
+  These tests should verify that the system is stable, by this I mean that given the same input, the output should be almost the same. A there is a lot of randomness in the algorithm, one can not expect the outputs to be equal, but they should be equivalent up to some threshold. In this case the threshold will be $1.0\times10^{-8}$, this small enough to not affect the expected return from a optimised portfolio.
 
     \subsection{Testing Strategy} % (fold)
     \label{sub:testing_strategy}
@@ -786,7 +786,7 @@ The following chapter describes the system's basic design and its program flow. 
         \end{table}
       As you can see from Table~\ref{table:expected_results} all of the standard deviations are less than $1.0\times10^{-8}$ which was our threshold, except Test 7. This is a very good sign as we have only given PSO 100 iterations to complete it's task and when we increase this to 300, the results are by far below the threshold. 
 
-      The only reason Test 7 didn't pass is because increasing the number of assets to 10 whilst only letting the algorithm run for 100 steps and only 20 particles was just to much. Remember that each asset represents a dimension, so in Test 7, the algorithm have 100 steps with 20 agents to search for an optimal value in a 10 dimensional search space.
+      The only reason Test 7 did not pass is because increasing the number of assets to 10 whilst only letting the algorithm run for 100 steps and only 20 particles was just to much. Remember that each asset represents a dimension, so in Test 7, the algorithm have 100 steps with 20 agents to search for an optimal value in a 10 dimensional search space.
     % subsection results (end)
 
     \subsection{Conclusion} % (fold)
@@ -1117,50 +1117,26 @@ The following chapter describes the system's basic design and its program flow. 
     \subsection{Parallel Programming} % (fold)
     \label{sub:parallel_programming}
       One of the benefits of Haskell -- Functional stuff...
+      Yet another benefit of Haskell is that through function abstraction \cite{haskellPSO} one can split the PSO algorithm into different processes. What takes the longest in PSO is updating each particles after every iteration, through parallel processes one can split the updating process into different sub-processes and computing them in parallel, improving the speed even more. Eden \cite{eden,eden2} is a parallel extension for Haskell, this would be what I would choose to implement parallel processing into the system.
     % subsection parallel_programming (end)
     \subsection{Self-termination} % (fold)
     \label{sub:self_termination}
-      Refer to design stuff 
+      This might be beneficial for making the algorithm more efficient. Why should the algorithm run for $x$ amount of iterations if it will not improve the solution. There is no reason what so ever, the counter-positive though, might be crucial when calculating a portfolio's risk. There is the possibility that the share price has changes by the end of the algorithm. This also applies to the following Section~\nameref{sec:asset_s_covariance_and_real_time_processing} when discussing real time processing. I have considered this method and described how it can be done in Chapter~\ref{chap:design} Section~\ref{sec:expansion_for_portfolio_optimisation}. Please refer there for further details.
     % subsection self_termination (end)
   % section pso (end)
 
-
-  % \section{PSO Parameters} % (fold)
-  % \label{sec:parameters}
-  %   More testing on WPG inertia weights
-  %   Dunno...
-  %   Parallel programming
-  % % section parameters (end)
-
-  % \section{Self-termination} % (fold)
-  % \label{sec:self_termination}
-  %   Stops after some criteria is met
-  % % section self_termination (end)
-
-  \section{Asset's covariance and Real Time Processing} % (fold)
+  \section{Asset's covariance and Real-Time Processing} % (fold)
   \label{sec:asset_s_covariance_and_real_time_processing}
   This section mentions some future improvements for implementing the system.
-  
+    \subsection{Covariance} % (fold)
+    \label{sub:covariance}
+      Stuff
+    % subsection covariance (end)
+    \subsection{Real-Time Processing} % (fold)
+    \label{sub:real_time_processing}
+      Whoop!
+    % subsection real_time_processing (end)
   % section asset_s_covariance_and_real_time_processing (end)
-
-  % \section{Assets' Covariance} % (fold)
-  % \label{sec:covariance}
-  %   Risk in terms of 
-  % % section covariance (end)
-
-  % \section{Market Relationships} % (fold)
-  % \label{sec:market_relationships}
-  %   Gold vs Money
-  % % section market_relationships (end)
-
-  %   This would be brilliant!!
-
-  % \section{Real-time processing} % (fold)
-  % \label{sec:real_time_processing}
-  %   Wow!
-  % % section real_time_processing (end)
-
-
 
   \section{Diversification} % (fold)
   \label{sec:diversification}
@@ -1201,7 +1177,7 @@ The following chapter describes the system's basic design and its program flow. 
 \bibliography{myref}
 
 \chapter*{Appendix A: User Manual}
-After starting the program you are asked to enter the name of the file containing the portfolio information. Make sure the file name does not contain any space and that the file extension is correct. If the file does have spaces, replace them with an underscore, example ``file with spaces.txt'' should be changed to ``file\_with\_spaces.txt''. This is just a precaution so the system doesn't get confused. 
+After starting the program you are asked to enter the name of the file containing the portfolio information. Make sure the file name does not contain any space and that the file extension is correct. If the file does have spaces, replace them with an underscore, example ``file with spaces.txt'' should be changed to ``file\_with\_spaces.txt''. This is just a precaution so the system does not get confused. 
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.9\textwidth]{asset_file}

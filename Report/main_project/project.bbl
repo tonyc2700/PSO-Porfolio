@@ -58,6 +58,11 @@ M.~S. Fekdstein.
   portfolio selection.
 \newblock In {\em Review of Economic Studies}, volume~36, pages 5--12, 1969.
 
+\bibitem{eden2}
+M.~Hidalgo-Herrero, Y.~Otega-Mallen, F.~Rubio, and R.~Pena.
+\newblock Analyzing the influence of mixed evaluation on the performance of
+  eden skeletons, 2002.
+
 \bibitem{pso_app2}
 Wei Hongkai, Wang Pingbo, Cai Zhiming, Chen Baozhu, and Yao Wanjun.
 \newblock Application of particle swarm optimization method in fractional
@@ -85,6 +90,10 @@ J.~Kennedy and R.~Eberhart.
 Shi Lim and Mohammad Montakhab.
 \newblock A constriction factor based particle swarm optimization for economic
   dispatch, 2009.
+
+\bibitem{eden}
+R.~Loogen, Y.~Otega-Mallen, F.~Rubio, and R.~Pena.
+\newblock Parallelism abstractions in eden, 2002.
 
 \bibitem{non-dist}
 Billio M.
@@ -129,6 +138,7 @@ R.~Poli.
 
 \bibitem{haskellPSO}
 Pablo Rabanal, Ismael Rodíguez, and Fernando Rubio.
+\newblock A functional approach to parallelize particle swarm optimization.
 \newblock
   \url{http://antares.sip.ucm.es/prabanal/english/heuristics_library.html}.
 \newblock Accessed: February,2014.

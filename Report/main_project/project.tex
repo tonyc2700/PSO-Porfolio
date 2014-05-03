@@ -335,36 +335,42 @@ For better understanding of the portfolio selection problem and particle swarm o
   % % section pso_applied (end)
 
 \chapter{Problem Domain}
+
+  In this chapter I will discuss some reasons why I believe this is a worth while project. I will mention what methods I intend to implement and for what reasons. It will then follow by a brief section describing my approach, although the full description of the actual approach taken is document in Chapter~\nameref{chap:design}.
   
-  Particle Swarm Optimisation has already been effectively implemented to solved various optimisation problems \cite{pso_app,pso_app2,pso_app3} under variant domains such as biomedical, networks, clustering, finance, combinatorial optimisation and many more \cite{pso_app_main}. 
+  Particle Swarm Optimisation has already been effectively implemented to solved various optimisation problems \cite{pso_app,pso_app2,pso_app3} in variant domains such as biomedical, networks, clustering, finance, combinatorial optimisation and many more \cite{pso_app_main}. 
 
-  This project mainly focuses on expanding the implementation created by Rabanal, Rodrıguez and Rubio in their paper ``A Functional Approach to Parallelize Particle Swarm Optimization'' and more importantly, applying it to solve the portfolio optimisation problem \cite{marko2}. The optimisation algorithm has been successful by means of accuracy as well as efficiency \cite{haskellPSO}. When millions of pounds are at stake, choosing the right portfolio to invest in is extremely important. Given that machines have been designed to  
+  This project mainly focuses on expanding the implementation created by Rabanal, Rodrıguez and Rubio in their paper ``A Functional Approach to Parallelize Particle Swarm Optimization'' and more importantly, it's application to solve the portfolio optimisation problem \cite{marko2}. The optimisation algorithm has been successful by means of accuracy as well as efficiency \cite{haskellPSO}, and when millions of pounds are at stake, choosing the right portfolio to invest in is extremely important, meaning that choosing the right algorithm is even more crucial.
 
-  \begin{itemize}
-    \item PSO
-    \begin{itemize}
-      \item Better than simplex at higher dimension optimisation
-      \item Good at not becoming stuck in local optima
-      \item Much better at optimisation than humans!!!
-    \end{itemize}
-    \item Portfolio
-    \begin{itemize}
-      \item Fundamental problem in finance
-      \item Good to test PSO
-      \item Loads of money at stake
-      \item Not that much out there
-      \item Suited well for PSO
-    \end{itemize}
-    \item Haskell
-    \begin{itemize}
-      \item Arbitrary large number calculation
-      \item Functional nature is great for programming mathematical problems efficiently
-      \item Lazy evaluation implies efficient use of resources
-      \item Good online community
-    \end{itemize}
-  \end{itemize}
+  \textbf{Why PSO.} I have chosen to use PSO as it is better than other familiar optimisation techniques such as the simplex method or hill climbing. It doesn't risk becoming stuck in local optima like the others. It out-performs the others with incredible efficiency when the optimisation function is over higher dimensional fields. 
 
-  % Mention more about portfolio optimisation....
+  \textbf{Why Portfolio.} It is a fundamental problem in finance, making it an ideal candidate to test PSO's capabilities. As already mentioned, there is a lot of money at stake, so making tools which are efficient to help humans make these multi-million decisions would definitely be worth the hard work. After some brief searching, I noticed that there is not that much information in this field out there, making this a novel and exciting topic. This two-sided coherent risk measure is a well defined function and compatible with PSO function format. 
+
+  \textbf{Why Haskell.} Firstly, Haskell is a passion for me, it has scared so many yet intrigues a few. Apart from it's syntactical charm (subjective I know), there are many benefits, specially when working with mathematical applications. Haskell has been given by default to work with arbitrary large number calculation, this will help against overflow problems which are ever so common with most languages. The functional nature of Haskell makes it effortless to formulate complex mathematical equations \cite{haskellPSO}. Other extra influences are that it has a great online community, very friendly and helpful, or lazy evaluation and function and partial function composition. 
+
+  % \begin{itemize}
+  %   \item PSO
+  %   \begin{itemize}
+  %     \item Better than simplex at higher dimension optimisation
+  %     \item Good at not becoming stuck in local optima
+  %     \item Much better at optimisation than humans!!!
+  %   \end{itemize}
+  %   \item Portfolio
+  %   \begin{itemize}
+  %     \item Fundamental problem in finance
+  %     \item Good to test PSO
+  %     \item Loads of money at stake
+  %     \item Not that much out there
+  %     \item Suited well for PSO
+  %   \end{itemize}
+  %   \item Haskell
+  %   \begin{itemize}
+  %     \item Arbitrary large number calculation
+  %     \item Functional nature is great for programming mathematical problems efficiently
+  %     \item Lazy evaluation implies efficient use of resources
+  %     \item Good online community
+  %   \end{itemize}
+  % \end{itemize}
 
   \section{Approach} % (fold)
   \label{sec:approach}
@@ -376,6 +382,7 @@ For better understanding of the portfolio selection problem and particle swarm o
 
   For further implementation and design details, including the reasoning behind the decision, please refer to \nameref{chap:design}.
   % section approach (end)
+
 
 \chapter{Requirements}
 This chapter describes the requirements for this project. Table~\ref{table:functionalRequirements} refers to the functional requirements from technical point of view. Section~\nameref{sec:non_functional} focuses on the non-functional requirements of the system.
@@ -919,7 +926,7 @@ The following chapter describes the system's basic design and its program flow. 
       For the reasons presented in the results, having the penalty parameter at 1.0 is too big, having it at 0.01 is too small and thus the penalty parameter will be held at 0.1. This should ensure consistent and reliable optimal solution to our portfolio optimisation problem.
   % section penalty_value (end)  
 
-  \section{Relationships} % (fold)
+  \section{Parameter Investigation} % (fold)
   \label{sec:relationships}
   This test might seem a little peculiar at first but be assured, there is method in this madness, that's what I tell myself anyways... I want to see what the relationship is (if any) between the time it takes to run, the number of particles, number of iterations and number of assets.
 

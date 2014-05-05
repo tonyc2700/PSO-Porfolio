@@ -90,10 +90,10 @@
 \contentsline {subsection}{\tocsubsection {}{2.1}{Covariance}}{38}{subsection.10.2.1}
 \contentsline {subsection}{\tocsubsection {}{2.2}{Real-Time Processing}}{38}{subsection.10.2.2}
 \contentsline {section}{\tocsection {}{3}{Diversification}}{38}{section.10.3}
-\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{39}{chapter.11}
-\contentsline {section}{\tocsection {}{1}{Problems encountered}}{39}{section.11.1}
-\contentsline {section}{\tocsection {}{2}{Discussion}}{39}{section.11.2}
-\contentsline {section}{\tocsection {}{3}{Conclusion}}{39}{section.11.3}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{40}{section.11.3}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix A: User Manual}}{42}{chapter*.2}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix B: Maintenance Manual}}{47}{figure.11.8}
+\contentsline {chapter}{\tocchapter {Chapter}{11}{Discussion and Conclusion}}{40}{chapter.11}
+\contentsline {section}{\tocsection {}{1}{Problems encountered}}{40}{section.11.1}
+\contentsline {section}{\tocsection {}{2}{Discussion}}{40}{section.11.2}
+\contentsline {section}{\tocsection {}{3}{Conclusion}}{40}{section.11.3}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{41}{section.11.3}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix A: User Manual}}{43}{chapter*.2}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix B: Maintenance Manual}}{48}{figure.11.8}

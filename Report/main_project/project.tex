@@ -217,12 +217,12 @@ Acknowledgments....
 
   Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation is an strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. In addition, Haskell is able to work with arbitrarily large numbers, unlike most other languages, by default all numbers are set as \textit{Integer} which can contain arbitrary-precision integers. This feature ensures no overflow errors occur, unless the programmer changes the default. As this project is working over multi dimensional optimisation and in finance, precision is important, this suits the project very much.
 
-  List comprehension \cite{list_comp} is syntactic construct for creating list based on existing lists. This is a very useful given that we might store all expected return and rate of return values in lists. We can use list comprehension to formulate complex equations such as calculating the expected portfolio return which is $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$, as in Section~\ref{sec:portfolio_management}, easily. The code could therefore be as follows: 
+  List comprehension \cite{list_comp} is syntactic construct for creating list based on existing lists. This is a very useful given that we might store all expected return and rate of return values in lists. We can use list comprehension to formulate complex equations, such as calculating the expected portfolio return, which is $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$, as in Section~\ref{sec:portfolio_management}, easily. The code could therefore be as follows: 
   \begin{code}
   expPortR :: [Double] -> [Double] -> Double
   expPortR weight expRet = sum [ x*y | x <- weight, y <- expRet ]
   \end{code}
-  The first line states the type which in this case mean, expPortR is a function which takes in two list of type Double and return a Double. The second lines says that the first list is the weight and the second will be the expected return and the rest of the second list computes the expected portfolio return for the given weights and expected rerturn. 
+  The first line states the type which in this case mean, \textit{expPortR} is a function which takes in two list of type \textit{Double} and return a \textit{Double}. The first part of the second line gives names to the assigned lists, the lists which will be given to the function. The second part of the second line with sum up the corresponding expected returns with their given weights. 
   % section haskell (end)
 
   % \section{Multi-objective Optimisation} % (fold)
@@ -232,6 +232,8 @@ Acknowledgments....
 
 
 \chapter{Related Work}
+Use pkg bbding with 
+
 For better understanding of the portfolio selection problem and particle swarm optimisation, their strengths, weaknesses and applications, a study of previous and related works for the measure of risk in a portfolio and alternatives to PSO was made. I will read and evaluate some strengths and weaknesses on the related models and outline where they fail when compared to what this project wants to achieve. 
 
   \section{Markowitz Model} % (fold)
@@ -463,7 +465,7 @@ Section~\ref{sec:social} and Section~\ref{sec:project_based} describe possible r
   \label{sec:social}
     The do not refer to the term `Social' as a worry that I will be too sociable and not focus enough on my project. I simply mean ``stuff not directly to do with my project area''. The first thing that worries me is that I am reading a joint-honours degree in mathematics and computing science, almost all of my colleagues have nothing to do this term except their dissertation, where I have two more modules as well was this project. Most of them where smart enough to take an extra  ``meaningless'' module last term so they did not have to do anything else this term. I was unable to do that as I had to do my Mathematics dissertation and 3 other modules last term. 
 
-    Doing a join-honours degree has meant I have gotten much more out of studying here than most people but it also means I have had to learn (in terms of quantity) much more material. I worry that having to do these other two mathematics modules this term might affect my dissertation or \textit{visa-versa}. I plan to work long as I can on all subjects even if it mean burning the candle at both ends as it were. Careful planning of my days will help and I hope it will be enough to achieve the grades I desire. 
+    Doing a join-honours degree has meant I have gotten much more out of studying here than most people but it also means I have had to learn (in terms of quantity) much more material. I worry that having to do these other two mathematics modules this term might affect my dissertation or \textit{visa-versa}. I plan to work as long as I can on all subjects even if it mean burning the candle at both ends as it were. Careful planning of my days will help and I hope it will be enough to achieve the grades I desire. 
   % section social (end)
   \section{Project Based Risk Assessment} % (fold)
   \label{sec:project_based}
@@ -1141,7 +1143,7 @@ The following chapter describes the system's basic design and its program flow. 
     % subsection covariance (end)
     \subsection{Real-Time Processing} % (fold)
     \label{sub:real_time_processing}
-      Whoop!
+      Real-time processing has never been so crucial to market efficiencies and competitiveness as it is today. To operate in the highly dynamic global market and to have an edge over competition, access to real-time data and intelligent processing and correlation of the data has become an absolute necessity in functions such as algorithmic management, smart order routing, pre-trade analytics and risk management.
     % subsection real_time_processing (end)
   % section asset_s_covariance_and_real_time_processing (end)
 

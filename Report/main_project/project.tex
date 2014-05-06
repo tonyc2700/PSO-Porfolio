@@ -11,7 +11,7 @@
 \usepackage{array}
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{decorations.fractals}
-
+\usepackage{mdwlist}
 \usepackage{fancyvrb}
 \DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
 \DefineVerbatimEnvironment{example}{Verbatim}{fontsize=\small}
@@ -1125,7 +1125,7 @@ The following chapter describes the system's basic design and its program flow. 
 \chapter*{Appendix A: User Manual}
 
 \begin{itemize}
-  \item To run the program on 
+  \item To run the program on Unix/Linux
 \end{itemize}
 
 After starting the program you are asked to enter the name of the file containing the portfolio information. Make sure the file name does not contain any space and that the file extension is correct. If the file does have spaces, replace them with an underscore, example ``file with spaces.txt'' should be changed to ``file\_with\_spaces.txt''. This is just a precaution so the system does not get confused. Figure~\ref{fig:asset_file} shows what you should see. 
@@ -1186,5 +1186,26 @@ For the better looking results, open the folder containing the output file. The 
 \end{figure}
 
 \chapter*{Appendix B: Maintenance Manual}
+
+\textbf{Instructions on how to compile and run the algorithm:} \\
+Makes sure that the source Haskell files (myFunc.hs, PSO.hs) are located in the same folder as the asset data files you wish to use for the portfolio.
+
+\begin{enumerate}
+  \item Open a terminal and move to the folder containing the source files, ie the Haskell code.
+  \item Type the following command into the terminal and press enter:
+\suspend{enumerate}
+\begin{center} \% ghc -O2 --make myFunc.hs -threaded -rtsopts \end{center}
+\resume{enumerate}
+  \item You have now created an executable file, now type into the terminal the following and press enter:
+\suspend{enumerate}
+\begin{center} \% ./myFunc \end{center}
+\resume{enumerate}
+  \item The program will start in the same terminal window.
+\end{enumerate}
+The User Manual provides a guide for using the program. 
+
+\textbf{Organisation of System Files, including directory structures} \\
+
+
 
 \end{document}

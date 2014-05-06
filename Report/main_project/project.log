@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  6 MAY 2014 16:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  6 MAY 2014 17:26
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -611,7 +611,10 @@ athmorphing.code.tex))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.fractals.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.f
-ractals.code.tex)) (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+ractals.code.tex)) (/usr/share/texmf-texlive/tex/latex/mdwtools/mdwlist.sty
+Package: mdwlist 1996/05/02 1.1 Various list-related things
+)
+(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -1091,6 +1094,11 @@ l.1188 \chapter
                *{Appendix B: Maintenance Manual} <./Figures/output.png (PNG cop
 y)>]
 Appendix B: Maintenance Manual
+
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
+
+ []
+
 [48
 
 
@@ -1100,10 +1108,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16576 strings out of 495061
- 288175 string characters out of 1182621
- 371050 words of memory out of 3000000
- 19047 multiletter control sequences out of 15000+50000
+ 16616 strings out of 495061
+ 288746 string characters out of 1182621
+ 371546 words of memory out of 3000000
+ 19079 multiletter control sequences out of 15000+50000
  14641 words of font info for 56 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,992b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1122,9 +1130,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (54 pages, 735396 bytes).
+Output written on project.pdf (54 pages, 736655 bytes).
 PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 204 named destinations out of 1000 (max. 500000)
+ 889 PDF objects out of 1000 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -34,7 +34,7 @@
 %-- always a4paper 12pt and rhs equation numbers,
 
 
-\PassOptionsToClass{12pt,a4paper,reqno,oneside}{amsbook}
+\PassOptionsToClass{11pt,a4paper,reqno,oneside}{amsbook}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{amsbook}}
 \ProcessOptions

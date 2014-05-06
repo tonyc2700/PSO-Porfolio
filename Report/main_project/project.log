@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  5 MAY 2014 10:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  6 MAY 2014 16:33
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -654,18 +654,6 @@ LaTeX Warning: Label `sub:results' multiply defined.
 LaTeX Warning: Label `sub:conclusion' multiply defined.
 
 
-LaTeX Warning: Label `sub:testing_strategy' multiply defined.
-
-
-LaTeX Warning: Label `sub:hypothesis' multiply defined.
-
-
-LaTeX Warning: Label `sub:results' multiply defined.
-
-
-LaTeX Warning: Label `sub:conclusion' multiply defined.
-
-
 LaTeX Warning: Label `fig:asset_file' multiply defined.
 
 )
@@ -726,7 +714,7 @@ LaTeX Info: Redefining \pageref on input line 33.
 
 \AtBeginShipoutBox=\box51
  ABD: EveryShipout initializing macros
-<phdlogo.pdf, id=196, 37.13875pt x 48.18pt>
+<phdlogo.pdf, id=188, 37.13875pt x 48.18pt>
 File: phdlogo.pdf Graphic file (type pdf)
  <use phdlogo.pdf> [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./phd
 logo.pdf>] [2] [3] [4]
@@ -823,7 +811,7 @@ Underfull \vbox (badness 1264) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=432, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=422, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -880,7 +868,7 @@ h as $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) =
 
 [20]
 Chapter 7
-<./Figures/time-line.png, id=526, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=516, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [21
@@ -897,7 +885,7 @@ Chapter 8
 [23
 
 
-] <./Figures/asset-file.png, id=561, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=551, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png> [24] [25pdfTeX warning (ext4): destination with 
@@ -921,55 +909,51 @@ Chapter 9
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.806 
-      ] [30] [31pdfTeX warning (ext4): destination with the same identifier (na
-me{table.9.2}) has been already used, duplicate ignored
+l.783     F
+           rom the results and our test strategy, we can conclude that the a...
+] [30] [31pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.9.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.878       T
+l.858       T
              he use of the constriction coefficient can be viewed as a recom...
 pdfTeX warning (ext4): destination with the same identifier (name{table.9.3}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.878       T
+l.858       T
              he use of the constriction coefficient can be viewed as a recom...
-]
-
-LaTeX Warning: Reference `sec:portfolio_constraints' on page 32 undefined on in
-put line 892.
-
-[32] [33pdfTeX warning (ext4): destination with the same identifier (name{table
-.9.4}) has been already used, duplicate ignored
+] [32] [33pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.9.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.945           \item T
-                       est 7: PSO 20 particles, 250 iterations, 10 assets]
-Underfull \vbox (badness 3557) has occurred while \output is active []
+l.926           \item T
+                       est 8: PSO 20 particles, 500 iterations, 10 assets]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34pdfTeX warning (ext4): destination with the same identifier (name{table.9.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1016       T
-              able~\ref{table:expect_return_results} show the expected retur...
+l.996       T
+             able~\ref{table:expect_return_results} show the expected return...
 ] [35pdfTeX warning (ext4): destination with the same identifier (name{table.9.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1051       T
+l.1031       T
               his leads me to think that if one had to between a large swarm...
 pdfTeX warning (ext4): destination with the same identifier (name{table.9.7}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1051       T
+l.1031       T
               his leads me to think that if one had to between a large swarm...
 ] [36]
 Chapter 10
@@ -1006,11 +990,11 @@ g / wiki / Diversification _ (finance)$[]\OT1/cmr/m/n/10 . Ac-cessed:
 
 ) [42]
 Appendix A: User Manual
-<./Figures/asset_file.png, id=766, 686.565pt x 303.1325pt>
+<./Figures/asset_file.png, id=744, 686.565pt x 303.1325pt>
 File: ./Figures/asset_file.png Graphic file (type png)
 
 <use ./Figures/asset_file.png>
-<./Figures/np.png, id=768, 686.565pt x 309.155pt>
+<./Figures/np.png, id=746, 686.565pt x 309.155pt>
 File: ./Figures/np.png Graphic file (type png)
  <use ./Figures/np.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1023,13 +1007,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1})
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1208 T
+l.1145 T
         hen you will be asked to enter the number of iterations for the PSO ...
  <./Figures/asset_file.png (PNG copy)>]
-<./Figures/nit.png, id=776, 692.5875pt x 310.15875pt>
+<./Figures/nit.png, id=754, 692.5875pt x 310.15875pt>
 File: ./Figures/nit.png Graphic file (type png)
  <use ./Figures/nit.png>
-<./Figures/risk.png, id=778, 689.57625pt x 307.1475pt>
+<./Figures/risk.png, id=756, 689.57625pt x 307.1475pt>
 File: ./Figures/risk.png Graphic file (type png)
 
 <use ./Figures/risk.png>
@@ -1040,21 +1024,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1222 T
+l.1159 T
         hen input the lever of risk aversion, recommended is 3. Figure~\ref{...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1222 T
+l.1159 T
         hen input the lever of risk aversion, recommended is 3. Figure~\ref{...
  <./Figures/np.png (PNG copy)> <./Figures/nit.png (PNG copy)>]
-<./Figures/aversion.png, id=784, 693.59125pt x 307.1475pt>
+<./Figures/aversion.png, id=762, 693.59125pt x 307.1475pt>
 File: ./Figures/aversion.png Graphic file (type png)
 
 <use ./Figures/aversion.png>
-<./Figures/portReq.png, id=786, 690.58pt x 307.1475pt>
+<./Figures/portReq.png, id=764, 690.58pt x 307.1475pt>
 File: ./Figures/portReq.png Graphic file (type png)
 
 <use ./Figures/portReq.png>
@@ -1065,21 +1049,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1236 P
+l.1173 P
         SO is pretty quick so you will, if nothing was wrongly inputted, get...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1236 P
+l.1173 P
         SO is pretty quick so you will, if nothing was wrongly inputted, get...
  <./Figures/risk.png (PNG copy)> <./Figures/aversion.png (PNG copy)>]
-<./Figures/results.png, id=792, 692.5875pt x 307.1475pt>
+<./Figures/results.png, id=770, 692.5875pt x 307.1475pt>
 File: ./Figures/results.png Graphic file (type png)
 
 <use ./Figures/results.png>
-<./Figures/output.png, id=794, 337.26pt x 396.48125pt>
+<./Figures/output.png, id=772, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
 <use ./Figures/output.png>
@@ -1090,20 +1074,20 @@ Underfull \vbox (badness 7740) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1250 
+l.1187 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .11.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1250 
+l.1187 
         <./Figures/portReq.png (PNG copy)> <./Figures/results.png (PNG copy)>]
 [47pdfTeX warning (ext4): destination with the same identifier (name{figure.11.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1251 \chapter
+l.1188 \chapter
                *{Appendix B: Maintenance Manual} <./Figures/output.png (PNG cop
 y)>]
 Appendix B: Maintenance Manual
@@ -1112,17 +1096,14 @@ Appendix B: Maintenance Manual
 
 ] (./project.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16595 strings out of 495061
- 288492 string characters out of 1182621
- 371173 words of memory out of 3000000
- 19052 multiletter control sequences out of 15000+50000
+ 16576 strings out of 495061
+ 288175 string characters out of 1182621
+ 371050 words of memory out of 3000000
+ 19047 multiletter control sequences out of 15000+50000
  14641 words of font info for 56 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
  56i,19n,57p,992b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1141,9 +1122,9 @@ y8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (54 pages, 737304 bytes).
+Output written on project.pdf (54 pages, 735396 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 884 PDF objects out of 1000 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,7 +10,7 @@ A level-1 auxiliary file: chap7-methodology.aux
 A level-1 auxiliary file: chap8-design.aux
 A level-1 auxiliary file: chap9-test.aux
 A level-1 auxiliary file: chap10-future.aux
-A level-1 auxiliary file: chap11-conclusion.aux
+A level-1 auxiliary file: chap11.aux
 The style file: plain.bst
 A level-1 auxiliary file: chap12-user.aux
 A level-1 auxiliary file: chap13-maintenance.aux
@@ -22,7 +22,7 @@ Name 1 in "Iterative Improvement Search Hill Climbing, Simulated Annealing, WALK
 while executing---line 1090 of file plain.bst
 You've used 38 entries,
             2118 wiz_defined-function locations,
-            682 strings with 9081 characters,
+            682 strings with 9070 characters,
 and the built_in function-call counts, 11462 in all, are:
 = -- 1063
 > -- 435

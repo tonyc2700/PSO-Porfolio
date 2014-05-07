@@ -45,31 +45,31 @@
         & Gbest^t \text{ : The global best position of particle i at time t.} \\
       \end{split}
     \end{equation}
-
   In the updating process shown in Equation (\ref{eq:vel}) the acceleration coefficients $c_1, c_2$ ($c_1$ determines the importance one following the individual personal best whereas $c_2$ determines the importance of following the particles with the global best position)and the inertia weight $\omega$ (which states how stubborn a particle is at not deviating from their path, regardless of previous results) are predefined, and $r_1, r_2$ (these introduce the concept of randomness so that a particles is able to switch between following their personal best and that of the whole swarm) are uniformly generated random numbers in the range [0,1].
 
   The following algorithm \ref{eq:pso} is one of the standard PSO. The pseudo-code outlines the procedures implemented in \cite{haskellPSO}, it will be followed by an explanation on how it works.   
-    \begin{algorithm}[H] \label{eq:pso}
-      \mbox{\textbf{Initialisation}} \\
-      \For{i = 1,\dots,S}{
-        initPosition(i) \\
-        initBestLocal(i) \\
-        \If{i = 1}{initBestGlobal()} 
-        \If{improvedGlobal(i)}{updateGlobalBest(i)} 
-        initVelocity(i)
+
+  \begin{algorithm}[H] \label{eq:pso}
+    \mbox{\textbf{Initialisation}} \\
+    \For{i = 1,\dots,S}{
+      initPosition(i) \\
+      initBestLocal(i) \\
+      \If{i = 1}{initBestGlobal()} 
+      \If{improvedGlobal(i)}{updateGlobalBest(i)} 
+      initVelocity(i)
+    }
+    \mbox{\textbf{Main program}} \\      
+    \While{not endingCondition()}{
+      \For{i - 1,\dots, S}{
+        createRnd($r_1,r_2$) \\
+        updateVelocity(i$,r_1,r_2$) \\
+        updatePosition(i) \\
+        \If{improvedLocal(i)}{updateBestLocal(i)}
+        \If{improvedGlobal(i)}{updateGlobalBest(i)}
       }
-      \mbox{\textbf{Main program}} \\      
-      \While{not endingCondition()}{
-        \For{i - 1,\dots, S}{
-          createRnd($r_1,r_2$) \\
-          updateVelocity(i$,r_1,r_2$) \\
-          updatePosition(i) \\
-          \If{improvedLocal(i)}{updateBestLocal(i)}
-          \If{improvedGlobal(i)}{updateGlobalBest(i)}
-        }
-      }
-      \caption{PSO pseudo-code.}
-    \end{algorithm}
+    }
+    \caption{PSO pseudo-code.}
+  \end{algorithm}
   
   In Algorithm~\ref{eq:pso} $S$ is the number of particles in a swarm, one can see the pseudo-code for a standard PSO. A step by step explanation of Algorithm~\ref{eq:pso} is as follows: First, there is an initialisation for all the particles in the PSO, for every particle $i$, \textit{initPosition(i)} randomly created a particle with a designated position in the search space. For the first step, \textit{initBestLocal(i) = initPosition(i)}, but it will be updated afterwards. Then the $if$ function makes a first global best and if any other particles has a better global best position it will be set as the new global best. \textit{initVelocity(i)} gives particle $i$ an initial velocity which is randomly generated. 
 

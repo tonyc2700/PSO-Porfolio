@@ -53,7 +53,7 @@
 \RequirePackage{setspace}
 \newif\ifsinglesp@
 \newif\ifdoublesp@
-\doublesp@false
+\doublesp@true
 
 \DeclareOption{singlespace}{\singlesp@true}
 \DeclareOption{doublespace}{\doublesp@true}
@@ -144,7 +144,7 @@
 %% Page size and margins.
 \setlength \paperheight {297mm}%  842pt almost exactly.
 \setlength \paperwidth  {210mm}%  595pt plus a very small fraction.
-%\setlength \hoffset {-60\p@}
+\setlength \hoffset {-20\p@}
 %\setlength \voffset {-60\p@}
 \setlength \marginparwidth {30\p@}
 \setlength \textwidth {150mm}
@@ -416,15 +416,17 @@
      \reset@font%
      \ifnum \c@secnumdepth >\m@ne%
          \if@mainmatter%
-             \Large \bfseries \@chapapp{} \thechapter%
-     \par%
-             \vskip 20\p@%
+             %\Large \bfseries \@chapapp{} \thechapter : %
+             \huge \bfseries \@chapapp{} \thechapter : %
+     %\par%
+             %\vskip 20\p@%
          \fi%
      \fi%
      \huge \bfseries #1%
+     %#1%
      \par%
      \nobreak%
-     \vskip 40\p@%
+     %\vskip 40\p@%
     }%
 }
 
@@ -484,14 +486,8 @@
 %% This produces the standard declaration.
 \newcommand \makedeclaration{%
     \chapter*{Declaration}%
-    
-    No portion of the work contained in this document has been
-    submitted in support of an application for a degree or
-    qualification of this or any other university or other institution
-    of learning.  All verbatim extracts have been distinguished by
-    quotation marks, and all sources of information have been
-    specifically acknowledged.
-
+    I declare that this document and the accompanying code has been composed by myself, and describes my own work, unless otherwise acknowledged in the text. It has not been accepted in any previous application for a degree. All verbatim extracts have been distinguished by quotation marks, and all sources of information have been specifically acknowledged.
+    %No portion of the work contained in this document has been submitted in support of an application for a degree or qualification of this or any other university or other institution of learning.  All verbatim extracts have been distinguished by quotation marks, and all sources of information have been specifically acknowledged.
     \vskip 40\p@%
     
     \noindent Signed:

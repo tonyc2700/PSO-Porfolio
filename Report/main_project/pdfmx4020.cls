@@ -81,6 +81,14 @@
 
 \newcommand{\mxfrontpage}{%
 \thispagestyle{empty}
+
+% ---- unilogo
+\begin{center}
+\epsfig{file=phdlogo.pdf,width=1in}
+\end{center}
+%
+\vspace*{1in}
+
 %  ----Header
 \begin{minipage}[t][1in][c]{\textwidth}
 \begin{center}{\bf\Large\sc University of Aberdeen\\\bigskip Department of Computing Science}\end{center}
@@ -91,12 +99,7 @@
 \end{minipage}
 %
 \vspace*{1in}
-% ---- unilogo
-\begin{center}
-\epsfig{file=phdlogo.pdf,width=1in}
-\end{center}
-%
-\vspace*{1in}
+
 
 % ----Author
 \begin{center}{\bf\Huge \Th@title}\end{center}

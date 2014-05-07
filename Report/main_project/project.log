@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  6 MAY 2014 18:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  7 MAY 2014 12:26
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -725,21 +725,16 @@ Contents
 (./project.toc [0
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.84 ...hapter}{}{Bibliography}}{40}{section.11.4}
-                                                   [1])
+])
 \tf@toc=\write6
 \openout6 = `project.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.53 \StartThesis
-                  [2]
+                  [1]
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
 (hyperref)                destination is added on input line 55.
@@ -817,7 +812,7 @@ Chapter 3
 [10
 
 
-] <./Figures/efficient_frontier.png, id=426, 487.8225pt x 233.87375pt>
+] <./Figures/efficient_frontier.png, id=423, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -867,7 +862,7 @@ Chapter 6
 
 ] [19]
 Chapter 7
-<./Figures/time-line.png, id=520, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=517, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [20
@@ -885,7 +880,7 @@ Chapter 8
 [22
 
 
-] <./Figures/asset-file.png, id=555, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=552, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png>
@@ -994,11 +989,11 @@ ntist . com / content / technologies-[]portfolio-[]optimization-[]theory .
 
 ) [41]
 Appendix A: User Manual
-<./Figures/asset_file.png, id=748, 686.565pt x 303.1325pt>
+<./Figures/asset_file.png, id=745, 686.565pt x 303.1325pt>
 File: ./Figures/asset_file.png Graphic file (type png)
 
 <use ./Figures/asset_file.png>
-<./Figures/np.png, id=750, 686.565pt x 309.155pt>
+<./Figures/np.png, id=747, 686.565pt x 309.155pt>
 File: ./Figures/np.png Graphic file (type png)
  <use ./Figures/np.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1014,10 +1009,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1})
 l.1183 T
         hen you will be asked to enter the number of iterations for the PSO ...
  <./Figures/asset_file.png (PNG copy)>]
-<./Figures/nit.png, id=758, 692.5875pt x 310.15875pt>
+<./Figures/nit.png, id=754, 692.5875pt x 310.15875pt>
 File: ./Figures/nit.png Graphic file (type png)
  <use ./Figures/nit.png>
-<./Figures/risk.png, id=760, 689.57625pt x 307.1475pt>
+<./Figures/risk.png, id=756, 689.57625pt x 307.1475pt>
 File: ./Figures/risk.png Graphic file (type png)
 
 <use ./Figures/risk.png>
@@ -1038,11 +1033,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.3})
 l.1197 T
         hen input the lever of risk aversion, recommended is 3. Figure~\ref{...
  <./Figures/np.png (PNG copy)> <./Figures/nit.png (PNG copy)>]
-<./Figures/aversion.png, id=766, 693.59125pt x 307.1475pt>
+<./Figures/aversion.png, id=763, 693.59125pt x 307.1475pt>
 File: ./Figures/aversion.png Graphic file (type png)
 
 <use ./Figures/aversion.png>
-<./Figures/portReq.png, id=768, 690.58pt x 307.1475pt>
+<./Figures/portReq.png, id=765, 690.58pt x 307.1475pt>
 File: ./Figures/portReq.png Graphic file (type png)
 
 <use ./Figures/portReq.png>
@@ -1063,11 +1058,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.5})
 l.1211 P
         SO is pretty quick so you will, if nothing was wrongly inputted, get...
  <./Figures/risk.png (PNG copy)> <./Figures/aversion.png (PNG copy)>]
-<./Figures/results.png, id=774, 692.5875pt x 307.1475pt>
+<./Figures/results.png, id=771, 692.5875pt x 307.1475pt>
 File: ./Figures/results.png Graphic file (type png)
 
 <use ./Figures/results.png>
-<./Figures/output.png, id=776, 337.26pt x 396.48125pt>
+<./Figures/output.png, id=773, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
 <use ./Figures/output.png>
@@ -1132,9 +1127,9 @@ sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (54 pages, 760442 bytes).
+Output written on project.pdf (53 pages, 759938 bytes).
 PDF statistics:
- 896 PDF objects out of 1000 (max. 8388607)
+ 893 PDF objects out of 1000 (max. 8388607)
  208 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

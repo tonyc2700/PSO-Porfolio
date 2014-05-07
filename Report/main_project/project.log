@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  7 MAY 2014 12:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  7 MAY 2014 19:24
 entering extended mode
  %&-line parsing enabled.
 **project.tex
@@ -774,78 +774,79 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 \chapter
-             {Background}\label{chap:background} [3
+l.79     \item T
+                est the resulting application on a dataset from a real-world...
+[3
 
 
-]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 \chapter
+             {Background}\label{chap:background} [4]
 Chapter 2
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.113     \begin{equation}
-                           \label{eq:PSO_stuff} [4
+ [5
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
+ [7pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.166 
-      ] [7]
+l.168 
+      ] [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-[9]
+ [9]
+[10]
 Chapter 3
-[10
+[11
 
 
-] <./Figures/efficient_frontier.png, id=423, 487.8225pt x 233.87375pt>
+] <./Figures/efficient_frontier.png, id=429, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
 Underfull \vbox (badness 1237) has occurred while \output is active []
 
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.286     M
+l.288     M
            arkowitz's model is subject to serous criticisms as stated in \ci...
- <./Figures/efficient_frontier.png (PNG copy)>] [12pdfTeX warning (ext4): desti
+ <./Figures/efficient_frontier.png (PNG copy)>] [13pdfTeX warning (ext4): desti
 nation with the same identifier (name{algocf.2}) has been already used, duplica
 te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.315 
-      ] [13]
+l.317 
+      ] [14]
 Chapter 4
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ± in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14
+ [15
 
 
 ]
-[15]
+[16]
 Chapter 5
-[16
+[17
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
@@ -853,19 +854,19 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.470     T
+l.472     T
            he system's scalability is something not to be overlooked. As eac...
-] [17]
+] [18]
 Chapter 6
-[18
+[19
 
 
-] [19]
+] [20]
 Chapter 7
-<./Figures/time-line.png, id=517, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=523, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
-<use ./Figures/time-line.png> [20
+<use ./Figures/time-line.png> [21
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) 
@@ -873,109 +874,109 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.526   T
+l.528   T
          he writing of this result will be flexible, the sections will be wr...
- <./Figures/time-line.png (PNG copy)>] [21]
+ <./Figures/time-line.png (PNG copy)>] [22]
 Chapter 8
-[22
+[23
 
 
-] <./Figures/asset-file.png, id=552, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=558, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+ [24]
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.623 
-       <./Figures/asset-file.png (PNG copy)>] [25] [26]
+l.625 
+       <./Figures/asset-file.png (PNG copy)>] [26] [27]
 Chapter 9
-[27
+[28
 
 
-] [28pdfTeX warning (ext4): destination with the same identifier (name{table.9.
+] [29pdfTeX warning (ext4): destination with the same identifier (name{table.9.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.805     \subsection
-                     {Testing Strategy} % (fold)] [29pdfTeX warning (ext4): des
+l.807     \subsection
+                     {Testing Strategy} % (fold)] [30pdfTeX warning (ext4): des
 tination with the same identifier (name{table.9.2}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.863 
-      ] [30pdfTeX warning (ext4): destination with the same identifier (name{ta
+l.865 
+      ] [31pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.9.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.888     \subsection
-                     {Testing Strategy}] [31pdfTeX warning (ext4): destination 
+l.890     \subsection
+                     {Testing Strategy}] [32pdfTeX warning (ext4): destination 
 with the same identifier (name{table.9.4}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.929     \subsection
-                     {Testing Strategy} % (fold)] [32pdfTeX warning (ext4): des
+l.931     \subsection
+                     {Testing Strategy} % (fold)] [33pdfTeX warning (ext4): des
 tination with the same identifier (name{table.9.5}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1009         \end{table}
-                          ] [33pdfTeX warning (ext4): destination with the same
+l.1011         \end{table}
+                          ] [34pdfTeX warning (ext4): destination with the same
  identifier (name{table.9.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1045       T
+l.1047       T
               his leads me to think that if one had to between a large swarm...
 pdfTeX warning (ext4): destination with the same identifier (name{table.9.7}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1045       T
+l.1047       T
               his leads me to think that if one had to between a large swarm...
-] [34]
+] [35]
 Chapter 10
-[35
+[36
 
 
-] [36] [37]
+] [37] [38]
 Chapter 11
-
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
 
  []
 
-[38
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1126
+
+ []
 
 
-] (./project.bbl [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
+
+ []
+
+[39
+
+
+] (./project.bbl [40]
 Bibliography
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40
+ [41
 
 
 ]
@@ -987,18 +988,18 @@ Overfull \hbox (23.70633pt too wide) in paragraph at lines 147--152
 ntist . com / content / technologies-[]portfolio-[]optimization-[]theory .
  []
 
-) [41]
+) [42]
 Appendix A: User Manual
-<./Figures/asset_file.png, id=745, 686.565pt x 303.1325pt>
+<./Figures/asset_file.png, id=751, 686.565pt x 303.1325pt>
 File: ./Figures/asset_file.png Graphic file (type png)
 
 <use ./Figures/asset_file.png>
-<./Figures/np.png, id=747, 686.565pt x 309.155pt>
+<./Figures/np.png, id=753, 686.565pt x 309.155pt>
 File: ./Figures/np.png Graphic file (type png)
  <use ./Figures/np.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42
+ [43
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1})
@@ -1006,96 +1007,96 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1})
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1183 T
+l.1185 T
         hen you will be asked to enter the number of iterations for the PSO ...
  <./Figures/asset_file.png (PNG copy)>]
-<./Figures/nit.png, id=754, 692.5875pt x 310.15875pt>
+<./Figures/nit.png, id=761, 692.5875pt x 310.15875pt>
 File: ./Figures/nit.png Graphic file (type png)
  <use ./Figures/nit.png>
-<./Figures/risk.png, id=756, 689.57625pt x 307.1475pt>
+<./Figures/risk.png, id=763, 689.57625pt x 307.1475pt>
 File: ./Figures/risk.png Graphic file (type png)
 
 <use ./Figures/risk.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1197 T
+l.1199 T
         hen input the lever of risk aversion, recommended is 3. Figure~\ref{...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1197 T
+l.1199 T
         hen input the lever of risk aversion, recommended is 3. Figure~\ref{...
  <./Figures/np.png (PNG copy)> <./Figures/nit.png (PNG copy)>]
-<./Figures/aversion.png, id=763, 693.59125pt x 307.1475pt>
+<./Figures/aversion.png, id=769, 693.59125pt x 307.1475pt>
 File: ./Figures/aversion.png Graphic file (type png)
 
 <use ./Figures/aversion.png>
-<./Figures/portReq.png, id=765, 690.58pt x 307.1475pt>
+<./Figures/portReq.png, id=771, 690.58pt x 307.1475pt>
 File: ./Figures/portReq.png Graphic file (type png)
 
 <use ./Figures/portReq.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 .4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1211 P
+l.1213 P
         SO is pretty quick so you will, if nothing was wrongly inputted, get...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1211 P
+l.1213 P
         SO is pretty quick so you will, if nothing was wrongly inputted, get...
  <./Figures/risk.png (PNG copy)> <./Figures/aversion.png (PNG copy)>]
-<./Figures/results.png, id=771, 692.5875pt x 307.1475pt>
+<./Figures/results.png, id=777, 692.5875pt x 307.1475pt>
 File: ./Figures/results.png Graphic file (type png)
 
 <use ./Figures/results.png>
-<./Figures/output.png, id=773, 337.26pt x 396.48125pt>
+<./Figures/output.png, id=779, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
 <use ./Figures/output.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+ [46pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 .6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1225 
+l.1227 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .11.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1225 
+l.1227 
         <./Figures/portReq.png (PNG copy)> <./Figures/results.png (PNG copy)>]
-[46pdfTeX warning (ext4): destination with the same identifier (name{figure.11.
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.11.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1226 \chapter
+l.1228 \chapter
                *{Appendix B: Maintenance Manual} <./Figures/output.png (PNG cop
 y)>]
 Appendix B: Maintenance Manual
 
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1248
 
  []
 
-[47
+[48
 
 
 ] (./project.aux)
@@ -1104,9 +1105,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16620 strings out of 495061
- 288792 string characters out of 1182621
- 370588 words of memory out of 3000000
+ 16621 strings out of 495061
+ 288799 string characters out of 1182621
+ 370589 words of memory out of 3000000
  19080 multiletter control sequences out of 15000+50000
  14533 words of font info for 55 fonts, out of 3000000 for 9000
  189 hyphenation exceptions out of 8191
@@ -1127,9 +1128,9 @@ sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on project.pdf (53 pages, 759938 bytes).
+Output written on project.pdf (54 pages, 762461 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
- 208 named destinations out of 1000 (max. 500000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

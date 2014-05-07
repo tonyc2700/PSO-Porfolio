@@ -4,83 +4,83 @@
 \contentsline {section}{\tocsection {}{1}{Overview}}{3}{section.1.1}
 \contentsline {section}{\tocsection {}{2}{Motivation}}{3}{section.1.2}
 \contentsline {section}{\tocsection {}{3}{Primary Goals}}{3}{section.1.3}
-\contentsline {section}{\tocsection {}{4}{Secondary Goals}}{3}{section.1.4}
-\contentsline {chapter}{\tocchapter {Chapter}{2}{Background}}{4}{chapter.2}
-\contentsline {section}{\tocsection {}{1}{Particle Swarm Optimisation}}{4}{section.2.1}
-\contentsline {section}{\tocsection {}{2}{Portfolio Optimisation}}{7}{section.2.2}
-\contentsline {section}{\tocsection {}{3}{Haskell}}{9}{section.2.3}
-\contentsline {chapter}{\tocchapter {Chapter}{3}{Related Work}}{10}{chapter.3}
-\contentsline {section}{\tocsection {}{1}{Markowitz Model}}{10}{section.3.1}
-\contentsline {section}{\tocsection {}{2}{Hill Climbing}}{12}{section.3.2}
-\contentsline {chapter}{\tocchapter {Chapter}{4}{Problem Domain}}{14}{chapter.4}
-\contentsline {section}{\tocsection {}{1}{Approach}}{15}{section.4.1}
-\contentsline {chapter}{\tocchapter {Chapter}{5}{Requirements}}{16}{chapter.5}
-\contentsline {section}{\tocsection {}{1}{Functional}}{16}{section.5.1}
-\contentsline {section}{\tocsection {}{2}{Non-functional}}{17}{section.5.2}
-\contentsline {chapter}{\tocchapter {Chapter}{6}{Risk Assessment}}{18}{chapter.6}
-\contentsline {section}{\tocsection {}{1}{Social Risk Assessment}}{18}{section.6.1}
-\contentsline {section}{\tocsection {}{2}{Project Based Risk Assessment}}{18}{section.6.2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{18}{subsection.6.2.1}
-\contentsline {subsection}{\tocsubsection {}{2.2}{PSO}}{18}{subsection.6.2.2}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Portfolio}}{19}{subsection.6.2.3}
-\contentsline {subsection}{\tocsubsection {}{2.4}{Finance}}{19}{subsection.6.2.4}
-\contentsline {chapter}{\tocchapter {Chapter}{7}{Methodology and Technologies}}{20}{chapter.7}
-\contentsline {section}{\tocsection {}{1}{Methodology}}{20}{section.7.1}
-\contentsline {section}{\tocsection {}{2}{Technology}}{21}{section.7.2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{21}{subsection.7.2.1}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Operating System}}{21}{subsection.7.2.2}
-\contentsline {chapter}{\tocchapter {Chapter}{8}{System Design and Architecture}}{22}{chapter.8}
-\contentsline {section}{\tocsection {}{1}{Original PSO Implementation}}{22}{section.8.1}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Initialisation}}{22}{subsection.8.1.1}
-\contentsline {subsection}{\tocsubsection {}{1.2}{Inertia Weights}}{22}{subsection.8.1.2}
-\contentsline {subsection}{\tocsubsection {}{1.3}{Optimisation}}{22}{subsection.8.1.3}
-\contentsline {subsection}{\tocsubsection {}{1.4}{Termination}}{23}{subsection.8.1.4}
-\contentsline {section}{\tocsection {}{2}{Expansion for Portfolio Optimisation}}{23}{section.8.2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Interface and User Input}}{23}{subsection.8.2.1}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Data file}}{23}{subsection.8.2.2}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Constriction Factor}}{24}{subsection.8.2.3}
-\contentsline {subsection}{\tocsubsection {}{2.4}{Termination}}{25}{subsection.8.2.4}
-\contentsline {subsection}{\tocsubsection {}{2.5}{Fitness Function}}{25}{subsection.8.2.5}
-\contentsline {subsection}{\tocsubsection {}{2.6}{Penalty function}}{25}{subsection.8.2.6}
-\contentsline {subsection}{\tocsubsection {}{2.7}{Forced Diversification}}{26}{subsection.8.2.7}
-\contentsline {subsection}{\tocsubsection {}{2.8}{Presenting the Results}}{26}{subsection.8.2.8}
-\contentsline {chapter}{\tocchapter {Chapter}{9}{Experimentation and Testing}}{27}{chapter.9}
-\contentsline {section}{\tocsection {}{1}{Scalability}}{27}{section.9.1}
-\contentsline {section}{\tocsection {}{2}{Efficiency}}{27}{section.9.2}
-\contentsline {section}{\tocsection {}{3}{Precision}}{27}{section.9.3}
-\contentsline {subsection}{\tocsubsection {}{3.1}{Testing Strategy}}{27}{subsection.9.3.1}
-\contentsline {subsection}{\tocsubsection {}{3.2}{Hypothesis}}{28}{subsection.9.3.2}
-\contentsline {subsection}{\tocsubsection {}{3.3}{Results}}{28}{subsection.9.3.3}
-\contentsline {subsection}{\tocsubsection {}{3.4}{Conclusion}}{28}{subsection.9.3.4}
-\contentsline {section}{\tocsection {}{4}{Constriction Factors}}{29}{section.9.4}
-\contentsline {subsection}{\tocsubsection {}{4.1}{Testing Strategy}}{29}{subsection.9.4.1}
-\contentsline {subsection}{\tocsubsection {}{4.2}{Hypothesis}}{29}{subsection.9.4.2}
-\contentsline {subsection}{\tocsubsection {}{4.3}{Results}}{29}{subsection.9.4.3}
-\contentsline {subsection}{\tocsubsection {}{4.4}{Conclusion}}{30}{subsection.9.4.4}
-\contentsline {section}{\tocsection {}{5}{Penalty value}}{30}{section.9.5}
-\contentsline {subsection}{\tocsubsection {}{5.1}{Testing Strategy}}{31}{subsection.9.5.1}
-\contentsline {subsection}{\tocsubsection {}{5.2}{Hypothesis}}{31}{subsection.9.5.2}
-\contentsline {subsection}{\tocsubsection {}{5.3}{Results}}{31}{subsection.9.5.3}
-\contentsline {subsection}{\tocsubsection {}{5.4}{Conclusion}}{31}{subsection.9.5.4}
-\contentsline {section}{\tocsection {}{6}{Parameter Investigation}}{32}{section.9.6}
-\contentsline {subsection}{\tocsubsection {}{6.1}{Testing Strategy}}{32}{subsection.9.6.1}
-\contentsline {subsection}{\tocsubsection {}{6.2}{Hypothesis}}{32}{subsection.9.6.2}
-\contentsline {subsection}{\tocsubsection {}{6.3}{Results}}{32}{subsection.9.6.3}
-\contentsline {subsection}{\tocsubsection {}{6.4}{Conclusion}}{33}{subsection.9.6.4}
-\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{35}{chapter.10}
-\contentsline {section}{\tocsection {}{1}{PSO}}{35}{section.10.1}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Inertia weights}}{35}{subsection.10.1.1}
-\contentsline {subsection}{\tocsubsection {}{1.2}{Parallel Programming}}{35}{subsection.10.1.2}
-\contentsline {subsection}{\tocsubsection {}{1.3}{Self-termination}}{35}{subsection.10.1.3}
-\contentsline {section}{\tocsection {}{2}{Asset's covariance and Real-Time Processing}}{36}{section.10.2}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Covariance}}{36}{subsection.10.2.1}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Real-Time Processing}}{36}{subsection.10.2.2}
-\contentsline {section}{\tocsection {}{3}{Diversification}}{36}{section.10.3}
-\contentsline {chapter}{\tocchapter {Chapter}{11}{Evaluation and Conclusion}}{38}{chapter.11}
-\contentsline {section}{\tocsection {}{1}{Evaluation}}{38}{section.11.1}
-\contentsline {section}{\tocsection {}{2}{Problems encountered}}{38}{section.11.2}
-\contentsline {section}{\tocsection {}{3}{Discussion}}{38}{section.11.3}
-\contentsline {section}{\tocsection {}{4}{Conclusion}}{39}{section.11.4}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{40}{section.11.4}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix A: User Manual}}{42}{chapter*.2}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix B: Maintenance Manual}}{47}{figure.11.8}
+\contentsline {section}{\tocsection {}{4}{Secondary Goals}}{4}{section.1.4}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Background}}{5}{chapter.2}
+\contentsline {section}{\tocsection {}{1}{Particle Swarm Optimisation}}{5}{section.2.1}
+\contentsline {section}{\tocsection {}{2}{Portfolio Optimisation}}{8}{section.2.2}
+\contentsline {section}{\tocsection {}{3}{Haskell}}{10}{section.2.3}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Related Work}}{11}{chapter.3}
+\contentsline {section}{\tocsection {}{1}{Markowitz Model}}{11}{section.3.1}
+\contentsline {section}{\tocsection {}{2}{Hill Climbing}}{13}{section.3.2}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Problem Domain}}{15}{chapter.4}
+\contentsline {section}{\tocsection {}{1}{Approach}}{16}{section.4.1}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Requirements}}{17}{chapter.5}
+\contentsline {section}{\tocsection {}{1}{Functional}}{17}{section.5.1}
+\contentsline {section}{\tocsection {}{2}{Non-functional}}{18}{section.5.2}
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Risk Assessment}}{19}{chapter.6}
+\contentsline {section}{\tocsection {}{1}{Social Risk Assessment}}{19}{section.6.1}
+\contentsline {section}{\tocsection {}{2}{Project Based Risk Assessment}}{19}{section.6.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{19}{subsection.6.2.1}
+\contentsline {subsection}{\tocsubsection {}{2.2}{PSO}}{19}{subsection.6.2.2}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Portfolio}}{20}{subsection.6.2.3}
+\contentsline {subsection}{\tocsubsection {}{2.4}{Finance}}{20}{subsection.6.2.4}
+\contentsline {chapter}{\tocchapter {Chapter}{7}{Methodology and Technologies}}{21}{chapter.7}
+\contentsline {section}{\tocsection {}{1}{Methodology}}{21}{section.7.1}
+\contentsline {section}{\tocsection {}{2}{Technology}}{22}{section.7.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{Haskell}}{22}{subsection.7.2.1}
+\contentsline {subsection}{\tocsubsection {}{2.2}{Operating System}}{22}{subsection.7.2.2}
+\contentsline {chapter}{\tocchapter {Chapter}{8}{System Design and Architecture}}{23}{chapter.8}
+\contentsline {section}{\tocsection {}{1}{Original PSO Implementation}}{23}{section.8.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Initialisation}}{23}{subsection.8.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.2}{Inertia Weights}}{23}{subsection.8.1.2}
+\contentsline {subsection}{\tocsubsection {}{1.3}{Optimisation}}{23}{subsection.8.1.3}
+\contentsline {subsection}{\tocsubsection {}{1.4}{Termination}}{24}{subsection.8.1.4}
+\contentsline {section}{\tocsection {}{2}{Expansion for Portfolio Optimisation}}{24}{section.8.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{Interface and User Input}}{24}{subsection.8.2.1}
+\contentsline {subsection}{\tocsubsection {}{2.2}{Data file}}{24}{subsection.8.2.2}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Constriction Factor}}{25}{subsection.8.2.3}
+\contentsline {subsection}{\tocsubsection {}{2.4}{Termination}}{26}{subsection.8.2.4}
+\contentsline {subsection}{\tocsubsection {}{2.5}{Fitness Function}}{26}{subsection.8.2.5}
+\contentsline {subsection}{\tocsubsection {}{2.6}{Penalty function}}{26}{subsection.8.2.6}
+\contentsline {subsection}{\tocsubsection {}{2.7}{Forced Diversification}}{27}{subsection.8.2.7}
+\contentsline {subsection}{\tocsubsection {}{2.8}{Presenting the Results}}{27}{subsection.8.2.8}
+\contentsline {chapter}{\tocchapter {Chapter}{9}{Experimentation and Testing}}{28}{chapter.9}
+\contentsline {section}{\tocsection {}{1}{Scalability}}{28}{section.9.1}
+\contentsline {section}{\tocsection {}{2}{Efficiency}}{28}{section.9.2}
+\contentsline {section}{\tocsection {}{3}{Precision}}{28}{section.9.3}
+\contentsline {subsection}{\tocsubsection {}{3.1}{Testing Strategy}}{28}{subsection.9.3.1}
+\contentsline {subsection}{\tocsubsection {}{3.2}{Hypothesis}}{29}{subsection.9.3.2}
+\contentsline {subsection}{\tocsubsection {}{3.3}{Results}}{29}{subsection.9.3.3}
+\contentsline {subsection}{\tocsubsection {}{3.4}{Conclusion}}{29}{subsection.9.3.4}
+\contentsline {section}{\tocsection {}{4}{Constriction Factors}}{30}{section.9.4}
+\contentsline {subsection}{\tocsubsection {}{4.1}{Testing Strategy}}{30}{subsection.9.4.1}
+\contentsline {subsection}{\tocsubsection {}{4.2}{Hypothesis}}{30}{subsection.9.4.2}
+\contentsline {subsection}{\tocsubsection {}{4.3}{Results}}{30}{subsection.9.4.3}
+\contentsline {subsection}{\tocsubsection {}{4.4}{Conclusion}}{31}{subsection.9.4.4}
+\contentsline {section}{\tocsection {}{5}{Penalty value}}{31}{section.9.5}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Testing Strategy}}{32}{subsection.9.5.1}
+\contentsline {subsection}{\tocsubsection {}{5.2}{Hypothesis}}{32}{subsection.9.5.2}
+\contentsline {subsection}{\tocsubsection {}{5.3}{Results}}{32}{subsection.9.5.3}
+\contentsline {subsection}{\tocsubsection {}{5.4}{Conclusion}}{32}{subsection.9.5.4}
+\contentsline {section}{\tocsection {}{6}{Parameter Investigation}}{33}{section.9.6}
+\contentsline {subsection}{\tocsubsection {}{6.1}{Testing Strategy}}{33}{subsection.9.6.1}
+\contentsline {subsection}{\tocsubsection {}{6.2}{Hypothesis}}{33}{subsection.9.6.2}
+\contentsline {subsection}{\tocsubsection {}{6.3}{Results}}{33}{subsection.9.6.3}
+\contentsline {subsection}{\tocsubsection {}{6.4}{Conclusion}}{34}{subsection.9.6.4}
+\contentsline {chapter}{\tocchapter {Chapter}{10}{Future Work}}{36}{chapter.10}
+\contentsline {section}{\tocsection {}{1}{PSO}}{36}{section.10.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Inertia weights}}{36}{subsection.10.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.2}{Parallel Programming}}{36}{subsection.10.1.2}
+\contentsline {subsection}{\tocsubsection {}{1.3}{Self-termination}}{36}{subsection.10.1.3}
+\contentsline {section}{\tocsection {}{2}{Asset's covariance and Real-Time Processing}}{37}{section.10.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{Covariance}}{37}{subsection.10.2.1}
+\contentsline {subsection}{\tocsubsection {}{2.2}{Real-Time Processing}}{37}{subsection.10.2.2}
+\contentsline {section}{\tocsection {}{3}{Diversification}}{37}{section.10.3}
+\contentsline {chapter}{\tocchapter {Chapter}{11}{Evaluation and Conclusion}}{39}{chapter.11}
+\contentsline {section}{\tocsection {}{1}{Evaluation}}{39}{section.11.1}
+\contentsline {section}{\tocsection {}{2}{Problems encountered}}{39}{section.11.2}
+\contentsline {section}{\tocsection {}{3}{Discussion}}{39}{section.11.3}
+\contentsline {section}{\tocsection {}{4}{Conclusion}}{40}{section.11.4}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{41}{section.11.4}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix A: User Manual}}{43}{chapter*.2}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Appendix B: Maintenance Manual}}{48}{figure.11.8}

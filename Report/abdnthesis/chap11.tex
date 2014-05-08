@@ -5,21 +5,18 @@ This chapter summarises and discusses the tasks accomplished, providing a critic
   \label{sec:evaluation}
   Looking back at the project goals and requirements, it is possible to say that almost all of them were successfully achieved. 
   \begin{itemize}
-    \item \textbf{Understanding the principles behind the Particles Swarm Optimisation algorithm and designing an appropriate expansion to solve the portfolio optimisation problem.} \\
-    Blahh
-    \item \textbf{Testing the resulting application on a dataset from a real-world domain} \\
-    \item \textbf{Perform experiments on the dataset to assess the effectiveness of the modified algorithm while making necessary changes to the parameter settings for a better optimisation and performance} \\
-    \item \textbf{Something else} \\
+    \item \textbf{Understanding the principles behind the Particles Swarm Optimisation algorithm and designing an appropriate expansion to solve the portfolio optimisation problem.} The Particles Swarm Optimisation algorithm, its modeling background, algorithmic concepts and expansion designs were thoroughly studied and described in theory as well as through practical applications. This was an excellent introduction into the field of Swarm Optimisation algorithms and has shown great potential for the algorithms to be used in the financial domain. Although the system was implemented as research to see whether it is possible to use PSO to solve real world problems, the portfolio selection problem in this case, a new design and architecture was laid to form a stepping stone for implementing real-time processing and other essential propertied for the system to be effective in the real world.
+    \item \textbf{Test the resulting application and assess whether it can be used in a professional environment.} The testing and experimentation has shown stable and promising results. Firstly, it was verified that the system was stable in a sense of reliable and consistence results. Secondly, the scalability was tested and the results where promising for the PSO but my forced diversification did affect the results negatively when considering 20 or more assets. Finally, it is left to future testing whether it is possible to use real-time processing to improve the system.
   \end{itemize}
   % section evaluation (end)
 
   \section{Problems encountered} % (fold)
   \label{sec:problems_encountered}
     \begin{itemize}
-      \item Haskell being strong typed
-      \item Results are too small (to good!!) for good presentation
-      \item A lot of new financial information had to be learnt
-      \item This is bigger and more important than anticipated, 
+      \item \textbf{Haskell being strong typed:} One problem I encountered when trying to embed the portfolio risk measure into Haskell was that because of the nature of Haskell, the function's type had to be clear and defined. This caused problems when trying to turn it into a fitness function for the PSO algorithm to understand. The problem was that the fitness function's type had to match what the PSO required. This was overcome by using partial functions composition and list comprehension. 
+      \item \textbf{Results are too small:} When experimenting and testing the system, the results where incredibly good. Unfortunately, drawing a nice graph for results which has a standard deviation of $10^{-13}$ is far to difficult for such a simple task. Tables are not as pretty, but they do get the job done. 
+      \item \textbf{Financial Background:} Prior to this project, I had never studying any type of finance or economics course. The amount of concepts that had to be learn was almost overwhelming. I found online lecture videos and this helped a huge amount, I tried to back-track as much as possible when I heard a new term in order to fully understand the problem and hence be more able to solve it.
+      \item \textbf{Project scale:} This isn't necessarily a problem, but the more I learn about financial computing, the more I realise I need to learn more. I wish I had more time to implement the future ideas stated, although I know as soon as I start to implement these improvements, I will find more to implement.
     \end{itemize}
   % section problems_encountered (end)
 
@@ -39,7 +36,6 @@ This chapter summarises and discusses the tasks accomplished, providing a critic
   Many challenges were faced during the design and implementation stages of the improved algorithm; some alternative paths considered, Regardless, this research project has given me a valuable insight into the world of evolutionary algorithms, their principles and applications. The results gained from the testing have given me a more insight knowledge on the algorithm, it has taught me new facts about PSo and confirmed some previous known facts too.
 
   There are plenty of opportunities for future development, I believe that this research project has opened a door for me to create something which I believe might change the way investment companies deal with portfolio selection.
-
   
   % section conclusion (end)
 

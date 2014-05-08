@@ -47,8 +47,7 @@
     \end{equation}
   In the updating process shown in Equation (\ref{eq:vel}) the acceleration coefficients $c_1, c_2$ ($c_1$ determines the importance one following the individual personal best whereas $c_2$ determines the importance of following the particles with the global best position)and the inertia weight $\omega$ (which states how stubborn a particle is at not deviating from their path, regardless of previous results) are predefined, and $r_1, r_2$ (these introduce the concept of randomness so that a particles is able to switch between following their personal best and that of the whole swarm) are uniformly generated random numbers in the range [0,1].
 
-  The following algorithm \ref{eq:pso} is one of the standard PSO. The pseudo-code outlines the procedures implemented in \cite{haskellPSO}, it will be followed by an explanation on how it works.   
-
+  The following algorithm \ref{eq:pso} is one of the standard PSO. The pseudo-code outlines the procedures implemented in \cite{haskellPSO}, it will be followed by an explanation on how it works.\\
   \begin{algorithm}[H] \label{eq:pso}
     \mbox{\textbf{Initialisation}} \\
     \For{i = 1,\dots,S}{
@@ -102,7 +101,7 @@
 
   One of the advantages proposed for two-sided coherent risk measure was that it would be easy to reflect an investor's attitude towards risk, this is achieve by the variables $p,a$ in $\rho_{a,p}(X)$ in Equation~(\ref{eq:two-sided}). An investor's risk adverse attitude is represented by $p$, where the larger $p$ is, the more risk the investor is willing to take, so small $p$ low risk, large $p$ high risk. In Equation~(\ref{eq:two-sided}) $a$ is the factor controlling the balance between good and bad volatility \cite{two_sided_risk}, $a \to 0$ represents an investors' attitude towards good volatility and $a \to 1$ would be the opposite. Thus different investors might choose different values for $p$ and $a$.
 
-  A reader might not see how Equation~(\ref{eq:two-sided}) has much to do with optimising a portfolio from a first glance, a quick example will be shown to illustrate it's use. Suppose we have $N$ assets to choose from and for $i \in [1,N]$ let $x_i \in [0,1]$ be the proportional weight of asset $i$ in the portfolio, let $r_i \in \mathbb{R}$ be a variable which represents the rate of return of asset $i$ and $\widehat{r}_i$ be the expected return of asset $i$. Then the rate of return of a portfolio can be expressed as $R = \sum_{i=1}^N x_i r_i$ and the expected return $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$
+  A reader might not see how Equation~(\ref{eq:two-sided}) has much to do with optimising a portfolio from a first glance, a quick example will be shown to illustrate its use. Suppose we have $N$ assets to choose from and for $i \in [1,N]$ let $x_i \in [0,1]$ be the proportional weight of asset $i$ in the portfolio, let $r_i \in \mathbb{R}$ be a variable which represents the rate of return of asset $i$ and $\widehat{r}_i$ be the expected return of asset $i$. Then the rate of return of a portfolio can be expressed as $R = \sum_{i=1}^N x_i r_i$ and the expected return $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$
 
   From Equation~(\ref{eq:two-sided}) we can measure the risk of a portfolio as follows:
   \begin{equation} \label{eq:portfolio-risk}

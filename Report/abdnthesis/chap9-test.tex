@@ -68,7 +68,7 @@
           \caption{Results for \nameref{sec:precision}, expected return.}
           \label{table:expected_results}
         \end{table}
-      As you can see from Table~\ref{table:expected_results} all of the standard deviations are less than $1.0\times10^{-8}$ which was our threshold, except Test 7. This is a very good sign as we have only given PSO 100 iterations to complete it's task and when we increase this to 300, the results are by far below the threshold. 
+      As you can see from Table~\ref{table:expected_results} all of the standard deviations are less than $1.0\times10^{-8}$ which was our threshold, except Test 7. This is a very good sign as we have only given PSO 100 iterations to complete its task and when we increase this to 300, the results are by far below the threshold. 
 
       The only reason Test 7 did not pass is because increasing the number of assets to 10 whilst only letting the algorithm run for 100 steps and only 20 particles was just to much. Remember that each asset represents a dimension, so in Test 7, the algorithm have 100 steps with 20 agents to search for an optimal value in a 10 dimensional search space.
     % subsection results (end)
@@ -197,7 +197,7 @@
           \label{table:penalty_results}
         \end{table}
 
-      The question now is whether it's better to have a penalty parameter of 0.1 or 0.001. Test 1 vs Test 2: they have the same mean but Test 1 has a smaller standard deviation. This means that both Test 1 and Test 2 provide in average the same result, but Test 1 is more consistent.
+      The question now is whether it is better to have a penalty parameter of 0.1 or 0.001. Test 1 vs Test 2: they have the same mean but Test 1 has a smaller standard deviation. This means that both Test 1 and Test 2 provide in average the same result, but Test 1 is more consistent.
 
     \subsection{Conclusion}
       For the reasons presented in the results, having the penalty parameter at 1.0 is too big, having it at 0.01 is too small and thus the penalty parameter will be held at 0.1. This should ensure consistent and reliable optimal solution to our portfolio optimisation problem.
@@ -205,7 +205,7 @@
 
   \section{Parameter Investigation} % (fold)
   \label{sec:relationships}
-  This test might seem a little peculiar at first but be assured, there is method in this madness, that's what I tell myself anyways... I want to see what the relationship is (if any) between the time it takes to run, the number of particles, number of iterations and number of assets.
+  This test might seem a little peculiar at first but be assured, there is method in my madness. I want to see what the relationship is (if any) between the time it takes to run, the number of particles, number of iterations and number of assets.
 
     \subsection{Testing Strategy} % (fold)
     \label{sub:testing_strategy}

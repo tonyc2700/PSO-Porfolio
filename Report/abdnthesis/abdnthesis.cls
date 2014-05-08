@@ -187,7 +187,7 @@
 
 % The main command; the internal version of \foo is \ting@foo
 % The macro \ting@foo is initialized to give an error or an info
-% message when used, so if the user doesn't provide a value for a
+% message when used, so if the user does not provide a value for a
 % mandatory variable, we'll catch the issue. I also need to be able to
 % branch according to whether a vaiable has been given a value or not.
 \newcommand{\ting@DeclareAuthorVariable}[2]{%
@@ -362,7 +362,7 @@
       \begin{minipage}{9cm}
         \begin{center}%
           {\bigskip \bf\Large \@author} \\
-          {\bigskip \bf\Large {\sc Supervisor} : \Th@supervisor}
+          {\bigskip \bf\Large {\sc Supervisor:} \Th@supervisor}
         \end{center}%
       \end{minipage}\\[2em]%
       %{\leftline{\bf\Large {\sc Supervisor} : \Th@supervisor}}\\%

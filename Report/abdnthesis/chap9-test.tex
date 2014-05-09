@@ -1,5 +1,7 @@
 \chapter{Experimentation and Testing}
-  
+This chapter shows the results of some of the tests I made, during the implementation I tested every function independently and then tested the full program after all the sub-programs where merged together. This project is not primarily about testing the PSO algorithm, it's more about testing whether we can use it to solve the portfolio selection problem and whether it's safe to use. 
+
+I condensed greatly the amount of data collected. I ran many tests, within each test there were many sub-test and each sub-test was ran 30 times. From this I calculated means and standard deviations which are used to give readable results. Overall there are about 7 files which represent test cases, each file contains the results for the sub-tests all grouped together and these files are each about 500 lines long.  
   \section{Scalability} % (fold)
   \label{sec:scalability}
     Unfortunately, I hindered the system by insisting that the minimum percentage of any asset in the portfolio is 5\% and the maximum is 35\%. This means that after 20 assets, the system stops giving credible results, as you can notice, if we have 21 assets and each one has to be at least 5\%, then we will end up have 105\%, which of course makes no sense. It will be essential to implement a better diversification technique if I plan to consider a large amount of assets. 

@@ -53,7 +53,7 @@
 \RequirePackage{setspace}
 \newif\ifsinglesp@
 \newif\ifdoublesp@
-\doublesp@true
+\doublesp@false
 
 \DeclareOption{singlespace}{\singlesp@true}
 \DeclareOption{doublespace}{\doublesp@true}

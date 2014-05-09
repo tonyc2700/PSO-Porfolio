@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  8 MAY 2014 13:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  9 MAY 2014 13:03
 entering extended mode
  %&-line parsing enabled.
 **abdnthesis.tex
@@ -845,12 +845,16 @@ File: abdnshield.pdf Graphic file (type pdf)
 
  (./chap1-intro.tex
 Chapter 1.
-[10
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [10
 
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
- (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
@@ -861,7 +865,10 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 
 (./chap2-background.tex
 Chapter 2.
-[12
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12
 
 
 
@@ -869,150 +876,132 @@ Chapter 2.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-[14] [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-[17]
+ [14]
+[15] [16]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 146.
 
  (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) [18]
+)) [17]
 \openout2 = `chap3-related.aux'.
 
 
 (./chap3-related.tex
 Chapter 3.
-[19
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18
 
 
 
-] <./Figures/efficient_frontier.png, id=619, 487.8225pt x 233.87375pt>
+]
+<./Figures/efficient_frontier.png, id=614, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./Figures/efficient_frontier.png (PNG copy)>]) [22]
+ [19 <./Figures/efficient_frontier.png (PNG copy)>] [20]) [21]
 \openout2 = `chap4-problem.aux'.
 
  (./chap4-problem.tex
 Chapter 4.
-[23
+[22
 
 
 
-]) [24]
+]) [23]
 \openout2 = `chap5-require.aux'.
 
  (./chap5-require.tex
 Chapter 5.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25
+[24
 
 
 
-])
-[26]
+]) [25]
 \openout2 = `chap6-risk.aux'.
 
  (./chap6-risk.tex
 Chapter 6.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 12.
-[27
+[26
 
 
 
-]) [28]
+]) [27]
 \openout2 = `chap7-methodology.aux'.
 
  (./chap7-methodology.tex
 Chapter 7.
-<./Figures/time-line.png, id=709, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=705, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
-<use ./Figures/time-line.png> [29
+<use ./Figures/time-line.png> [28
 
 
 
  <./Figures/time-line.png (PNG copy)>])
-[30]
+[29]
 \openout2 = `chap8-design.aux'.
 
  (./chap8-design.tex
 Chapter 8.
-[31
+[30
 
 
 
-] <./Figures/asset-file.png, id=740, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=736, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
+ [31 <./Figures/asset-file.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./Figures/asset-file.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34])
-[35]
+ [32])
+[33]
 \openout2 = `chap9-test.aux'.
 
  (./chap9-test.tex
 Chapter 9.
-[36
+[34
 
 
 
-] [37]
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [38]
-[39] [40] [41] [42] [43]) [44]
+] [35] [36] [37] [38] [39]) [40]
 \openout2 = `chap10-future.aux'.
 
  (./chap10-future.tex
 Chapter 10.
-[45
+[41
 
 
 
-] [46]) [47]
+]) [42]
 \openout2 = `chap11.aux'.
 
  (./chap11.tex
 Chapter 11.
-[48
+[43
 
+
+
+]) [44] (./abdnthesis.bbl [45
 
 
 ]
-Underfull \vbox (badness 4940) has occurred while \output is active []
-
- [49])
-[50] (./abdnthesis.bbl [51
-
-
-] [52]
 Underfull \hbox (badness 10000) in paragraph at lines 147--152
 []\T1/ptm/m/n/10.95 Risk Sci-en-tist.  []$\T1/cmtt/m/n/10.95 http : / / www . r
 iskscientist . com / content /
  []
 
-
+[46]
 Underfull \hbox (badness 1997) in paragraph at lines 188--191
 []\T1/ptm/m/n/10.95 Wikipedia.  []$\T1/cmtt/m/n/10.95 http : / / en . wikipedia
  . org / wiki / Portfolio _ (finance)$[]\T1/ptm/m/n/10.95 .  Ac-cessed:
@@ -1030,62 +1019,57 @@ Underfull \hbox (badness 1997) in paragraph at lines 203--206
  . org / wiki / Portfolio _ (finance)$[]\T1/ptm/m/n/10.95 .  Ac-cessed:
  []
 
-[53]) [54]
+) [47]
 \openout2 = `chap12-user.aux'.
 
  (./chap12-user.tex
-<./Figures/asset_file.png, id=928, 686.565pt x 303.1325pt>
+<./Figures/asset_file.png, id=899, 686.565pt x 303.1325pt>
 File: ./Figures/asset_file.png Graphic file (type png)
 
 <use ./Figures/asset_file.png>
-<./Figures/np.png, id=930, 686.565pt x 309.155pt>
+<./Figures/np.png, id=901, 686.565pt x 309.155pt>
 File: ./Figures/np.png Graphic file (type png)
  <use ./Figures/np.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55
-
-
- <./Figures/asset_file.png (PNG copy)>]
-<./Figures/nit.png, id=938, 692.5875pt x 310.15875pt>
+<./Figures/nit.png, id=903, 692.5875pt x 310.15875pt>
 File: ./Figures/nit.png Graphic file (type png)
  <use ./Figures/nit.png>
-<./Figures/risk.png, id=940, 689.57625pt x 307.1475pt>
+[48
+
+
+ <./Figures/asset_file.png (PNG copy)> <./Figures/np.png (PNG copy)>]
+<./Figures/risk.png, id=910, 689.57625pt x 307.1475pt>
 File: ./Figures/risk.png Graphic file (type png)
 
 <use ./Figures/risk.png>
-<./Figures/aversion.png, id=942, 693.59125pt x 307.1475pt>
+<./Figures/aversion.png, id=912, 693.59125pt x 307.1475pt>
 File: ./Figures/aversion.png Graphic file (type png)
 
-<use ./Figures/aversion.png> [56 <./Figures/np.png (PNG copy)> <./Figures/nit.p
-ng (PNG copy)> <./Figures/risk.png (PNG copy)>]
-<./Figures/portReq.png, id=948, 690.58pt x 307.1475pt>
+<use ./Figures/aversion.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./Figures/nit.png (PNG copy)> <./Figures/risk.png (PNG copy)>]
+<./Figures/portReq.png, id=919, 690.58pt x 307.1475pt>
 File: ./Figures/portReq.png Graphic file (type png)
 
 <use ./Figures/portReq.png>
-<./Figures/results.png, id=950, 692.5875pt x 307.1475pt>
+<./Figures/results.png, id=921, 692.5875pt x 307.1475pt>
 File: ./Figures/results.png Graphic file (type png)
 
 <use ./Figures/results.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57 <./Figures/aversion.png (PNG copy)> <./Figures/portReq.png (PNG copy)>]
-<./Figures/output.png, id=956, 337.26pt x 396.48125pt>
+<./Figures/output.png, id=923, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
-<use ./Figures/output.png>)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58 <./Figures/results.png (PNG copy)>] [59 <./Figures/output.png (PNG copy)>]
+<use ./Figures/output.png> [50 <./Figures/aversion.png (PNG copy)> <./Figures/p
+ortReq.png (PNG copy)> <./Figures/results.png (PNG copy)>]) [51 <./Figures/outp
+ut.png (PNG copy)>]
 \openout2 = `chap13-maintenance.aux'.
 
-
-(./chap13-maintenance.tex
+ (./chap13-maintenance.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [60
+) [52
 
 
 
@@ -1099,8 +1083,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17742 strings out of 495061
- 309138 string characters out of 1182621
+ 17734 strings out of 495061
+ 309082 string characters out of 1182621
  394365 words of memory out of 3000000
  20196 multiletter control sequences out of 15000+50000
  66551 words of font info for 90 fonts, out of 3000000 for 9000
@@ -1117,9 +1101,9 @@ exmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on abdnthesis.pdf (60 pages, 681673 bytes).
+Output written on abdnthesis.pdf (52 pages, 675075 bytes).
 PDF statistics:
- 1134 PDF objects out of 1200 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
+ 1100 PDF objects out of 1200 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
  721 words of extra memory for PDF output out of 10000 (max. 10000000)
 

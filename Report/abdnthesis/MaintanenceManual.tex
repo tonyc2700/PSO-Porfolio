@@ -1,4 +1,29 @@
-\chapter*{Appendix B: Maintenance Manual}
+\documentclass[]{report}
+\title{Maintenance Manual}
+\author{Anthony Chapman}
+\date{2014}
+
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm}
+\usepackage{color} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{setspace}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.fractals}
+\usepackage{mdwlist}
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
+\DefineVerbatimEnvironment{example}{Verbatim}{fontsize=\small}
+\newcommand{\ignore}[1]{}
+
+\begin{document}
+
+\maketitle
+
 The source code of the PSO and portfolio optimisation (together with an example asset file) could be found in the `source' folder in project submission.
 
 \section*{Haskell Requirements}
@@ -103,4 +128,4 @@ You will need the latest version of Haskell and it can be downloaded from \texti
     appendFile ("output-" ++ (time t))
   \end{code}
 
-
+\end{document}

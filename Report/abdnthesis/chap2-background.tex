@@ -86,7 +86,7 @@
     \item It is easy to compute and therefore easier to apply to optimisation models.
   \end{itemize}
 
-  Now this is where some mathematical background is needed, let $\| X \|_p = (E_Q |X|^p)^{\frac{1}{p}}$, $\|X\|_\infty = ess.sup \{ |X|\}$, $\sigma_p^{\pm} (X) = \|(X-E_Q[X])^{\pm}\|_p$. As already mentioned, this two-sided risk measure takes into account both sides of the loss distribution, so relative to the expected return value $E_Q[X]$, the random variable $(X-E_Q[X])^-$ is the ``downside risk'' of $X$, which according to \cite{two_sided_risk} might be more crucial to an application than the analogues ``upside risk'' variable $(X-E_Q[X])^+$.
+  Now this is where some mathematical background is needed, let $\| X \|_p = (E_Q |X|^p)^{\frac{1}{p}}$, $\|X\|_\infty = ess.sup \{ |X|\}$, $\sigma_p^{\pm} (X) = \|(X-E_Q[X])^{\pm}\|_p$, as described in \cite{two_sided_risk}. As already mentioned, this two-sided risk measure takes into account both sides of the loss distribution, so relative to the expected return value $E_Q[X]$, the random variable $(X-E_Q[X])^-$ is the ``downside risk'' of $X$, which according to \cite{two_sided_risk} might be more crucial to an application than the analogues ``upside risk'' variable $(X-E_Q[X])^+$.
 
   This is where the name, \textit{two-sided risk measure}, comes from; it considers both sides or risk, downside and upside. Due to the way downside and upside risk can be represented and the monotonically increasing property of $\| \cdot \|_p$ with respect to p, the two-sided risk measure can be determined by the following equation:
   \begin{equation} \label{eq:two-sided}

@@ -1,20 +1,46 @@
 \chapter*{Appendix B: Maintenance Manual}
+The source code of the PSO and portfolio optimisation (together with an example asset file) could be found in the `source' folder in project submission.
 
-\textbf{Instructions on how to compile and run the algorithm:} \\
-Makes sure that the source Haskell files (myFunc.hs, PSO.hs) are located in the same folder as the asset data files you wish to use for the portfolio.
+\section*{Instructions on how to compile and run the algorithm:} 
+  Makes sure that the source Haskell files (portOpt.hs, PSO.hs) are located in the same folder as the asset data files you wish to use for the portfolio.
 
-\begin{enumerate}
-  \item Open a terminal and move to the folder containing the source files, ie the Haskell code.
-  \item Type the following command into the terminal and press enter:
-\suspend{enumerate}
-\begin{center} \% ghc -O2 --make myFunc.hs -threaded -rtsopts \end{center}
-\resume{enumerate}
-  \item You have now created an executable file, now type into the terminal the following and press enter:
-\suspend{enumerate}
-\begin{center} \% ./myFunc \end{center}
-\resume{enumerate}
-  \item The program will start in the same terminal window.
-\end{enumerate}
-The User Manual provides a guide for using the program. \\
+  \begin{enumerate}
+    \item Open a terminal and move to the folder containing the source files, ie the Haskell code.
+    \item Type the following command into the terminal and press enter:
+  \suspend{enumerate}
+  \begin{center} \% ghc -O2 --make portOpt.hs -threaded -rtsopts \end{center}
+  \resume{enumerate}
+    \item You have now created an executable file, now type into the terminal the following and press enter:
+  \suspend{enumerate}
+  \begin{center} \% ./portOpt \end{center}
+  \resume{enumerate}
+    \item The program will start in the same terminal window.
+  \end{enumerate}
+  The User Manual provides a guide for using the program. \\
 
-\textbf{Organisation of System Files, including directory structures} \\
+\section*{Organisation of System Files, including directory structures} 
+
+\section*{Space and Memory Requirements}
+  2 GB of RAM, 100 MB of space would be recommended.
+
+\section*{List of source code files, with a summary of their role}
+  \begin{tabular}{|l|l|}
+    \hline
+    File & Description \\
+    \hline
+    portOpt.hs & Portfolio optimisation implementation using PSO \\
+    \hline
+    PSO.hs & Main PSO optimisation module \\
+    \hline
+  \end{tabular}
+
+\section*{Program Flow} 
+  This section provides a general description of the program flow from a technical side. \\
+  \textbf{Initialisation} \\
+
+  \textbf{Optimisation} \\
+  
+  \textbf{Output} \\
+
+
+\section*{Changing Parameters} 

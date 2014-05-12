@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  12 MAY 2014 14:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  12 MAY 2014 16:58
 entering extended mode
  %&-line parsing enabled.
 **abdnthesis.tex
@@ -1062,28 +1062,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./Figures/output.png, id=927, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
-<use ./Figures/output.png>)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51 <./Figures/results.png (PNG copy)>] [52 <./Figures/output.png (PNG copy)>]
+<use ./Figures/output.png>) [51 <./Figures/results.png (PNG copy)> <./Figures/o
+utput.png (PNG copy)>]
 \openout2 = `chap13-maintenance.aux'.
 
-
-(./chap13-maintenance.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 20--130
+ (./chap13-maintenance.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[53
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+) [52
 
 
 
-] (./abdnthesis.aux (./chap1-intro.aux) (./chap2-background.aux)
+] [53] (./abdnthesis.aux (./chap1-intro.aux) (./chap2-background.aux)
 (./chap3-related.aux) (./chap4-problem.aux) (./chap5-require.aux)
 (./chap6-risk.aux) (./chap7-methodology.aux) (./chap8-design.aux)
 (./chap9-test.aux) (./chap10-future.aux) (./chap11.aux) (./chap12-user.aux)
@@ -1093,8 +1100,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17735 strings out of 495061
- 309089 string characters out of 1182621
+ 17741 strings out of 495061
+ 309155 string characters out of 1182621
  394359 words of memory out of 3000000
  20196 multiletter control sequences out of 15000+50000
  66551 words of font info for 90 fonts, out of 3000000 for 9000
@@ -1111,9 +1118,9 @@ exmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on abdnthesis.pdf (53 pages, 678013 bytes).
+Output written on abdnthesis.pdf (53 pages, 679301 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
+ 1111 PDF objects out of 1200 (max. 8388607)
+ 224 named destinations out of 1000 (max. 500000)
  721 words of extra memory for PDF output out of 10000 (max. 10000000)
 

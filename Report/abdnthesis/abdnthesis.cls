@@ -344,13 +344,14 @@
     \let \maketitle = \relax%
 }
 
+%--------------------------------------
 %% This produces the title page.
 \newcommand \@maketitle{%
     \newpage%
     \null%
 %% Format the title and author so that it fits within the UoA       
 %% front cover window.
-    \iftitleboxp%
+  \iftitleboxp%
     \vspace*{8em}%
     \begin{center}%
       \begin{minipage}{14cm}
@@ -368,7 +369,7 @@
       %{\leftline{\bf\Large {\sc Supervisor} : \Th@supervisor}}\\%
     \end{center}%
 %% Otherwise make it look nice! 
-    \else%
+  \else%
     \vspace*{5em}%
     \begin{center}%
         {\huge \bfseries \@title}\\[5em]%
@@ -377,25 +378,26 @@
             {\small \upshape \ting@qualifications}
             {}
     \end{center}%
-    \fi%
+  \fi%
     \vfill%
     \begin{center}%
-    %A dissertation submitted in partial fulfilment \\
-    %of the requirements for the degree of \\
-    \textbf{\@degree@string} \\
-    of the \\
-    \textbf{University of Aberdeen}.\\[2em]
-    \includegraphics[width=2cm]{abdnshield}
+      %A dissertation submitted in partial fulfilment \\
+      %of the requirements for the degree of \\
+      \textbf{\@degree@string} \\
+      of the \\
+      \textbf{University of Aberdeen}.\\[2em]
+      \includegraphics[width=2cm]{abdnshield}
     \end{center}%
     \vspace{4em}%
     \begin{center}%
-    \@school
+      \@school
     \end{center}%
     \vspace{2em}%
     \begin{center}%
-    \@date%
+      \@date%
     \end{center}%
 }
+%--------------------------------------
 
 \renewcommand \chapter{%
     \if@openright%

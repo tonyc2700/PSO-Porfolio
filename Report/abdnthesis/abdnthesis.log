@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  12 MAY 2014 13:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  12 MAY 2014 13:40
 entering extended mode
  %&-line parsing enabled.
 **abdnthesis.tex
@@ -1106,7 +1106,7 @@ exmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on abdnthesis.pdf (52 pages, 676690 bytes).
+Output written on abdnthesis.pdf (52 pages, 676684 bytes).
 PDF statistics:
  1100 PDF objects out of 1200 (max. 8388607)
  217 named destinations out of 1000 (max. 500000)

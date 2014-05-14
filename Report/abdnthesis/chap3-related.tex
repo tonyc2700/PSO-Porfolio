@@ -1,6 +1,4 @@
 \chapter{Related Work}
-Use pkg bbding with 
-
 For better understanding of the portfolio selection problem and particle swarm optimisation, their strengths, weaknesses and applications, a study of previous and related works for the measure of risk in a portfolio and alternatives to PSO was made. I will read and evaluate some strengths and weaknesses on the related models and outline where they fail when compared to what this project wants to achieve. 
 
   \section{Markowitz Model} % (fold)
@@ -19,7 +17,7 @@ For better understanding of the portfolio selection problem and particle swarm o
         \mbox{\textit{Constraints:} }
         \sum\limits_{i=1}^N x_i r_i = \pi \\
         \sum\limits_{i=1}^N x_i = 1 \\
-        x_i \geq 1, i \in \{1,2,\dots,N\}
+        0 \leq x_i \leq 1, i \in \{1,2,\dots,N\}
       \end{split}
     \end{equation}
 

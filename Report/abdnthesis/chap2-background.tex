@@ -42,7 +42,7 @@
         & c_1, c_2 \text{ : Acceleration coefficients.} \\
         & r_1, r_2 \text{ : Random numbers between 0 and 1.} \\
         & Pbest_i^t \text{ : The personal best position of particle i at time t.} \\
-        & Gbest^t \text{ : The global best position of particle i at time t.} \\
+        & Gbest^t \text{ : The global best position of any particle at time t.} \\
       \end{split}
     \end{equation}
   In the updating process shown in Equation (\ref{eq:vel}) the acceleration coefficients $c_1, c_2$ ($c_1$ determines the importance one following the individual personal best whereas $c_2$ determines the importance of following the particles with the global best position)and the inertia weight $\omega$ (which states how stubborn a particle is at not deviating from their path, regardless of previous results) are predefined, and $r_1, r_2$ (these introduce the concept of randomness so that a particles is able to switch between following their personal best and that of the whole swarm) are uniformly generated random numbers in the range [0,1].
@@ -79,11 +79,11 @@
   \label{sec:portfolio_management}
   The term portfolio refers to a collection of investments such as stocks, bonds or other securities \cite{portfolio}. For this project we will focus on stocks but it would be trivial to include other such securities into the application as they behave in a similar manner to stocks. Portfolio Optimisation is the process of choosing the proportion of various assets to be held in a portfolio in such a way that any other choice would result in an equal or worst portfolio, here we have referred to the comparison of portfolio from the rate of return or the level of risk, ie one portfolio is better than another if it has a lower level of risk or higher rate of return. 
 
-  This dissertation will focus on the two-sided coherent risk measure introduced in \cite{two_sided_risk}. This revolutionises how to calculate risk as it takes into account both downside as well as upside risk in unison. Compared to previous risk measures this new measure has the following advantages:
+  This project will focus on the two-sided coherent risk measure introduced in \cite{two_sided_risk}. This revolutionises how risk can be calculated as it takes into account both downside as well as upside risk in unison. Compared to previous risk measures this new measure has the following advantages:
   \begin{itemize}
     \item The whole domain loss distribution information is utilised, making it superior for finding robust and stable investment decisions.
     \item Suitably selecting the combination coefficient and the order of the norm of the downside random loss, it is easy reflect the investor's risk attitude and to control the asymmetry and fat tails of the loss distribution.
-    \item It is easy to compute and therefore easier to apply to optimisation models.
+    \item It is easy to formulate and compute, therefore easier to apply to optimisation models.
   \end{itemize}
 
   Now this is where some mathematical background is needed, let $\| X \|_p = (E_Q |X|^p)^{\frac{1}{p}}$, $\|X\|_\infty = ess.sup \{ |X|\}$, $\sigma_p^{\pm} (X) = \|(X-E_Q[X])^{\pm}\|_p$, as described in \cite{two_sided_risk}. As already mentioned, this two-sided risk measure takes into account both sides of the loss distribution, so relative to the expected return value $E_Q[X]$, the random variable $(X-E_Q[X])^-$ is the ``downside risk'' of $X$, which according to \cite{two_sided_risk} might be more crucial to an application than the analogues ``upside risk'' variable $(X-E_Q[X])^+$.
@@ -142,12 +142,12 @@
 
   Haskell is one of the leading lazy evaluation languages in the functional programming community \cite{lazy}. Lazy evaluation is an strategy which delays the evaluation of each expression until the exact moment when it is actually required, this is indeed a powerful tool. Haskell is also a strongly typed language which includes polymorphism and high-order programming facilities. In addition, Haskell is able to work with arbitrarily large numbers, unlike most other languages, by default all numbers are set as \textit{Integer} which can contain arbitrary-precision integers. This feature ensures no overflow errors occur, unless the programmer changes the default. As this project is working over multi dimensional optimisation and in finance, precision is important, this suits the project very much.
 
-  List comprehension \cite{list_comp} is syntactic construct for creating list based on existing lists. This is a very useful given that we might store all expected return and rate of return values in lists. We can use list comprehension to formulate complex equations, such as calculating the expected portfolio return, which is $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$, as in Section~\ref{sec:portfolio_management}, easily. The code could therefore be as follows: 
+  List comprehension \cite{list_comp} is a syntactic construct for creating list based on existing lists. This is very useful given that we might store all expected return and rate of return values in lists. We can use list comprehension to formulate complex equations, such as calculating the expected portfolio return, which is $\widehat{R} = \sum_{i=1}^N  x_i \widehat{r}_i$, as in Section~\ref{sec:portfolio_management}, easily. The code could therefore be as follows: 
   \begin{code}
   expPortR :: [Double] -> [Double] -> Double
   expPortR weight expRet = sum [ x*y | x <- weight, y <- expRet ]
   \end{code}
-  The first line states the type which in this case mean, \textit{expPortR} is a function which takes in two list of type \textit{Double} and return a \textit{Double}. The first part of the second line gives names to the assigned lists, the lists which will be given to the function. The second part of the second line with sum up the corresponding expected returns with their given weights. 
+  The first line states the type which in this case mean, \textit{expPortR} is a function which takes in two list of type \textit{Double} and return a \textit{Double}. The first part of the second line gives names to the assigned lists, the lists which will be given to the function. The second part of the second line will sum up the corresponding expected returns with their given weights. 
   % section haskell (end)
 
   % \section{Multi-objective Optimisation} % (fold)

@@ -1,0 +1,40 @@
+Anthony S. Chapman
+
+*********************************************
+*********** Section 1 Contents **************
+*********************************************
+The folder 'executables' contains two executable files, one for Windows (called 'portOptWin.exe') and one for Unix/Linux (called 'portOptUnix') systems. It also has an example asset file (called 'assetTest.txt').
+
+The folder 'source' contains the source files. 'PSO.hs' is the module that deals with the main PSO algorithm. 'portOpt.hs' deals with that actual portfolio optimisation function. 
+
+*********************************************
+********* Section 2 Dependancies ************
+*********************************************
+The Haskell Platform can be downloaded and installed from 'http://www.haskell.org/platform/'. 
+
+*********************************************
+********** Section 3 Compiling **************
+*********************************************
+To compile 'portOpt.hs'
+	1) Open a terminal or command line
+	2) Move to the forlder containing the source files
+	3) Type into the terminal the following command and press enter:
+		ghc --make portOpt.hs
+	4) You how now created an executable file called 'portOpt' in Unix/Linux or 'portOpt.exe' in Windows.
+
+*********************************************
+*********** Section 4 Running ***************
+*********************************************
+Running the program in Windows:
+	1) Open a folder
+	2) Move to where the executable file is
+	3) Double click on the executable file
+	4) A new window should open with further instructions.
+
+Running the program in Unix/Linux:
+	1) Open a terminal
+	2) Move to the forlder containing the executabl file
+	3) Type into the terminal the following command and press enter:
+		./portOptUnix or ./portOpt
+
+For further instructions please refer to the User Manual.

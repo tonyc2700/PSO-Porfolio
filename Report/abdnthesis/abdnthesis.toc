@@ -44,27 +44,26 @@
 \contentsline {subsection}{\numberline {8.2.8}Presenting the Results}{35}{subsection.8.2.8}
 \contentsline {chapter}{\numberline {9}Experimentation and Testing}{36}{chapter.9}
 \contentsline {section}{\numberline {9.1}Scalability}{36}{section.9.1}
-\contentsline {section}{\numberline {9.2}Efficiency}{36}{section.9.2}
-\contentsline {section}{\numberline {9.3}Precision}{36}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Testing Strategy}{37}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Hypothesis}{37}{subsection.9.3.2}
-\contentsline {subsection}{\numberline {9.3.3}Results}{37}{subsection.9.3.3}
-\contentsline {subsection}{\numberline {9.3.4}Conclusion}{38}{subsection.9.3.4}
-\contentsline {section}{\numberline {9.4}Constriction Factors}{38}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Testing Strategy}{38}{subsection.9.4.1}
-\contentsline {subsection}{\numberline {9.4.2}Hypothesis}{39}{subsection.9.4.2}
-\contentsline {subsection}{\numberline {9.4.3}Results}{39}{subsection.9.4.3}
-\contentsline {subsection}{\numberline {9.4.4}Conclusion}{40}{subsection.9.4.4}
-\contentsline {section}{\numberline {9.5}Penalty value}{41}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Testing Strategy}{41}{subsection.9.5.1}
-\contentsline {subsection}{\numberline {9.5.2}Hypothesis}{41}{subsection.9.5.2}
-\contentsline {subsection}{\numberline {9.5.3}Results}{41}{subsection.9.5.3}
-\contentsline {subsection}{\numberline {9.5.4}Conclusion}{42}{subsection.9.5.4}
-\contentsline {section}{\numberline {9.6}Parameter Investigation}{42}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Testing Strategy}{42}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Hypothesis}{42}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}Results}{43}{subsection.9.6.3}
-\contentsline {subsection}{\numberline {9.6.4}Conclusion}{44}{subsection.9.6.4}
+\contentsline {section}{\numberline {9.2}Precision}{36}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Testing Strategy}{37}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Hypothesis}{37}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Results}{37}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.4}Conclusion}{38}{subsection.9.2.4}
+\contentsline {section}{\numberline {9.3}Constriction Factors}{38}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Testing Strategy}{38}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Hypothesis}{39}{subsection.9.3.2}
+\contentsline {subsection}{\numberline {9.3.3}Results}{39}{subsection.9.3.3}
+\contentsline {subsection}{\numberline {9.3.4}Conclusion}{40}{subsection.9.3.4}
+\contentsline {section}{\numberline {9.4}Penalty value}{41}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Testing Strategy}{41}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Hypothesis}{41}{subsection.9.4.2}
+\contentsline {subsection}{\numberline {9.4.3}Results}{41}{subsection.9.4.3}
+\contentsline {subsection}{\numberline {9.4.4}Conclusion}{42}{subsection.9.4.4}
+\contentsline {section}{\numberline {9.5}Parameter Investigation}{42}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Testing Strategy}{42}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Hypothesis}{42}{subsection.9.5.2}
+\contentsline {subsection}{\numberline {9.5.3}Results}{43}{subsection.9.5.3}
+\contentsline {subsection}{\numberline {9.5.4}Conclusion}{44}{subsection.9.5.4}
 \contentsline {chapter}{\numberline {10}Future Work}{45}{chapter.10}
 \contentsline {section}{\numberline {10.1}PSO}{45}{section.10.1}
 \contentsline {subsection}{\numberline {10.1.1}Inertia weights}{45}{subsection.10.1.1}
@@ -76,6 +75,6 @@
 \contentsline {section}{\numberline {10.3}Diversification}{46}{section.10.3}
 \contentsline {chapter}{\numberline {11}Evaluation and Conclusion}{48}{chapter.11}
 \contentsline {section}{\numberline {11.1}Evaluation}{48}{section.11.1}
-\contentsline {section}{\numberline {11.2}Problems encountered}{48}{section.11.2}
-\contentsline {section}{\numberline {11.3}Discussion}{49}{section.11.3}
+\contentsline {section}{\numberline {11.2}Problems encountered}{49}{section.11.2}
+\contentsline {section}{\numberline {11.3}Discussion}{50}{section.11.3}
 \contentsline {section}{\numberline {11.4}Conclusion}{50}{section.11.4}

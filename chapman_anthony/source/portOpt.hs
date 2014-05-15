@@ -60,6 +60,7 @@ main = do
     file <- getLine 
     src <- readFile file
     --src <- readFile "readText.txt" -- for testing
+    -- Splitting and extractiong data from asset file
     let triples   = map (split.words) (lines src)
     let names = extractName triples :: [String]
     let rateR = extractRate triples :: [Double]
@@ -124,6 +125,7 @@ outPutFile names pos = do
     --appendFile ("output-" ++ (time t)) ("Expected Portfolio Return is: " ++ "\n\n" )
   where time t = show (toGregorian $ utctDay t)
 
+--Printable portfolio function.
 printStuff [] [] = []
 printStuff (n:ns) (p:ps) = n ++ "\t" ++ toPerc p ++ "% \n" ++ (printStuff ns ps)
 

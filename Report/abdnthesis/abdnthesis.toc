@@ -35,9 +35,9 @@
 \contentsline {subsection}{\numberline {8.1.4}Termination}{32}{subsection.8.1.4}
 \contentsline {section}{\numberline {8.2}Expansion for Portfolio Optimisation}{32}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}Interface and User Input}{32}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Data file}{32}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.2}Data (asset) file}{32}{subsection.8.2.2}
 \contentsline {subsection}{\numberline {8.2.3}Constriction Factor}{33}{subsection.8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}Termination}{34}{subsection.8.2.4}
+\contentsline {subsection}{\numberline {8.2.4}Termination}{33}{subsection.8.2.4}
 \contentsline {subsection}{\numberline {8.2.5}Fitness Function}{34}{subsection.8.2.5}
 \contentsline {subsection}{\numberline {8.2.6}Penalty function}{34}{subsection.8.2.6}
 \contentsline {subsection}{\numberline {8.2.7}Forced Diversification}{35}{subsection.8.2.7}
@@ -75,6 +75,7 @@
 \contentsline {section}{\numberline {10.3}Diversification}{46}{section.10.3}
 \contentsline {chapter}{\numberline {11}Evaluation and Conclusion}{48}{chapter.11}
 \contentsline {section}{\numberline {11.1}Evaluation}{48}{section.11.1}
-\contentsline {section}{\numberline {11.2}Problems encountered}{49}{section.11.2}
-\contentsline {section}{\numberline {11.3}Discussion}{50}{section.11.3}
-\contentsline {section}{\numberline {11.4}Conclusion}{50}{section.11.4}
+\contentsline {section}{\numberline {11.2}Testing Conclusion}{49}{section.11.2}
+\contentsline {section}{\numberline {11.3}Problems encountered}{49}{section.11.3}
+\contentsline {section}{\numberline {11.4}Discussion}{50}{section.11.4}
+\contentsline {section}{\numberline {11.5}Conclusion}{50}{section.11.5}

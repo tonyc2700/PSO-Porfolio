@@ -35,7 +35,7 @@
 \BOOKMARK [2][-]{subsection.8.1.4}{Termination}{section.8.1}
 \BOOKMARK [1][-]{section.8.2}{Expansion for Portfolio Optimisation}{chapter.8}
 \BOOKMARK [2][-]{subsection.8.2.1}{Interface and User Input}{section.8.2}
-\BOOKMARK [2][-]{subsection.8.2.2}{Data file}{section.8.2}
+\BOOKMARK [2][-]{subsection.8.2.2}{Data \(asset\) file}{section.8.2}
 \BOOKMARK [2][-]{subsection.8.2.3}{Constriction Factor}{section.8.2}
 \BOOKMARK [2][-]{subsection.8.2.4}{Termination}{section.8.2}
 \BOOKMARK [2][-]{subsection.8.2.5}{Fitness Function}{section.8.2}
@@ -75,6 +75,7 @@
 \BOOKMARK [1][-]{section.10.3}{Diversification}{chapter.10}
 \BOOKMARK [0][-]{chapter.11}{Evaluation and Conclusion}{}
 \BOOKMARK [1][-]{section.11.1}{Evaluation}{chapter.11}
-\BOOKMARK [1][-]{section.11.2}{Problems encountered}{chapter.11}
-\BOOKMARK [1][-]{section.11.3}{Discussion}{chapter.11}
-\BOOKMARK [1][-]{section.11.4}{Conclusion}{chapter.11}
+\BOOKMARK [1][-]{section.11.2}{Testing Conclusion}{chapter.11}
+\BOOKMARK [1][-]{section.11.3}{Problems encountered}{chapter.11}
+\BOOKMARK [1][-]{section.11.4}{Discussion}{chapter.11}
+\BOOKMARK [1][-]{section.11.5}{Conclusion}{chapter.11}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  15 MAY 2014 09:55
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.13)  15 MAY 2014 22:08
 entering extended mode
  %&-line parsing enabled.
 **abdnthesis.tex
@@ -714,21 +714,21 @@ LaTeX Warning: Label `fig:asset_file' multiply defined.
 ) (./chap13-maintenance.aux))
 \openout1 = `abdnthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 38.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -750,7 +750,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 38.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -759,8 +759,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
  (./abdnthesis.out)
 (./abdnthesis.out)
 \@outlinefile=\write5
@@ -769,48 +769,48 @@ LaTeX Info: Redefining \pageref on input line 83.
 \AtBeginShipoutBox=\box50
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 88
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 41
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 41
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 41
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 41
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 88.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
 
-<abdnshield.pdf, id=326, 48.18pt x 65.59047pt>
+<abdnshield.pdf, id=330, 48.18pt x 65.59047pt>
 File: abdnshield.pdf Graphic file (type pdf)
  <use abdnshield.pdf> [1
 
@@ -874,13 +874,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 [14] [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7595) has occurred while \output is active []
 
  [16]
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
  [17]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 146.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 143.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
@@ -898,7 +898,7 @@ Underfull \vbox (badness 7832) has occurred while \output is active []
 
 
 ]
-<./Figures/efficient_frontier.png, id=615, 487.8225pt x 233.87375pt>
+<./Figures/efficient_frontier.png, id=620, 487.8225pt x 233.87375pt>
 File: ./Figures/efficient_frontier.png Graphic file (type png)
 
 <use ./Figures/efficient_frontier.png>
@@ -948,7 +948,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
  (./chap7-methodology.tex
 Chapter 7.
-<./Figures/time-line.png, id=705, 1177.39874pt x 218.8175pt>
+<./Figures/time-line.png, id=710, 1177.39874pt x 218.8175pt>
 File: ./Figures/time-line.png Graphic file (type png)
 
 <use ./Figures/time-line.png> [29
@@ -965,16 +965,14 @@ Chapter 8.
 
 
 
-] <./Figures/asset-file.png, id=736, 417.56pt x 331.2375pt>
+] <./Figures/asset-file.png, id=741, 417.56pt x 331.2375pt>
 File: ./Figures/asset-file.png Graphic file (type png)
 
 <use ./Figures/asset-file.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1616) has occurred while \output is active []
 
  [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 <./Figures/asset-file.png (PNG copy)>]
+[33 <./Figures/asset-file.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34])
@@ -1019,10 +1017,10 @@ Chapter 11.
 
 
 
-] [49]) [50] (./abdnthesis.bbl [51
+] [49] [50]) [51] (./abdnthesis.bbl [52
 
 
-] [52]
+] [53]
 Underfull \hbox (badness 10000) in paragraph at lines 147--152
 []\T1/ptm/m/n/10.95 Risk Sci-en-tist.  []$\T1/cmtt/m/n/10.95 http : / / www . r
 iskscientist . com / content /
@@ -1046,51 +1044,51 @@ Underfull \hbox (badness 1997) in paragraph at lines 203--206
  . org / wiki / Portfolio _ (finance)$[]\T1/ptm/m/n/10.95 .  Ac-cessed:
  []
 
-[53]) [54]
+[54]) [55]
 \openout2 = `chap12-user.aux'.
 
  (./chap12-user.tex
-<./Figures/asset_file.png, id=924, 686.565pt x 303.1325pt>
+<./Figures/asset_file.png, id=935, 686.565pt x 303.1325pt>
 File: ./Figures/asset_file.png Graphic file (type png)
 
 <use ./Figures/asset_file.png>
-<./Figures/np.png, id=926, 686.565pt x 309.155pt>
+<./Figures/np.png, id=937, 686.565pt x 309.155pt>
 File: ./Figures/np.png Graphic file (type png)
  <use ./Figures/np.png>
-[55
+[56
 
 
  <./Figures/asset_file.png (PNG copy)>]
-<./Figures/nit.png, id=934, 692.5875pt x 310.15875pt>
+<./Figures/nit.png, id=944, 692.5875pt x 310.15875pt>
 File: ./Figures/nit.png Graphic file (type png)
  <use ./Figures/nit.png>
-<./Figures/risk.png, id=936, 689.57625pt x 307.1475pt>
+<./Figures/risk.png, id=946, 689.57625pt x 307.1475pt>
 File: ./Figures/risk.png Graphic file (type png)
 
 <use ./Figures/risk.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56 <./Figures/np.png (PNG copy)> <./Figures/nit.png (PNG copy)>]
-<./Figures/aversion.png, id=942, 693.59125pt x 307.1475pt>
+ [57 <./Figures/np.png (PNG copy)> <./Figures/nit.png (PNG copy)>]
+<./Figures/aversion.png, id=952, 693.59125pt x 307.1475pt>
 File: ./Figures/aversion.png Graphic file (type png)
 
 <use ./Figures/aversion.png>
-<./Figures/portReq.png, id=944, 690.58pt x 307.1475pt>
+<./Figures/portReq.png, id=954, 690.58pt x 307.1475pt>
 File: ./Figures/portReq.png Graphic file (type png)
 
 <use ./Figures/portReq.png>
-<./Figures/results.png, id=946, 692.5875pt x 307.1475pt>
+<./Figures/results.png, id=956, 692.5875pt x 307.1475pt>
 File: ./Figures/results.png Graphic file (type png)
 
-<use ./Figures/results.png> [57 <./Figures/risk.png (PNG copy)> <./Figures/aver
+<use ./Figures/results.png> [58 <./Figures/risk.png (PNG copy)> <./Figures/aver
 sion.png (PNG copy)> <./Figures/portReq.png (PNG copy)>]
-<./Figures/output.png, id=952, 337.26pt x 396.48125pt>
+<./Figures/output.png, id=962, 337.26pt x 396.48125pt>
 File: ./Figures/output.png Graphic file (type png)
 
 <use ./Figures/output.png>)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58 <./Figures/results.png (PNG copy)>] [59 <./Figures/output.png (PNG copy)>]
+ [59 <./Figures/results.png (PNG copy)>] [60 <./Figures/output.png (PNG copy)>]
 \openout2 = `chap13-maintenance.aux'.
 
 
@@ -1108,11 +1106,11 @@ ed-i-tor and can be in-stalled for free from \T1/ptm/m/it/10.95 http://notepad-
 
  []
 
-[60
+[61
 
 
 
-] [61] [62]) [63] (./abdnthesis.aux (./chap1-intro.aux)
+] [62] [63]) [64] (./abdnthesis.aux (./chap1-intro.aux)
 (./chap2-background.aux) (./chap3-related.aux) (./chap4-problem.aux)
 (./chap5-require.aux) (./chap6-risk.aux) (./chap7-methodology.aux)
 (./chap8-design.aux) (./chap9-test.aux) (./chap10-future.aux) (./chap11.aux)
@@ -1122,13 +1120,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17755 strings out of 495061
- 309244 string characters out of 1182621
- 394344 words of memory out of 3000000
- 20195 multiletter control sequences out of 15000+50000
+ 17760 strings out of 495061
+ 309315 string characters out of 1182621
+ 394473 words of memory out of 3000000
+ 20198 multiletter control sequences out of 15000+50000
  66551 words of font info for 90 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 56i,19n,57p,1094b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,19n,57p,1168b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/anthony/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home
 /anthony/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texm
 f-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/pub
@@ -1140,9 +1138,9 @@ exmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
 f-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on abdnthesis.pdf (63 pages, 702955 bytes).
+Output written on abdnthesis.pdf (64 pages, 706146 bytes).
 PDF statistics:
- 1188 PDF objects out of 1200 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 713 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1199 PDF objects out of 1200 (max. 8388607)
+ 241 named destinations out of 1000 (max. 500000)
+ 721 words of extra memory for PDF output out of 10000 (max. 10000000)
 
